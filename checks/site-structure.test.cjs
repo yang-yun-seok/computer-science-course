@@ -49,3 +49,18 @@ test('build uses only repository-owned curriculum data',()=>{
  assert.doesNotMatch(build,/\.\.\/outputs/);
  assert.match(read('content/curriculum.md'),/^# Computer Science/m);
 });
+
+test('glossary indexes every reference keyword without copying descriptions',()=>{
+ const context=vm.createContext({});context.window=context;
+ vm.runInContext(read('src/core.js'),context);
+ vm.runInContext(read('content/glossary.js'),context);
+ const glossary=context.CS.glossary;
+ assert.equal(glossary.terms.length,1133);
+ assert.deepEqual(Array.from(glossary.subjects,v=>[v.id,glossary.terms.filter(term=>term.subject===v.id).length]),[['os',220],['net',483],['db',85],['ds',86],['arch',259]]);
+ assert.ok(glossary.terms.every(term=>term.term&&term.subject&&term.topic));
+ assert.doesNotMatch(read('content/glossary.js'),/"description"\s*:/);
+ assert.match(glossary.source.note,/설명과 이미지는 포함하지 않았습니다/);
+ const app=read('src/app.js');
+ assert.match(app,/href="#glossary"/);
+ assert.match(app,/id==='glossary'\)renderGlossary/);
+});

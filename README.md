@@ -8,6 +8,7 @@
 - **2강:** 알고리즘·운영체제·가상 메모리·동시성·SQL
 - **3강:** 인터넷·브라우저·보안·컴파일러·병렬 처리·분산 시스템
 - **부록:** 확장성·아키텍처·테스트·배포·장애 복구
+- **용어 정리:** 운영체제·네트워크·데이터베이스·자료구조·컴퓨터 구조 1,133개 키워드 검색
 
 총 24개 대단원, 48개 소단원으로 구성되어 있습니다. 각 소단원은 개념 설명, 시각 자료, 직접 조작하는 실습, 확인 문제와 핵심 정리 순서로 진행됩니다.
 
@@ -34,6 +35,7 @@ src/style.css        공통·단원별 스타일
 assets/              생성 이미지 원본과 최적화 이미지
 checks/              Node.js 회귀 테스트
 scripts/build.cjs    단일 HTML 빌드
+scripts/generate-glossary-index.cjs  용어명·영문명·분류 인덱스 생성
 dist/                빌드 결과(버전 관리 제외)
 .github/workflows/   GitHub Pages 자동 배포
 ```
@@ -43,3 +45,7 @@ dist/                빌드 결과(버전 관리 제외)
 저장소의 기본 브랜치를 `main`으로 사용하고 GitHub의 **Settings → Pages → Source**를 **GitHub Actions**로 설정합니다. 이후 `main`에 push하면 테스트와 빌드를 실행한 뒤 `dist/`를 게시합니다. 수동 배포는 Actions의 `Deploy to GitHub Pages`에서 실행할 수 있습니다.
 
 이 사이트는 해시 주소로 단원을 이동하므로 사용자 또는 프로젝트 GitHub Pages 저장소에서 별도의 경로 설정 없이 동작합니다.
+
+## 용어 목록 참고
+
+용어명, 영문명과 과목 분류는 [CSnote](https://csnote.net/)와 [공개 저장소](https://github.com/kangtegong/csnote)를 참고했습니다. 원문의 설명문과 이미지는 포함하지 않았으며, 현재 교안의 검색·분류·관련 단원 연결 방식으로 다시 구성했습니다.
