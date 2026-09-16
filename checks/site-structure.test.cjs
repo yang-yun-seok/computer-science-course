@@ -39,6 +39,7 @@ test('GitHub Pages workflow validates and publishes dist',()=>{
  assert.match(workflow,/npm run build/);
  assert.match(workflow,/actions\/upload-pages-artifact@v3/);
  assert.match(workflow,/actions\/deploy-pages@v4/);
+ assert.match(workflow,/enablement: true/);
  assert.match(read('scripts/build.cjs'),/\.nojekyll/);
 });
 
