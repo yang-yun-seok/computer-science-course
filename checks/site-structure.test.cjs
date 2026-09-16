@@ -50,19 +50,21 @@ test('build uses only repository-owned curriculum data',()=>{
  assert.match(read('content/curriculum.md'),/^# Computer Science/m);
 });
 
-test('glossary indexes every reference keyword without copying descriptions',()=>{
+test('glossary indexes every reference keyword with a readable meaning',()=>{
  const context=vm.createContext({});context.window=context;
  vm.runInContext(read('src/core.js'),context);
  vm.runInContext(read('content/glossary.js'),context);
  const glossary=context.CS.glossary;
  assert.equal(glossary.terms.length,1133);
  assert.deepEqual(Array.from(glossary.subjects,v=>[v.id,glossary.terms.filter(term=>term.subject===v.id).length]),[['os',220],['net',483],['db',85],['ds',86],['arch',259]]);
- assert.ok(glossary.terms.every(term=>term.term&&term.subject&&term.topic));
- assert.doesNotMatch(read('content/glossary.js'),/"description"\s*:/);
- assert.match(glossary.source.note,/설명과 이미지는 포함하지 않았습니다/);
+ assert.ok(glossary.terms.every(term=>term.term&&term.subject&&term.topic&&term.meaning.length>=8));
+ assert.ok(glossary.terms.every(term=>!/<[^>]+>/.test(term.meaning)));
+ assert.match(glossary.source.note,/짧은 뜻/);
  const app=read('src/app.js');
  assert.match(app,/href="#glossary"/);
  assert.match(app,/id==='glossary'\)renderGlossary/);
+ assert.match(app,/glossary-term-meaning/);
+ assert.match(app,/term\.meaning/);
 });
 
 test('lesson topics have breathing room and figures explain their learning focus',()=>{

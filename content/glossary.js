@@ -4,7 +4,8 @@ CS.glossary={
     "name": "CSnote",
     "site": "https://csnote.net/",
     "repository": "https://github.com/kangtegong/csnote",
-    "note": "용어명·영문명·과목 분류만 참고했습니다. 원문의 설명과 이미지는 포함하지 않았습니다."
+    "note": "용어명·영문명·과목 분류와 짧은 뜻을 참고해 현재 교안의 학습 흐름에 맞는 문장으로 정리했습니다. 원본 이미지는 포함하지 않았습니다.",
+    "meaning": "CSnote의 짧은 설명을 초심자용 문장으로 정리했습니다."
   },
   "subjects": [
     {
@@ -69,7 +70,9 @@ CS.glossary={
       "term": "시스템 자원",
       "english": "",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제를 알아야 하는 이유"
+      "detail": "운영체제를 알아야 하는 이유",
+      "meaning": "시스템 자원은 프로그램 실행에 꼭 필요한 요소예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-002",
@@ -77,7 +80,10 @@ CS.glossary={
       "term": "운영체제",
       "english": "operation system",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제를 알아야 하는 이유"
+      "detail": "운영체제를 알아야 하는 이유",
+      "meaning": "운영체제는 실행할 프로그램에 필요한 자원을 할당하고, 프로그램이 올바르게 실행되도록 돕는 특별한 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q9135"
     },
     {
       "id": "os-003",
@@ -85,7 +91,10 @@ CS.glossary={
       "term": "커널",
       "english": "kernel",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제를 알아야 하는 이유"
+      "detail": "운영체제를 알아야 하는 이유",
+      "meaning": "커널은 운영체제의 핵심 부분으로, 하드웨어를 비롯한 자원과 프로세스 및 스레드를 관리해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q9662"
     },
     {
       "id": "os-004",
@@ -93,7 +102,10 @@ CS.glossary={
       "term": "커널 영역",
       "english": "kernel space",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제를 알아야 하는 이유"
+      "detail": "운영체제를 알아야 하는 이유",
+      "meaning": "커널 영역은 메모리 상에서 커널이 적재된 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3058243"
     },
     {
       "id": "os-005",
@@ -101,7 +113,10 @@ CS.glossary={
       "term": "사용자 영역",
       "english": "user space",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제를 알아야 하는 이유"
+      "detail": "운영체제를 알아야 하는 이유",
+      "meaning": "사용자 영역은 커널 영역을 제외한 나머지 영역, 사용자가 이용하는 응용프로그램이 적재되는 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1142183"
     },
     {
       "id": "os-006",
@@ -109,7 +124,10 @@ CS.glossary={
       "term": "응용 프로그램",
       "english": "application software",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제를 알아야 하는 이유"
+      "detail": "운영체제를 알아야 하는 이유",
+      "meaning": "응용 프로그램은 사용자가 특정 목적을 위해 사용하는 일반적인 프로그램을 의미예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q166142"
     },
     {
       "id": "os-007",
@@ -117,7 +135,10 @@ CS.glossary={
       "term": "커널",
       "english": "kernel",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "커널은 자원에 접근하고 조작하는 기능과 프로그램이 올바르고 안전하게 실행되게 하는 기능이 있는 운영체제의 핵심 부분이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q9662"
     },
     {
       "id": "os-008",
@@ -125,7 +146,10 @@ CS.glossary={
       "term": "사용자 인터페이스",
       "english": "UI; User Interface",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "사용자 인터페이스는 윈도우의 바탕화면과 같이 사용자가 컴퓨터와 상호작용할 수 있는 통로예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q47146"
     },
     {
       "id": "os-009",
@@ -133,7 +157,10 @@ CS.glossary={
       "term": "그래픽 유저 인터페이스",
       "english": "GUI; Graphic User Interface",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "그래픽 유저 인터페이스는 그래픽을 기반으로 컴퓨터와 상호작용할 수 있는 사용자 인터페이스예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q25439363"
     },
     {
       "id": "os-010",
@@ -141,7 +168,10 @@ CS.glossary={
       "term": "커맨드 라인 인터페이스",
       "english": "CLI; Command Line Interface",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "커맨드 라인 인터페이스는 명령어를 기반으로 컴퓨터와 상호작용할 수 있는 사용자 인터페이스예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q30612"
     },
     {
       "id": "os-011",
@@ -149,7 +179,10 @@ CS.glossary={
       "term": "이중 모드",
       "english": "dual mode",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "이중 모드는 CPU가 명령어를 실행하는 모드를 크게 사용자 모드와 커널 모드로 구분하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q232962"
     },
     {
       "id": "os-012",
@@ -157,7 +190,10 @@ CS.glossary={
       "term": "사용자 모드",
       "english": "user mode",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "사용자 모드는 커널 영역의 코드를 실행할 수 없어 운영체제 서비스를 제공받을 수 없는 실행 모드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4820732"
     },
     {
       "id": "os-013",
@@ -165,7 +201,10 @@ CS.glossary={
       "term": "커널 모드",
       "english": "kernel mode",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "커널 모드는 커널 영역의 코드를 실행할 수 있어 운영체제 서비스를 제공받을 수 있는 실행 모드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q10851258"
     },
     {
       "id": "os-014",
@@ -173,7 +212,10 @@ CS.glossary={
       "term": "시스템 호출 (시스템 콜)",
       "english": "system call",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "시스템 호출 (시스템 콜)은 사용자 모드로 실행되는 응용 프로그램이 운영체제의 서비스를 받기 위해 커널 모드로 전환하는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q722192"
     },
     {
       "id": "os-015",
@@ -181,7 +223,9 @@ CS.glossary={
       "term": "소프트웨어 인터럽트",
       "english": "",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "소프트웨어 인터럽트는 인터럽트를 발생시키는 특정 명령어에 의해 발생하는 인터럽트예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-016",
@@ -189,7 +233,10 @@ CS.glossary={
       "term": "프로세스",
       "english": "process",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "프로세스는 실행 중인 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q205663"
     },
     {
       "id": "os-017",
@@ -197,7 +244,9 @@ CS.glossary={
       "term": "CPU 스케줄링",
       "english": "",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "CPU 스케줄링은 프로세스들에 공정하게 CPU를 할당하는 작업이에요. 어떤 프로세스부터 CPU를 이용하게 할 것인지, 얼마나 오래 CPU를 이용하게 할지를 결정해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-018",
@@ -205,7 +254,10 @@ CS.glossary={
       "term": "파일 시스템",
       "english": "",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "파일 시스템은 파일을 저장하고 관리하는 운영체제 내부의 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q174989"
     },
     {
       "id": "os-019",
@@ -213,7 +265,10 @@ CS.glossary={
       "term": "가상 머신",
       "english": "virtual machine",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "가상 머신은 소프트웨어적으로 만들어낸 가상 컴퓨터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q192726"
     },
     {
       "id": "os-020",
@@ -221,7 +276,10 @@ CS.glossary={
       "term": "하이퍼바이저",
       "english": "hypervisor",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "하이퍼바이저는 하드웨어를 가상화하는 소프트웨어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1077480"
     },
     {
       "id": "os-021",
@@ -229,7 +287,10 @@ CS.glossary={
       "term": "컨테이너",
       "english": "container",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "컨테이너는 가상 머신과 유사하게 동작하지만, 가상 머신보다 가볍고 빠르게 동작하는 가상화 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q187956"
     },
     {
       "id": "os-022",
@@ -237,7 +298,10 @@ CS.glossary={
       "term": "컨테이너 오케스트레이션",
       "english": "container orchestration",
       "topic": "운영체제 시작하기",
-      "detail": "운영체제의 큰 그림"
+      "detail": "운영체제의 큰 그림",
+      "meaning": "컨테이너 오케스트레이션은 여러 개의 컨테이너를 자동으로 배포하고 관리하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7935198"
     },
     {
       "id": "os-023",
@@ -245,7 +309,9 @@ CS.glossary={
       "term": "포그라운드 프로세스",
       "english": "foreground process",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "포그라운드 프로세스는 사용자가 볼 수 있는 공간에서 실행되는 프로세스예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-024",
@@ -253,7 +319,10 @@ CS.glossary={
       "term": "백그라운드 프로세스",
       "english": "background process",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "백그라운드 프로세스는 사용자가 볼 수 없는 공간에서 실행되는 프로세스예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q549497"
     },
     {
       "id": "os-025",
@@ -261,7 +330,10 @@ CS.glossary={
       "term": "데몬",
       "english": "daemon",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "데몬은 유닉스 체계의 운영체제에서 사용자와 상호작용하지 않고 정해진 일만 수행하는 백그라운드 프로세스예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q308980"
     },
     {
       "id": "os-026",
@@ -269,7 +341,10 @@ CS.glossary={
       "term": "서비스",
       "english": "service",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "서비스는 윈도우 운영체제에서 사용자와 상호작용하지 않고 정해진 일만 수행하는 백그라운드 프로세스예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7406919"
     },
     {
       "id": "os-027",
@@ -277,7 +352,10 @@ CS.glossary={
       "term": "프로세스 제어 블록",
       "english": "PCB; Process Control Block",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "프로세스 제어 블록은 프로세스와 관련된 식별 정보를 저장하는 자료 구조예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1142922"
     },
     {
       "id": "os-028",
@@ -285,7 +363,9 @@ CS.glossary={
       "term": "프로세스 테이블",
       "english": "Process Table",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "프로세스 테이블은 PCB의 모음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-029",
@@ -293,7 +373,10 @@ CS.glossary={
       "term": "프로세스 ID (PID)",
       "english": "PID; Process ID",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "프로세스 ID (PID)는 프로세스를 식별하기 위해 부여하는 고유한 번호예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2377898"
     },
     {
       "id": "os-030",
@@ -301,7 +384,10 @@ CS.glossary={
       "term": "문맥",
       "english": "context",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "문맥은 프로세스 수행을 재개하기 위해 기억해야 할 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q196626"
     },
     {
       "id": "os-031",
@@ -309,7 +395,10 @@ CS.glossary={
       "term": "문맥 교환",
       "english": "context switching",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "문맥 교환은 기존 프로세스의 문맥을 PCB에 백업하고, 새로운 프로세스 문맥을 PCB로부터 복구하여 새로운 프로세스를 실행하는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1061424"
     },
     {
       "id": "os-032",
@@ -317,7 +406,10 @@ CS.glossary={
       "term": "코드 영역",
       "english": "code segment",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "코드 영역은 기계어(실행할 수 있는 코드)로 이루어진 명령어가 저장되는 메모리 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q836978"
     },
     {
       "id": "os-033",
@@ -325,7 +417,10 @@ CS.glossary={
       "term": "데이터 영역",
       "english": "data segment",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "데이터 영역은 프로그램이 실행되는 동안 유지할 데이터가 저장되는 메모리 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q491179"
     },
     {
       "id": "os-034",
@@ -333,7 +428,10 @@ CS.glossary={
       "term": "BSS 영역",
       "english": "BSS segment",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "BSS 영역은 프로그램이 실행되는 동안 유지할 데이터가 저장되는 메모리 영역이에요. 초기화되지 않은 전역 변수가 저장되는 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q835876"
     },
     {
       "id": "os-035",
@@ -341,7 +439,10 @@ CS.glossary={
       "term": "전역 변수",
       "english": "global variable",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "전역 변수는 프로그램이 실행되는 동안 유지되며, 프로그램 전체에서 접근할 수 있는 변수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1143344"
     },
     {
       "id": "os-036",
@@ -349,7 +450,9 @@ CS.glossary={
       "term": "정적 할당 영역",
       "english": "",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "정적 할당 영역은 프로세스 메모리 구조에서 크기가 고정된 영역이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-037",
@@ -357,7 +460,9 @@ CS.glossary={
       "term": "동적 할당 영역",
       "english": "",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "동적 할당 영역은 프로세스 메모리 구조에서 크기가 가변적인 영역이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-038",
@@ -365,7 +470,9 @@ CS.glossary={
       "term": "힙 영역",
       "english": "heap segment",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "힙 영역은 프로그램을 만드는 사용자가 직접 할당할 수 있는 저장 공간이에요. 동적 할당 영역의 일종이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-039",
@@ -373,7 +480,10 @@ CS.glossary={
       "term": "메모리 누수",
       "english": "memory leak",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "메모리 누수는 메모리 공간을 할당했지만 반환하지 않아 사용하지 않는 메모리 공간이 계속 남아 메모리 낭비를 초래하는 현상이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q751740"
     },
     {
       "id": "os-040",
@@ -381,7 +491,9 @@ CS.glossary={
       "term": "스택 영역",
       "english": "",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "스택 영역은 데이터를 일시적으로 저장하는 공간이에요. 매개 변수와 지역 변수가 저장되는 영역이에요. 동적 할당 영역의 일종이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-041",
@@ -389,7 +501,9 @@ CS.glossary={
       "term": "스택 트레이스",
       "english": "",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 개요"
+      "detail": "프로세스 개요",
+      "meaning": "스택 트레이스는 스택 영역에 저장된 함수 호출 정보예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-042",
@@ -397,7 +511,10 @@ CS.glossary={
       "term": "생성 상태",
       "english": "new",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "생성 상태는 프로세스를 생성 중인 상태예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q60"
     },
     {
       "id": "os-043",
@@ -405,7 +522,10 @@ CS.glossary={
       "term": "준비 상태",
       "english": "ready",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "준비 상태는 CPU를 할당받아 실행할 수 있지만, 아직 자신의 차례가 아니기에 기다리고 있는 상태예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q139765664"
     },
     {
       "id": "os-044",
@@ -413,7 +533,10 @@ CS.glossary={
       "term": "디스패치",
       "english": "dispatch",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "디스패치는 준비 상태인 프로세스가 실행 상태로 전환되는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q131436199"
     },
     {
       "id": "os-045",
@@ -421,7 +544,10 @@ CS.glossary={
       "term": "실행 상태",
       "english": "running",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "실행 상태는 CPU를 할당 받아 실행 중인 상태예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q15796039"
     },
     {
       "id": "os-046",
@@ -429,7 +555,10 @@ CS.glossary={
       "term": "대기 상태",
       "english": "blocked",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "대기 상태는 입출력장치의 작업을 기다리는 등 실행이 잠시 중단된 상태예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1068739"
     },
     {
       "id": "os-047",
@@ -437,7 +566,10 @@ CS.glossary={
       "term": "종료 상태",
       "english": "terminated",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "종료 상태는 프로세스가 종료된 상태예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2553232"
     },
     {
       "id": "os-048",
@@ -445,7 +577,10 @@ CS.glossary={
       "term": "부모 프로세스",
       "english": "parent process",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "부모 프로세스는 실행 도중 시스템 호출을 통해 다른 프로세스를 생성한 프로세스예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2280987"
     },
     {
       "id": "os-049",
@@ -453,7 +588,10 @@ CS.glossary={
       "term": "자식 프로세스",
       "english": "child process",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "자식 프로세스는 부모 프로세스에 의해 생성된 프로세스예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2534297"
     },
     {
       "id": "os-050",
@@ -461,7 +599,10 @@ CS.glossary={
       "term": "PPID",
       "english": "Parent PID",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "PPID는 부모 프로세스의 PID예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q18030686"
     },
     {
       "id": "os-051",
@@ -469,7 +610,9 @@ CS.glossary={
       "term": "프로세스 계층 구조",
       "english": "",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "프로세스 계층 구조는 프로세스들이 계층적으로 구성된 구조예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-052",
@@ -477,7 +620,10 @@ CS.glossary={
       "term": "fork",
       "english": "fork",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "fork는 자기 자신 프로세스의 복사본을 자식 프로세스로 생성하는 시스템 호출해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q48893562"
     },
     {
       "id": "os-053",
@@ -485,7 +631,10 @@ CS.glossary={
       "term": "exec",
       "english": "exec",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "exec는 자신의 메모리 공간을 새로운 프로그램으로 덮어쓰는 시스템 호출해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2522382"
     },
     {
       "id": "os-054",
@@ -493,7 +642,9 @@ CS.glossary={
       "term": "타임아웃 인터럽트",
       "english": "timeout interrupt",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "타임아웃 인터럽트는 프로세스가 정해진 시간 동안 CPU를 사용할 경우 발생하는 인터럽트예요. 타이머 인터럽트라고도 해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-055",
@@ -501,7 +652,10 @@ CS.glossary={
       "term": "블로킹 입출력",
       "english": "blocking I/O",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "블로킹 입출력은 프로세스가 입출력 작업이 완료될 때까지 대기 상태로 머무는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q14940721"
     },
     {
       "id": "os-056",
@@ -509,7 +663,10 @@ CS.glossary={
       "term": "논블로킹 입출력",
       "english": "non-blocking I/O",
       "topic": "프로세스와 스레드",
-      "detail": "프로세스 상태와 계층 구조"
+      "detail": "프로세스 상태와 계층 구조",
+      "meaning": "논블로킹 입출력은 프로세스가 입출력 작업을 요청한 후 완료 여부와 상관없이 즉시 실행을 계속하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q752741"
     },
     {
       "id": "os-057",
@@ -517,7 +674,10 @@ CS.glossary={
       "term": "스레드",
       "english": "thread",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "스레드는 프로세스를 구성하는 실행의 흐름 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q213092"
     },
     {
       "id": "os-058",
@@ -525,7 +685,9 @@ CS.glossary={
       "term": "단일 스레드 프로세스",
       "english": "",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "단일 스레드 프로세스는 하나의 스레드로 구성된 프로세스예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-059",
@@ -533,7 +695,10 @@ CS.glossary={
       "term": "테스크",
       "english": "task",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "테스크는 리눅스에서 프로세스와 스레드를 포함하는 개념이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q854840"
     },
     {
       "id": "os-060",
@@ -541,7 +706,10 @@ CS.glossary={
       "term": "멀티프로세스",
       "english": "multiprocess",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "멀티프로세스는 여러 개의 프로세스를 동시에 실행하는 실행 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q107382204"
     },
     {
       "id": "os-061",
@@ -549,7 +717,10 @@ CS.glossary={
       "term": "멀티스레드",
       "english": "multithread",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "멀티스레드는 여러 개의 스레드로 프로세스를 동시에 실행하는 실행 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1064412"
     },
     {
       "id": "os-062",
@@ -557,7 +728,9 @@ CS.glossary={
       "term": "스레드 조인",
       "english": "thread join",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "스레드 조인은 하나의 스레드가 다른 스레드가 종료될 때까지 기다리는 기능이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-063",
@@ -565,7 +738,10 @@ CS.glossary={
       "term": "프로세스 간 통신",
       "english": "IPC; Inter-Process Communication",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "프로세스 간 통신은 프로세스 간에 자원을 공유하고 데이터를 주고받는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q751436"
     },
     {
       "id": "os-064",
@@ -573,7 +749,10 @@ CS.glossary={
       "term": "공유 메모리",
       "english": "shared memory",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "공유 메모리는 프로세스들이 공유할 수 있는 메모리 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q764810"
     },
     {
       "id": "os-065",
@@ -581,7 +760,10 @@ CS.glossary={
       "term": "메시지 전달",
       "english": "message passing",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "메시지 전달은 프로세스 간에 메시지를 주고받는 IPC의 한 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1859284"
     },
     {
       "id": "os-066",
@@ -589,7 +771,10 @@ CS.glossary={
       "term": "익명 파이프",
       "english": "anonymous pipe",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "익명 파이프는 단방향 통신을 위한 IPC의 한 방법이에요. 부모 프로세스와 자식 프로세스 간에 통신만 가능해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q923907"
     },
     {
       "id": "os-067",
@@ -597,7 +782,10 @@ CS.glossary={
       "term": "지명 파이프",
       "english": "named pipe",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "지명 파이프는 IPC의 한 방법이에요. 부모-자식 이외의 프로세스 간에도 통신 가능해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1196672"
     },
     {
       "id": "os-068",
@@ -605,7 +793,10 @@ CS.glossary={
       "term": "시그널",
       "english": "signal",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "시그널은 프로세스 간에 특정 이벤트를 전달하는 IPC의 한 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q19718090"
     },
     {
       "id": "os-069",
@@ -613,7 +804,10 @@ CS.glossary={
       "term": "시그널 핸들러",
       "english": "signal handler",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "시그널 핸들러는 시그널을 처리하는 함수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1412443"
     },
     {
       "id": "os-070",
@@ -621,7 +815,10 @@ CS.glossary={
       "term": "코어 덤프",
       "english": "core dump",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "코어 덤프는 프로세스가 비정상적으로 종료될 때, 프로세스의 메모리 정보를 파일로 저장하는 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1265166"
     },
     {
       "id": "os-071",
@@ -629,7 +826,10 @@ CS.glossary={
       "term": "원격 프로시저 호출(RPC)",
       "english": "Remote Procedure Call",
       "topic": "프로세스와 스레드",
-      "detail": "스레드"
+      "detail": "스레드",
+      "meaning": "원격 프로시저 호출(RPC)은 원격지에 있는 프로시저를 호출하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q62270"
     },
     {
       "id": "os-072",
@@ -637,7 +837,10 @@ CS.glossary={
       "term": "CPU 스케줄링",
       "english": "CPU scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "CPU 스케줄링은 운영체제가 프로세스들에게 공정하고 합리적으로 CPU 자원을 배분하는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q100156968"
     },
     {
       "id": "os-073",
@@ -645,7 +848,10 @@ CS.glossary={
       "term": "CPU 활용률",
       "english": "CPU utilization",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "CPU 활용률은 CPU가 일정 시간 동안 얼마나 사용되었는지를 나타내는 비율이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q136673425"
     },
     {
       "id": "os-074",
@@ -653,7 +859,9 @@ CS.glossary={
       "term": "입출력 집중 프로세스",
       "english": "I/O bound process",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "입출력 집중 프로세스는 CPU를 거의 사용하지 않고, 대부분의 시간을 입출력 작업에 사용하는 프로세스예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-075",
@@ -661,7 +869,9 @@ CS.glossary={
       "term": "CPU 집중 프로세스",
       "english": "CPU bound process",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "CPU 집중 프로세스는 CPU 작업이 많은 프로세스예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-076",
@@ -669,7 +879,9 @@ CS.glossary={
       "term": "CPU 버스트",
       "english": "CPU burst",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "CPU 버스트는 CPU를 이용하는 작업이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-077",
@@ -677,7 +889,9 @@ CS.glossary={
       "term": "입출력 버스트",
       "english": "I/O burst",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "입출력 버스트는 입출력장치를 기다리는 작업이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-078",
@@ -685,7 +899,10 @@ CS.glossary={
       "term": "우선순위",
       "english": "priority",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "우선순위는 프로세스들에게 CPU 자원을 할당할 때, 어떤 프로세스에게 먼저 CPU를 할당할 것인지 결정하는 기준이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q629283"
     },
     {
       "id": "os-079",
@@ -693,7 +910,9 @@ CS.glossary={
       "term": "스케줄링 큐",
       "english": "scheduling queue",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "스케줄링 큐는 CPU를 사용하고 싶은 프로세스들, 메모리에 적재되고 싶은 프로세스들, 특정 입출력장치를 사용하고 싶은 프로세스 등을 줄세워 놓은 큐예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-080",
@@ -701,7 +920,9 @@ CS.glossary={
       "term": "준비 큐",
       "english": "ready queue",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "준비 큐는 CPU를 사용하고 싶은 프로세스들이 기다리는 큐예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-081",
@@ -709,7 +930,9 @@ CS.glossary={
       "term": "대기 큐",
       "english": "waiting queue",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "대기 큐는 입출력장치를 이용하기 위해 대기 상태에 접어든 프로세스들이 기다리는 큐예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-082",
@@ -717,7 +940,10 @@ CS.glossary={
       "term": "선점형 스케줄링",
       "english": "preemptive scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "선점형 스케줄링은 프로세스가 CPU를 비롯한 자원을 사용하고 있더라도 운영체제가 프로세스로부터 자원을 강제로 빼앗아 다른 프로세스에 할당할 수 있는 스케줄링 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q57185955"
     },
     {
       "id": "os-083",
@@ -725,7 +951,9 @@ CS.glossary={
       "term": "비선점형 스케줄링",
       "english": "non-preemptive scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 개요"
+      "detail": "CPU 스케줄링 개요",
+      "meaning": "비선점형 스케줄링은 하나의 프로세스가 자원을 사용하고 있다면 그 프로세스가 종료되거나 스스로 대기 상태에 접어들기 전까진 다른 프로세스가 끼어들 수 없는 스케줄링 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-084",
@@ -733,7 +961,9 @@ CS.glossary={
       "term": "선입 선처리 스케줄링",
       "english": "FCFS Scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "선입 선처리 스케줄링은 준비 큐에 삽입된 순서대로 프로세스들을 처리하는 비선점형 스케줄링 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-085",
@@ -741,7 +971,10 @@ CS.glossary={
       "term": "호위 효과",
       "english": "convoy effect",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "호위 효과는 CPU를 사용하는 시간이 긴 프로세스가 준비 큐에 먼저 도착하면, 그 프로세스를 기다리는 프로세스들이 뒤로 밀리는 현상이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q6665292"
     },
     {
       "id": "os-086",
@@ -749,7 +982,10 @@ CS.glossary={
       "term": "최단 작업 우선 스케줄링",
       "english": "SJF Scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "최단 작업 우선 스케줄링은 준비 큐에 삽입된 프로세스들 중 CPU 이용 시간의 길이가 가장 짧은 프로세스부터 실행하는 스케줄링 알고리즘이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1194678"
     },
     {
       "id": "os-087",
@@ -757,7 +993,10 @@ CS.glossary={
       "term": "라운드 로빈 스케줄링",
       "english": "round robin scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "라운드 로빈 스케줄링은 선입 선처리 스케줄링에 타임 슬라이스라는 개념이 더해진 스케줄링 알고리즘이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1196582"
     },
     {
       "id": "os-088",
@@ -765,7 +1004,10 @@ CS.glossary={
       "term": "타임 슬라이스",
       "english": "time slice",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "타임 슬라이스는 각 프로세스가 CPU를 사용할 수 있는 정해진 시간이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1004422"
     },
     {
       "id": "os-089",
@@ -773,7 +1015,9 @@ CS.glossary={
       "term": "최소 잔여 시간 우선 스케줄링",
       "english": "SRT Scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "최소 잔여 시간 우선 스케줄링은 프로세스들은 정해진 타임 슬라이스만큼 CPU를 사용하되, 남아있는 작업 시간이 가장 적은 프로세스를 다음으로 CPU를 사용할 다음 프로세스로 선택하는 스케줄링 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-090",
@@ -781,7 +1025,10 @@ CS.glossary={
       "term": "우선순위 스케줄링",
       "english": "priority scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "우선순위 스케줄링은 프로세스들에게 우선순위를 부여하고, 가장 높은 우선순위를 가진 프로세스부터 실행하는 스케줄링 알고리즘이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2110862"
     },
     {
       "id": "os-091",
@@ -789,7 +1036,9 @@ CS.glossary={
       "term": "기아 현상",
       "english": "starvation",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "기아 현상은 우선순위가 낮은 프로세스가 우선순위가 높은 프로세스들에 의해 실행이 계속해서 연기되는 현상이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-092",
@@ -797,7 +1046,10 @@ CS.glossary={
       "term": "아사 현상",
       "english": "starvation",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "아사 현상은 기아 현상의 다른 말이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q22383544"
     },
     {
       "id": "os-093",
@@ -805,7 +1057,9 @@ CS.glossary={
       "term": "에이징",
       "english": "aging",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "에이징은 기아 현상을 방지하기 위해 오랫동안 대기한 프로세스의 우선순위를 점차 높이는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-094",
@@ -813,7 +1067,10 @@ CS.glossary={
       "term": "다단계 큐 스케줄링",
       "english": "multilevel queue scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "다단계 큐 스케줄링은 우선순위별로 준비 큐를 여러 개 사용하는 스케줄링 알고리즘이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q660380"
     },
     {
       "id": "os-095",
@@ -821,7 +1078,9 @@ CS.glossary={
       "term": "다단계 피드백 큐 스케줄링",
       "english": "multilevel feedback queue scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "다단계 피드백 큐 스케줄링은 다단계 큐 스케줄링에서 프로세스가 다른 큐로 이동할 수 있는 스케줄링 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-096",
@@ -829,7 +1088,9 @@ CS.glossary={
       "term": "리눅스 CPU 스케줄링",
       "english": "Linux CPU scheduling",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "리눅스 CPU 스케줄링은 리눅스에서 사용되는 CPU 스케줄링 방식이에요. 다양한 스케줄링 정책이 존재예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-097",
@@ -837,7 +1098,10 @@ CS.glossary={
       "term": "CFS 스케줄러",
       "english": "Completely Fair Scheduler",
       "topic": "CPU 스케줄링",
-      "detail": "CPU 스케줄링 알고리즘"
+      "detail": "CPU 스케줄링 알고리즘",
+      "meaning": "CFS 스케줄러는 리눅스에서 사용되는 일반적인 사용자 프로세스의 CPU 스케줄러 중 하나예요. 프로세스의 가중치를 기반으로 CPU를 할당하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q29186"
     },
     {
       "id": "os-098",
@@ -845,7 +1109,10 @@ CS.glossary={
       "term": "동기화",
       "english": "synchronization",
       "topic": "프로세스 동기화",
-      "detail": "동기화란"
+      "detail": "동기화란",
+      "meaning": "동기화는 특정 자원에 접근할 때 한 개의 프로세스만 접근하게 하거나, 프로세스를 올바른 순서대로 실행하게 하는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1058791"
     },
     {
       "id": "os-099",
@@ -853,7 +1120,10 @@ CS.glossary={
       "term": "상호 배제",
       "english": "mutual exclusion",
       "topic": "프로세스 동기화",
-      "detail": "동기화란"
+      "detail": "동기화란",
+      "meaning": "상호 배제는 한 프로세스가 사용하는 자원을 다른 프로세스가 사용할 수 없는 상태로, 공유가 불가능한 자원에 동시 접근하지 않는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1047554"
     },
     {
       "id": "os-100",
@@ -861,7 +1131,9 @@ CS.glossary={
       "term": "상호 배제를 위한 동기화",
       "english": "",
       "topic": "프로세스 동기화",
-      "detail": "동기화란"
+      "detail": "동기화란",
+      "meaning": "상호 배제를 위한 동기화는 동시에 접근해서는 안 되는 자원에 동시에 접근하지 못하게 하는 동기화해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-101",
@@ -869,7 +1141,10 @@ CS.glossary={
       "term": "공유 자원",
       "english": "shared resource",
       "topic": "프로세스 동기화",
-      "detail": "동기화란"
+      "detail": "동기화란",
+      "meaning": "공유 자원은 동시에 실행되는 프로세스들이 공유하는 자원이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1172305"
     },
     {
       "id": "os-102",
@@ -877,7 +1152,10 @@ CS.glossary={
       "term": "임계 구역",
       "english": "critical section",
       "topic": "프로세스 동기화",
-      "detail": "동기화란"
+      "detail": "동기화란",
+      "meaning": "임계 구역은 동시에 실행하면 문제가 발생하는 자원에 접근하는 코드 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1046373"
     },
     {
       "id": "os-103",
@@ -885,7 +1163,10 @@ CS.glossary={
       "term": "레이스 컨디션",
       "english": "race condition",
       "topic": "프로세스 동기화",
-      "detail": "동기화란"
+      "detail": "동기화란",
+      "meaning": "레이스 컨디션은 잘못된 실행으로 인해 여러 프로세스가 동시 다발적으로 임계 구역의 코드를 실행하여 발생하는 문제예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q122271495"
     },
     {
       "id": "os-104",
@@ -893,7 +1174,9 @@ CS.glossary={
       "term": "유한 대기",
       "english": "bounded waiting",
       "topic": "프로세스 동기화",
-      "detail": "동기화란"
+      "detail": "동기화란",
+      "meaning": "유한 대기는 상호 배제를 위한 동기화 원칙 중 임계 구역에 진입하려는 프로세스가 있으면 임계 구역을 빠져나가기 위해 기다리는 프로세스는 반드시 한정된 횟수 내에 진입해야 한다는 원칙이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-105",
@@ -901,7 +1184,9 @@ CS.glossary={
       "term": "뮤텍스 락",
       "english": "Mutex lock; MUTual EXclusion lock",
       "topic": "프로세스 동기화",
-      "detail": "동기화 기법"
+      "detail": "동기화 기법",
+      "meaning": "뮤텍스 락은 동시에 접근해서는 안 되는 자원에 동시에 접근하지 않도록 만드는 도구예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-106",
@@ -909,7 +1194,10 @@ CS.glossary={
       "term": "바쁜 대기",
       "english": "busy wait",
       "topic": "프로세스 동기화",
-      "detail": "동기화 기법"
+      "detail": "동기화 기법",
+      "meaning": "바쁜 대기는 임계 구역이 잠겨 있을 경우 프로세스가 계속해서 임계 구역에 접근 가능할 때까지 반복적으로 접근 가능 여부를 확인하는 대기 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q423003"
     },
     {
       "id": "os-107",
@@ -917,7 +1205,10 @@ CS.glossary={
       "term": "세마포어",
       "english": "semaphore",
       "topic": "프로세스 동기화",
-      "detail": "동기화 기법"
+      "detail": "동기화 기법",
+      "meaning": "세마포어는 공유 자원이 여러 개 있는 상황에서도 적용이 가능한 동기화 도구예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q221682"
     },
     {
       "id": "os-108",
@@ -925,7 +1216,10 @@ CS.glossary={
       "term": "모니터",
       "english": "monitor",
       "topic": "프로세스 동기화",
-      "detail": "동기화 기법"
+      "detail": "동기화 기법",
+      "meaning": "모니터는 동기화 도구 중 하나로, 공유 자원을 다루는 인터페이스에 접근하기 위한 큐(모니터에 진입하기 위한 큐)를 통해 오직 하나의 프로세스만 모니터 내에 진입 가능한 동기화 도구예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1062162"
     },
     {
       "id": "os-109",
@@ -933,7 +1227,10 @@ CS.glossary={
       "term": "조건 변수",
       "english": "condition variable",
       "topic": "프로세스 동기화",
-      "detail": "동기화 기법"
+      "detail": "동기화 기법",
+      "meaning": "조건 변수는 모니터 내부에서 프로세스나 스레드의 실행 순서를 제어하기 위해 사용하는 변수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q48101986"
     },
     {
       "id": "os-110",
@@ -941,7 +1238,10 @@ CS.glossary={
       "term": "스레드 안전",
       "english": "thread-safe",
       "topic": "프로세스 동기화",
-      "detail": "동기화 기법"
+      "detail": "동기화 기법",
+      "meaning": "스레드 안전은 여러 스레드가 동시에 실행되어도 프로그램의 실행에 문제가 없는 상태예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1326976"
     },
     {
       "id": "os-111",
@@ -949,7 +1249,10 @@ CS.glossary={
       "term": "교착 상태",
       "english": "deadlock",
       "topic": "교착 상태",
-      "detail": "교착 상태란"
+      "detail": "교착 상태란",
+      "meaning": "교착 상태는 일어나지 않을 사건을 기다리며 진행이 멈춰 버리는 현상이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q623276"
     },
     {
       "id": "os-112",
@@ -957,7 +1260,10 @@ CS.glossary={
       "term": "자원 할당 그래프",
       "english": "resource-allocation graph",
       "topic": "교착 상태",
-      "detail": "교착 상태란"
+      "detail": "교착 상태란",
+      "meaning": "자원 할당 그래프는 어떤 프로세스가 어떤 자원을 사용하고 있고, 또 어떤 프로세스가 어떤 자원을 기다리고 있는지 표현하는 간단한 그래프예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q15842237"
     },
     {
       "id": "os-113",
@@ -965,7 +1271,9 @@ CS.glossary={
       "term": "교착 상태 발생 조건",
       "english": "",
       "topic": "교착 상태",
-      "detail": "교착 상태란"
+      "detail": "교착 상태란",
+      "meaning": "교착 상태 발생 조건은 1) 상호 배제 2) 점유와 대기 3) 비선점 4) 원형 대기의 네 가지 조건이 모두 성립할 때 교착 상태가 발생 가능성이 생김이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-114",
@@ -973,7 +1281,9 @@ CS.glossary={
       "term": "점유와 대기",
       "english": "hold and wait",
       "topic": "교착 상태",
-      "detail": "교착 상태란"
+      "detail": "교착 상태란",
+      "meaning": "점유와 대기는 자원을 할당받은 상태에서 다른 자원을 할당받기를 기다리는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-115",
@@ -981,7 +1291,9 @@ CS.glossary={
       "term": "원형 대기",
       "english": "circular wait",
       "topic": "교착 상태",
-      "detail": "교착 상태란"
+      "detail": "교착 상태란",
+      "meaning": "원형 대기는 프로세스들이 원의 형태로 자원을 대기하는 것이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-116",
@@ -989,7 +1301,9 @@ CS.glossary={
       "term": "교착 상태 예방",
       "english": "",
       "topic": "교착 상태",
-      "detail": "교착 상태 해결 방법"
+      "detail": "교착 상태 해결 방법",
+      "meaning": "교착 상태 예방은 교착 상태 발생 조건 중 하나를 제거하여 교착 상태를 예방하는 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-117",
@@ -997,7 +1311,9 @@ CS.glossary={
       "term": "교착 상태 회피",
       "english": "",
       "topic": "교착 상태",
-      "detail": "교착 상태 해결 방법"
+      "detail": "교착 상태 해결 방법",
+      "meaning": "교착 상태 회피는 교착 상태가 발생하지 않을 정도로만 조심스럽게 자원을 할당하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-118",
@@ -1005,7 +1321,10 @@ CS.glossary={
       "term": "안전 상태",
       "english": "safe state",
       "topic": "교착 상태",
-      "detail": "교착 상태 해결 방법"
+      "detail": "교착 상태 해결 방법",
+      "meaning": "안전 상태는 교착 상태가 발생하지 않고 모든 프로세스가 정상적으로 자원을 할당받고 종료될 수 있는 상태예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7603654"
     },
     {
       "id": "os-119",
@@ -1013,7 +1332,9 @@ CS.glossary={
       "term": "불안전 상태",
       "english": "unsafe state",
       "topic": "교착 상태",
-      "detail": "교착 상태 해결 방법"
+      "detail": "교착 상태 해결 방법",
+      "meaning": "불안전 상태는 교착 상태가 발생할 수도 있는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-120",
@@ -1021,7 +1342,9 @@ CS.glossary={
       "term": "교착 상태 검출 후 회복",
       "english": "",
       "topic": "교착 상태",
-      "detail": "교착 상태 해결 방법"
+      "detail": "교착 상태 해결 방법",
+      "meaning": "교착 상태 검출 후 회복은 교착 상태 발생을 인정하고 사후에 조치하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-121",
@@ -1029,7 +1352,9 @@ CS.glossary={
       "term": "선점을 통한 교착 상태 회복",
       "english": "",
       "topic": "교착 상태",
-      "detail": "교착 상태 해결 방법"
+      "detail": "교착 상태 해결 방법",
+      "meaning": "선점을 통한 교착 상태 회복은 교착 상태가 해결될 때까지 한 프로세스씩 자원을 몰아주는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-122",
@@ -1037,7 +1362,9 @@ CS.glossary={
       "term": "프로세스 강제 종료를 통한 교착 상태 회복",
       "english": "",
       "topic": "교착 상태",
-      "detail": "교착 상태 해결 방법"
+      "detail": "교착 상태 해결 방법",
+      "meaning": "프로세스 강제 종료를 통한 교착 상태 회복은 교착 상태가 해결될 때까지 프로세스를 강제로 종료하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-123",
@@ -1045,7 +1372,10 @@ CS.glossary={
       "term": "타조 알고리즘",
       "english": "ostrich algorithm",
       "topic": "교착 상태",
-      "detail": "교착 상태 해결 방법"
+      "detail": "교착 상태 해결 방법",
+      "meaning": "타조 알고리즘은 드물게 발생하는 잠재적 문제를 무시로 대처하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1472662"
     },
     {
       "id": "os-124",
@@ -1053,7 +1383,9 @@ CS.glossary={
       "term": "연속 메모리 할당",
       "english": "",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "연속 메모리 할당은 프로세스에 연속적인 메모리 공간을 할당하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-125",
@@ -1061,7 +1393,10 @@ CS.glossary={
       "term": "스와핑",
       "english": "swapping",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "스와핑은 프로세스들을 임시로 보조기억장치 일부 영역으로 쫓아내고, 그렇게 해서 생긴 메모리상의 빈 공간에 또 다른 프로세스를 적재하여 실행하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q626503"
     },
     {
       "id": "os-126",
@@ -1069,7 +1404,10 @@ CS.glossary={
       "term": "스왑 영역",
       "english": "swap space",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "스왑 영역은 사용되지 않아 스왑 아웃되는 프로세스들이 저장되는 보조기억장치의 일부 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q656083"
     },
     {
       "id": "os-127",
@@ -1077,7 +1415,10 @@ CS.glossary={
       "term": "스왑 아웃",
       "english": "swap-out",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "스왑 아웃은 현재 실행되지 않는 프로세스가 메모리에서 스왑 영역으로 옮겨지는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q58302829"
     },
     {
       "id": "os-128",
@@ -1085,7 +1426,9 @@ CS.glossary={
       "term": "스왑 인",
       "english": "swap-in",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "스왑 인은 스왑 영역에 있던 프로세스가 다시 메모리로 옮겨오는 것이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-129",
@@ -1093,7 +1436,9 @@ CS.glossary={
       "term": "최초 적합",
       "english": "first fit",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "최초 적합은 운영체제가 메모리 내의 빈 공간을 순서대로 검색하다가 적재할 수 있는 공간을 발견하면 그 공간에 프로세스를 배치하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-130",
@@ -1101,7 +1446,9 @@ CS.glossary={
       "term": "최적 적합",
       "english": "best fit",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "최적 적합은 운영체제가 빈 공간을 모두 검색해 본 후, 프로세스가 적재될 수 있는 공간 중 가장 작은 공간에 프로세스를 배치하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-131",
@@ -1109,7 +1456,9 @@ CS.glossary={
       "term": "최악 적합",
       "english": "worst fit",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "최악 적합은 운영체제가 빈 공간을 모두 검색해 본 후, 프로세스가 적재될 수 있는 공간 중 가장 큰 공간에 프로세스를 배치하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-132",
@@ -1117,7 +1466,9 @@ CS.glossary={
       "term": "외부 단편화",
       "english": "external fragmentation",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "외부 단편화는 프로세스 외부에 생긴 프로세스를 할당하기 어려울 만큼 작은 메모리 공간들로 인해 메모리가 낭비되는 현상이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-133",
@@ -1125,7 +1476,10 @@ CS.glossary={
       "term": "압축",
       "english": "compaction",
       "topic": "가상 메모리",
-      "detail": "연속 메모리 할당"
+      "detail": "연속 메모리 할당",
+      "meaning": "압축은 메모리 내에 저장된 프로세스를 재배치시켜 흩어져 있는 작은 빈 공간들을 하나의 큰 빈 공간으로 만드는 메모리 관리 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1414356"
     },
     {
       "id": "os-134",
@@ -1133,7 +1487,10 @@ CS.glossary={
       "term": "가상 메모리",
       "english": "virtual memory",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "가상 메모리는 실행하고자 하는 프로그램을 일부만 메모리에 적재하여 실제 물리 메모리 크기보다 더 큰 프로세스를 실행할 수 있게 하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q189401"
     },
     {
       "id": "os-135",
@@ -1141,7 +1498,10 @@ CS.glossary={
       "term": "페이징",
       "english": "paging",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "페이징은 프로세스의 논리 주소 공간을 페이지라는 일정한 단위로 자르고, 메모리 물리 주소 공간을 프레임이라는 페이지와 동일한 크기의 일정한 단위로 자른 뒤예요. 페이지를 프레임에 할당하는 가상 메모리 관리 기법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q656083"
     },
     {
       "id": "os-136",
@@ -1149,7 +1509,10 @@ CS.glossary={
       "term": "세그멘테이션",
       "english": "segmentation",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "세그멘테이션은 프로세스의 논리 주소 공간을 세그먼트라는 일정한 단위로 자르고, 메모리 물리 주소 공간을 세그먼트와 동일한 크기의 일정한 단위로 자른 뒤예요. 세그먼트를 메모리에 할당하는 가상 메모리 관리 기법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q140784781"
     },
     {
       "id": "os-137",
@@ -1157,7 +1520,9 @@ CS.glossary={
       "term": "페이지 아웃",
       "english": "page out",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "페이지 아웃은 페이징 시스템에서의 스왑 아웃이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-138",
@@ -1165,7 +1530,10 @@ CS.glossary={
       "term": "페이지 인",
       "english": "page in",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "페이지 인은 페이징 시스템에서의 스왑 인이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q14204246"
     },
     {
       "id": "os-139",
@@ -1173,7 +1541,10 @@ CS.glossary={
       "term": "페이지 테이블",
       "english": "page table",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "페이지 테이블은 현재 어떤 페이지가 어떤 프레임에 할당되었는지 알기 위해 페이지 번호와 프레임 번호를 짝지어 주는 표 형태의 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1195972"
     },
     {
       "id": "os-140",
@@ -1181,7 +1552,10 @@ CS.glossary={
       "term": "내부 단편화",
       "english": "internal fragmentation",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "내부 단편화는 모든 프로세스가 페이지 크기에 딱 맞게 잘리지 않아 발생하는 메모리의 낭비 현상이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q20825793"
     },
     {
       "id": "os-141",
@@ -1189,7 +1563,10 @@ CS.glossary={
       "term": "페이지 테이블 베이스 레지스터 (PTBR)",
       "english": "PTBR; Page Table Base Register",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "페이지 테이블 베이스 레지스터 (PTBR)는 각 프로세스의 페이지 테이블이 적재된 주소를 가지고 있는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q750553"
     },
     {
       "id": "os-142",
@@ -1197,7 +1574,10 @@ CS.glossary={
       "term": "TLB",
       "english": "Translation Lookaside Buffer",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "TLB는 페이지 테이블의 캐시 메모리 역할을 수행하기 위해 페이지 테이블의 일부를 저장하는 메모리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q12518407"
     },
     {
       "id": "os-143",
@@ -1205,7 +1585,9 @@ CS.glossary={
       "term": "TLB 히트",
       "english": "TLB hit",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "TLB 히트는 CPU가 발생한 논리 주소에 대한 페이지 번호가 TLB에 있는 경우예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-144",
@@ -1213,7 +1595,9 @@ CS.glossary={
       "term": "TLB 미스",
       "english": "TLB miss",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "TLB 미스는 CPU가 발생한 논리 주소에 대한 페이지 번호가 TLB에 없는 경우예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-145",
@@ -1221,7 +1605,10 @@ CS.glossary={
       "term": "페이지 테이블 엔트리",
       "english": "PTE; Page Table Entry",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "페이지 테이블 엔트리는 페이지 테이블의 각 행들이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1195972"
     },
     {
       "id": "os-146",
@@ -1229,7 +1616,9 @@ CS.glossary={
       "term": "유효 비트",
       "english": "valid bit",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "유효 비트는 현재 해당 페이지에 접근 가능한지 여부를 나타내는 비트예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-147",
@@ -1237,7 +1626,10 @@ CS.glossary={
       "term": "페이지 폴트",
       "english": "page fault",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "페이지 폴트는 CPU가 유효 비트가 0인 메모리에 적재되어 있지 않은 페이지로 접근하려고 할 때 발생하는 예외(Exception)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1928607"
     },
     {
       "id": "os-148",
@@ -1245,7 +1637,9 @@ CS.glossary={
       "term": "보호 비트",
       "english": "protection bit",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "보호 비트는 페이지 보호 기능을 위해 존재하는 비트로, 해당 페이지가 읽고 쓰기가 모두 가능한 페이지인지, 혹은 읽기만 가능한 페이지인지를 나타내는 비트예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-149",
@@ -1253,7 +1647,9 @@ CS.glossary={
       "term": "참조 비트",
       "english": "reference bit",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "참조 비트는 CPU가 이 페이지에 접근한 적이 있는지 여부를 나타내는 비트예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-150",
@@ -1261,7 +1657,10 @@ CS.glossary={
       "term": "수정 비트",
       "english": "modified bit",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "수정 비트는 해당 페이지에 데이터를 쓴 적이 있는지 없는지 수정 여부를 나타내는 비트로 더티 비트(dirty bit)라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q68908930"
     },
     {
       "id": "os-151",
@@ -1269,7 +1668,10 @@ CS.glossary={
       "term": "쓰기 시 복사",
       "english": "copy on write",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "쓰기 시 복사는 부모 프로세스의 자식 프로세스 생성 직후, 부모 프로세스 혹은 자식 프로세스 둘 중 하나가 페이지에 쓰기 작업을 하면이에요. 해당 페이지가 별도의 공간으로 복제되고예요. 각 프로세스는 자신의 고유한 페이지가 할당된 프레임을 가리키게 되는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1131607"
     },
     {
       "id": "os-152",
@@ -1277,7 +1679,9 @@ CS.glossary={
       "term": "계층적 페이징",
       "english": "hierarchical paging",
       "topic": "가상 메모리",
-      "detail": "페이징을 통한 가상 메모리 관리"
+      "detail": "페이징을 통한 가상 메모리 관리",
+      "meaning": "계층적 페이징은 프로세스를 이루는 모든 페이지 테이블 엔트리를 항상 메모리에 유지하지 않을 수 있는 방법으로 다단계 페이지 테이블이라고도 부름이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-153",
@@ -1285,7 +1689,10 @@ CS.glossary={
       "term": "요구 페이징",
       "english": "demand paging",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "요구 페이징은 프로세스를 메모리에 적재할 때 처음부터 모든 페이지를 적재하지 않고 필요한 페이지만을 메모리에 적재하는 기법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5255045"
     },
     {
       "id": "os-154",
@@ -1293,7 +1700,9 @@ CS.glossary={
       "term": "순수 요구 페이징",
       "english": "pure demand paging",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "순수 요구 페이징은 아무런 페이지도 메모리에 적재하지 않은 상태에서 프로세스를 실행하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-155",
@@ -1301,7 +1710,10 @@ CS.glossary={
       "term": "페이지 교체 알고리즘",
       "english": "",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "페이지 교체 알고리즘은 당장 실행에 필요한 페이지를 적재하기 위해 메모리에 적재된 페이지를 내보내야 할 때, 어떤 페이지를 내보낼지 결정하는 알고리즘이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1330967"
     },
     {
       "id": "os-156",
@@ -1309,7 +1721,9 @@ CS.glossary={
       "term": "페이지 참조열",
       "english": "page reference string",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "페이지 참조열은 CPU가 참조하는 페이지들 중 연속된 페이지를 생략한 페이지열이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-157",
@@ -1317,7 +1731,9 @@ CS.glossary={
       "term": "FIFO 페이지 교체 알고리즘",
       "english": "FIFO page replacement algorithm",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "FIFO 페이지 교체 알고리즘은 메모리에 가장 먼저 올라온 페이지부터 내쫓는, 적재된 페이지 순서대로 교체하는 페이지 교체 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-158",
@@ -1325,7 +1741,9 @@ CS.glossary={
       "term": "2차 기회 페이지 교체 알고리즘",
       "english": "second chance replacement algorithm",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "2차 기회 페이지 교체 알고리즘은 FIFO 페이지 교체 알고리즘과 같이 기본적으로 메모리에서 가장 오래 머물렀던 페이지를 내보낼 페이지로 선별하지만, 참조 비트가 1이면 페이지를 내보내지 않고 참조 비트를 0으로 만든 후 현재 시간을 적재 시간으로 설정하는 페이지 교체 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-159",
@@ -1333,7 +1751,9 @@ CS.glossary={
       "term": "최적 페이지 교체 알고리즘",
       "english": "optimal page replacement algorithm",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "최적 페이지 교체 알고리즘은 앞으로의 사용 빈도가 가장 낮은 페이지를 교체하는 페이지 교체 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-160",
@@ -1341,7 +1761,9 @@ CS.glossary={
       "term": "LRU 페이지 교체 알고리즘",
       "english": "LRU; Least Recently Used Page Algorithm",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "LRU 페이지 교체 알고리즘은 가장 오랫동안 사용되지 않은 페이지를 교체하는 페이지 교체 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-161",
@@ -1349,7 +1771,10 @@ CS.glossary={
       "term": "스레싱",
       "english": "thrashing",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "스레싱은 프로세스가 실제 실행되는 시간보다 페이징에 더 많은 시간을 소요하여 성능이 저해되는 문제예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2067413"
     },
     {
       "id": "os-162",
@@ -1357,7 +1782,9 @@ CS.glossary={
       "term": "메이저 페이지 폴트",
       "english": "major page fault",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "메이저 페이지 폴트는 보조기억장치에서 CPU가 원하는 페이지를 읽어 들이기 위해 입출력 작업이 필요한 페이지 폴트예요. CPU가 접근하려는 페이지 가 물리 메모리에 없을 때 발생이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-163",
@@ -1365,7 +1792,9 @@ CS.glossary={
       "term": "마이너 페이지 폴트",
       "english": "minor page fault",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "마이너 페이지 폴트는 보조기억장치와의 입출력이 필요하지 않은 페이지 폴트예요. CPU가 요청한 페이지가 물리 메모리에는 존재하지만, 페이지 테이블 상에는 반영되지 않은 경우 발생이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-164",
@@ -1373,7 +1802,9 @@ CS.glossary={
       "term": "멀티프로그래밍의 정도",
       "english": "degree of multiprogramming",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "멀티프로그래밍의 정도는 메모리에 동시 실행되는 프로세스의 수예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-165",
@@ -1381,7 +1812,9 @@ CS.glossary={
       "term": "균등 할당",
       "english": "equal allocation",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "균등 할당은 모든 프로세스에 균등하게 프레임을 할당하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-166",
@@ -1389,7 +1822,10 @@ CS.glossary={
       "term": "비례 할당",
       "english": "proportional allocation",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "비례 할당은 프로세스의 크기에 따라 프레임을 배분하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q137391590"
     },
     {
       "id": "os-167",
@@ -1397,7 +1833,9 @@ CS.glossary={
       "term": "정적 할당 방식 (프레임 할당)",
       "english": "",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "정적 할당 방식 (프레임 할당)은 프로세스의 실행 과정을 고려하지 않고 단순히 프로세스의 크기와 물리 메모리의 크기만을 고려하여 프레임을 할당하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-168",
@@ -1405,7 +1843,10 @@ CS.glossary={
       "term": "작업 집합",
       "english": "working set",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "작업 집합은 프로세스가 실행 중에 일정 시간 동안 참조한 페이지의 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8034984"
     },
     {
       "id": "os-169",
@@ -1413,7 +1854,9 @@ CS.glossary={
       "term": "페이지 폴트 빈도",
       "english": "Page-Fault Frequency (PFF)",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "페이지 폴트 빈도는 프로세스가 실행 중에 발생하는 페이지 폴트의 빈도예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-170",
@@ -1421,7 +1864,9 @@ CS.glossary={
       "term": "동적 할당 방식 (프레임 할당)",
       "english": "",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "동적 할당 방식 (프레임 할당)은 프로세스의 실행 과정을 고려하여 프레임 수를 결정하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-171",
@@ -1429,7 +1874,9 @@ CS.glossary={
       "term": "작업 집합 모델 기반 프레임 할당",
       "english": "",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "작업 집합 모델 기반 프레임 할당은 작업 집합의 크기만큼만 프레임을 할당하는 프레임 할당 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-172",
@@ -1437,7 +1884,9 @@ CS.glossary={
       "term": "페이지 폴트율 기반 프레임 할당",
       "english": "",
       "topic": "가상 메모리",
-      "detail": "페이지 교체와 프레임 할당"
+      "detail": "페이지 교체와 프레임 할당",
+      "meaning": "페이지 폴트율 기반 프레임 할당은 페이지 폴트율에 상한선과 하한선을 정하고, 그 내부 범위 안에서만 프레임을 할당하는 프레임 할당 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-173",
@@ -1445,7 +1894,10 @@ CS.glossary={
       "term": "파일",
       "english": "file",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "파일은 하드 디스크나 SSD와 같은 보조기억장치에 저장된 관련 정보의 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q82753"
     },
     {
       "id": "os-174",
@@ -1453,7 +1905,10 @@ CS.glossary={
       "term": "속성",
       "english": "attribute",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "속성은 파일 관련 부가 정보로 메타데이터(metadata)라고도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q937228"
     },
     {
       "id": "os-175",
@@ -1461,7 +1916,10 @@ CS.glossary={
       "term": "파일 속성",
       "english": "",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "파일 속성은 파일 형식, 위치, 크기 등 파일과 관련된 다양한 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1144207"
     },
     {
       "id": "os-176",
@@ -1469,7 +1927,9 @@ CS.glossary={
       "term": "파일 디스크립터",
       "english": "",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "파일 디스크립터는 파일을 식별하기 위해 운영체제가 할당하는 번호예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-177",
@@ -1477,7 +1937,9 @@ CS.glossary={
       "term": "파일 유형",
       "english": "",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "파일 유형은 운영체제가 인식하는 파일의 종류로, 확장자로 식별 가능해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-178",
@@ -1485,7 +1947,9 @@ CS.glossary={
       "term": "파일 위치",
       "english": "",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "파일 위치는 파일의 보조기억장치상의 현재 위치예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-179",
@@ -1493,7 +1957,10 @@ CS.glossary={
       "term": "디렉터리",
       "english": "directory",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "디렉터리는 파일을 저장하는 공간으로 윈도우 운영체제에서는 폴더(folder)라고 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q201456"
     },
     {
       "id": "os-180",
@@ -1501,7 +1968,9 @@ CS.glossary={
       "term": "트리 구조 디렉터리",
       "english": "tree-structured directory",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "트리 구조 디렉터리는 디렉터리가 여러 계층을 가진 트리 구조로 연결된 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-181",
@@ -1509,7 +1978,10 @@ CS.glossary={
       "term": "루트 디렉터리",
       "english": "root directory",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "루트 디렉터리는 트리 구조 디렉터리의 최상위 디렉터리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q972090"
     },
     {
       "id": "os-182",
@@ -1517,7 +1989,10 @@ CS.glossary={
       "term": "경로",
       "english": "path",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "경로는 디렉터리를 이용해 파일 위치이자, 파일 이름을 특정 짓는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1415372"
     },
     {
       "id": "os-183",
@@ -1525,7 +2000,10 @@ CS.glossary={
       "term": "절대 경로",
       "english": "absolute path",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "절대 경로는 루트 디렉터리에서 자기 자신까지 이르는 고유한 경로예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q37761147"
     },
     {
       "id": "os-184",
@@ -1533,7 +2011,10 @@ CS.glossary={
       "term": "상대 경로",
       "english": "relative path",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "상대 경로는 현재 디렉터리에서 자기 자신까지 이르는 경로예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q37761219"
     },
     {
       "id": "os-185",
@@ -1541,7 +2022,10 @@ CS.glossary={
       "term": "디렉터리 엔트리",
       "english": "directory entry",
       "topic": "파일 시스템",
-      "detail": "파일과 디렉터리"
+      "detail": "파일과 디렉터리",
+      "meaning": "디렉터리 엔트리는 디렉터리에 저장된 파일과 디렉터리의 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q37787110"
     },
     {
       "id": "os-186",
@@ -1549,7 +2033,10 @@ CS.glossary={
       "term": "파일 시스템",
       "english": "file system",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "파일 시스템은 파일과 디렉터리를 보조기억장치에 일목요연하게 저장하고 접근할 수 있게 하는 운영체제 내부 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q174989"
     },
     {
       "id": "os-187",
@@ -1557,7 +2044,10 @@ CS.glossary={
       "term": "파티셔닝",
       "english": "partitioning",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "파티셔닝은 저장 장치의 논리적인 영역을 구획하는 작업이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2054992"
     },
     {
       "id": "os-188",
@@ -1565,7 +2055,10 @@ CS.glossary={
       "term": "파티션",
       "english": "",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "파티션은 파티셔닝 작업을 통해 나누어진 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q624752"
     },
     {
       "id": "os-189",
@@ -1573,7 +2066,9 @@ CS.glossary={
       "term": "포맷팅",
       "english": "formatting",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "포맷팅은 파일 시스템을 설정하는 작업이자, 새로운 데이터를 쓸 준비를 하는 작업이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-190",
@@ -1581,7 +2076,9 @@ CS.glossary={
       "term": "저수준 포매팅",
       "english": "",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "저수준 포매팅은 저장 장치를 생성할 당시 공장에서 수행되는 물리적인 포매팅이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-191",
@@ -1589,7 +2086,9 @@ CS.glossary={
       "term": "논리적 포매팅",
       "english": "",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "논리적 포매팅은 파일 시스템을 생성하는 포매팅이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-192",
@@ -1597,7 +2096,10 @@ CS.glossary={
       "term": "블록",
       "english": "block",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "블록은 파일 시스템(운영체제)에서 파일을 저장하는 최소 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q766952"
     },
     {
       "id": "os-193",
@@ -1605,7 +2107,9 @@ CS.glossary={
       "term": "연속 할당",
       "english": "contiguous allocation",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "연속 할당은 파일이 저장 장치 내에서 연속적인 공간을 차지하도록 블록을 할당하는 파일 할당 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-194",
@@ -1613,7 +2117,9 @@ CS.glossary={
       "term": "연결 할당",
       "english": "linked allocation",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "연결 할당은 각 블록 일부에 다른 블록의 주소를 저장하여 각 블록의 다음 블록을 가리키는 형태로 할당하는 파일 할당 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-195",
@@ -1621,7 +2127,10 @@ CS.glossary={
       "term": "임의 접근 속도",
       "english": "random access",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "임의 접근 속도는 데이터의 임의의 위치에 접근하는 속도예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q121029945"
     },
     {
       "id": "os-196",
@@ -1629,7 +2138,9 @@ CS.glossary={
       "term": "색인 할당",
       "english": "indexed allocation",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "색인 할당은 파일의 모든 블록 주소를 색인 블록에 모아 관리하는 파일 할당 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-197",
@@ -1637,7 +2148,9 @@ CS.glossary={
       "term": "색인 블록",
       "english": "index block",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "색인 블록은 파일의 모든 블록 주소를 모아 놓은 특별한 블록이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-198",
@@ -1645,7 +2158,10 @@ CS.glossary={
       "term": "파일 할당 테이블 (FAT)",
       "english": "FAT; File Allocation Table",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "파일 할당 테이블 (FAT)은 각 블록에 포함된 다음 블록의 주소들을 한데 모아 놓은 테이블이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3740023"
     },
     {
       "id": "os-199",
@@ -1653,7 +2169,9 @@ CS.glossary={
       "term": "FAT 파일 시스템",
       "english": "FAT file system",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "FAT 파일 시스템은 FAT을 이용하는 파일 시스템이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-200",
@@ -1661,7 +2179,9 @@ CS.glossary={
       "term": "클러스터 (파일 시스템)",
       "english": "",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "클러스터 (파일 시스템)은 윈도우에서 블록이라는 용어 대신 사용하는 용어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-201",
@@ -1669,7 +2189,10 @@ CS.glossary={
       "term": "유닉스 파일 시스템",
       "english": "UNIX file system",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "유닉스 파일 시스템은 색인 할당을 기반의 파일 시스템으로, 아이노드라는 색인 블록을 색인 블록으로 사용해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1046338"
     },
     {
       "id": "os-202",
@@ -1677,7 +2200,9 @@ CS.glossary={
       "term": "색인 할당",
       "english": "",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "색인 할당은 색인 블록을 기반으로 파일의 데이터 블록들을 찾는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-203",
@@ -1685,7 +2210,10 @@ CS.glossary={
       "term": "아이노드 (i-node)",
       "english": "index-node",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "아이노드 (i-node)는 유닉스 파일 시스템에서의 색인 블록으로, 파일 속성 정보와 파일 데이터 위치가 저장될 수 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q306170"
     },
     {
       "id": "os-204",
@@ -1693,7 +2221,10 @@ CS.glossary={
       "term": "직접 블록",
       "english": "direct block",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "직접 블록은 파일 데이터가 저장된 아이노드 블록이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q42919200"
     },
     {
       "id": "os-205",
@@ -1701,7 +2232,9 @@ CS.glossary={
       "term": "하드 링크 파일",
       "english": "hard link file",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "하드 링크 파일은 원본 파일과 같은 아이노드를 공유하는 파일이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-206",
@@ -1709,7 +2242,10 @@ CS.glossary={
       "term": "심볼릭 링크",
       "english": "symbolic link",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "심볼릭 링크는 원본 파일 주소를 가리키는 파일이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q646197"
     },
     {
       "id": "os-207",
@@ -1717,7 +2253,9 @@ CS.glossary={
       "term": "단일 간접 블록",
       "english": "single indirect block",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "단일 간접 블록은 파일 데이터가 저장된 블록이 아닌 파일 데이터를 저장한 블록 주소가 저장된 아이노드 블록이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-208",
@@ -1725,7 +2263,9 @@ CS.glossary={
       "term": "이중 간접 블록",
       "english": "double indirect block",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "이중 간접 블록은 데이터 블록 주소를 저장하는 블록 주소가 저장된 아이노드 블록 (단일 간접 블록들의 주소를 저장하는 아이노드 블록)이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-209",
@@ -1733,7 +2273,9 @@ CS.glossary={
       "term": "삼중 간접 블록",
       "english": "triple indirect block",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "삼중 간접 블록은 이중 간접 블록들의 주소를 저장하는 아이노드 블록이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-210",
@@ -1741,7 +2283,10 @@ CS.glossary={
       "term": "NT 파일 시스템",
       "english": "NTFS",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "NT 파일 시스템은 Windows 운영체제에서 사용하는 파일 시스템이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q183205"
     },
     {
       "id": "os-211",
@@ -1749,7 +2294,9 @@ CS.glossary={
       "term": "ext 파일 시스템",
       "english": "ext file system",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "ext 파일 시스템은 리눅스 운영체제에서 주로 사용하는 파일 시스템이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "os-212",
@@ -1757,7 +2304,10 @@ CS.glossary={
       "term": "시스템 크래시",
       "english": "system crash",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "시스템 크래시는 컴퓨터를 이용해 작업을 하던 도중 갑자기 전원이 나가거나 치명적인 오류로 인해 컴퓨터가 강제로 종료되어 버린 상황이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q124073439"
     },
     {
       "id": "os-213",
@@ -1765,7 +2315,10 @@ CS.glossary={
       "term": "저널링 파일 시스템",
       "english": "journaling file system",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "저널링 파일 시스템은 저널링 기법을 이용하는 파일 시스템이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q579047"
     },
     {
       "id": "os-214",
@@ -1773,7 +2326,10 @@ CS.glossary={
       "term": "저널링 기법",
       "english": "journaling",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "저널링 기법은 파일 시스템 변경 전후로 작업 로그를 남기고, 시스템 크래시가 발생했을 때 해당 작업 로그 기반으로 빠르게 복구하는 파일 시스템 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q185598"
     },
     {
       "id": "os-215",
@@ -1781,7 +2337,10 @@ CS.glossary={
       "term": "마운트",
       "english": "mount",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "마운트는 한 저장 장치의 파일 시스템에서 다른 저장 장치의 파일 시스템에 접근할 수 있도록 파일 시스템을 편입시키는 작업이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q14713"
     },
     {
       "id": "os-216",
@@ -1789,7 +2348,10 @@ CS.glossary={
       "term": "부팅",
       "english": "booting",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "부팅은 컴퓨터를 켜서 운영체제를 메모리에 적재하는 작업이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q180256"
     },
     {
       "id": "os-217",
@@ -1797,7 +2359,10 @@ CS.glossary={
       "term": "바이오스",
       "english": "BIOS; Basic Input/Output System",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "바이오스는 컴퓨터의 전원을 켜면 가장 먼저 실행되는 프로그램으로, 컴퓨터의 기본적인 입출력 작업을 수행하는 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q226264"
     },
     {
       "id": "os-218",
@@ -1805,7 +2370,10 @@ CS.glossary={
       "term": "POST (부팅)",
       "english": "Power-On Self-Test",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "POST (부팅)은 부팅 시 하드웨어의 기본적인 동작을 검사하는 작업이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q277541"
     },
     {
       "id": "os-219",
@@ -1813,7 +2381,10 @@ CS.glossary={
       "term": "마스터 부트 레코드",
       "english": "master boot record",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "마스터 부트 레코드는 바이오스가 보조기억장치에서 부팅을 위해 읽어들이는 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q624752"
     },
     {
       "id": "os-220",
@@ -1821,7 +2392,10 @@ CS.glossary={
       "term": "부트로더",
       "english": "boot loader",
       "topic": "파일 시스템",
-      "detail": "파일 시스템"
+      "detail": "파일 시스템",
+      "meaning": "부트로더는 컴퓨터의 부팅 과정에서 운영체제를 메모리에 적재하는 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q836795"
     },
     {
       "id": "net-001",
@@ -1829,7 +2403,10 @@ CS.glossary={
       "term": "컴퓨터 네트워크",
       "english": "computer network",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "컴퓨터 네트워크를 알아야 하는 이유"
+      "detail": "컴퓨터 네트워크를 알아야 하는 이유",
+      "meaning": "컴퓨터 네트워크는 여러 개의 장치가 마치 그물처럼 서로 연결되어 정보를 주고받을 수 있는 통신망이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1301371"
     },
     {
       "id": "net-002",
@@ -1837,7 +2414,10 @@ CS.glossary={
       "term": "인터넷",
       "english": "internet",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "컴퓨터 네트워크를 알아야 하는 이유"
+      "detail": "컴퓨터 네트워크를 알아야 하는 이유",
+      "meaning": "인터넷은 여러 네트워크를 연결한 네트워크의 네트워크예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q75"
     },
     {
       "id": "net-003",
@@ -1845,7 +2425,10 @@ CS.glossary={
       "term": "그래프",
       "english": "graph",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "그래프는 노드와 노드를 연결하는 간선으로 이루어진 자료 구조, 네트워크는 그래프로 표현할 수 있어요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q141488"
     },
     {
       "id": "net-004",
@@ -1853,7 +2436,10 @@ CS.glossary={
       "term": "네트워크 토폴로지",
       "english": "network topology",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "네트워크 토폴로지는 네트워크 상에서 노드와 노드 사이의 연결 구조예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q145490"
     },
     {
       "id": "net-005",
@@ -1861,7 +2447,10 @@ CS.glossary={
       "term": "노드",
       "english": "node",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "노드는 정보를 주고받을 수 있는 장치로, 정점(vertex)이라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q173106"
     },
     {
       "id": "net-006",
@@ -1869,7 +2458,10 @@ CS.glossary={
       "term": "간선",
       "english": "edge",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "간선은 정보를 주고받을 수 있는 유무선의 통신 매체로, 링크(link)라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2878855"
     },
     {
       "id": "net-007",
@@ -1877,7 +2469,10 @@ CS.glossary={
       "term": "호스트",
       "english": "host",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "호스트는 네트워크에서 가장자리 노드로, 종단 시스템(end system)이라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q386682"
     },
     {
       "id": "net-008",
@@ -1885,7 +2480,10 @@ CS.glossary={
       "term": "서버",
       "english": "server",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "서버는 어떠한 서비스를 제공하는 호스트로, 요청 메세지를 받고 응답 메시지를 보냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q44127"
     },
     {
       "id": "net-009",
@@ -1893,7 +2491,10 @@ CS.glossary={
       "term": "클라이언트",
       "english": "client",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "클라이언트는 서버에게 어떠한 서비스를 요청하고 서버의 응답을 제공받는 호스트예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q528166"
     },
     {
       "id": "net-010",
@@ -1901,7 +2502,9 @@ CS.glossary={
       "term": "중간 노드",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "중간 노드는 네트워크 가장자리에 위치하지 않는 노드로 호스트 간 주고받을 정보가 중간에 거치는 노드 (예: 네트워크 장비)예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-011",
@@ -1909,7 +2512,9 @@ CS.glossary={
       "term": "통신 매체",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "통신 매체는 각 노드를 연결하는 간선으로 유선 매체와 무선 매체가 있음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-012",
@@ -1917,7 +2522,10 @@ CS.glossary={
       "term": "메시지",
       "english": "message",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "메시지는 통신 매체로 연결된 노드가 주고받는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q628523"
     },
     {
       "id": "net-013",
@@ -1925,7 +2533,10 @@ CS.glossary={
       "term": "LAN",
       "english": "Local Area Network",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "LAN은 가까운 지역을 연결한 근거리 통신망이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11381"
     },
     {
       "id": "net-014",
@@ -1933,7 +2544,10 @@ CS.glossary={
       "term": "WAN",
       "english": "Wide Area Network",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "WAN은 먼 지역을 연결하는 광역 통신망이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11384"
     },
     {
       "id": "net-015",
@@ -1941,7 +2555,10 @@ CS.glossary={
       "term": "ISP",
       "english": "Internet Service Provider",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "ISP는 사용자에게 인터넷과 같은 WAN에 연결 가능한 회선을 임대하는 등 WAN과 관련한 다양한 서비스를 제공하는 업체예요. 국내의 대표적인 ISP로는 KT, LG유플러스, SK브로드밴드가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11371"
     },
     {
       "id": "net-016",
@@ -1949,7 +2566,10 @@ CS.glossary={
       "term": "CAN",
       "english": "Campus Area Network",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "CAN은 학교 또는 회사의 여러 건물 단위로 연결되는 규모의 네트워크예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1093877"
     },
     {
       "id": "net-017",
@@ -1957,7 +2577,9 @@ CS.glossary={
       "term": "MAN",
       "english": "Metropolitan Area Network",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "MAN은 도시나 대도시 단위로 연결되는 규모의 네트워크예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-018",
@@ -1965,7 +2587,10 @@ CS.glossary={
       "term": "회선 교환",
       "english": "circuit switching",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "회선 교환은 메세지 전송로인 회선을 설정하고 이를 통해 메세지를 전송하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q506273"
     },
     {
       "id": "net-019",
@@ -1973,7 +2598,10 @@ CS.glossary={
       "term": "회선",
       "english": "circuit",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "회선은 메세지 전송로예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q137224"
     },
     {
       "id": "net-020",
@@ -1981,7 +2609,9 @@ CS.glossary={
       "term": "회선 스위치",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "회선 스위치는 호스트 사이에 일대일 전송로를 확보하는 네트워크 장비예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-021",
@@ -1989,7 +2619,10 @@ CS.glossary={
       "term": "패킷 교환",
       "english": "packet switching",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "패킷 교환은 회선 교환 방식의 문제점을 해결한 송수신 방식으로, 메시지를 패킷이라는 작은 단위로 쪼개어 전송하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q193446"
     },
     {
       "id": "net-022",
@@ -1997,7 +2630,10 @@ CS.glossary={
       "term": "패킷",
       "english": "packet",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "패킷은 패킷 교환 네트워크상에서 송수신되는 메시지의 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q214111"
     },
     {
       "id": "net-023",
@@ -2005,7 +2641,10 @@ CS.glossary={
       "term": "패킷 스위치",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "패킷 스위치는 패킷이 수신지까지 올바르게 도달할 수 있도록 최적의 경로를 결정하거나 패킷의 송수신지를 식별하는 네트워크 장비예요. 대표적인 패킷 스위치 네트워크 장비로는 라우터와 스위치가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q193446"
     },
     {
       "id": "net-024",
@@ -2013,7 +2652,10 @@ CS.glossary={
       "term": "페이로드",
       "english": "payload",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "페이로드는 패킷을 통해 전송하고자 하는 데이터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7641034"
     },
     {
       "id": "net-025",
@@ -2021,7 +2663,10 @@ CS.glossary={
       "term": "헤더",
       "english": "header",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "헤더는 패킷에 붙는 일종의 부가 정보, 내지는 제어 정보예요. 패킷의 앞에 포함되는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1141160"
     },
     {
       "id": "net-026",
@@ -2029,7 +2674,10 @@ CS.glossary={
       "term": "트레일러",
       "english": "trailor",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "트레일러는 페이로드와 더불어 패킷의 뒤에 포함되는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q216146"
     },
     {
       "id": "net-027",
@@ -2037,7 +2685,10 @@ CS.glossary={
       "term": "주소",
       "english": "address",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "주소는 송수신지를 특정하는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q319608"
     },
     {
       "id": "net-028",
@@ -2045,7 +2696,10 @@ CS.glossary={
       "term": "유니캐스트",
       "english": "unicast",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "유니캐스트는 송신지와 수신지가 일대일로 메시지를 주고받는 메시지 송수신 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q918337"
     },
     {
       "id": "net-029",
@@ -2053,7 +2707,10 @@ CS.glossary={
       "term": "브로드캐스트",
       "english": "broadcast",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "브로드캐스트는 자신을 제외한 네트워크상의 모든 호스트에게 전송하는 송수신 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q922446"
     },
     {
       "id": "net-030",
@@ -2061,7 +2718,10 @@ CS.glossary={
       "term": "브로드케스트 도메인",
       "english": "broadcast domain",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "브로드케스트 도메인은 브로드캐스트가 전송되는 범위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q922117"
     },
     {
       "id": "net-031",
@@ -2069,7 +2729,10 @@ CS.glossary={
       "term": "멀티캐스트",
       "english": "multicast",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "멀티캐스트는 네트워크 내의 동일 그룹에 속한 호스트에게만 전송하는 송수신 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q899288"
     },
     {
       "id": "net-032",
@@ -2077,7 +2740,10 @@ CS.glossary={
       "term": "애니캐스트",
       "english": "anycast",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 거시적으로 살펴보기"
+      "detail": "네트워크 거시적으로 살펴보기",
+      "meaning": "애니캐스트는 네트워크 내의 동일 그룹에 속한 호스트 중 가장 가까운 호스트에게 전송하는 송수신 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q613897"
     },
     {
       "id": "net-033",
@@ -2085,7 +2751,10 @@ CS.glossary={
       "term": "프로토콜",
       "english": "protocol",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "프로토콜은 통신 과정에서 정보를 올바르게 주고받기 위해 합의된 규칙이나 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q132364"
     },
     {
       "id": "net-034",
@@ -2093,7 +2762,9 @@ CS.glossary={
       "term": "네트워크 참조 모델",
       "english": "network reference model",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "네트워크 참조 모델은 통신이 일어나는 구조를 계층으로 표현한 모델로, 네트워크 계층 모델이라고도 부름이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-035",
@@ -2101,7 +2772,10 @@ CS.glossary={
       "term": "OSI 모델",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "OSI 모델은 국제 표준화 기구에서 만든 네트워크 참조 모델이에요. 통신 단계를 7개의 계층으로 나누는데, 최하위 계층에서 최상위 계층 순으로 각각이에요. 물리 계층, 데이터 링크 계층, 네트워크 계층, 전송 계층, 세션 계층, 표현 계층, 응용 계층이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q93312"
     },
     {
       "id": "net-036",
@@ -2109,7 +2783,10 @@ CS.glossary={
       "term": "물리 계층",
       "english": "physical layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "물리 계층은 OSI 모델의 최하단에 있는 계층으로, 1과 0으로 표현되는 비트 신호를 주고 받는 계층이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q192727"
     },
     {
       "id": "net-037",
@@ -2117,7 +2794,10 @@ CS.glossary={
       "term": "데이터 링크 계층",
       "english": "data link layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "데이터 링크 계층은 네트워크 내 주변 장치 간의 정보를 올바르게 주고받기 위한 계층이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q194134"
     },
     {
       "id": "net-038",
@@ -2125,7 +2805,10 @@ CS.glossary={
       "term": "네트워크 계층",
       "english": "network layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "네트워크 계층은 메시지를 (다른 네트워크에 속한) 수신지까지 전달하는 계층이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q208074"
     },
     {
       "id": "net-039",
@@ -2133,7 +2816,10 @@ CS.glossary={
       "term": "전송 계층",
       "english": "transport layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "전송 계층은 신뢰성 있고 안정성 있는 전송을 해야 할 때 필요한 계층이에요. 패킷의 흐름을 제어하거나 전송 오류를 점검해 신뢰성 있고 안정적인 전송이 이루어지도록 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q209372"
     },
     {
       "id": "net-040",
@@ -2141,7 +2827,10 @@ CS.glossary={
       "term": "응용 프로그램",
       "english": "application software",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "응용 프로그램은 사용자가 특정 목적을 위해 사용하는 일반적인 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q166142"
     },
     {
       "id": "net-041",
@@ -2149,7 +2838,10 @@ CS.glossary={
       "term": "세션 계층",
       "english": "session layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "세션 계층은 세션을 관리하기 위해 존재하는 계층이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q216292"
     },
     {
       "id": "net-042",
@@ -2157,7 +2849,10 @@ CS.glossary={
       "term": "세션",
       "english": "session",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "세션은 통신을 주고받는 호스트의 응용 프로그램 간 연결 상태예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q932410"
     },
     {
       "id": "net-043",
@@ -2165,7 +2860,10 @@ CS.glossary={
       "term": "표현 계층",
       "english": "presentation layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "표현 계층은 사람이 이해할 수 있는 언어인 문자를 컴퓨터가 이해할 수 있는 코드로 변환하거나, 압축, 암호화와 같은 작업이 이루어지는 계층이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q215121"
     },
     {
       "id": "net-044",
@@ -2173,7 +2871,10 @@ CS.glossary={
       "term": "응용 계층",
       "english": "application layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "응용 계층은 OSI 참조 모델 최상단에 있는 계층으로 사용자 및 사용자가 이용하는 응용프로그램과 가장 밀접히 맞닿아 있는 계층이에요. 실질적인 네트워크 서비스가 제공되는 계층이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q189768"
     },
     {
       "id": "net-045",
@@ -2181,7 +2882,9 @@ CS.glossary={
       "term": "TCP/IP 모델",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "TCP/IP 모델은 통신과정을 4개의 계층으로 표현하는 네트워크 참조 모델, 최하위 계층부터 최상위 계층까지 각각 네트워크 인터페이스 계층, 인터넷 계층, 전송 계층, 응용 계층이 있음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-046",
@@ -2189,7 +2892,10 @@ CS.glossary={
       "term": "프로토콜 스위트",
       "english": "protocol suite",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "프로토콜 스위트는 다양한 계층의 프로토콜 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q67080166"
     },
     {
       "id": "net-047",
@@ -2197,7 +2903,10 @@ CS.glossary={
       "term": "프로토콜 스택",
       "english": "protocol stack",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "프로토콜 스택은 다양한 계층의 프로토콜 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1757693"
     },
     {
       "id": "net-048",
@@ -2205,7 +2914,9 @@ CS.glossary={
       "term": "네트워크 액세스 계층",
       "english": "network access layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "네트워크 액세스 계층은 OSI 모델의 링크 계층과 유사한 계층이에요. 링크 계층 또는 네트워크 인터페이스 계층이라고도 부름이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-049",
@@ -2213,7 +2924,10 @@ CS.glossary={
       "term": "인터넷 계층",
       "english": "internet layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "인터넷 계층은 OSI 모델의 네트워크 계층과 유사한 계층이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2910948"
     },
     {
       "id": "net-050",
@@ -2221,7 +2935,10 @@ CS.glossary={
       "term": "전송 계층",
       "english": "transport layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "전송 계층은 OSI 모델의 전송 계층과 유사한 계층이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q209372"
     },
     {
       "id": "net-051",
@@ -2229,7 +2946,10 @@ CS.glossary={
       "term": "응용 계층",
       "english": "application layer",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "응용 계층은 OSI 모델의 세션 계층, 표현 계층, 응용 계층을 합친 것과 유사한 계층이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q189768"
     },
     {
       "id": "net-052",
@@ -2237,7 +2957,10 @@ CS.glossary={
       "term": "캡슐화",
       "english": "encapsulation",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "캡슐화는 데이터 전송 과정에서 헤더 및 트레일러를 추가해 나가는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1305241"
     },
     {
       "id": "net-053",
@@ -2245,7 +2968,10 @@ CS.glossary={
       "term": "역캡슐화",
       "english": "decapsulation",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "역캡슐화는 캡슐화 과정에서 붙인 헤더(및 트레일러)를 제거하는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q71864781"
     },
     {
       "id": "net-054",
@@ -2253,7 +2979,10 @@ CS.glossary={
       "term": "PDU",
       "english": "Protocol Data Unit",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "PDU는 각 계층에서 송수신되는 메시지의 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2634565"
     },
     {
       "id": "net-055",
@@ -2261,7 +2990,10 @@ CS.glossary={
       "term": "세그먼트",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "세그먼트는 TCP 프로토콜이 사용되었을 경우 전송 계층의 PDU예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q355694"
     },
     {
       "id": "net-056",
@@ -2269,7 +3001,10 @@ CS.glossary={
       "term": "데이터그램",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "데이터그램은 UDP 프로토콜이 사용되었을 경우 전송 계층의 PDU예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q214111"
     },
     {
       "id": "net-057",
@@ -2277,7 +3012,10 @@ CS.glossary={
       "term": "IP 패킷",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "IP 패킷은 네트워크 계층의 PDU예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q56660405"
     },
     {
       "id": "net-058",
@@ -2285,7 +3023,10 @@ CS.glossary={
       "term": "트래픽",
       "english": "traffic",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "트래픽은 네트워크 내의 정보량이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q142292"
     },
     {
       "id": "net-059",
@@ -2293,7 +3034,10 @@ CS.glossary={
       "term": "과부하 (네트워크)",
       "english": "overhead",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "과부하 (네트워크)는 네트워크에 트래픽이 너무 많아져서 네트워크가 처리할 수 없는 상태예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q122353641"
     },
     {
       "id": "net-060",
@@ -2301,7 +3045,10 @@ CS.glossary={
       "term": "처리율",
       "english": "throughput",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "처리율은 단위 시간당 네트워크를 통해 실제로 전송되는 정보량이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7798498"
     },
     {
       "id": "net-061",
@@ -2309,7 +3056,10 @@ CS.glossary={
       "term": "대역폭",
       "english": "bandwidth",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "대역폭은 단위 시간 동안 통신 매체를 통해 송수신할 수 있는 최대 정보량이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1576430"
     },
     {
       "id": "net-062",
@@ -2317,7 +3067,10 @@ CS.glossary={
       "term": "패킷 손실",
       "english": "packet loss",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "패킷 손실은 송수신되는 패킷이 손실된 상황이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q391064"
     },
     {
       "id": "net-063",
@@ -2325,7 +3078,9 @@ CS.glossary={
       "term": "ping 명령어",
       "english": "",
       "topic": "컴퓨터 네트워크 시작하기",
-      "detail": "네트워크 미시적으로 살펴보기"
+      "detail": "네트워크 미시적으로 살펴보기",
+      "meaning": "ping 명령어는 수신지로 다수의 패킷을 전송해 수신지까지 도달 가능한지 여부를 알려주는 명령어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-064",
@@ -2333,7 +3088,10 @@ CS.glossary={
       "term": "이더넷",
       "english": "Ethernet",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "이더넷은 다양한 통신 매체의 규격들과 송수신되는 프레임의 형태, 프레임을 주고받는 방법 등이 정의된 네트워크 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q79984"
     },
     {
       "id": "net-065",
@@ -2341,7 +3099,10 @@ CS.glossary={
       "term": "IEEE 802.3",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "IEEE 802.3은 이더넷 관련 다양한 표준들의 모음이에요. 이더넷 표준에 따라 지원되는 네트워크 장비, 통신 매체의 종류와 전송 속도 등이 달라질 수 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q79984"
     },
     {
       "id": "net-066",
@@ -2349,7 +3110,9 @@ CS.glossary={
       "term": "통신 매체 표기의 'BASE'",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "통신 매체 표기의 'BASE'는 BASE는 베이스밴드(Baseband)의 약자로 변조 타입을 나타냄이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-067",
@@ -2357,7 +3120,10 @@ CS.glossary={
       "term": "변조 타입",
       "english": "modulation type",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "변조 타입은 비트 신호로 변환된 데이터를 통신 매체로 전송하는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q128375068"
     },
     {
       "id": "net-068",
@@ -2365,7 +3131,9 @@ CS.glossary={
       "term": "통신 매체 표기의 '추가 특성'",
       "english": "additional distinction",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "통신 매체 표기의 '추가 특성'은 통신 매체의 특성을 명시 (예: 전송 가능한 최대 거리나 물리 계층 인코딩 방식, 레인 수)예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-069",
@@ -2373,7 +3141,9 @@ CS.glossary={
       "term": "레인 수",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "레인 수는 비트 신호를 옮길 수 있는 전송로 수예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-070",
@@ -2381,7 +3151,9 @@ CS.glossary={
       "term": "물리 계층 인코딩 방식",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "물리 계층 인코딩 방식은 데이터가 비트 신호로 변환되는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-071",
@@ -2389,7 +3161,9 @@ CS.glossary={
       "term": "10BASE-T 케이블",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "10BASE-T 케이블은 10Mbps 속도의 이더넷을 지원하는 트위스티드 페어 케이블이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-072",
@@ -2397,7 +3171,9 @@ CS.glossary={
       "term": "1000BASE-SX 케이블",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "1000BASE-SX 케이블은 1000Mbps 속도의 이더넷을 지원하는 단파장 광섬유 케이블이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-073",
@@ -2405,7 +3181,9 @@ CS.glossary={
       "term": "1000BASE-LX 케이블",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "1000BASE-LX 케이블은 1000Mbps 속도의 이더넷을 지원하는 장파장 광섬유 케이블이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-074",
@@ -2413,7 +3191,10 @@ CS.glossary={
       "term": "고속 이더넷",
       "english": "Fast Ethernet",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "고속 이더넷은 100Mbps 가량의 속도를 지원하는 표준들을 통칭하는 용어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q546389"
     },
     {
       "id": "net-075",
@@ -2421,7 +3202,10 @@ CS.glossary={
       "term": "이더넷 프레임",
       "english": "Ethernet frame",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "이더넷 프레임은 이더넷 네트워크에서 주고받는 프레임이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11331406"
     },
     {
       "id": "net-076",
@@ -2429,7 +3213,9 @@ CS.glossary={
       "term": "이더넷 프레임 헤더",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "이더넷 프레임 헤더는 프리앰블, 수신지 MAC 주소, 송신지 MAC 주소, 타입/길이로 구성해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-077",
@@ -2437,7 +3223,9 @@ CS.glossary={
       "term": "프리앰블",
       "english": "preamble",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "프리앰블은 이더넷 프레임의 시작을 알리는 8바이트(64비트) 크기의 정보예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-078",
@@ -2445,7 +3233,9 @@ CS.glossary={
       "term": "MAC 주소",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "MAC 주소는 네트워크 인터페이스마다 부여되는 6바이트(48비트) 길이의 주소로 LAN 내의 수신지와 송신지를 특정할 수 있어요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-079",
@@ -2453,7 +3243,10 @@ CS.glossary={
       "term": "타입",
       "english": "type",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "타입은 이더넷 프레임이 '어떤 정보를 캡슐화했는지'를 나타내는 정보로 이더타입(ethertype)이라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q115868730"
     },
     {
       "id": "net-080",
@@ -2461,7 +3254,9 @@ CS.glossary={
       "term": "데이터 (패킷)",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "데이터 (패킷)은 상위 계층에서 전달받거나 상위 계층으로 전달해야 할 페이로드 내용이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-081",
@@ -2469,7 +3264,10 @@ CS.glossary={
       "term": "패딩 (네트워크)",
       "english": "padding",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "패딩 (네트워크)는 이더넷 프레임이 반드시 일정 크기(46바이트 이상)여야 한다는 규칙을 지키기 위해 데이터가 부족할 경우 채워지는 비트예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2794488"
     },
     {
       "id": "net-082",
@@ -2477,7 +3275,10 @@ CS.glossary={
       "term": "FCS",
       "english": "Frame Check Sequence",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "FCS는 수신한 이더넷 프레임에 오류가 있는지 확인하기 위한 트레일러 필드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q884773"
     },
     {
       "id": "net-083",
@@ -2485,7 +3286,10 @@ CS.glossary={
       "term": "CRC",
       "english": "Cyclic Redundancy Check",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "CRC는 순환 중복 검사라고 불리는 오류 검출용 값이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q245471"
     },
     {
       "id": "net-084",
@@ -2493,7 +3297,10 @@ CS.glossary={
       "term": "토큰 링",
       "english": "Token Ring",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "이더넷"
+      "detail": "이더넷",
+      "meaning": "토큰 링은 이더넷 이외의 LAN 기술로, 호스트들은 토큰(token)이라는 정보를 교환하고, 토큰이 있어야 송신이 가능해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q207971"
     },
     {
       "id": "net-085",
@@ -2501,7 +3308,10 @@ CS.glossary={
       "term": "NIC",
       "english": "Network Interface Controller",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "NIC는 호스트와 통신 매체를 연결하고, MAC 주소가 부여되는 네트워크 장비예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q165233"
     },
     {
       "id": "net-086",
@@ -2509,7 +3319,10 @@ CS.glossary={
       "term": "케이블",
       "english": "cable",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "케이블은 NIC에 연결되는 물리 계층의 유선 통신 매체예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q188447"
     },
     {
       "id": "net-087",
@@ -2517,7 +3330,10 @@ CS.glossary={
       "term": "확장 카드",
       "english": "expansion card",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "확장 카드는 컴퓨터에 기능을 추가할 목적으로 연결하는 카드 형태의 회로 기판이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q216158"
     },
     {
       "id": "net-088",
@@ -2525,7 +3341,10 @@ CS.glossary={
       "term": "마더보드",
       "english": "motherboard",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "마더보드는 CPU, 메모리, 보조기억장치 등 컴퓨터의 주요 부품들을 연결할 수 있는 기판(board)이에요. 흔히 메인보드(mainboard)라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4321"
     },
     {
       "id": "net-089",
@@ -2533,7 +3352,10 @@ CS.glossary={
       "term": "트위스티드 페어 케이블",
       "english": "twisted pair cable",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "트위스티드 페어 케이블은 구리 선으로 전기 신호를 주고받는 통신 매체로 케이블 본체와 커넥터로 구성돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q192808"
     },
     {
       "id": "net-090",
@@ -2541,7 +3363,10 @@ CS.glossary={
       "term": "RJ-45",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "RJ-45는 트위스티드 페어 케이블에서 활용되는 커넥터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1650302"
     },
     {
       "id": "net-091",
@@ -2549,7 +3374,10 @@ CS.glossary={
       "term": "노이즈",
       "english": "noise",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "노이즈는 전기 신호를 왜곡시킬 수 있는 간섭이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q179448"
     },
     {
       "id": "net-092",
@@ -2557,7 +3385,10 @@ CS.glossary={
       "term": "차폐",
       "english": "shielding",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "차폐는 구리 선 주변을 감싸 노이즈를 감소시키는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q192808"
     },
     {
       "id": "net-093",
@@ -2565,7 +3396,9 @@ CS.glossary={
       "term": "브레이드 실드",
       "english": "braided shield",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "브레이드 실드는 차폐에 사용된 그물 모양의 철사예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-094",
@@ -2573,7 +3406,9 @@ CS.glossary={
       "term": "포일 실드",
       "english": "foil shield",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "포일 실드는 차폐에 사용된 그물 모양의 포일이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-095",
@@ -2581,7 +3416,10 @@ CS.glossary={
       "term": "STP 케이블",
       "english": "Shielded Twisted Pair",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "STP 케이블은 브레이드 실드로 구리 선을 감싸 노이즈를 감소시킨 트위스티드 페어 케이블이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q192808"
     },
     {
       "id": "net-096",
@@ -2589,7 +3427,9 @@ CS.glossary={
       "term": "FTP 케이블",
       "english": "Foil Twisted Pair",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "FTP 케이블은 포일 실드로 노이즈를 감소시킨 트위스티드 페어 케이블이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-097",
@@ -2597,7 +3437,10 @@ CS.glossary={
       "term": "UTP 케이블",
       "english": "Unshielded Twisted Pair",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "UTP 케이블은 아무것도 감싸지 않은 구리 선만 있는 케이블이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q192808"
     },
     {
       "id": "net-098",
@@ -2605,7 +3448,9 @@ CS.glossary={
       "term": "S/FTP 케이블",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "S/FTP 케이블은 케이블 외부는 브레이드 실드로 보호되며, 꼬인 각 구리 선 쌍은 포일 실드로 감싼 케이블이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-099",
@@ -2613,7 +3458,9 @@ CS.glossary={
       "term": "F/FTP 케이블",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "F/FTP 케이블은 케이블 외부와 각 구리 선 쌍을 모두 포일 실드로 감싼 케이블이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-100",
@@ -2621,7 +3468,9 @@ CS.glossary={
       "term": "SF/FTP 케이블",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "SF/FTP 케이블은 케이블 외부는 브레이드 실드와 포일 실드로 감싸고, 각 구리 선 쌍은 포일 실드로 감싼 케이블이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-101",
@@ -2629,7 +3478,9 @@ CS.glossary={
       "term": "U/UTP 케이블",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "U/UTP 케이블은 아무것도 감싸지 않은 케이블이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-102",
@@ -2637,7 +3488,10 @@ CS.glossary={
       "term": "광섬유 케이블",
       "english": "fiber optic cable",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "광섬유 케이블은 빛(광신호)를 이용해 정보를 주고받는 케이블이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q122480450"
     },
     {
       "id": "net-103",
@@ -2645,7 +3499,10 @@ CS.glossary={
       "term": "코어",
       "english": "core",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "코어는 광섬유의 중심부(광섬유에서 실질적으로 빛이 흐르는 부분)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1051469"
     },
     {
       "id": "net-104",
@@ -2653,7 +3510,10 @@ CS.glossary={
       "term": "클래딩",
       "english": "cladding",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "클래딩은 코어를 둘러싸는 광섬유의 외부 부분(빛이 코어 안에서만 흐르도록 빛을 가두는 역할을 하는 부분)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2037332"
     },
     {
       "id": "net-105",
@@ -2661,7 +3521,10 @@ CS.glossary={
       "term": "싱글모드 광섬유 케이블",
       "english": "SMF; Single Mode Fiber",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "싱글모드 광섬유 케이블은 코어의 지름이 멀티모드보다 작은 광섬유 케이블이에요. 멀티모드에 비해 장거리 전송에 적합하고 노이즈 간섭이 적으며, 가격이 높음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1141743"
     },
     {
       "id": "net-106",
@@ -2669,7 +3532,10 @@ CS.glossary={
       "term": "멀티 모드 광섬유 케이블",
       "english": "MMF; Multi Mode Fiber",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "NIC와 케이블"
+      "detail": "NIC와 케이블",
+      "meaning": "멀티 모드 광섬유 케이블은 코어의 지름이 싱글모드보다 큰 광섬유 케이블이에요. 싱글모드에 비해 단거리 전송에 적합하고 가격이 낮음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4567614"
     },
     {
       "id": "net-107",
@@ -2677,7 +3543,10 @@ CS.glossary={
       "term": "허브",
       "english": "hub",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "허브는 여러 대의 호스트를 연결하는 물리 계층의 네트워크 장비예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q207123"
     },
     {
       "id": "net-108",
@@ -2685,7 +3554,10 @@ CS.glossary={
       "term": "이더넷 허브",
       "english": "Ethernet hub",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "이더넷 허브는 이더넷 네트워크의 허브예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q128003"
     },
     {
       "id": "net-109",
@@ -2693,7 +3565,10 @@ CS.glossary={
       "term": "반이중",
       "english": "half duplex",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "반이중은 한 번에 한 방향으로만 전송할 수 있는 통신 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q625306"
     },
     {
       "id": "net-110",
@@ -2701,7 +3576,10 @@ CS.glossary={
       "term": "전이중",
       "english": "full duplex",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "전이중은 동시에 양방향으로 데이터를 전송할 수 있는 통신 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q625306"
     },
     {
       "id": "net-111",
@@ -2709,7 +3587,10 @@ CS.glossary={
       "term": "리피터",
       "english": "repeater",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "리피터는 전기 신호가 감소하거나 왜곡되는 것을 방지하기 위해 전기 신호를 증폭시켜 주는 장비예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q273693"
     },
     {
       "id": "net-112",
@@ -2717,7 +3598,10 @@ CS.glossary={
       "term": "충돌(콜리전)",
       "english": "collision",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "충돌(콜리전)은 두 대 이상의 호스트가 동시에 데이터를 전송하려고 할 때 발생하는 현상이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q124050678"
     },
     {
       "id": "net-113",
@@ -2725,7 +3609,10 @@ CS.glossary={
       "term": "콜리전 도메인",
       "english": "collision domain",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "콜리전 도메인은 충돌이 발생할 수 있는 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1068411"
     },
     {
       "id": "net-114",
@@ -2733,7 +3620,10 @@ CS.glossary={
       "term": "CSMA/CD",
       "english": "Carrier Sense Multiple Access with Collision Detection",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "CSMA/CD는 반이중 이더넷 네트워크에서 충돌을 방지하는 대표적인 매체 접근 제어(MAC예요. Media Access Control) 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q373155"
     },
     {
       "id": "net-115",
@@ -2741,7 +3631,10 @@ CS.glossary={
       "term": "캐리어 감지",
       "english": "Carrier Sense",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "캐리어 감지는 현재 통신 매체의 사용 가능 여부를 검사하기 위해 반송파를 감지하는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1045106"
     },
     {
       "id": "net-116",
@@ -2749,7 +3642,9 @@ CS.glossary={
       "term": "잼 신호",
       "english": "jam signal",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "허브"
+      "detail": "허브",
+      "meaning": "잼 신호는 충돌을 검출한 호스트가 다른 이들에게 충돌이 발생했음을 알리기 위해 전송하는 신호예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-117",
@@ -2757,7 +3652,10 @@ CS.glossary={
       "term": "스위치",
       "english": "switch",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "스위치는 콜리전 도메인을 포트별로 나누어 주며 전이중 모드 통신을 지원하는 데이터 링크 계층의 장비예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q911520"
     },
     {
       "id": "net-118",
@@ -2765,7 +3663,9 @@ CS.glossary={
       "term": "MAC 주소 학습",
       "english": "MAC address learning",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "MAC 주소 학습은 특정 포트와 해당 포트에 연결된 호스트의 MAC 주소와의 관계를 기억하는 스위치의 기능이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-119",
@@ -2773,7 +3673,9 @@ CS.glossary={
       "term": "MAC 주소 테이블",
       "english": "MAC address table",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "MAC 주소 테이블은 MAC 주소 학습을 위해 스위치에 저장되는 정보예요. 포트와 연결된 호스트의 MAC 주소 간의 연관 관계를 담은 표 형태의 정보예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-120",
@@ -2781,7 +3683,9 @@ CS.glossary={
       "term": "플러딩",
       "english": "flooding",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "플러딩은 송신지 포트를 제외한 모든 포트로 프레임을 전송하는 스위치의 동작이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-121",
@@ -2789,7 +3693,10 @@ CS.glossary={
       "term": "필터링",
       "english": "filtering",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "필터링은 전달받은 프레임을 어디로 내보내고 어디로 내보내지 않을지 결정하는 스위치의 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q122226894"
     },
     {
       "id": "net-122",
@@ -2797,7 +3704,10 @@ CS.glossary={
       "term": "에이징 (네트워크 스위치)",
       "english": "aging",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "에이징 (네트워크 스위치)는 MAC 주소 테이블에 등록된 특정 포트에서 일정 시간 동안 프레임을 전송받지 못했다면 해당 항목이 삭제되는 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2845875"
     },
     {
       "id": "net-123",
@@ -2805,7 +3715,10 @@ CS.glossary={
       "term": "브리지",
       "english": "bridge",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "브리지는 네트워크 영역을 구획하여 콜리전 도메인을 나누거나 네트워크를 확장하는 용도로 사용되는 장비예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2302642"
     },
     {
       "id": "net-124",
@@ -2813,7 +3726,10 @@ CS.glossary={
       "term": "VLAN",
       "english": "Virtual LAN",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "VLAN은 한 대의 스위치로 가상의 LAN을 만드는 스위치의 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q16452"
     },
     {
       "id": "net-125",
@@ -2821,7 +3737,9 @@ CS.glossary={
       "term": "포트 기반 VLAN",
       "english": "port based VLAN",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "포트 기반 VLAN은 스위치의 포트가 VLAN을 결정하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-126",
@@ -2829,7 +3747,10 @@ CS.glossary={
       "term": "VLAN 트렁킹",
       "english": "VLAN Trunking",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "VLAN 트렁킹은 두 대 이상의 VLAN 스위치를 효율적으로 연결하여 확장하는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1382530"
     },
     {
       "id": "net-127",
@@ -2837,7 +3758,9 @@ CS.glossary={
       "term": "트렁크 포트",
       "english": "trunk port",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "트렁크 포트는 스위치 간의 통신을 위한 특별한 포트로, 태그 포트(tagged port)라고도 부름이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-128",
@@ -2845,7 +3768,10 @@ CS.glossary={
       "term": "액세스 포트",
       "english": "access port",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "액세스 포트는 트렁크 포트가 아닌 하나의 VLAN이 할당된 일반적인 포트예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q50189835"
     },
     {
       "id": "net-129",
@@ -2853,7 +3779,9 @@ CS.glossary={
       "term": "802.1Q 프레임",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "802.1Q 프레임은 어떤 VLAN에 속하는지 식별하기 위한 정보까지 추가된 확장된 이더넷 프레임이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-130",
@@ -2861,7 +3789,9 @@ CS.glossary={
       "term": "VLAN 태그",
       "english": "",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "VLAN 태그는 802.1Q 프레임에 포함된 정보로, VLAN을 식별하는 정보가 포함되어 있음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-131",
@@ -2869,7 +3799,9 @@ CS.glossary={
       "term": "MAC 기반 VLAN",
       "english": "MAC based VLAN",
       "topic": "물리 계층과 데이터 링크 계층",
-      "detail": "스위치"
+      "detail": "스위치",
+      "meaning": "MAC 기반 VLAN은 사전에 설정된 MAC 주소로 VLAN을 결정하는 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-132",
@@ -2877,7 +3809,10 @@ CS.glossary={
       "term": "라우팅",
       "english": "routing",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "라우팅은 패킷이 이동할 최적의 경로를 결정하는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q22725"
     },
     {
       "id": "net-133",
@@ -2885,7 +3820,10 @@ CS.glossary={
       "term": "라우터",
       "english": "router",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "라우터는 라우팅을 수행하는 네트워크 계층의 장비예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5318"
     },
     {
       "id": "net-134",
@@ -2893,7 +3831,10 @@ CS.glossary={
       "term": "IP 주소",
       "english": "",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "IP 주소는 논리 주소라고도 부르는 네트워크 계층의 주소 체계예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11135"
     },
     {
       "id": "net-135",
@@ -2901,7 +3842,10 @@ CS.glossary={
       "term": "DHCP",
       "english": "Dynamic Host Configuration Protocol",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "DHCP는 호스트에 IP 주소를 자동으로 할당하는 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11166"
     },
     {
       "id": "net-136",
@@ -2909,7 +3853,10 @@ CS.glossary={
       "term": "IP (인터넷 프로토콜)",
       "english": "Internet Protocol",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "IP (인터넷 프로토콜)은 단편화와 주소 지정이 가능한 네트워크 계층의 프로토콜이에요. IPv4, IPv6가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8795"
     },
     {
       "id": "net-137",
@@ -2917,7 +3864,10 @@ CS.glossary={
       "term": "옥텟 (IP 주소)",
       "english": "octet",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "옥텟 (IP 주소)는 점으로 구분된 8비트(0~255 범위의 10진수) 숫자예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q99252497"
     },
     {
       "id": "net-138",
@@ -2925,7 +3875,9 @@ CS.glossary={
       "term": "IP 주소 지정",
       "english": "IP addressing",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "IP 주소 지정은 IP 주소를 바탕으로 송수신 대상을 지정하는 것이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-139",
@@ -2933,7 +3885,10 @@ CS.glossary={
       "term": "IP 단편화",
       "english": "IP fragmentation",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "IP 단편화는 전송하고자 하는 패킷의 크기가 MTU라는 최대 전송 단위보다 클 경우, 이를 MTU 크기 이하의 복수의 패킷으로 나누는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1332338"
     },
     {
       "id": "net-140",
@@ -2941,7 +3896,10 @@ CS.glossary={
       "term": "MTU",
       "english": "Maximum Transmission Unit",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "MTU는 네트워크에서 한 번에 전송 가능한 IP 패킷(IP 패킷 헤더 포함)의 최대 크기예요. 일반적으로 1500바이트예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q12432"
     },
     {
       "id": "net-141",
@@ -2949,7 +3907,10 @@ CS.glossary={
       "term": "식별자",
       "english": "identifier",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "식별자는 단편화된 패킷들의 재조합을 위해 패킷에 할당된 번호예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q853614"
     },
     {
       "id": "net-142",
@@ -2957,7 +3918,10 @@ CS.glossary={
       "term": "플래그 (IPv4 헤더)",
       "english": "flag",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "플래그 (IPv4 헤더)는 총 3비트로 구성된 IP 헤더의 필드예요. 첫 번째 비트는 항상 0으로 예약된 비트로, 사용되지 않음이에요. 두 번째 비트는 DF(Don't Fragment) 비트로, 1이면 단편화 금지를 의미예요. 세 번째 비트는 MF(More Fragment) 비트로, 1이면 쪼개진 패킷이 더 있다는 것을 의미예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3746323"
     },
     {
       "id": "net-143",
@@ -2965,7 +3929,9 @@ CS.glossary={
       "term": "단편화 오프셋",
       "english": "fragment offset",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "단편화 오프셋은 패킷이 단편화되기 전 패킷의 초기 데이터에서 몇 번째로 떨어진 패킷인지를 나타내는 필드로, 패킷을 순서대로 재조합하기 위해 사용돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-144",
@@ -2973,7 +3939,10 @@ CS.glossary={
       "term": "TTL (IPv4 헤더)",
       "english": "Time To Live",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "TTL (IPv4 헤더)는 패킷의 수명을 의미하는 필드로, 패킷이 한 홉을 거칠 때마다 TTL이 1씩 감소하다가 0이 되면 해당 패킷은 폐기돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q135049711"
     },
     {
       "id": "net-145",
@@ -2981,7 +3950,10 @@ CS.glossary={
       "term": "홉",
       "english": "hop",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "홉은 패킷이 호스트 또는 라우터에 한 번 전달되는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q104212"
     },
     {
       "id": "net-146",
@@ -2989,7 +3961,10 @@ CS.glossary={
       "term": "IPv6",
       "english": "",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "IPv6은 IPv4의 주소 고갈 문제를 해결하기 위해 개발된 IP 프로토콜이에요. IPv6 주소는 16바이트(128비트)로 표현되고, 콜론(:)으로 구분된 8개 그룹의 16진수로 표현돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2551624"
     },
     {
       "id": "net-147",
@@ -2997,7 +3972,9 @@ CS.glossary={
       "term": "다음 헤더 (IPv6 헤더)",
       "english": "next header",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "다음 헤더 (IPv6 헤더)는 상위 계층의 프로토콜을 가리키거나 확장 헤더를 가리킴이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-148",
@@ -3005,7 +3982,9 @@ CS.glossary={
       "term": "확장 헤더",
       "english": "extension header",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "확장 헤더는 기본 IPv6 헤더와 더불어 추가적인 헤더 정보가 필요할 경우 덧붙는 추가적인 IPv6 헤더는 추가적인 헤더예요. 기본 헤더와 페이로드 데이터 사이에 위치예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-149",
@@ -3013,7 +3992,9 @@ CS.glossary={
       "term": "홉 제한 (IPv6 헤더)",
       "english": "hop limit",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "홉 제한 (IPv6 헤더)는 IPv4 패킷의 TTL 필드와 유사한 패킷의 수명을 나타내는 필드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-150",
@@ -3021,7 +4002,10 @@ CS.glossary={
       "term": "ARP",
       "english": "Address Resolution Protocol",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "ARP는 IP 주소를 MAC 주소에 대응하는 프로토콜이에요. 네트워크 내에 있는 송수신 대상의 IP 주소를 통해 MAC 주소를 알아낼 수 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q574747"
     },
     {
       "id": "net-151",
@@ -3029,7 +4013,9 @@ CS.glossary={
       "term": "오퍼레이션 코드 (ARP)",
       "english": "Opcode; Operation Code",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "오퍼레이션 코드 (ARP)는 ARP 패킷의 유형을 나타내는 필드예요. ARP 요청의 경우 1, ARP 응답의 경우 2로 설정이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-152",
@@ -3037,7 +4023,9 @@ CS.glossary={
       "term": "ARP 테이블",
       "english": "",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "ARP 테이블은 IP 주소와 그에 맞는 MAC 주소 테이블을 대응하는 표 형태의 정보예요. ARP 메시지 송수신 결과 ARP 테이블이 갱신돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-153",
@@ -3045,7 +4033,10 @@ CS.glossary={
       "term": "경로 MTU",
       "english": "Path MTU",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "경로 MTU는 IP 단편화 없이 주고 받을 수 있는 최대 크기예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q465141"
     },
     {
       "id": "net-154",
@@ -3053,7 +4044,10 @@ CS.glossary={
       "term": "경로 MTU 발견",
       "english": "Path MTU Discovery",
       "topic": "네트워크 계층",
-      "detail": "LAN을 넘어서는 네트워크 계층"
+      "detail": "LAN을 넘어서는 네트워크 계층",
+      "meaning": "경로 MTU 발견은 경로 MTU를 구하고 해당 크기만큼만 송수신하여 IP 단편화를 회피하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q47456386"
     },
     {
       "id": "net-155",
@@ -3061,7 +4055,10 @@ CS.glossary={
       "term": "네트워크 주소 (IP 주소)",
       "english": "network address",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "네트워크 주소 (IP 주소)는 IP주소를 이루는 부분으로, 호스트가 속한 특정 네트워크를 식별하는 역할 수행해요. 네트워크 ID, 네트워크 식별자 등으로 부리기도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11182"
     },
     {
       "id": "net-156",
@@ -3069,7 +4066,10 @@ CS.glossary={
       "term": "호스트 주소 (IP 주소)",
       "english": "host address",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "호스트 주소 (IP 주소)는 IP주소를 이루는 부분으로, 네트워크 내에서 특정 호스트를 식별하는 역할 수행해요. 호스트 ID, 호스트 식별자 등으로 부르기도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5909232"
     },
     {
       "id": "net-157",
@@ -3077,7 +4077,10 @@ CS.glossary={
       "term": "클래스",
       "english": "class",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "클래스는 네트워크 크기에 따라 IP 주소를 분류하는 기준이에요. 필요한 호스트 IP 갯수에 따라 네트워크 크기를 가변적으로 조정해 네트워크 주소와 호스트 주소를 구획할 수 있어요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q18204"
     },
     {
       "id": "net-158",
@@ -3085,7 +4088,10 @@ CS.glossary={
       "term": "클래스풀 주소 체계",
       "english": "classful addressing",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "클래스풀 주소 체계는 클래스를 기반으로 IP 주소를 관리하는 주소 체계예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1338897"
     },
     {
       "id": "net-159",
@@ -3093,7 +4099,9 @@ CS.glossary={
       "term": "클래스리스 주소 체계",
       "english": "classless addressing",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "클래스리스 주소 체계는 클래스 개념 없이(classless) 클래스에 구애받지 않고 네트워크의 영역을 나누어서 호스트에게 IP 주소 공간을 할당하는 방식이에요. 클래스풀 주소 체계보다 더 유동적이고 정교하게 네트워크를 구획할 수 있어요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-160",
@@ -3101,7 +4109,10 @@ CS.glossary={
       "term": "서브넷 마스크",
       "english": "subnet mask",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "서브넷 마스크는 IP 주소상에서 네트워크 주소는 1, 호스트 주소는 0으로 표기한 비트열이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1245638"
     },
     {
       "id": "net-161",
@@ -3109,7 +4120,10 @@ CS.glossary={
       "term": "서브네팅",
       "english": "subnetting",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "서브네팅은 서브넷 마스크를 이용해 네트워크를 원하는 크기로 더 잘게 쪼개어 사용하는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11414"
     },
     {
       "id": "net-162",
@@ -3117,7 +4131,10 @@ CS.glossary={
       "term": "서브네트워크",
       "english": "subnetwork",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "서브네트워크는 IP주소의 네트워크 주소로 구분 가능한 네트워크의 부분 집합이에요. 서브넷(subnet)이라고 줄여서 부르기도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11414"
     },
     {
       "id": "net-163",
@@ -3125,7 +4142,10 @@ CS.glossary={
       "term": "CIDR 표기법",
       "english": "CIDR; Classless Inter-Domain Routing notation",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "CIDR 표기법은 'IP 주소/서브넷 마스크상의 1의 개수'로 표기하는 서브넷 마스크를 표기법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q646589"
     },
     {
       "id": "net-164",
@@ -3133,7 +4153,9 @@ CS.glossary={
       "term": "공인 IP 주소",
       "english": "public IP address",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "공인 IP 주소는 전 세계에서 고유한 IP 주소로, 네트워크 간의 통신(인터넷)에서 사용되는 IP 주소예요. ISP나 공인 IP 주소 할당 기관을 통해 할당받을 수 있음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-165",
@@ -3141,7 +4163,10 @@ CS.glossary={
       "term": "사설 IP 주소",
       "english": "private IP address",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "사설 IP 주소는 사설 네트워크에서 사용하기 위한 IP 주소예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11186"
     },
     {
       "id": "net-166",
@@ -3149,7 +4174,10 @@ CS.glossary={
       "term": "사설 네트워크",
       "english": "private network",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "사설 네트워크는 인터넷, 외부 네트워크에 공개되지 않은 네트워크예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11186"
     },
     {
       "id": "net-167",
@@ -3157,7 +4185,10 @@ CS.glossary={
       "term": "NAT",
       "english": "Network Address Translation",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "NAT는 IP 주소를 변환하는 기술로, 주로 네트워크 내부에서 사용되는 사설 IP 주소와 네트워크 외부에서 사용되는 공인 IP 주소를 변환하는 데 사용돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11182"
     },
     {
       "id": "net-168",
@@ -3165,7 +4196,9 @@ CS.glossary={
       "term": "정적 할당 (IP 주소)",
       "english": "static allocation",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "정적 할당 (IP 주소)는 호스트에 직접 수작업으로 IP 주소를 부여하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-169",
@@ -3173,7 +4206,9 @@ CS.glossary={
       "term": "정적 IP 주소",
       "english": "static IP address",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "정적 IP 주소는 정적으로 할당된 IP 주소예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-170",
@@ -3181,7 +4216,10 @@ CS.glossary={
       "term": "기본 게이트웨이",
       "english": "default gateway",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "기본 게이트웨이는 호스트가 속한 네트워크 외부로 나가기 위한 기본적인 첫 경로(첫 번째 홉)이에요. 따라서 기본 게이트웨이는 네트워크 외부와 연결된 라우터(공유기)의 주소를 의미하는 경우가 많음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2465461"
     },
     {
       "id": "net-171",
@@ -3189,7 +4227,10 @@ CS.glossary={
       "term": "동적 할당",
       "english": "dynamic allocation",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "동적 할당은 호스트에 IP 주소가 동적으로 할당되는 방식으로, 자동으로 IP 주소를 할당하는 DHCP 프로토콜을 통해 가능해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q123370118"
     },
     {
       "id": "net-172",
@@ -3197,7 +4238,9 @@ CS.glossary={
       "term": "동적 IP 주소",
       "english": "dynamic IP address",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "동적 IP 주소는 동적으로 할당된 IP 주소예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-173",
@@ -3205,7 +4248,10 @@ CS.glossary={
       "term": "DHCP",
       "english": "Dynamic Host Configuration Protocol",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "DHCP는 IP 동적 할당에 사용되는 대표적인 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11166"
     },
     {
       "id": "net-174",
@@ -3213,7 +4259,10 @@ CS.glossary={
       "term": "DHCP 서버",
       "english": "DHCP Server",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "DHCP 서버는 DHCP를 통한 IP 주소 할당에서 호스트에게 IP주소를 제공하는 호스트예요. DHCP 서버는 클라이언트에게 할당 가능한 IP 주소 목록을 관리하다가, 클라이언트가 요청할 때 IP 주소를 할당해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q47459623"
     },
     {
       "id": "net-175",
@@ -3221,7 +4270,9 @@ CS.glossary={
       "term": "DHCP Discover",
       "english": "",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "DHCP Discover은 DHCP 클라이언트가 DHCP 서버를 찾기 위한 브로드캐스트로 메시지예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-176",
@@ -3229,7 +4280,9 @@ CS.glossary={
       "term": "DHCP Offer",
       "english": "",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "DHCP Offer은 DHCP 서버가 DHCP 클라이언트에게 할당 가능한 IP 주소를 제안하는 메시지예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-177",
@@ -3237,7 +4290,9 @@ CS.glossary={
       "term": "DHCP Request",
       "english": "",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "DHCP Request는 DHCP 클라이언트의 DHCP Offer 메시지에 대한 답변이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-178",
@@ -3245,7 +4300,9 @@ CS.glossary={
       "term": "DHCP ACK",
       "english": "",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "DHCP ACK는 DHCP서버가 동적 IP 주소를 할당하는 최종 승인 메시지예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-179",
@@ -3253,7 +4310,9 @@ CS.glossary={
       "term": "임대 갱신",
       "english": "lease renewal",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "임대 갱신은 IP 주소 임대 기간이 끝나기 전에 임대 기간을 연장하는 기능이에요. 동적 IP 주소의 임대 기간이 끝나기 전 기본적으로 두 차례 자동으로 수행돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-180",
@@ -3261,7 +4320,9 @@ CS.glossary={
       "term": "루프백 주소",
       "english": "loopback address",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "루프백 주소는 자기 자신을 가리키는 특별한 주소로 일반적으로 127.0.0.1 사용해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-181",
@@ -3269,7 +4330,10 @@ CS.glossary={
       "term": "로컬호스트",
       "english": "localhost",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "로컬호스트는 루프백 주소의 다른 이름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q153799"
     },
     {
       "id": "net-182",
@@ -3277,7 +4341,9 @@ CS.glossary={
       "term": "0.0.0.0/8",
       "english": "",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "0.0.0.0/8은 호스트가 IP 주소를 할당받기 전에 임시로 사용 가능한 예약 IP 주소예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-183",
@@ -3285,7 +4351,9 @@ CS.glossary={
       "term": "디폴트 라우트 (라우팅)",
       "english": "default route",
       "topic": "네트워크 계층",
-      "detail": "IP 주소"
+      "detail": "IP 주소",
+      "meaning": "디폴트 라우트 (라우팅)은 패킷을 어떤 IP 주소로 전달할지 결정하기 어려울 경우 기본적으로 패킷을 전달할 경로예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-184",
@@ -3293,7 +4361,10 @@ CS.glossary={
       "term": "라우팅 테이블",
       "english": "routing table",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "라우팅 테이블은 특정 수신지까지 도달하기 위한 정보(라우팅 정보)를 명시한 표와 같은 정보로, 라우터의 라우팅 과정에서 반드시 참조돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q290066"
     },
     {
       "id": "net-185",
@@ -3301,7 +4372,10 @@ CS.glossary={
       "term": "다음 홉 (라우팅 테이블)",
       "english": "next hop",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "다음 홉 (라우팅 테이블)은 최종 수신지까지 가기 위해 다음으로 거쳐야 할 호스트의 IP 주소나 인터페이스예요. 게이트웨이라고 명시되기도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7021038"
     },
     {
       "id": "net-186",
@@ -3309,7 +4383,10 @@ CS.glossary={
       "term": "네트워크 인터페이스 (라우팅 테이블)",
       "english": "network interface",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "네트워크 인터페이스 (라우팅 테이블)은 패킷을 내보낼 통로예요. 인터페이스(NIC) 이름이 직접적으로 명시되거나 인터페이스에 대응하는 IP 주소가 명시되기도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q165233"
     },
     {
       "id": "net-187",
@@ -3317,7 +4394,10 @@ CS.glossary={
       "term": "메트릭 (라우팅 테이블)",
       "english": "metric",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "메트릭 (라우팅 테이블)은 특정 경로로 패킷을 이동시키기 위해 드는 비용이에요. 메트릭이 낮은 경로가 선호돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q17004438"
     },
     {
       "id": "net-188",
@@ -3325,7 +4405,10 @@ CS.glossary={
       "term": "디폴트 라우트",
       "english": "default route",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "디폴트 라우트는 패킷을 어떤 IP 주소로 전달할지 결정하기 어려울 경우 기본적으로 패킷을 전달할 경로예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1022120"
     },
     {
       "id": "net-189",
@@ -3333,7 +4416,10 @@ CS.glossary={
       "term": "정적 라우팅",
       "english": "static routing",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "정적 라우팅은 사용자가 수동으로 직접 채워 넣은 라우팅 테이블의 항목을 토대로 라우팅 되는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1119410"
     },
     {
       "id": "net-190",
@@ -3341,7 +4427,10 @@ CS.glossary={
       "term": "동적 라우팅",
       "english": "dynamic routing",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "동적 라우팅은 자동으로 라우팅 테이블 항목을 만들고, 이를 이용하여 라우팅하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q352483"
     },
     {
       "id": "net-191",
@@ -3349,7 +4438,9 @@ CS.glossary={
       "term": "동적 라우팅 프로토콜",
       "english": "dynamic routing protocol",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "동적 라우팅 프로토콜은 동적 라우팅을 위해 사용되는 프로토콜이에요. AS 내의 라우팅이 가능한 프로토콜(RIP, OSPF)과 AS 간의 라우팅이 가능한 프로토콜(BGP) 존재예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-192",
@@ -3357,7 +4448,10 @@ CS.glossary={
       "term": "AS",
       "english": "Autonomous System",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "AS는 동일한 라우팅 정책으로 운용되는 라우터들의 집단 네트워크예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q16641"
     },
     {
       "id": "net-193",
@@ -3365,7 +4459,10 @@ CS.glossary={
       "term": "AS 경계 라우터",
       "english": "ASBR; Autonomous System Boundary Router",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "AS 경계 라우터는 AS 경계에서 AS 내외로 통신을 주고받을 수 있는 특별한 라우터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q208525"
     },
     {
       "id": "net-194",
@@ -3373,7 +4470,10 @@ CS.glossary={
       "term": "라우팅 프로토콜",
       "english": "routing protocol",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "라우팅 프로토콜은 라우터끼리 자신들의 정보를 교환하며 패킷이 이동할 최적의 경로를 찾기 위한 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1648707"
     },
     {
       "id": "net-195",
@@ -3381,7 +4481,10 @@ CS.glossary={
       "term": "IGP",
       "english": "Interior Gateway Protocol",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "IGP는 AS 내부에서 수행되는 라우팅 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q431028"
     },
     {
       "id": "net-196",
@@ -3389,7 +4492,10 @@ CS.glossary={
       "term": "EGP",
       "english": "Exterior Gateway Protocol",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "EGP는 AS 외부에서 수행되는 라우팅 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q199462"
     },
     {
       "id": "net-197",
@@ -3397,7 +4503,10 @@ CS.glossary={
       "term": "거리 벡터 라우팅 프로토콜",
       "english": "distance vector routing protocol",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "거리 벡터 라우팅 프로토콜은 거리를 기반으로 최적의 경로를 찾는 라우팅 프로토콜이에요. 여기서 '거리'는 패킷이 경유한 라우터의 수, 즉 홉의 수를 의미예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1229441"
     },
     {
       "id": "net-198",
@@ -3405,7 +4514,10 @@ CS.glossary={
       "term": "RIP",
       "english": "RIP",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "RIP는 거리 벡터를 사용하는 라우팅 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q207580"
     },
     {
       "id": "net-199",
@@ -3413,7 +4525,10 @@ CS.glossary={
       "term": "OSPF",
       "english": "OSPF",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "OSPF는 링크 상태를 사용하는 라우팅 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q220169"
     },
     {
       "id": "net-200",
@@ -3421,7 +4536,10 @@ CS.glossary={
       "term": "링크 상태 데이터베이스",
       "english": "LSDB; Link State DataBase",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "링크 상태 데이터베이스는 OSPF에서 사용되는 링크 상태 정보가 저장된 데이터베이스예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q38751643"
     },
     {
       "id": "net-201",
@@ -3429,7 +4547,10 @@ CS.glossary={
       "term": "에어리어",
       "english": "area",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "에어리어는 OSPF에서 AS를 나누는 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q177397"
     },
     {
       "id": "net-202",
@@ -3437,7 +4558,10 @@ CS.glossary={
       "term": "ABR",
       "english": "Area Border Router",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "ABR은 에어리어 경계에 있는 라우터예요. 에어리어 간의 연결을 담당이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q130557048"
     },
     {
       "id": "net-203",
@@ -3445,7 +4569,10 @@ CS.glossary={
       "term": "BGP",
       "english": "Border Gateway Protocol",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "BGP는 대표적인 EGP 중 하나로 AS 간의 통신에서 사용되는 대표적인 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11155"
     },
     {
       "id": "net-204",
@@ -3453,7 +4580,10 @@ CS.glossary={
       "term": "피어",
       "english": "peer",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "피어는 BGP 메시지를 주고받을 수 있도록 연결된 BGP 라우터의 관계예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q40747"
     },
     {
       "id": "net-205",
@@ -3461,7 +4591,10 @@ CS.glossary={
       "term": "피어링",
       "english": "peering",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "피어링은 피어 관계가 되도록 연결되는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q772532"
     },
     {
       "id": "net-206",
@@ -3469,7 +4602,9 @@ CS.glossary={
       "term": "AS-PATH 속성 (BGP)",
       "english": "AS-PATH attribute",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "AS-PATH 속성 (BGP)은 메시지가 수신지에 이르는 과정에서 통과하는 AS들의 목록이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-207",
@@ -3477,7 +4612,9 @@ CS.glossary={
       "term": "NEXT-HOP 속성 (BGP)",
       "english": "NEXT-HOP attribute",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "NEXT-HOP 속성 (BGP)은 다음으로 거칠 라우터의 IP 주소예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-208",
@@ -3485,7 +4622,9 @@ CS.glossary={
       "term": "LOCAL-PREF 속성 (BGP)",
       "english": "LOCAL-PREF attribute",
       "topic": "네트워크 계층",
-      "detail": "라우팅"
+      "detail": "라우팅",
+      "meaning": "LOCAL-PREF 속성 (BGP)은 AS 외부 경로에 있어서 AS 내부에서(local) 어떤 경로를 선호할지(preference)에 대한 척도를 나타내는 속성이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-209",
@@ -3493,7 +4632,9 @@ CS.glossary={
       "term": "신뢰할 수 없는 통신",
       "english": "",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "신뢰할 수 없는 통신은 IP 프로토콜이 패킷이 수신지까지 제대로 전송되었다는 보장을 하지 않는 전송 특성이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-210",
@@ -3501,7 +4642,10 @@ CS.glossary={
       "term": "최선형 전달",
       "english": "best effort delivery",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "최선형 전달은 최선을 다해 보겠지만, 전송 결과에 대해서는 어떠한 보장도 하지 않는 전송 특성이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q830287"
     },
     {
       "id": "net-211",
@@ -3509,7 +4653,10 @@ CS.glossary={
       "term": "비연결형 통신",
       "english": "",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "비연결형 통신은 송수신 호스트 간에 사전 연결 수립 작업을 거치지 않는 전송 특성이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q727896"
     },
     {
       "id": "net-212",
@@ -3517,7 +4664,9 @@ CS.glossary={
       "term": "IP의 주요 통신 특성",
       "english": "",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "IP의 주요 통신 특성은 신뢰할 수 없는 통신이자, 비연결형 통신이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-213",
@@ -3525,7 +4674,10 @@ CS.glossary={
       "term": "TCP",
       "english": "",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "TCP는 전송 계층의 연결형 프로토콜이자 신뢰할 수 있는 통신을 수행하는 프로토콜이에요. UDP보다 비교적 확실한 전송이 가능해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8803"
     },
     {
       "id": "net-214",
@@ -3533,7 +4685,10 @@ CS.glossary={
       "term": "UDP",
       "english": "",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "UDP는 전송 계층의 비연결형 프로토콜이자 신뢰할 수 없는 통신을 수행하는 프로토콜이에요. TCP보다는 비교적 빠른 전송이 가능해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11163"
     },
     {
       "id": "net-215",
@@ -3541,7 +4696,10 @@ CS.glossary={
       "term": "포트",
       "english": "port",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "포트는 응용 계층의 애플리케이션 프로세스를 식별하는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3404200"
     },
     {
       "id": "net-216",
@@ -3549,7 +4707,10 @@ CS.glossary={
       "term": "잘 알려진 포트",
       "english": "well known port",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "잘 알려진 포트는 0번부터 1023번까지의 포트번호예요. 범용적으로 사용되는 애플리케이션 프로토콜이 일반적으로 사용하는 '널리 알려진, 유명한' 포트번호예요. 시스템포트(system port)라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q756750"
     },
     {
       "id": "net-217",
@@ -3557,7 +4718,9 @@ CS.glossary={
       "term": "등록된 포트",
       "english": "registered port",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "등록된 포트는 1024번부터 49151번까지의 포트 번호예요. 잘 알려진 포트에 비해서는 덜 범용적이지만, 흔히 사용되는 애플리케이션 프로토콜에 할당하기 위해 사용해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-218",
@@ -3565,7 +4728,10 @@ CS.glossary={
       "term": "동적 포트",
       "english": "dynamic port",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "동적 포트는 포트 번호 49152번부터 65535번까지의 포트 번호예요. 자유롭게 사용 가능한 포트 번호로, 보통 클라이언트가 활용하는 포트 번호예요. 사설 포트(private port), 임시 포트(ephemeral port)라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q137374170"
     },
     {
       "id": "net-219",
@@ -3573,7 +4739,9 @@ CS.glossary={
       "term": "netstat 명령어",
       "english": "",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "netstat 명령어는 맥OS, 리눅스 운영체제에서 포트 번호를 확인할 수 있는 명령어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-220",
@@ -3581,7 +4749,9 @@ CS.glossary={
       "term": "NAT 변환 테이블",
       "english": "",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "NAT 변환 테이블은 NAT 변환의 대상이 되는 IP 주소 쌍이 명시되어 있는 표 형태의 정보예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-221",
@@ -3589,7 +4759,9 @@ CS.glossary={
       "term": "NAPT",
       "english": "Network Address Port Translation",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "NAPT는 포트 기반의 NAT예요. 포트를 활용해 하나의 공인 IP 주소를 여러 사설 IP 주소가 공유할 수 있도록 하는 NAT의 일종이에요. NAT 테이블에 변환될 IP 주소 쌍과 더불어 포트 번호도 함께 기록해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-222",
@@ -3597,7 +4769,10 @@ CS.glossary={
       "term": "포트 포워딩",
       "english": "port forwarding",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "포트 포워딩은 네트워크 내 특정 호스트에 IP 주소와 포트 번호를 미리 할당하고, 해당 IP 주소:포트 번호로써 해당 호스트에게 패킷을 전달하는 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1049673"
     },
     {
       "id": "net-223",
@@ -3605,7 +4780,10 @@ CS.glossary={
       "term": "ICMP",
       "english": "Internet Control Message Protocol",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "ICMP는 IP 패킷의 전송 과정에 대한 피드백 메시지(이하 ICMP 메시지)를 얻기 위해 사용하는 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q13162"
     },
     {
       "id": "net-224",
@@ -3613,7 +4791,9 @@ CS.glossary={
       "term": "ping",
       "english": "",
       "topic": "전송 계층",
-      "detail": "전송 계층 개요: IP의 한계와 포트"
+      "detail": "전송 계층 개요: IP의 한계와 포트",
+      "meaning": "ping는 네트워크의 상태를 진단하는 가장 기본적인 명령어로, ICMP 기반의 명령어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-225",
@@ -3621,7 +4801,10 @@ CS.glossary={
       "term": "TCP",
       "english": "Transmission Control Protocol",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "TCP는 신뢰할 수 있는 통신을 위한 연결형 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8803"
     },
     {
       "id": "net-226",
@@ -3629,7 +4812,10 @@ CS.glossary={
       "term": "UDP",
       "english": "User Datagram Protocol",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "UDP는 TCP보다 신뢰성은 떨어지지만 비교적 빠른 통신이 가능한 비연결형 프로토콜이에요. 상태를 유지하지도, 활용하지도 않는다는 점에서 스테이트리스(stateless) 프로토콜이라고도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11163"
     },
     {
       "id": "net-227",
@@ -3637,7 +4823,10 @@ CS.glossary={
       "term": "MMS",
       "english": "Maximum Segment Size",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "MMS는 TCP로 전송할 수 있는 최대 페이로드 크기예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q201605"
     },
     {
       "id": "net-228",
@@ -3645,7 +4834,10 @@ CS.glossary={
       "term": "송신지 포트와 수신지 포트 필드 (TCP 헤더)",
       "english": "source port, destination port",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "송신지 포트와 수신지 포트 필드 (TCP 헤더)는 송신지 또는 수신지 애플리케이션을 식별하는 포트 번호가 명시되는 TCP 헤더 필드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7565159"
     },
     {
       "id": "net-229",
@@ -3653,7 +4845,10 @@ CS.glossary={
       "term": "순서 번호 필드 (TCP 헤더)",
       "english": "sequence number",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "순서 번호 필드 (TCP 헤더)는 순서 번호가 명시되는 TCP 헤더 필드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q124666085"
     },
     {
       "id": "net-230",
@@ -3661,7 +4856,9 @@ CS.glossary={
       "term": "확인 응답 번호 필드 (TCP 헤더)",
       "english": "acknowledgment number",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "확인 응답 번호 필드 (TCP 헤더)는 상대 호스트가 보낸 세그먼트에 대한 응답으로, 다음으로 수신하기를 기대하는 순서 번호가 명시되는 TCP 헤더 필드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-231",
@@ -3669,7 +4866,9 @@ CS.glossary={
       "term": "제어 비트 필드 (TCP 헤더)",
       "english": "control bits",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "제어 비트 필드 (TCP 헤더)는 플래그 비트(flag bits)라고도 부르는 현재 세그먼트에 대한 부가 정보가 명시되는 TCP 헤더 필드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-232",
@@ -3677,7 +4876,9 @@ CS.glossary={
       "term": "윈도우 필드 (TCP 헤더)",
       "english": "window",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "윈도우 필드 (TCP 헤더)는 수신 윈도우의 크기가 명시되는 TCP 헤더 필드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-233",
@@ -3685,7 +4886,9 @@ CS.glossary={
       "term": "수신 윈도우",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "수신 윈도우는 한 번에 수신하고자 하는 데이터의 양이에요. 수신 호스트가 TCP 헤더 필드로 송신 호스트에게 알려 주어야 해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-234",
@@ -3693,7 +4896,10 @@ CS.glossary={
       "term": "ACK",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "ACK는 세그먼트의 숭인을 나타내기 위한 비트예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q18035104"
     },
     {
       "id": "net-235",
@@ -3701,7 +4907,9 @@ CS.glossary={
       "term": "SYN",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "SYN은 연결을 수립하기 위한 비트예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-236",
@@ -3709,7 +4917,9 @@ CS.glossary={
       "term": "FIN",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "FIN은 연결을 종료하기 위한 비트예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-237",
@@ -3717,7 +4927,10 @@ CS.glossary={
       "term": "순서 번호",
       "english": "sequence number",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "순서 번호는 세그먼트의 올바른 송수신 순서를 보장하기 위한 번호예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q124666085"
     },
     {
       "id": "net-238",
@@ -3725,7 +4938,10 @@ CS.glossary={
       "term": "초기 순서 번호",
       "english": "ISN; Initial Sequence Number",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "초기 순서 번호는 SYN 세그먼트를 전송할 당시 무작위로 설정된 최초의 순서 번호예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q423048"
     },
     {
       "id": "net-239",
@@ -3733,7 +4949,9 @@ CS.glossary={
       "term": "확인 응답 번호",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "확인 응답 번호는 수신 호스트가 다음으로 받기를 희망하는 순서 번호예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-240",
@@ -3741,7 +4959,10 @@ CS.glossary={
       "term": "쓰리 웨이 핸드셰이크",
       "english": "three-way handshake",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "쓰리 웨이 핸드셰이크는 세 개의 단계로 이루어진 TCP의 연결 수립 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3525919"
     },
     {
       "id": "net-241",
@@ -3749,7 +4970,9 @@ CS.glossary={
       "term": "포 웨이 핸드셰이크",
       "english": "four-way handshake",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "포 웨이 핸드셰이크는 네 개의 단계로 이루어진 TCP의 종료 수립 과정이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-242",
@@ -3757,7 +4980,10 @@ CS.glossary={
       "term": "액티브 오픈",
       "english": "active open",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "액티브 오픈은 처음 연결을 시작하는 호스트의 연결 수립 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q53246310"
     },
     {
       "id": "net-243",
@@ -3765,7 +4991,10 @@ CS.glossary={
       "term": "패시브 오픈",
       "english": "passive open",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "패시브 오픈은 연결 요청을 받고 나서 요청에 따라 연결을 수립해 주는 호스트 연결 수립 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q114880601"
     },
     {
       "id": "net-244",
@@ -3773,7 +5002,10 @@ CS.glossary={
       "term": "액티브 클로즈",
       "english": "active close",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "액티브 클로즈는 먼저 연결을 종료하려는 호스트에 의해 수행되는 연결 종료 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q72184038"
     },
     {
       "id": "net-245",
@@ -3781,7 +5013,9 @@ CS.glossary={
       "term": "패시브 클로즈",
       "english": "passive close",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "패시브 클로즈는 연결 종료 요청을 받아들이는 호스트에 의해 수행되는 연결 종료 과정이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-246",
@@ -3789,7 +5023,10 @@ CS.glossary={
       "term": "상태",
       "english": "state",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "상태는 현재 어떤 통신 과정에 있는지를 나타내는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q813912"
     },
     {
       "id": "net-247",
@@ -3797,7 +5034,10 @@ CS.glossary={
       "term": "스테이트풀 프로토콜",
       "english": "stateful",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "스테이트풀 프로토콜은 상태를 유지하고 활용하는 프로토콜로, 대표적으로 TCP가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q59654362"
     },
     {
       "id": "net-248",
@@ -3805,7 +5045,9 @@ CS.glossary={
       "term": "CLOSED 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "CLOSED 상태는 아무런 연결이 없는 TCP 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-249",
@@ -3813,7 +5055,9 @@ CS.glossary={
       "term": "LISTEN 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "LISTEN 상태는 SYN 세그먼트를 기다리는 일종의 연결 대기 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-250",
@@ -3821,7 +5065,9 @@ CS.glossary={
       "term": "SYN-SENT 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "SYN-SENT 상태는 액티브 오픈 호스트가 SYN 세그먼트를 보낸 뒤 그에 대한 응답인 SYN+ACK 세그먼트를 기다리는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-251",
@@ -3829,7 +5075,9 @@ CS.glossary={
       "term": "SYN-RECEIVED 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "SYN-RECEIVED 상태는 패시브 오픈 호스트가 SYN+ACK 세그먼트를 보낸 뒤 그에 대한 ACK 세그먼트를 기다리는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-252",
@@ -3837,7 +5085,9 @@ CS.glossary={
       "term": "ESTABLISHED 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "ESTABLISHED 상태는 연결이 확립되었음을 나타내는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-253",
@@ -3845,7 +5095,9 @@ CS.glossary={
       "term": "FIN-WAIT-1 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "FIN-WAIT-1 상태는 일반적인 TCP 연결 종료 과정에 있어 연결 종료의 첫 단계예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-254",
@@ -3853,7 +5105,9 @@ CS.glossary={
       "term": "CLOSE-WAIT 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "CLOSE-WAIT 상태는 종료 요청인 FIN 세그먼트를 받은 패시브 클로즈 호스트가 그에 대한 응답으로 ACK 세그먼트를 보낸 후 대기하는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-255",
@@ -3861,7 +5115,9 @@ CS.glossary={
       "term": "FIN-WAIT-2 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "FIN-WAIT-2 상태는 FIN-WAIT-1 상태에서 ACK 세그먼트를 받게 되면 FIN-WAIT-2 상태가 돼요. 상대 호스트의 FIN 세그먼트를 기다리는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-256",
@@ -3869,7 +5125,9 @@ CS.glossary={
       "term": "LAST-ACK 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "LAST-ACK 상태는 CLOSE-WAIT 상태에서 FIN 세그먼트를 전송한 뒤 이에 대한 ACK 세그먼트를 기다리는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-257",
@@ -3877,7 +5135,9 @@ CS.glossary={
       "term": "TIME-WAIT 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "TIME-WAIT 상태는 액티브 클로즈 호스트가 FIN 세그먼트를 수신한 뒤, 이에 대한 ACK 세그먼트를 전송한 뒤 접어드는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-258",
@@ -3885,7 +5145,9 @@ CS.glossary={
       "term": "CLOSING 상태",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "CLOSING 상태는 동시에 연결을 종료하려 할 때 접어드는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-259",
@@ -3893,7 +5155,9 @@ CS.glossary={
       "term": "UDP 데이터그램",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP와 UDP"
+      "detail": "TCP와 UDP",
+      "meaning": "UDP 데이터그램은 송신지 포트와 수신지 포트, 길이, 체크섬 필드로 구성돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-260",
@@ -3901,7 +5165,10 @@ CS.glossary={
       "term": "RTT",
       "english": "Round Trip Time",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "RTT는 메시지를 전송한 뒤 그에 대한 답변을 받는 데까지 걸리는 시간이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q100274018"
     },
     {
       "id": "net-261",
@@ -3909,7 +5176,10 @@ CS.glossary={
       "term": "타임아웃 (TCP 송수신)",
       "english": "timeout",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "타임아웃 (TCP 송수신)은 호스트가 세그먼트를 전송할 때마다 시작하는 재전송 타이머가 만료된 상황이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q131619515"
     },
     {
       "id": "net-262",
@@ -3917,7 +5187,10 @@ CS.glossary={
       "term": "자동 재전송 요구(ARQ)",
       "english": "Automatic Repeat Request",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "자동 재전송 요구(ARQ)는 수신 호스트의 답변(ACK)과 타임아웃 발생을 토대로 문제를 진단하고, 문제가 생긴 메시지를 재전송함으로써 신뢰성을 확보하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q29522"
     },
     {
       "id": "net-263",
@@ -3925,7 +5198,10 @@ CS.glossary={
       "term": "Stop-and-Wait ARQ",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "Stop-and-Wait ARQ는 제대로 전달했음을 확인하기 전까지는 새로운 메시지를 보내지 않는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q29522"
     },
     {
       "id": "net-264",
@@ -3933,7 +5209,10 @@ CS.glossary={
       "term": "파이프라이닝 (TCP 송수신)",
       "english": "pipelining",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "파이프라이닝 (TCP 송수신)은 확인 응답 메시지를 받기 전이라도 연속해서 메시지를 전송할 수 있는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7197282"
     },
     {
       "id": "net-265",
@@ -3941,7 +5220,10 @@ CS.glossary={
       "term": "Go-Back-N ARQ",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "Go-Back-N ARQ는 파이프라이닝 방식을 활용해 여러 세그먼트를 전송하고, 도중에 잘못 전송된 세그먼트가 발생할 경우 해당 세그먼트부터 전부 다시 전송하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q29522"
     },
     {
       "id": "net-266",
@@ -3949,7 +5231,10 @@ CS.glossary={
       "term": "누적 확인 응답",
       "english": "CACK; Cumulative Acknowledgement",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "누적 확인 응답은 Go-Back-N ARQ의 ACK 세그먼트예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q170579"
     },
     {
       "id": "net-267",
@@ -3957,7 +5242,10 @@ CS.glossary={
       "term": "빠른 재전송",
       "english": "fast retransmit",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "빠른 재전송은 재전송 타이머가 만료되기 전이라도 세 번의 동일한 ACK 세그먼트가 수신되었다면 해당 세그먼트를 곧바로 재전송하는 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2917221"
     },
     {
       "id": "net-268",
@@ -3965,7 +5253,10 @@ CS.glossary={
       "term": "Selective Repeat ARQ",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "Selective Repeat ARQ는 선택적으로 재전송하는 방법이에요. 수신 호스트 측에서 제대로 전송받은 각각의 패킷들에 대해 ACK 세그먼트를 보내는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q29522"
     },
     {
       "id": "net-269",
@@ -3973,7 +5264,9 @@ CS.glossary={
       "term": "수신 버퍼",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "수신 버퍼는 수신된 세그먼트가 애플리케이션 프로세스에 의해 읽히기 전에 임시로 저장되는 공간이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-270",
@@ -3981,7 +5274,9 @@ CS.glossary={
       "term": "송신 버퍼",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "송신 버퍼는 송신할 세그먼트가 저장되는 공간이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-271",
@@ -3989,7 +5284,10 @@ CS.glossary={
       "term": "윈도우 (TCP 송수신)",
       "english": "window",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "윈도우 (TCP 송수신)은 송신 호스트가 파이프라이닝할 수 있는 최대량이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1406"
     },
     {
       "id": "net-272",
@@ -3997,7 +5295,10 @@ CS.glossary={
       "term": "슬라이딩 윈도우",
       "english": "sliding window",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "슬라이딩 윈도우는 TCP의 흐름제어 기법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q80681012"
     },
     {
       "id": "net-273",
@@ -4005,7 +5306,10 @@ CS.glossary={
       "term": "흐름 제어",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "흐름 제어는 수신자의 처리 속도를 고려하며 전송하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q612457"
     },
     {
       "id": "net-274",
@@ -4013,7 +5317,10 @@ CS.glossary={
       "term": "혼잡",
       "english": "congestion",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "혼잡은 많은 트래픽으로 인해 패킷의 처리 속도가 늦어지거나 유실될 우려가 있는 네트워크 상황이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q13743387"
     },
     {
       "id": "net-275",
@@ -4021,7 +5328,9 @@ CS.glossary={
       "term": "혼잡 붕괴",
       "english": "congestion collapse",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "혼잡 붕괴는 혼잡으로 인해 전송률이 크게 떨어지는 현상이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-276",
@@ -4029,7 +5338,9 @@ CS.glossary={
       "term": "혼잡 윈도우",
       "english": "congestion window",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "혼잡 윈도우는 혼잡 없이 전송할 수 있을 법한 데이터 양이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-277",
@@ -4037,7 +5348,10 @@ CS.glossary={
       "term": "혼잡 제어",
       "english": "",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "혼잡 제어는 네트워크의 혼잡도를 판단하고 혼잡한 정도에 따라 전송량을 조절하는 방식으로, 느린 시작, 혼잡 회피, 빠른 회복 등의 알고리즘이 사용될 수 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q180368"
     },
     {
       "id": "net-278",
@@ -4045,7 +5359,10 @@ CS.glossary={
       "term": "혼잡 제어 알고리즘",
       "english": "congestion control algorithm",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "혼잡 제어 알고리즘은 혼잡 제어를 수행하는 일련의 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q126264297"
     },
     {
       "id": "net-279",
@@ -4053,7 +5370,10 @@ CS.glossary={
       "term": "AIMD (혼잡 제어 알고리즘)",
       "english": "Additive Increase/Multiplicative Decrease",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "AIMD (혼잡 제어 알고리즘)은 '합으로 증가, 곱으로 감소'라는 의미로, 혼잡이 감지되지 않는다면 혼잡 윈도우를 RTT마다 1씩 선형적으로 증가시키고, 혼잡이 감지되면 혼잡윈도우를 절반으로 떨어뜨리는 동작을 반복하는 알고리즘이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2819207"
     },
     {
       "id": "net-280",
@@ -4061,7 +5381,9 @@ CS.glossary={
       "term": "느린 시작",
       "english": "slow start",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "느린 시작은 혼잡 윈도우를 1부터 시작해 문제없이 수신된 ACK 세그먼트 하나당 1씩 증가시키는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-281",
@@ -4069,7 +5391,9 @@ CS.glossary={
       "term": "느린 시작 임계치",
       "english": "slow start threshold",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "느린 시작 임계치는 느린 시작 알고리즘이 끝나는 시점을 명시하기 위해 함께 사용하는 값이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-282",
@@ -4077,7 +5401,10 @@ CS.glossary={
       "term": "RWND",
       "english": "Receiver Window",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "RWND는 수신 윈도우의 줄임말이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q33583"
     },
     {
       "id": "net-283",
@@ -4085,7 +5412,9 @@ CS.glossary={
       "term": "CWND",
       "english": "Congestion Window",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "CWND는 혼잡 윈도우의 줄임말이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-284",
@@ -4093,7 +5422,9 @@ CS.glossary={
       "term": "SSTHRESH",
       "english": "Slow Start Threshold",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "SSTHRESH는 느린 시작 임계치의 줄임말이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-285",
@@ -4101,7 +5432,10 @@ CS.glossary={
       "term": "혼잡 회피 알고리즘",
       "english": "congestion avoidance",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "혼잡 회피 알고리즘은 RTT마다 혼잡 윈도우를 1MSS(Maximum Segment Size)씩 증가시키는 알고리즘이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q124611106"
     },
     {
       "id": "net-286",
@@ -4109,7 +5443,10 @@ CS.glossary={
       "term": "빠른 회복 알고리즘",
       "english": "fast recovery",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "빠른 회복 알고리즘은 세 번의 중복 ACK 세그먼트를 수신했을 때 느린 시작은 건너뛰고 혼잡 회피를 수행하는 알고리즘이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q256543"
     },
     {
       "id": "net-287",
@@ -4117,7 +5454,10 @@ CS.glossary={
       "term": "명시적 혼잡 알림",
       "english": "ECN; Explicit Congestion Notification",
       "topic": "전송 계층",
-      "detail": "TCP의 오류•흐름•혼잡 제어"
+      "detail": "TCP의 오류•흐름•혼잡 제어",
+      "meaning": "명시적 혼잡 알림은 혼잡을 회피하기 위해 네트워크 중간 장치(주로 라우터)의 도움을 받는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q10479229"
     },
     {
       "id": "net-288",
@@ -4125,7 +5465,10 @@ CS.glossary={
       "term": "도메인 네임",
       "english": "domain name",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "도메인 네임은 호스트의 IP 주소와 대응되는 문자열 형태의 호스트 특징 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q32635"
     },
     {
       "id": "net-289",
@@ -4133,7 +5476,10 @@ CS.glossary={
       "term": "네임 서버",
       "english": "name server",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "네임 서버는 도메인 네임과 IP 주소를 관리하는 서버예요. 호스트의 도메인 네임과 IP 주소를 모아 관리하는 '공용' 전화번호부와 같은 역할을 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q41494"
     },
     {
       "id": "net-290",
@@ -4141,7 +5487,10 @@ CS.glossary={
       "term": "DNS 서버",
       "english": "DNS server",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "DNS 서버는 도메인 네임을 관리하는 네임 서버예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q41494"
     },
     {
       "id": "net-291",
@@ -4149,7 +5498,10 @@ CS.glossary={
       "term": "최상위 도메인",
       "english": "TLD; Top-Level Domain",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "최상위 도메인은 도메인 네임의 마지막 부분 (예: .com, .kr, .net, ...)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q14296"
     },
     {
       "id": "net-292",
@@ -4157,7 +5509,10 @@ CS.glossary={
       "term": "2단계 도메인",
       "english": "second-level domain",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "2단계 도메인은 최상위 도메인의 하부 도메인이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q903444"
     },
     {
       "id": "net-293",
@@ -4165,7 +5520,10 @@ CS.glossary={
       "term": "전체 주소 도메인 네임 (FQDN)",
       "english": "FQDN; Fully Qualified Domain Name",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "전체 주소 도메인 네임 (FQDN)은 도메인 네임을 모두 포함하는 도메인 네임이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q849159"
     },
     {
       "id": "net-294",
@@ -4173,7 +5531,10 @@ CS.glossary={
       "term": "호스트 네임",
       "english": "host name",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "호스트 네임은 FQDN의 첫 번째 부분(www)이에요. FQDN 자체를 가리키기도 하며, 때로는 네트워크상의 장치 자체의 이름을 가리키는 데 사용되기도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1073408"
     },
     {
       "id": "net-295",
@@ -4181,7 +5542,10 @@ CS.glossary={
       "term": "도메인 네임 시스템",
       "english": "DNS; Domain Name System",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "도메인 네임 시스템은 계층적이고 분산된 도메인 네임에 대한 관리 체계이자 이를 관리하는 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8767"
     },
     {
       "id": "net-296",
@@ -4189,7 +5553,10 @@ CS.glossary={
       "term": "서브 도메인",
       "english": "subdomain",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "서브 도메인은 다른 도메인이 포함된 도메인이에요. (예: google.com의 서브 도메인인 mail.google.com)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3491996"
     },
     {
       "id": "net-297",
@@ -4197,7 +5564,9 @@ CS.glossary={
       "term": "도메인 네임 리졸빙",
       "english": "resolve+ing",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "도메인 네임 리졸빙은 도메인 네임에 대응되는 IP 주소를 알아내는 과정이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-298",
@@ -4205,7 +5574,9 @@ CS.glossary={
       "term": "로컬 네임 서버",
       "english": "local name server",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "로컬 네임 서버는 클라이언트와 맞닿아 있는 네임 서버로, 클라이언트가 도메인 네임을 통해 IP 주소를 알아내고자 할 때 가장 먼저 찾게 되는 네임 서버예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-299",
@@ -4213,7 +5584,9 @@ CS.glossary={
       "term": "공개 DNS 서버",
       "english": "public DNS Server",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "공개 DNS 서버는 ISP에서 할당해 주는 로컬 네임 서버 주소가 아닌, 인터넷에 공개된 DNS 서버예요. (예: 8.8.8.8, 1.1.1.1)예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-300",
@@ -4221,7 +5594,10 @@ CS.glossary={
       "term": "루트 네임 서버",
       "english": "root name server",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "루트 네임 서버는 루트 도메인을 관장하는 네임 서버로 질의에 대해 TLD 네임 서버의 IP 주소를 반환할 수 있어요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q32867"
     },
     {
       "id": "net-301",
@@ -4229,7 +5605,9 @@ CS.glossary={
       "term": "TLD 네임 서버",
       "english": "",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "TLD 네임 서버는 TLD를 관리하는 네임 서버로 질의에 대해 TLD의 하위 도메인 네임을 관리하는 네임 서버 주소를 반환할 수 있어요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-302",
@@ -4237,7 +5615,10 @@ CS.glossary={
       "term": "책임 네임 서버",
       "english": "authoritative name server",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "책임 네임 서버는 특정 도메인 영역(zone)을 관리하는 네임 서버로, 질의에 대한 IP 주소를 곧바로 답할 수 있는 네임 서버예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q94278304"
     },
     {
       "id": "net-303",
@@ -4245,7 +5626,10 @@ CS.glossary={
       "term": "재귀적 질의",
       "english": "recursive query",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "재귀적 질의는 클라이언트가 로컬 네임 서버에게 도메인 네임을 질의하면, 로컬 네임 서버가 루트 네임 서버에게 질의하고, 루트 네임 서버가 TLD 네임 서버에게 질의하고, TLD 네임 서버가 다음 단계에 질의하는 과정을 반복하며 최종 응답 결과(IP 주소)를 역순으로 전달하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5753091"
     },
     {
       "id": "net-304",
@@ -4253,7 +5637,9 @@ CS.glossary={
       "term": "반복적 질의",
       "english": "iteractive query",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "반복적 질의는 클라이언트가 로컬 네임 서버에게 IP 주소를 알고 싶은 도메인 네임을 질의하면, 로컬 네임 서버는 루트 도메인 서버에게 질의해서 다음으로 질의할 네임 서버의 주소를 응답받고, 다음으로 TLD 네임 서버에게 질의해서 다음으로 질의할 네임 서버의 주소를 응답받는 과정을 반복하다가예요. 최종 응답 결과(IP 주소)를 클라이언트에게 알려 주는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-305",
@@ -4261,7 +5647,10 @@ CS.glossary={
       "term": "DNS 캐시",
       "english": "DNS cache",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "DNS 캐시는 네임 서버들이 기존에 응답받은 결과를 임시로 저장했다가 추후 같은 질의에 이를 활용하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3700500"
     },
     {
       "id": "net-306",
@@ -4269,7 +5658,10 @@ CS.glossary={
       "term": "TTL (DNS)",
       "english": "Time To Live",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "TTL (DNS)는 DNS 레코드가 캐시될 수 있는 시간이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q135049711"
     },
     {
       "id": "net-307",
@@ -4277,7 +5669,10 @@ CS.glossary={
       "term": "자원 (네트워크)",
       "english": "resource",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "자원 (네트워크)는 네트워크상의 메시지를 통해 주고받는 대상이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1554231"
     },
     {
       "id": "net-308",
@@ -4285,7 +5680,9 @@ CS.glossary={
       "term": "HTML 파일",
       "english": "",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "HTML 파일은 웹 페이지의 구성요소(제목, 하이퍼링크, 이미지 등)를 표현할 수 있는 HTML이란 언어로 이루어진 파일이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-309",
@@ -4293,7 +5690,10 @@ CS.glossary={
       "term": "URI",
       "english": "Uniform Resource Identifier",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "URI는 자원을 식별할 수 있는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q61694"
     },
     {
       "id": "net-310",
@@ -4301,7 +5701,10 @@ CS.glossary={
       "term": "URL",
       "english": "Uniform Resource Locator",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "URL은 위치를 이용해 자원을 식별할 수 있는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q42253"
     },
     {
       "id": "net-311",
@@ -4309,7 +5712,10 @@ CS.glossary={
       "term": "URN",
       "english": "Uniform Resource Name",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "URN은 이름을 이용해 자원을 식별할 수 있는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q76497"
     },
     {
       "id": "net-312",
@@ -4317,7 +5723,9 @@ CS.glossary={
       "term": "scheme (URL)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "scheme (URL)는 URL의 첫 번째 부분으로, 자원에 접근하는 방법을 의미예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-313",
@@ -4325,7 +5733,9 @@ CS.glossary={
       "term": "authority (URL)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "authority (URL)는 호스트를 특정할 수 있는 정보, 이를테면 IP 주소 혹은 도메인 네임이 명시돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-314",
@@ -4333,7 +5743,9 @@ CS.glossary={
       "term": "path (URL)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "path (URL)는 자원이 위치한 경로가 명시돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-315",
@@ -4341,7 +5753,10 @@ CS.glossary={
       "term": "쿼리 문자열 (URL)",
       "english": "query string",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "쿼리 문자열 (URL)은 URL을 통해 서버에 전송 가능한 물음표(?)로 시작되는 형태의 데이터로, 쿼리 파라미터라고도 부르며예요. 앰퍼샌드(&)로 여러 쿼리 문자열을 연결할 수 있어요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q517410"
     },
     {
       "id": "net-316",
@@ -4349,7 +5764,9 @@ CS.glossary={
       "term": "fragment (URL)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "fragment (URL)는 자원의 한 조각을 가리키기 위한 정보예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-317",
@@ -4357,7 +5774,10 @@ CS.glossary={
       "term": "DNS 자원 레코드",
       "english": "DNS resource record",
       "topic": "응용 계층",
-      "detail": "DNS와 자원"
+      "detail": "DNS와 자원",
+      "meaning": "DNS 자원 레코드는 도메인 네임과 IP 주소의 대응 관계를 나타내는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q56098605"
     },
     {
       "id": "net-318",
@@ -4365,7 +5785,10 @@ CS.glossary={
       "term": "HTTP",
       "english": "Hypertext Transfer Protocol",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP는 응용 계층에서 다양한 정보를 주고받는 데 사용되는 프로토콜이에요. 클라이언트-서버 구조 기반의 요청-응답 프로토콜이에요. 주고받을 미디어 타입에 특별히 제한을 두지 않고 독립적으로 동작이 가능한 미디어 독립적인 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8777"
     },
     {
       "id": "net-319",
@@ -4373,7 +5796,10 @@ CS.glossary={
       "term": "미디어 타입",
       "english": "media type",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "미디어 타입은 HTTP에서 메시지로 주고받는 자원의 종류로 일종의 웹 세상의 확장자와 같은 개념이에요. '타입/서브타입(type/subtype)' 형식으로 구성되며, 타입은 데이터의 유형을 나타내고, 서브타입은 주어진 타입에 대한 세부 유형을 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1667978"
     },
     {
       "id": "net-320",
@@ -4381,7 +5807,9 @@ CS.glossary={
       "term": "MIME 타입",
       "english": "Multipurpose Internet Mail Extensions Type",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "MIME 타입은 미디어 타입의 다른 이름이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-321",
@@ -4389,7 +5817,10 @@ CS.glossary={
       "term": "스테이트리스 프로토콜",
       "english": "stateless",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "스테이트리스 프로토콜은 상태를 유지하지 않는 프로토콜 (예: HTTP)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3497309"
     },
     {
       "id": "net-322",
@@ -4397,7 +5828,10 @@ CS.glossary={
       "term": "지속 연결",
       "english": "persistent connection",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "지속 연결은 하나의 TCP 연결상에서 여러 개의 요청-응답을 주고받을 수 있는 기술로, 킵 어라이브(keep-alive)라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q93109998"
     },
     {
       "id": "net-323",
@@ -4405,7 +5839,10 @@ CS.glossary={
       "term": "HTTP 메서드",
       "english": "method",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP 메서드는 클라이언트가 서버의 자원(요청 대상)에 대해 수행할 작업의 종류 (예: GET, HEAD, POST, PUT, DELETE 등)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q60457358"
     },
     {
       "id": "net-324",
@@ -4413,7 +5850,9 @@ CS.glossary={
       "term": "요청 대상",
       "english": "request-target",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "요청 대상은 HTTP 요청을 보낼 서버의 자원이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-325",
@@ -4421,7 +5860,10 @@ CS.glossary={
       "term": "HTTP 버전",
       "english": "HTTP-version",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP 버전은 사용된 HTTP 버전이에요. 'HTTP/ '이라는 표기 방식을 따름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q64728505"
     },
     {
       "id": "net-326",
@@ -4429,7 +5871,10 @@ CS.glossary={
       "term": "상태 라인",
       "english": "status-line",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "상태 라인은 HTTP 응답 메시지의 첫 줄로, HTTP 버전, 상태 코드, 이유 구문으로 구성돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q586462"
     },
     {
       "id": "net-327",
@@ -4437,7 +5882,10 @@ CS.glossary={
       "term": "상태 코드",
       "english": "status code",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "상태 코드는 요청에 대한 결과를 나타내는 세 자리 정수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q140185855"
     },
     {
       "id": "net-328",
@@ -4445,7 +5893,9 @@ CS.glossary={
       "term": "이유 구문",
       "english": "reason phrase",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "이유 구문은 상태 코드에 대한 문자열 형태의 설명이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-329",
@@ -4453,7 +5903,10 @@ CS.glossary={
       "term": "HTTP 헤더",
       "english": "HTTP header",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP 헤더는 HTTP 통신에 필요한 부가 정보예요. 콜론(:)을 기준으로 헤더 이름(header-name)과 하나 이상의 헤더 값(header-value)으로 구성돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1428315"
     },
     {
       "id": "net-330",
@@ -4461,7 +5914,9 @@ CS.glossary={
       "term": "GET 메서드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "GET 메서드는 자원을 조회 및 습득하기 위해 사용하는 메서드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-331",
@@ -4469,7 +5924,9 @@ CS.glossary={
       "term": "HEAD 메서드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HEAD 메서드는 GET 메서드와 동일한 역할을 하지만, 응답 메시지에 메시지 본문이 포함되지 않는 메서드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-332",
@@ -4477,7 +5934,9 @@ CS.glossary={
       "term": "POST 메서드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "POST 메서드는 서버로 하여금 특정 작업을 처리하도록 요청하는 메서드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-333",
@@ -4485,7 +5944,9 @@ CS.glossary={
       "term": "PUT 메서드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "PUT 메서드는 '덮어쓰기'를 요청하는 메서드예요. 요청 자원이 없다면 메시지 본문으로 자원을 새롭게 생성하거나, 이미 자원이 존재한다면 메시지 본문으로 자원을 완전히 대체하는 메서드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-334",
@@ -4493,7 +5954,9 @@ CS.glossary={
       "term": "PATCH 메서드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "PATCH 메서드는 부분적 수정을 수행하는 메서드예요. PATCH 메서드로 요청을 보낼 경우 메시지 본문에 맞게 자원이 일부 수정돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-335",
@@ -4501,7 +5964,9 @@ CS.glossary={
       "term": "DELETE 메서드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "DELETE 메서드는 특정 자원을 삭제하고 싶을 때 사용하는 메서드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-336",
@@ -4509,7 +5974,9 @@ CS.glossary={
       "term": "API 문서",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "API 문서는 '어떤 URL로 어떤 요청을 받았을 때 서버는 어떻게 응답할 것인가?'를 설명한 문서예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-337",
@@ -4517,7 +5984,9 @@ CS.glossary={
       "term": "100번대 상태 코드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "100번대 상태 코드는 정보성 상태 코드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-338",
@@ -4525,7 +5994,9 @@ CS.glossary={
       "term": "200번대 상태 코드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "200번대 상태 코드는 성공 상태 코드로 요청이 성공했음을 의미예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-339",
@@ -4533,7 +6004,9 @@ CS.glossary={
       "term": "300번대 상태 코드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "300번대 상태 코드는 리다이렉션 상태 코드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-340",
@@ -4541,7 +6014,10 @@ CS.glossary={
       "term": "리다이렉션",
       "english": "redirection",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "리다이렉션은 클라이언트가 요청한 자원이 다른 곳에 있을 때, 클라이언트의 요청을 다른 곳으로 이동시키는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8143062"
     },
     {
       "id": "net-341",
@@ -4549,7 +6025,9 @@ CS.glossary={
       "term": "영구적인 리다이렉션",
       "english": "permanent redirection",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "영구적인 리다이렉션은 자원이 완전히 새로운 곳으로 이동하여 경로가 영구적으로 재지정되는 것이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-342",
@@ -4557,7 +6035,9 @@ CS.glossary={
       "term": "400번대 상태 코드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "400번대 상태 코드는 클라이언트 에러 상태 코드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-343",
@@ -4565,7 +6045,9 @@ CS.glossary={
       "term": "500번대 상태 코드",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "500번대 상태 코드는 서버 에러 상태 코드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-344",
@@ -4573,7 +6055,10 @@ CS.glossary={
       "term": "200 OK",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "200 OK는 요청이 성공했음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q64728450"
     },
     {
       "id": "net-345",
@@ -4581,7 +6066,10 @@ CS.glossary={
       "term": "201 Created",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "201 Created는 요청이 성공했으며, 새로운 자원이 생성되었음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q64728471"
     },
     {
       "id": "net-346",
@@ -4589,7 +6077,10 @@ CS.glossary={
       "term": "202 Accepted",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "202 Accepted는 요청을 잘 받았으나, 아직 요청한 작업을 끝내지 않았음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q64728474"
     },
     {
       "id": "net-347",
@@ -4597,7 +6088,10 @@ CS.glossary={
       "term": "204 No Content",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "204 No Content는 요청이 성공했지만, 메시지 본문으로 표시할 데이터가 없음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q64728477"
     },
     {
       "id": "net-348",
@@ -4605,7 +6099,10 @@ CS.glossary={
       "term": "301 Moved Permanently",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "301 Moved Permanently는 영구적인 리다이렉션을 의미하는 상태 코드예요. 재요청 메서드 변경될 수 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4119183"
     },
     {
       "id": "net-349",
@@ -4613,7 +6110,9 @@ CS.glossary={
       "term": "308 Permanent Redirect",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "308 Permanent Redirect는 영구적 리다이렉션을 의미하는 상태 코드예요. 재요청 메서드 변경되지 않음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-350",
@@ -4621,7 +6120,9 @@ CS.glossary={
       "term": "일시적인 리다이렉션",
       "english": "temporary redirection",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "일시적인 리다이렉션은 자원의 위치가 임시로 변경되었거나 임시로 사용할 URL이 필요한 경우 주로 사용돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-351",
@@ -4629,7 +6130,9 @@ CS.glossary={
       "term": "302 Found",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "302 Found는 일시적 리다이렉션을 의미하는 상태 코드예요. 재요청 메서드 변경될 수 있음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-352",
@@ -4637,7 +6140,9 @@ CS.glossary={
       "term": "303 See Other",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "303 See Other은 일시적 리다이렉션을 의미하는 상태 코드예요. 재요청 메서드 GET으로 변경이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-353",
@@ -4645,7 +6150,9 @@ CS.glossary={
       "term": "307 Temporary Redirect",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "307 Temporary Redirect는 일시적 리다이렉션을 의미하는 상태 코드예요. 재요청 메서드는 변경되지 않음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-354",
@@ -4653,7 +6160,9 @@ CS.glossary={
       "term": "400 Bad Request",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "400 Bad Request는 클라이언트의 요청이 잘못되었음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-355",
@@ -4661,7 +6170,9 @@ CS.glossary={
       "term": "401 Unauthorized",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "401 Unauthorized는 요청한 자원에 대한 유효한 인증이 없음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-356",
@@ -4669,7 +6180,9 @@ CS.glossary={
       "term": "403 Forbidden",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "403 Forbidden은 요청이 서버에 의해 거부됨 (예: 접근 권한이 없을 경우)을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-357",
@@ -4677,7 +6190,10 @@ CS.glossary={
       "term": "404 Not Found",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "404 Not Found는 요청받은 자원을 찾을 수 없음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q22099717"
     },
     {
       "id": "net-358",
@@ -4685,7 +6201,10 @@ CS.glossary={
       "term": "405 Method Not Allowed",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "405 Method Not Allowed는 요청한 메서드를 지원하지 않음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q81106174"
     },
     {
       "id": "net-359",
@@ -4693,7 +6212,10 @@ CS.glossary={
       "term": "인증",
       "english": "Authentication",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "인증은 자신이 누구인지 증명하는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q212108"
     },
     {
       "id": "net-360",
@@ -4701,7 +6223,10 @@ CS.glossary={
       "term": "권한 부여 (인가)",
       "english": "Authorization",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "권한 부여 (인가)는 인증된 주체에게 작업을 허용하는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q18615172"
     },
     {
       "id": "net-361",
@@ -4709,7 +6234,10 @@ CS.glossary={
       "term": "500 Internal Server Error",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "500 Internal Server Error은 요청을 처리할 수 없음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q64728498"
     },
     {
       "id": "net-362",
@@ -4717,7 +6245,10 @@ CS.glossary={
       "term": "502 Bad Gateway",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "502 Bad Gateway는 중간 서버의 통신 오류를 의미하는 상태 코드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q97445863"
     },
     {
       "id": "net-363",
@@ -4725,7 +6256,10 @@ CS.glossary={
       "term": "503 Service Unavailable",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "503 Service Unavailable는 현재는 요청을 처리할 수 없으나, 추후 가능할 수 있음을 의미하는 상태 코드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q17538709"
     },
     {
       "id": "net-364",
@@ -4733,7 +6267,9 @@ CS.glossary={
       "term": "HTTP/0.9",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP/0.9는 초창기 HTTP 버전으로 사용 가능한 메서드가 GET뿐이었고, 요청 메시지는 한 줄로 구성되었음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-365",
@@ -4741,7 +6277,10 @@ CS.glossary={
       "term": "HTTP/1.0",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP/1.0은 HEAD, POST와 같은 GET 이외의 메서드가 도입된 HTTP 버전이에요. 헤더가 지원되기 시작해 훨씬 더 다양한 정보를 주고 받을 수 있게 돼요. 하지만 공식적으로 지속 연결(persistent connection)을 지원하지 않음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q31207264"
     },
     {
       "id": "net-366",
@@ -4749,7 +6288,10 @@ CS.glossary={
       "term": "HTTP/1.1",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP/1.1은 지속 연결이 공식적으로 지원된 HTTP 버전이에요. 특정 요청에 대한 응답이 수신되기 전에 다음 요청을 보낼 수 있는 파이프라이닝 기능 지원해요. 콘텐츠 협상 기능 등 다양한 편의 기능 및 사용 가능한 헤더가 추가돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q30500573"
     },
     {
       "id": "net-367",
@@ -4757,7 +6299,9 @@ CS.glossary={
       "term": "HTTP/2.0",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP/2.0은 송수신 효율을 높이기 위해 헤더를 압축하여 전송하고, (텍스트 기반의 메시지를 송수신한 이전 버전과는 달리) 바이너리 데이터 기반의 메시지를 송수신하며 서버 푸시라는 기능을 제공하고 HOL 블로킹이라는 문제를 완화한 HTTP 버전이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-368",
@@ -4765,7 +6309,10 @@ CS.glossary={
       "term": "서버 푸시",
       "english": "server push",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "서버 푸시는 클라이언트가 요청하지 않았더라도 미래에 필요할 것으로 예상되는 자원을 미리 전송하는 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1351910"
     },
     {
       "id": "net-369",
@@ -4773,7 +6320,10 @@ CS.glossary={
       "term": "HOL 블로킹",
       "english": "Head-Of-Line blocking",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HOL 블로킹은 같은 큐에 대기하며 순차적으로 처리되는 여러 패킷이 있을 때, 첫 번째 패킷의 처리 지연으로 인해 나머지 패킷들의 처리도 모두 지연되는 문제 상황이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5689070"
     },
     {
       "id": "net-370",
@@ -4781,7 +6331,9 @@ CS.glossary={
       "term": "HTTP 멀티플렉싱",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP 멀티플렉싱은 여러 스트림(stream)을 이용해 병렬적으로 메시지를 주고받는 기술이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-371",
@@ -4789,7 +6341,9 @@ CS.glossary={
       "term": "HTTP/3.0",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP"
+      "detail": "HTTP",
+      "meaning": "HTTP/3.0은 UDP를 기반으로 구현된 QUIC 프로토콜을 기반으로 동작하는 최신 HTTP 버전이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-372",
@@ -4797,7 +6351,9 @@ CS.glossary={
       "term": "Host (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Host (HTTP 헤더)는 요청을 보낼 호스트를 나타내는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-373",
@@ -4805,7 +6361,9 @@ CS.glossary={
       "term": "User-Agent (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "User-Agent (HTTP 헤더)는 요청 메시지 생성에 관여한 클라이언트 프로그램과 관련된 다양한 정보가 명시되는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-374",
@@ -4813,7 +6371,10 @@ CS.glossary={
       "term": "유저 에이전트",
       "english": "user agent",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "유저 에이전트는 웹 브라우저와 같이 HTTP 요청을 시작하는 클라이언트 측의 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q763744"
     },
     {
       "id": "net-375",
@@ -4821,7 +6382,9 @@ CS.glossary={
       "term": "Referer (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Referer (HTTP 헤더)는 클라이언트가 요청을 보낼 때 머무르고 있던 URL이 명시되는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-376",
@@ -4829,7 +6392,9 @@ CS.glossary={
       "term": "Authorization (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Authorization (HTTP 헤더)는 클라이언트의 인증 정보를 담는 HTTP 헤더예요. 인증 타입(type)과 인증을 위한 정보(credentials)가 차례로 명시돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-377",
@@ -4837,7 +6402,9 @@ CS.glossary={
       "term": "Base64 인코딩",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Base64 인코딩은 인코딩 방식의 일종이에요. 6비트씩 끊어서 64가지 문자로 표현하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-378",
@@ -4845,7 +6412,9 @@ CS.glossary={
       "term": "인코딩",
       "english": "encoding",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "인코딩은 문자를 코드로 변환하는 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-379",
@@ -4853,7 +6422,9 @@ CS.glossary={
       "term": "Server (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Server (HTTP 헤더)는 요청을 처리하는 서버 측의 소프트웨어와 관련된 정보가 명시되는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-380",
@@ -4861,7 +6432,9 @@ CS.glossary={
       "term": "Allow (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Allow (HTTP 헤더)는 클라이언트에게 허용된 HTTP 메서드 목록을 알려주기 위해 사용되는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-381",
@@ -4869,7 +6442,9 @@ CS.glossary={
       "term": "Retry-After (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Retry-After (HTTP 헤더)는 자원을 사용할 수 있는 날짜 혹은 시각을 나타내는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-382",
@@ -4877,7 +6452,9 @@ CS.glossary={
       "term": "Location (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Location (HTTP 헤더)는 클라이언트에게 자원의 위치를 알려 주기 위해 사용되는 HTTP 헤더예요. 주로 리다이렉션이 발생했을 때나 새로운 자원이 생성되었을 때 사용돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-383",
@@ -4885,7 +6462,9 @@ CS.glossary={
       "term": "WWW-Authenticate (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "WWW-Authenticate (HTTP 헤더)는 자원에 접근하기 위한 인증 방식을 설명하는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-384",
@@ -4893,7 +6472,10 @@ CS.glossary={
       "term": "realm",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "realm은 WWW-Authenticate 헤더에서 보안이 적용될 영역이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q62075839"
     },
     {
       "id": "net-385",
@@ -4901,7 +6483,9 @@ CS.glossary={
       "term": "Date (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Date (HTTP 헤더)는 메시지가 생성된 날짜와 시각에 관련된 정보가 명시되는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-386",
@@ -4909,7 +6493,9 @@ CS.glossary={
       "term": "Connection (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Connection (HTTP 헤더)는 클라이언트의 요청과 응답 간의 연결 방식을 설정하는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-387",
@@ -4917,7 +6503,9 @@ CS.glossary={
       "term": "Content-Length (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Content-Length (HTTP 헤더)는 헤더는 본문의 바이트 단위 크기(길이)를 나타내는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-388",
@@ -4925,7 +6513,9 @@ CS.glossary={
       "term": "Content-Type (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Content-Type (HTTP 헤더)는 메시지 본문에서 사용된 미디어 타입을 명시하는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-389",
@@ -4933,7 +6523,9 @@ CS.glossary={
       "term": "Content-Language (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Content-Language (HTTP 헤더)는 메시지 본문에 사용된 자연어를 명시하는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-390",
@@ -4941,7 +6533,9 @@ CS.glossary={
       "term": "Content-Encoding (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Content-Encoding (HTTP 헤더)는 메시지 본문을 압축하거나 변환한 방식이 명시되는 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-391",
@@ -4949,7 +6543,10 @@ CS.glossary={
       "term": "캐시",
       "english": "cache",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "캐시는 불필요한 대역폭 낭비와 응답 지연을 방지하기 위해 정보의 사본을 임시로 저장하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q165596"
     },
     {
       "id": "net-392",
@@ -4957,7 +6554,9 @@ CS.glossary={
       "term": "개인 전용 캐시",
       "english": "private cache",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "개인 전용 캐시는 웹 브라우저에 저장되어 있는 캐시예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-393",
@@ -4965,7 +6564,9 @@ CS.glossary={
       "term": "공용 캐시",
       "english": "public cache",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "공용 캐시는 클라이언트와 서버 사이에 위치한 중간 서버에 저장되어 있는 캐시예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-394",
@@ -4973,7 +6574,9 @@ CS.glossary={
       "term": "캐시 신선도",
       "english": "cache freshness",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "캐시 신선도는 캐시된 사본 데이터가 얼마나 최신 원본 데이터와 유사한지를 나타내는 지표예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-395",
@@ -4981,7 +6584,9 @@ CS.glossary={
       "term": "엔티티 태그",
       "english": "ENtity Tag(이하 Etag)",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "엔티티 태그는 캐시에서 사용되는, 자원의 버전을 식별하기 위한 정보예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-396",
@@ -4989,7 +6594,10 @@ CS.glossary={
       "term": "버전",
       "english": "version",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "버전은 유의미한 변경 사항이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q189439"
     },
     {
       "id": "net-397",
@@ -4997,7 +6605,10 @@ CS.glossary={
       "term": "쿠키",
       "english": "cookie",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "쿠키는 서버에서 생성되어 클라이언트 측에 저장되는 데이터예요. 상태를 유지하지 않는 HTTP의 특성을 보완하기 위한 수단이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q13266"
     },
     {
       "id": "net-398",
@@ -5005,7 +6616,10 @@ CS.glossary={
       "term": "세션 아이디",
       "english": "session ID",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "세션 아이디는 클라이언트와 서버 간의 연결 상태인 세션을 식별하기 위한 고유 식별자예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q744575"
     },
     {
       "id": "net-399",
@@ -5013,7 +6627,9 @@ CS.glossary={
       "term": "세션 인증",
       "english": "session authentication",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "세션 인증은 세션을 이용한 인증 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-400",
@@ -5021,7 +6637,9 @@ CS.glossary={
       "term": "Expires/Max-Age",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Expires/Max-Age는 쿠키의 유효 기간을 나타내는 쿠키의 속성값이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-401",
@@ -5029,7 +6647,9 @@ CS.glossary={
       "term": "Secure",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Secure는 HTTPS 프로토콜이 사용되는 경우에만 쿠키를 전송되도록 하는 쿠키의 속성값이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-402",
@@ -5037,7 +6657,9 @@ CS.glossary={
       "term": "HttpOnly",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "HttpOnly는 HTTP 송수신을 통해서만 쿠키를 이용하도록 제한하는 속성이에요. 자바스크립트에서 쿠키에 접근하지 못하도록 하는 쿠키의 속성값이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-403",
@@ -5045,7 +6667,10 @@ CS.glossary={
       "term": "웹 스토리지",
       "english": "web storage",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "웹 스토리지는 쿠키보다 더 큰 데이터를 저장할 수 있는 웹 브라우저 내의 저장 공간이에요. (종류: 로컬 스토리지와 세션 스토리지)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q48869"
     },
     {
       "id": "net-404",
@@ -5053,7 +6678,9 @@ CS.glossary={
       "term": "로컬 스토리지",
       "english": "local storage",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "로컬 스토리지는 별도로 삭제하지 않는 한 영구적으로 저장이 가능한 정보예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-405",
@@ -5061,7 +6688,9 @@ CS.glossary={
       "term": "세션 스토리지",
       "english": "session storage",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "세션 스토리지는 세션이 유지되는 동안(브라우저가 열려있는 동안) 유지되는 정보예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-406",
@@ -5069,7 +6698,10 @@ CS.glossary={
       "term": "콘텐츠 협상",
       "english": "content negotiation",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "콘텐츠 협상은 같은 URI에 대해 가장 적합한 자원의 형태를 제공하는 메커니즘이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1128629"
     },
     {
       "id": "net-407",
@@ -5077,7 +6709,9 @@ CS.glossary={
       "term": "자원의 표현",
       "english": "representation",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "자원의 표현은 송수신 가능한 자원의 형태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-408",
@@ -5085,7 +6719,9 @@ CS.glossary={
       "term": "Accept 헤더 (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Accept 헤더 (HTTP 헤더)는 선호하는 미디어 타입을 나타내기 위한 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-409",
@@ -5093,7 +6729,9 @@ CS.glossary={
       "term": "Accept-Language 헤더 (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Accept-Language 헤더 (HTTP 헤더)는 선호하는 언어를 나타내기 위한 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-410",
@@ -5101,7 +6739,9 @@ CS.glossary={
       "term": "Accept-Charset 헤더 (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Accept-Charset 헤더 (HTTP 헤더)는 선호하는 문자 인코딩 방식을 나타내기 위한 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-411",
@@ -5109,7 +6749,9 @@ CS.glossary={
       "term": "Accept-Encoding 헤더 (HTTP 헤더)",
       "english": "",
       "topic": "응용 계층",
-      "detail": "HTTP 헤더와 HTTP 기반 기술"
+      "detail": "HTTP 헤더와 HTTP 기반 기술",
+      "meaning": "Accept-Encoding 헤더 (HTTP 헤더)는 선호하는 압축 방식을 나타내기 위한 HTTP 헤더예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-412",
@@ -5117,7 +6759,10 @@ CS.glossary={
       "term": "가용성",
       "english": "availability",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "가용성은 컴퓨터 시스템이 특정 기능을 실제로 수행할 수 있는 시간의 비율이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q384871"
     },
     {
       "id": "net-413",
@@ -5125,7 +6770,10 @@ CS.glossary={
       "term": "고가용성",
       "english": "High Availability",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "고가용성은 가용성이 높은 성질이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1622420"
     },
     {
       "id": "net-414",
@@ -5133,7 +6781,10 @@ CS.glossary={
       "term": "업타임",
       "english": "uptime",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "업타임은 정상적인 사용 시간이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q709277"
     },
     {
       "id": "net-415",
@@ -5141,7 +6792,10 @@ CS.glossary={
       "term": "다운타임",
       "english": "downtime",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "다운타임은 정상적인 사용이 불가능한 시간이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1253369"
     },
     {
       "id": "net-416",
@@ -5149,7 +6803,10 @@ CS.glossary={
       "term": "결함 감내",
       "english": "fault tolerance",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "결함 감내는 문제가 발생하더라도 기능할 수 있는 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q136490010"
     },
     {
       "id": "net-417",
@@ -5157,7 +6814,10 @@ CS.glossary={
       "term": "이중화",
       "english": "",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "이중화는 특정 시스템을 이중으로 두는 기술이에요. 결함을 감내하여 가용성을 높이기 위한 방법으로 예비(백업)을 마련하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q16091143"
     },
     {
       "id": "net-418",
@@ -5165,7 +6825,10 @@ CS.glossary={
       "term": "단일 장애점 (SPoF)",
       "english": "SPoF; Single Point Of Failure",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "단일 장애점 (SPoF)은 문제가 발생할 경우 시스템 전체가 중단될 수 있는 대상이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7578813"
     },
     {
       "id": "net-419",
@@ -5173,7 +6836,9 @@ CS.glossary={
       "term": "액티브/스탠바이",
       "english": "active-standby",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "액티브/스탠바이는 액티브는 가동 상태를 의미하며, 스탠바이는 액티브의 백업으로서 대기하는 상태를 의미예요. 즉, 한 시스템은 가동하고, 다른 시스템은 백업 용도로 대기 상태로 두는 이중화 구성 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-420",
@@ -5181,7 +6846,10 @@ CS.glossary={
       "term": "액티브/액티브",
       "english": "active-active",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "액티브/액티브는 두 시스템 모두를 가동 상태로 두는 구성 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q120931601"
     },
     {
       "id": "net-421",
@@ -5189,7 +6857,10 @@ CS.glossary={
       "term": "페일오버",
       "english": "failover",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "페일오버는 액티브 시스템에 문제가 생겼을 경우 예비된 스탠바이 시스템으로 자동 전환되는 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q998767"
     },
     {
       "id": "net-422",
@@ -5197,7 +6868,10 @@ CS.glossary={
       "term": "다중화",
       "english": "",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "다중화는 특정 시스템을 여러 개 두는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q222903"
     },
     {
       "id": "net-423",
@@ -5205,7 +6879,9 @@ CS.glossary={
       "term": "티밍",
       "english": "teaming",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "티밍은 네트워크 인터페이스(NIC)를 이중화/다중화하여 마치 더 뛰어나고 안정적인 성능을 보유한 하나의 인터페이스처럼 보이게 하는 기술로, 윈도우에서 주로 사용되는 용어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-424",
@@ -5213,7 +6889,10 @@ CS.glossary={
       "term": "본딩",
       "english": "bonding",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "본딩은 네트워크 인터페이스(NIC)를 이중화/다중화하여 마치 더 뛰어나고 안정적인 성능을 보유한 하나의 인터페이스처럼 보이게 하는 기술로, 리눅스에서 주로 사용되는 용어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q63282024"
     },
     {
       "id": "net-425",
@@ -5221,7 +6900,10 @@ CS.glossary={
       "term": "트래픽",
       "english": "traffic",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "트래픽은 주어진 시점에 특정 노드를 경유한 패킷의 양이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q142292"
     },
     {
       "id": "net-426",
@@ -5229,7 +6911,10 @@ CS.glossary={
       "term": "로드 밸런싱",
       "english": "load balancing",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "로드 밸런싱은 트래픽의 고른 분배를 위해 로드 밸런서에 의해 수행되는 기술이에요. 부하를 의미하는 단어인 로드(load)와 균형 유지를 나타내는 단어인 밸런싱(balancing)이 합쳐진 단어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1806783"
     },
     {
       "id": "net-427",
@@ -5237,7 +6922,10 @@ CS.glossary={
       "term": "헬스 체크",
       "english": "health check",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "헬스 체크는 현재 요청에 대해 올바른 응답을 할 수 있는 상태인지를 주기적으로 검사하는 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q17021749"
     },
     {
       "id": "net-428",
@@ -5245,7 +6933,10 @@ CS.glossary={
       "term": "하트비트",
       "english": "heartbeat",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "하트비트는 서버끼리 주기적으로 하트비트 메시지를 주고받다가, 신호가 끊겼을 때 문제 발생을 감지하는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2336453"
     },
     {
       "id": "net-429",
@@ -5253,7 +6944,9 @@ CS.glossary={
       "term": "라운드 로빈 알고리즘 (로드 밸런싱 알고리즘)",
       "english": "round robin algorithm",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "라운드 로빈 알고리즘 (로드 밸런싱 알고리즘)은 단순히 서버를 돌아가며 부하를 전달하는 로드 밸런싱 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-430",
@@ -5261,7 +6954,9 @@ CS.glossary={
       "term": "최소 연결 알고리즘 (로드 밸런싱 알고리즘)",
       "english": "least connection algorithm",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "최소 연결 알고리즘 (로드 밸런싱 알고리즘)은 연결이 적은 서버부터 우선적으로 부하를 전달하는 로드 밸런싱 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-431",
@@ -5269,7 +6964,9 @@ CS.glossary={
       "term": "가중치 라운드 로빈 알고리즘 (로드 밸런싱 알고리즘)",
       "english": "weighted round robin algorithm",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "가중치 라운드 로빈 알고리즘 (로드 밸런싱 알고리즘)은 라운드 로빈 알고리즘에 따라 동작하되, 가중치가 높은 서버가 더 많이 선택되어 더 많은 부하를 받게 하는 로드 밸런싱 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-432",
@@ -5277,7 +6974,9 @@ CS.glossary={
       "term": "가중치 최소 연결 알고리즘 (로드 밸런싱 알고리즘)",
       "english": "weighted least connection algorithm",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "가중치 최소 연결 알고리즘 (로드 밸런싱 알고리즘)은 최소 연결 알고리즘에 따라 동작하되, 가중치가 높은 서버가 더 많이 선택되어 더 많은 부하를 받게 하는 로드 밸런싱 알고리즘이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-433",
@@ -5285,7 +6984,10 @@ CS.glossary={
       "term": "오리진 서버",
       "english": "origin server",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "오리진 서버는 자원을 생성하고 클라이언트에게 권한 있는 응답을 보낼 수 있는 HTTP 서버예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q117713329"
     },
     {
       "id": "net-434",
@@ -5293,7 +6995,10 @@ CS.glossary={
       "term": "인바운드 메시지",
       "english": "inbound",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "인바운드 메시지는 오리진 서버를 향하는 메시지예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q124066939"
     },
     {
       "id": "net-435",
@@ -5301,7 +7006,10 @@ CS.glossary={
       "term": "아웃바운드 메시지",
       "english": "outbound",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "아웃바운드 메시지는 클라이언트를 향하는 메시지예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q125913488"
     },
     {
       "id": "net-436",
@@ -5309,7 +7017,10 @@ CS.glossary={
       "term": "프록시",
       "english": "proxy",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "프록시는 클라이언트가 선택한 메시지 전달 대리자로, 클라이언트에 가까이 위치한 중간 서버예요. 주로 캐시 저장/클라이언트 암호화 및 접근 제한 등의 기능을 제공해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q23846"
     },
     {
       "id": "net-437",
@@ -5317,7 +7028,10 @@ CS.glossary={
       "term": "게이트웨이",
       "english": "gateway",
       "topic": "네트워크 심화",
-      "detail": "안정성을 위한 기술"
+      "detail": "안정성을 위한 기술",
+      "meaning": "게이트웨이는 네트워크 간의 통신을 가능케 하는 입구 역할을 하는 중간 서버로, 오리진 서버에 가까이 위치해요. 리버스 프록시라고도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2167391"
     },
     {
       "id": "net-438",
@@ -5325,7 +7039,10 @@ CS.glossary={
       "term": "암호화",
       "english": "encryption",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "암호화는 원문 데이터를 알아볼 수 없는 형태로 변경하는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q141090"
     },
     {
       "id": "net-439",
@@ -5333,7 +7050,10 @@ CS.glossary={
       "term": "복호화",
       "english": "decryption",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "복호화는 암호화된 데이터를 원문 데이터로 되돌리는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q745243"
     },
     {
       "id": "net-440",
@@ -5341,7 +7061,10 @@ CS.glossary={
       "term": "대칭 키 암호화",
       "english": "symmetric key encryption",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "대칭 키 암호화는 암호화와 복호화에 동일한 암호키를 사용하는 암호화 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q122476689"
     },
     {
       "id": "net-441",
@@ -5349,7 +7072,10 @@ CS.glossary={
       "term": "공개 키 암호화",
       "english": "public key encryption",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "공개 키 암호화는 암호화와 복호화에 서로 다른 암호키를 사용하는 암호화 방식으로, 비대칭 키 암호화라고도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q130882506"
     },
     {
       "id": "net-442",
@@ -5357,7 +7083,9 @@ CS.glossary={
       "term": "비대칭 키 암호화",
       "english": "asymmetric key encryption",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "비대칭 키 암호화는 암호화와 복호화에 서로 다른 암호키를 사용하는 암호화 방식으로, 공개 키 암호화라고도 해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-443",
@@ -5365,7 +7093,10 @@ CS.glossary={
       "term": "인증서",
       "english": "certificate",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "인증서는 무엇인가를 증명하기 위한 문서예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q196765"
     },
     {
       "id": "net-444",
@@ -5373,7 +7104,10 @@ CS.glossary={
       "term": "공개키 인증서",
       "english": "public key certificate",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "공개키 인증서는 공개 키와 공개 키의 유효성을 입증하기 위한 전자 문서예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q274758"
     },
     {
       "id": "net-445",
@@ -5381,7 +7115,10 @@ CS.glossary={
       "term": "인증 기관 (CA)",
       "english": "CA; Certification Authority",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "인증 기관 (CA)은 인증서의 발급, 검증, 저장과 같은 역할을 수행할 수 있는 공인 기관이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q16"
     },
     {
       "id": "net-446",
@@ -5389,7 +7126,10 @@ CS.glossary={
       "term": "서명값",
       "english": "signature",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "서명값은 발급한 인증서를 보증하는 CA의 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1373131"
     },
     {
       "id": "net-447",
@@ -5397,7 +7137,10 @@ CS.glossary={
       "term": "지문",
       "english": "fingerprint",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "지문은 인증서 내용에 대한 해시 값이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3745713"
     },
     {
       "id": "net-448",
@@ -5405,7 +7148,9 @@ CS.glossary={
       "term": "해시 값",
       "english": "",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "해시 값은 해시 함수를 적용시킨 결괏값이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-449",
@@ -5413,7 +7158,10 @@ CS.glossary={
       "term": "해시 함수",
       "english": "",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "해시 함수는 임의의 길이의 데이터를 고정된 길이의 데이터로 변환해 주는 함수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q183427"
     },
     {
       "id": "net-450",
@@ -5421,7 +7169,10 @@ CS.glossary={
       "term": "디지털 서명",
       "english": "digital signature",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "디지털 서명은 개인키로 암호화된 메시지를 공개 키로 복호화함으로써 신원을 증명하는 절차예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q220849"
     },
     {
       "id": "net-451",
@@ -5429,7 +7180,10 @@ CS.glossary={
       "term": "SSL",
       "english": "Secure Sockets Layer",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "SSL은 인증과 암호화를 수행하는 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1193479"
     },
     {
       "id": "net-452",
@@ -5437,7 +7191,10 @@ CS.glossary={
       "term": "TLS",
       "english": "Transport Layer Security",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "TLS는 SSL을 계승한 인증과 암호화를 수행하는 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q206494"
     },
     {
       "id": "net-453",
@@ -5445,7 +7202,9 @@ CS.glossary={
       "term": "TLS 핸드셰이크",
       "english": "TLS handshake",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "TLS 핸드셰이크는 TLS 기반 암호화통신을 수행하기 위해 주고받는 메시지예요. (예: HTTPS는 쓰리 웨이 핸드셰이크를 통한 TCP 연결 수립 이후 TLS 핸드셰이크를 통한 TLS 암호화 통신이 설정됨 )이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-454",
@@ -5453,7 +7212,10 @@ CS.glossary={
       "term": "HTTPS",
       "english": "HTTP over TLS",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "HTTPS는 HTTP 메시지의 안전한 송수신을 위해 개발된 프로토콜이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q44484"
     },
     {
       "id": "net-455",
@@ -5461,7 +7223,9 @@ CS.glossary={
       "term": "암호 스위트",
       "english": "cipher suite",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "암호 스위트는 사용 가능한 암호화 방식과 해시 함수를 담은 정보예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-456",
@@ -5469,7 +7233,9 @@ CS.glossary={
       "term": "스케일 업",
       "english": "scale up",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "스케일 업은 더 나은 장비로 교체함으로써 성능을 향상시키는 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-457",
@@ -5477,7 +7243,9 @@ CS.glossary={
       "term": "스케일 아웃",
       "english": "scale out",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "스케일 아웃은 더 많은 장비를 추가함으로써 성능을 향상시키는 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-458",
@@ -5485,7 +7253,10 @@ CS.glossary={
       "term": "수직적 확장",
       "english": "vertical scaling",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "수직적 확장은 스케일 업의 다른 이름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q127540709"
     },
     {
       "id": "net-459",
@@ -5493,7 +7264,9 @@ CS.glossary={
       "term": "수평적 확장",
       "english": "horizontal scaling",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "수평적 확장은 스케일 아웃의 다른 이름이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-460",
@@ -5501,7 +7274,10 @@ CS.glossary={
       "term": "오토 스케일링",
       "english": "auto scaling",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "오토 스케일링은 필요할 때마다 시스템을 동적으로 확장하거나 축소하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q117478183"
     },
     {
       "id": "net-461",
@@ -5509,7 +7285,10 @@ CS.glossary={
       "term": "업스트림",
       "english": "upstream",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "업스트림은 상위 서버(오리진 서버 방향)로 데이터를 전송하는 방향이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q352213"
     },
     {
       "id": "net-462",
@@ -5517,7 +7296,9 @@ CS.glossary={
       "term": "다운스트림",
       "english": "downstream",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "다운스트림은 하위 서버(클라이언트 방향)로 데이터를 전송하는 방향이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-463",
@@ -5525,7 +7306,10 @@ CS.glossary={
       "term": "웹 서버",
       "english": "web server",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "웹 서버는 정적인 정보를 응답하는 HTTP 서버예요. (예: Apache, Nginx)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11288"
     },
     {
       "id": "net-464",
@@ -5533,7 +7317,10 @@ CS.glossary={
       "term": "웹 애플리케이션 서버",
       "english": "web application server",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "웹 애플리케이션 서버는 동적인 정보를 응답하는 HTTP 서버예요. (예: Tomcat, JBoss)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q71550"
     },
     {
       "id": "net-465",
@@ -5541,7 +7328,10 @@ CS.glossary={
       "term": "소켓 (네트워크)",
       "english": "socket",
       "topic": "네트워크 심화",
-      "detail": "안전성을 위한 기술"
+      "detail": "안전성을 위한 기술",
+      "meaning": "소켓 (네트워크)는 프로세스 간 네트워크 통신의 엔드포인트예요. 많은 운영체제에서 소켓은 파일과 같은 방식으로 다룸이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3488724"
     },
     {
       "id": "net-466",
@@ -5549,7 +7339,10 @@ CS.glossary={
       "term": "전파",
       "english": "radio wave",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "전파는 약 3kHz부터 3THz 사이의 진동수를 갖는 눈에 보이지 않는 전자기파의 일종이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4262"
     },
     {
       "id": "net-467",
@@ -5557,7 +7350,10 @@ CS.glossary={
       "term": "변조",
       "english": "modulation",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "변조는 정보를 원하는 형태의 신호로 변환하는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q170474"
     },
     {
       "id": "net-468",
@@ -5565,7 +7361,10 @@ CS.glossary={
       "term": "복조",
       "english": "demodulation",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "복조는 변조된 신호를 원래의 정보로 다시 변환하는 것이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1185939"
     },
     {
       "id": "net-469",
@@ -5573,7 +7372,10 @@ CS.glossary={
       "term": "주파수 대역",
       "english": "",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "주파수 대역은 특정 범위의 주파수를 의미예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q16023911"
     },
     {
       "id": "net-470",
@@ -5581,7 +7383,10 @@ CS.glossary={
       "term": "IEEE 802.11",
       "english": "",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "IEEE 802.11은 무선 LAN의 표준 규격이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q193228"
     },
     {
       "id": "net-471",
@@ -5589,7 +7394,10 @@ CS.glossary={
       "term": "와이파이",
       "english": "Wi-Fi",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "와이파이는 특정 IEEE 802.11 표준을 따르는 무선 LAN 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q29643"
     },
     {
       "id": "net-472",
@@ -5597,7 +7405,9 @@ CS.glossary={
       "term": "5GHz 와이파이",
       "english": "",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "5GHz 와이파이는 2.4GHz 와이파이에 비해 송수신 속도가 빠르지만 장애물의 영향을 크게 받음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-473",
@@ -5605,7 +7415,9 @@ CS.glossary={
       "term": "2.4GHz 와이파이",
       "english": "",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "2.4GHz 와이파이는 5GHz 와이파이에 비해 송수신 속도가 느리지만 장애물의 영향을 덜 받음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-474",
@@ -5613,7 +7425,9 @@ CS.glossary={
       "term": "회절성",
       "english": "",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "회절성은 파동이 장애물이나 좁은 틈을 통과할 때, 파동이 그 뒤편까지 전파되는 현상이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-475",
@@ -5621,7 +7435,10 @@ CS.glossary={
       "term": "채널",
       "english": "channel",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "채널은 무선 네트워크에서 사용될 특정 주파수 대역으로, 각 채널은 번호로 구분돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q733553"
     },
     {
       "id": "net-476",
@@ -5629,7 +7446,10 @@ CS.glossary={
       "term": "AP",
       "english": "Access Point",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "AP는 무선 통신 기기들을 연결하여 무선 네트워크를 구성하는 장치예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q40469"
     },
     {
       "id": "net-477",
@@ -5637,7 +7457,9 @@ CS.glossary={
       "term": "인프라스트럭처 모드",
       "english": "infrastructure mode",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "인프라스트럭처 모드는 AP를 경유하여 통신이 이루어지는 무선 네트워크 통신 모드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-478",
@@ -5645,7 +7467,10 @@ CS.glossary={
       "term": "애드 혹 모드",
       "english": "Ad Hoc mode",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "애드 혹 모드는 AP의 간섭 없이 호스트 간에 일대일로 통신하는 무선 통신 모드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4085781"
     },
     {
       "id": "net-479",
@@ -5653,7 +7478,10 @@ CS.glossary={
       "term": "서비스 셋",
       "english": "Service Set",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "서비스 셋은 무선 네트워크를 이루는 AP와 여러 장치들의 집합이에요. 같은 서비스 셋에 속한 장치들은 같은 무선 네트워크에 속해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q193228"
     },
     {
       "id": "net-480",
@@ -5661,7 +7489,10 @@ CS.glossary={
       "term": "서비스 셋 식별자(SSID)",
       "english": "SSID; Service Set Identifier",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "서비스 셋 식별자(SSID)는 무선 네트워크를 구분짓는 수단이자 무선 네트워크를 지칭하는 고유한 이름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1043562"
     },
     {
       "id": "net-481",
@@ -5669,7 +7500,9 @@ CS.glossary={
       "term": "BSS (무선 네트워크)",
       "english": "Basic Service Set",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "BSS (무선 네트워크)는 하나의 AP로 구성된 무선 LAN이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-482",
@@ -5677,7 +7510,9 @@ CS.glossary={
       "term": "ESS (무선 네트워크)",
       "english": "Extended Service Set",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "ESS (무선 네트워크)는 여러 AP로 구성된 무선 LAN이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "net-483",
@@ -5685,7 +7520,10 @@ CS.glossary={
       "term": "비컨 프레임",
       "english": "beacon frame",
       "topic": "네트워크 심화",
-      "detail": "무선 네트워크"
+      "detail": "무선 네트워크",
+      "meaning": "비컨 프레임은 AP가 자신의 존재를 알리기 위해 주기적으로 전송하는 브로드캐스트 메시지예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4876004"
     },
     {
       "id": "db-001",
@@ -5693,7 +7531,10 @@ CS.glossary={
       "term": "데이터베이스",
       "english": "database",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "데이터베이스는 여러 사람이 공유하여 사용할 목적으로 체계화해 통합·관리하는 데이터의 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8513"
     },
     {
       "id": "db-002",
@@ -5701,7 +7542,10 @@ CS.glossary={
       "term": "데이터베이스 관리 시스템(DBMS)",
       "english": "Database Management System",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "데이터베이스 관리 시스템(DBMS)은 데이터베이스를 관리하기 위한 소프트웨어로, 데이터의 정의, 조작, 제어를 수행해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q124442669"
     },
     {
       "id": "db-003",
@@ -5709,7 +7553,10 @@ CS.glossary={
       "term": "관계형 데이터베이스 관리 시스템(RDBMS)",
       "english": "Relational DataBase Management System",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "관계형 데이터베이스 관리 시스템(RDBMS)은 데이터를 테이블 형식으로 저장하며, 테이블 간의 관계를 정의하는 시스템이에요. MySQL, Oracle, PostgreSQL, SQLite, MariaDB, MS SQL Server 등이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3932296"
     },
     {
       "id": "db-004",
@@ -5717,7 +7564,9 @@ CS.glossary={
       "term": "NoSQL 데이터베이스 관리 시스템",
       "english": "NoSQL DataBase Management System",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "NoSQL 데이터베이스 관리 시스템은 관계형 모델을 사용하지 않는 데이터베이스 시스템으로, 유연한 스키마와 높은 확장성을 제공해요. MongoDB, redis 등이 대표적이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-005",
@@ -5725,7 +7574,9 @@ CS.glossary={
       "term": "쿼리 (데이터베이스)",
       "english": "query",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "쿼리 (데이터베이스)는 데이터베이스에 데이터를 조회, 삽입, 갱신, 삭제하기 위한 명령어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-006",
@@ -5733,7 +7584,10 @@ CS.glossary={
       "term": "SQL",
       "english": "Structured Query Language",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "SQL은 데이터베이스에 질의하기 위한 구조화된 언어로, 데이터베이스를 정의, 조작, 제어하는 데 사용해요. SELECT, INSERT, UPDATE, DELETE 등의 명령어가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q47607"
     },
     {
       "id": "db-007",
@@ -5741,7 +7595,10 @@ CS.glossary={
       "term": "DDL",
       "english": "Data Definition Language",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "DDL은 데이터 정의를 위한 언어로, 테이블, 인덱스 등의 데이터 구조를 정의하고 관리해요. CREATE, ALTER, DROP 등의 명령어가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1053518"
     },
     {
       "id": "db-008",
@@ -5749,7 +7606,10 @@ CS.glossary={
       "term": "DML",
       "english": "Data Manipulation Language",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "DML은 데이터 조작을 위한 언어로, 테이블의 레코드를 조회, 삽입, 갱신, 삭제하는 기능이에요. SELECT, INSERT, UPDATE, DELETE 등의 명령어가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q58673"
     },
     {
       "id": "db-009",
@@ -5757,7 +7617,10 @@ CS.glossary={
       "term": "DCL",
       "english": "Data Control Language",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "DCL은 데이터 제어를 위한 언어로, 데이터베이스의 작업을 커밋하거나 롤백하고, 사용자에게 권한을 부여하거나 회수하는 기능이에요. COMMIT, ROLLBACK, GRANT, REVOKE 등의 명령어가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q604737"
     },
     {
       "id": "db-010",
@@ -5765,7 +7628,10 @@ CS.glossary={
       "term": "TCL",
       "english": "Transaction Control Language",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "TCL은 트랜잭션을 제어하는 언어로, 트랜잭션의 시작과 종료, 복구를 관리해요. BEGIN, COMMIT, ROLLBACK 등의 명령어가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2448845"
     },
     {
       "id": "db-011",
@@ -5773,7 +7639,10 @@ CS.glossary={
       "term": "엔티티",
       "english": "Entity",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "엔티티는 독립적으로 존재할 수 있는 객체로, 데이터베이스에서 저장 및 관리되는 데이터 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3726318"
     },
     {
       "id": "db-012",
@@ -5781,7 +7650,10 @@ CS.glossary={
       "term": "속성",
       "english": "attribute",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "속성은 엔티티의 특성으로, 엔티티가 가지고 있는 데이터를 설명하는 필드예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q937228"
     },
     {
       "id": "db-013",
@@ -5789,7 +7661,10 @@ CS.glossary={
       "term": "도메인",
       "english": "domain",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "도메인은 엔티티의 속성이 가질 수 있는 값의 범위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q21503250"
     },
     {
       "id": "db-014",
@@ -5797,7 +7672,10 @@ CS.glossary={
       "term": "릴레이션",
       "english": "relation",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "릴레이션은 이차원 테이블 형태로 데이터를 저장하는 엔티티의 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q28729320"
     },
     {
       "id": "db-015",
@@ -5805,7 +7683,10 @@ CS.glossary={
       "term": "컬렉션",
       "english": "collection",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "컬렉션은 MongoDB에서 데이터를 저장하는 단위로, 엔티티 집합을 표현하는 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2668072"
     },
     {
       "id": "db-016",
@@ -5813,7 +7694,10 @@ CS.glossary={
       "term": "레코드",
       "english": "record",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "레코드는 데이터베이스에 저장된 엔티티의 인스턴스로, 하나의 행에 해당이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2470517"
     },
     {
       "id": "db-017",
@@ -5821,7 +7705,10 @@ CS.glossary={
       "term": "필드",
       "english": "field",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "필드는 엔티티 속성을 표현하는 열로, 하나의 데이터 요소를 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1172412"
     },
     {
       "id": "db-018",
@@ -5829,7 +7716,10 @@ CS.glossary={
       "term": "도큐먼트",
       "english": "document",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "도큐먼트는 MongoDB에서 개별 레코드를 JSON 형태로 저장하는 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q313103"
     },
     {
       "id": "db-019",
@@ -5837,7 +7727,10 @@ CS.glossary={
       "term": "카디날리티",
       "english": "cardinality",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "카디날리티는 한 필드에 대한 고유 값의 수로, 데이터베이스에서 중복되지 않는 레코드의 개수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q28727773"
     },
     {
       "id": "db-020",
@@ -5845,7 +7738,10 @@ CS.glossary={
       "term": "스키마",
       "english": "schema",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "스키마는 데이터베이스에 저장되는 데이터의 구조와 제약 조건을 정의하는 구조예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1141242"
     },
     {
       "id": "db-021",
@@ -5853,7 +7749,9 @@ CS.glossary={
       "term": "스키마리스 데이터베이스",
       "english": "schemaless database",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "스키마리스 데이터베이스는 고정된 스키마 없이 데이터를 저장하여 유연성을 제공해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-022",
@@ -5861,7 +7759,10 @@ CS.glossary={
       "term": "트랜잭션",
       "english": "transaction",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "트랜잭션은 데이터베이스에서 수행되는 작업의 논리적 단위로, ACID 속성을 가짐이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q844565"
     },
     {
       "id": "db-023",
@@ -5869,7 +7770,10 @@ CS.glossary={
       "term": "초당 트랜잭션 (TPS)",
       "english": "Transactions Per Second",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "초당 트랜잭션 (TPS)은 데이터베이스의 성능을 나타내는 지표로, 1초당 처리할 수 있는 트랜잭션의 수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7833739"
     },
     {
       "id": "db-024",
@@ -5877,7 +7781,10 @@ CS.glossary={
       "term": "ACID",
       "english": "",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "ACID는 데이터베이스 트랜잭션이 지켜야 할 성질로, 원자성, 일관성, 격리성, 지속성을 의미예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q288435"
     },
     {
       "id": "db-025",
@@ -5885,7 +7792,10 @@ CS.glossary={
       "term": "원자성 (데이터베이스)",
       "english": "Atomicity",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "원자성 (데이터베이스)는 하나의 트랜잭션이 완전히 수행되거나, 전혀 수행되지 않아야 하는 성질이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q288435"
     },
     {
       "id": "db-026",
@@ -5893,7 +7803,10 @@ CS.glossary={
       "term": "커밋",
       "english": "commit",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "커밋은 트랜잭션의 작업을 영구적으로 저장하는 연산이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1115672"
     },
     {
       "id": "db-027",
@@ -5901,7 +7814,10 @@ CS.glossary={
       "term": "롤백",
       "english": "rollback",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "롤백은 트랜잭션의 작업을 취소하고, 이전 상태로 되돌리는 연산이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1678782"
     },
     {
       "id": "db-028",
@@ -5909,7 +7825,10 @@ CS.glossary={
       "term": "일관성 (데이터베이스)",
       "english": "consistency",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "일관성 (데이터베이스)는 트랜잭션 전후로 데이터베이스가 일관된 상태를 유지해야 하는 성질이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q25233391"
     },
     {
       "id": "db-029",
@@ -5917,7 +7836,10 @@ CS.glossary={
       "term": "격리성 (데이터베이스)",
       "english": "isolation",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "격리성 (데이터베이스)는 동시에 수행되는 여러 트랜잭션이 서로 간섭하지 않도록 보장하는 성질이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q51840512"
     },
     {
       "id": "db-030",
@@ -5925,7 +7847,10 @@ CS.glossary={
       "term": "지속성 (데이터베이스)",
       "english": "durability",
       "topic": "데이터베이스의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "지속성 (데이터베이스)는 트랜잭션이 성공적으로 완료된 후, 그 결과가 영구적으로 반영되는 성질이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5316114"
     },
     {
       "id": "db-031",
@@ -5933,7 +7858,10 @@ CS.glossary={
       "term": "키",
       "english": "key",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "키는 테이블의 레코드를 식별할 수 있는 하나 이상의 필드로, 기본 키, 후보 키, 외래 키 등이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3667566"
     },
     {
       "id": "db-032",
@@ -5941,7 +7869,10 @@ CS.glossary={
       "term": "후보 키",
       "english": "candidate key",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "후보 키는 테이블의 한 레코드를 유일하게 식별할 수 있는 필드의 최소 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2113197"
     },
     {
       "id": "db-033",
@@ -5949,7 +7880,10 @@ CS.glossary={
       "term": "복합 키",
       "english": "composite key",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "복합 키는 두 개 이상의 필드로 구성된 후보 키로, 여러 필드를 결합하여 유일성을 보장이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q120065105"
     },
     {
       "id": "db-034",
@@ -5957,7 +7891,10 @@ CS.glossary={
       "term": "슈퍼 키",
       "english": "super key",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "슈퍼 키는 유일성을 만족하지만, 최소성을 만족하지 않는 필드의 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q10684070"
     },
     {
       "id": "db-035",
@@ -5965,7 +7902,10 @@ CS.glossary={
       "term": "기본 키",
       "english": "primary key",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "기본 키는 테이블의 각 레코드를 유일하게 식별할 수 있는 필드로, 테이블 당 하나만 존재예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q934729"
     },
     {
       "id": "db-036",
@@ -5973,7 +7913,9 @@ CS.glossary={
       "term": "대체 키",
       "english": "alternate key",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "대체 키는 기본 키가 아닌 후보 키예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-037",
@@ -5981,7 +7923,10 @@ CS.glossary={
       "term": "외래 키",
       "english": "foreign key",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "외래 키는 다른 테이블의 기본 키를 참조하는 필드로, 테이블 간의 관계를 정의예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1056760"
     },
     {
       "id": "db-038",
@@ -5989,7 +7934,9 @@ CS.glossary={
       "term": "일대일 대응 관계 (데이터베이스)",
       "english": "",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "일대일 대응 관계 (데이터베이스)는 하나의 레코드가 다른 테이블의 레코드 하나에만 대응되는 관계예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-039",
@@ -5997,7 +7944,9 @@ CS.glossary={
       "term": "일대다 대응 관계 (데이터베이스)",
       "english": "",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "일대다 대응 관계 (데이터베이스)는 하나의 레코드가 다른 테이블의 여러 레코드와 대응되는 관계예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-040",
@@ -6005,7 +7954,9 @@ CS.glossary={
       "term": "다대다 대응 관계 (데이터베이스)",
       "english": "",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "다대다 대응 관계 (데이터베이스)는 여러 레코드가 다른 테이블의 여러 레코드와 연결되는 관계예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-041",
@@ -6013,7 +7964,9 @@ CS.glossary={
       "term": "무결성 제약 조건",
       "english": "integrity constraint",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "무결성 제약 조건은 데이터베이스의 일관성과 유효한 데이터를 유지하기 위해 지켜야 하는 규칙이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-042",
@@ -6021,7 +7974,10 @@ CS.glossary={
       "term": "도메인 제약 조건",
       "english": "domain constraint",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "도메인 제약 조건은 테이블이 가질 수 있는 필드 타입과 범위에 대한 규칙이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q21503250"
     },
     {
       "id": "db-043",
@@ -6029,7 +7985,9 @@ CS.glossary={
       "term": "원자 값",
       "english": "atomic value",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "원자 값은 더 이상 쪼갤 수 없는 단일한 값이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-044",
@@ -6037,7 +7995,10 @@ CS.glossary={
       "term": "키 제약 조건",
       "english": "key constraint",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "키 제약 조건은 키로 지정된 필드에 중복된 값이 존재해서는 안 되는 제약 조건이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3667566"
     },
     {
       "id": "db-045",
@@ -6045,7 +8006,9 @@ CS.glossary={
       "term": "엔티티 무결성 제약 조건",
       "english": "entity integrity constraint",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "엔티티 무결성 제약 조건은 기본 키로 지정된 필드는 고유한 값이어야 하며, NULL이 되어서는 안 되는 규칙이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-046",
@@ -6053,7 +8016,10 @@ CS.glossary={
       "term": "참조 무결성 제약 조건",
       "english": "referential integrity constraint",
       "topic": "RDBMS의 기본",
-      "detail": ""
+      "detail": "",
+      "meaning": "참조 무결성 제약 조건은 외래 키를 통해 참조된 데이터는 실제로 존재해야 하는 규칙이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q108797735"
     },
     {
       "id": "db-047",
@@ -6061,7 +8027,10 @@ CS.glossary={
       "term": "서브 쿼리",
       "english": "subquery",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "서브 쿼리는 다른 SQL문에 포함된 SQL문으로, 주로 SELECT, INSERT, UPDATE, DELETE 문에 사용해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q12045831"
     },
     {
       "id": "db-048",
@@ -6069,7 +8038,10 @@ CS.glossary={
       "term": "조인",
       "english": "join",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "조인은 두 개 이상의 테이블을 결합하여, 하나의 결과 집합으로 반환하는 SQL 연산이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q378439"
     },
     {
       "id": "db-049",
@@ -6077,7 +8049,10 @@ CS.glossary={
       "term": "내부 조인",
       "english": "inner join",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "내부 조인은 두 테이블 간의 조인 조건을 만족하는 레코드만 반환하는 조인 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q126585333"
     },
     {
       "id": "db-050",
@@ -6085,7 +8060,10 @@ CS.glossary={
       "term": "외부 조인",
       "english": "outer join",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "외부 조인은 조인 조건을 만족하지 않는 레코드도 포함하여 반환하는 조인 방식이에요. 왼쪽 외부 조인, 오른쪽 외부 조인, 전체 외부 조인 등이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q113318129"
     },
     {
       "id": "db-051",
@@ -6093,7 +8071,10 @@ CS.glossary={
       "term": "왼쪽 외부 조인",
       "english": "left outer join",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "왼쪽 외부 조인은 왼쪽 테이블의 모든 레코드를 포함하고, 조인 조건을 만족하지 않는 오른쪽 테이블의 레코드는 NULL로 반환해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q31341045"
     },
     {
       "id": "db-052",
@@ -6101,7 +8082,10 @@ CS.glossary={
       "term": "오른쪽 외부 조인",
       "english": "right outer join",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "오른쪽 외부 조인은 오른쪽 테이블의 모든 레코드를 포함하고, 조인 조건을 만족하지 않는 왼쪽 테이블의 레코드는 NULL로 반환해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q42214156"
     },
     {
       "id": "db-053",
@@ -6109,7 +8093,10 @@ CS.glossary={
       "term": "전체 외부 조인",
       "english": "full outer join",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "전체 외부 조인은 두 테이블의 모든 레코드를 포함하고, 조인 조건을 만족하지 않는 레코드는 NULL로 반환해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q87527681"
     },
     {
       "id": "db-054",
@@ -6117,7 +8104,10 @@ CS.glossary={
       "term": "뷰",
       "english": "view",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "뷰는 SELECT문의 결과로 생성된 가상의 테이블로, 저장된 데이터의 일부분만을 제공하여 보안을 강화하고, 복잡한 쿼리를 단순화해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q109291230"
     },
     {
       "id": "db-055",
@@ -6125,7 +8115,10 @@ CS.glossary={
       "term": "인덱스",
       "english": "index",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "인덱스는 테이블의 검색 속도를 높이기 위해 사용하는 자료구조로, 대량의 데이터를 효율적으로 조회예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2272475"
     },
     {
       "id": "db-056",
@@ -6133,7 +8126,9 @@ CS.glossary={
       "term": "클러스터형 인덱스",
       "english": "clustered index",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "클러스터형 인덱스는 테이블 당 하나만 생성할 수 있으며, 테이블의 물리적 순서를 인덱스 순서에 맞게 정렬해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-057",
@@ -6141,7 +8136,9 @@ CS.glossary={
       "term": "세컨더리 인덱스",
       "english": "secondary index",
       "topic": "효율적 쿼리",
-      "detail": ""
+      "detail": "",
+      "meaning": "세컨더리 인덱스는 클러스터형 인덱스 외에 추가로 생성할 수 있는 인덱스로, 클러스터형 인덱스와는 달리 테이블의 물리적 순서를 변경하지 않음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-058",
@@ -6149,7 +8146,10 @@ CS.glossary={
       "term": "ER 다이어그램",
       "english": "ER diagram",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "ER 다이어그램은 데이터베이스에 저장되는 엔티티의 구조를 모델링한 다이어그램으로, 엔티티, 속성, 관계 등을 도식화해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q624546"
     },
     {
       "id": "db-059",
@@ -6157,7 +8157,9 @@ CS.glossary={
       "term": "피터 첸 표기법",
       "english": "Peter Chen notation",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "피터 첸 표기법은 전통적인 형태의 ERD 표기 방식으로, 엔티티와 관계를 다이어그램으로 표현해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-060",
@@ -6165,7 +8167,9 @@ CS.glossary={
       "term": "IE 표기법",
       "english": "IE notation",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "IE 표기법은 정보 엔지니어링 표기법으로, 테이블 간의 관계를 직관적으로 표현해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-061",
@@ -6173,7 +8177,10 @@ CS.glossary={
       "term": "식별 관계",
       "english": "identifying relationship",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "식별 관계는 참조되는 엔티티가 존재해야 참조하는 엔티티가 존재할 수 있는 관계예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q120514943"
     },
     {
       "id": "db-062",
@@ -6181,7 +8188,9 @@ CS.glossary={
       "term": "비식별 관계",
       "english": "non-identifying relationship",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "비식별 관계는 참조되는 엔티티가 존재하지 않아도 참조하는 엔티티가 존재할 수 있는 관계예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-063",
@@ -6189,7 +8198,10 @@ CS.glossary={
       "term": "정규화",
       "english": "Normal Form",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "정규화는 데이터베이스 설계 과정에서 테이블의 데이터 중복을 최소화하고, 일관성을 유지하기 위해 테이블을 분해하는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q249772"
     },
     {
       "id": "db-064",
@@ -6197,7 +8209,10 @@ CS.glossary={
       "term": "제 1 정규화",
       "english": "1NF",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "제 1 정규화는 모든 속성이 원자값을 가지도록 테이블을 구성해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1366465"
     },
     {
       "id": "db-065",
@@ -6205,7 +8220,10 @@ CS.glossary={
       "term": "제 2 정규화",
       "english": "2NF",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "제 2 정규화는 기본 키가 아닌 모든 속성이 기본 키 전체에 완전히 종속되도록 테이블을 구성해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q277396"
     },
     {
       "id": "db-066",
@@ -6213,7 +8231,10 @@ CS.glossary={
       "term": "제 3 정규화",
       "english": "3NF",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "제 3 정규화는 기본 키가 아닌 모든 속성이 기본 키에 이행적으로 종속되지 않도록 테이블을 구성해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q311585"
     },
     {
       "id": "db-067",
@@ -6221,7 +8242,10 @@ CS.glossary={
       "term": "보이스/코드 정규화",
       "english": "Boyce-Codd Normal Form",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "보이스/코드 정규화는 제 3 정규형을 만족하면서, 모든 결정자가 후보 키가 되도록 테이블을 구성해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2460153"
     },
     {
       "id": "db-068",
@@ -6229,7 +8253,9 @@ CS.glossary={
       "term": "부분 함수 종속성",
       "english": "partial functional dependency",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "부분 함수 종속성은 기본 키의 일부에만 종속된 필드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-069",
@@ -6237,7 +8263,9 @@ CS.glossary={
       "term": "완전 함수 종속성",
       "english": "full functional dependency",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "완전 함수 종속성은 기본 키 전체에 종속된 필드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-070",
@@ -6245,7 +8273,9 @@ CS.glossary={
       "term": "이행 함수 종속성",
       "english": "transitive functional dependency",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "이행 함수 종속성은 기본 키가 아닌 다른 필드가 또 다른 필드에 종속된 관계예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-071",
@@ -6253,7 +8283,10 @@ CS.glossary={
       "term": "역정규화",
       "english": "denormalization",
       "topic": "데이터베이스 설계",
-      "detail": ""
+      "detail": "",
+      "meaning": "역정규화는 성능 향상을 위해 정규화된 테이블을 다시 통합하는 과정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1189732"
     },
     {
       "id": "db-072",
@@ -6261,7 +8294,9 @@ CS.glossary={
       "term": "키-값 데이터베이스",
       "english": "key-value database",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "키-값 데이터베이스는 레코드를 키와 값의 쌍으로 저장하는 데이터베이스로, 빠른 데이터 액세스가 가능해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-073",
@@ -6269,7 +8304,9 @@ CS.glossary={
       "term": "인-메모리 데이터베이스",
       "english": "in-memory database",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "인-메모리 데이터베이스는 데이터를 보조기억장치가 아닌 메모리에 저장하여 빠른 데이터베이스 접근 속도를 제공해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-074",
@@ -6277,7 +8314,9 @@ CS.glossary={
       "term": "도큐먼트 데이터베이스",
       "english": "document database",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "도큐먼트 데이터베이스는 레코드를 도큐먼트라는 단위로 저장하고 관리하는 데이터베이스로, JSON, BSON 형태로 데이터를 저장해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-075",
@@ -6285,7 +8324,9 @@ CS.glossary={
       "term": "그래프 데이터베이스",
       "english": "graph database",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "그래프 데이터베이스는 데이터를 그래프의 노드 형태로 저장하여, 복잡한 관계 데이터를 효율적으로 관리해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-076",
@@ -6293,7 +8334,9 @@ CS.glossary={
       "term": "칼럼 패밀리 데이터베이스",
       "english": "column-family database",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "칼럼 패밀리 데이터베이스는 열을 기준으로 데이터를 저장하는 데이터베이스로, 대량의 데이터를 효율적으로 관리해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-077",
@@ -6301,7 +8344,9 @@ CS.glossary={
       "term": "데이터베이스 분할",
       "english": "database partitioning",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "데이터베이스 분할은 테이블을 물리적으로 분할하여, 분산 환경에서 데이터베이스를 효율적으로 관리하는 기술이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-078",
@@ -6309,7 +8354,9 @@ CS.glossary={
       "term": "수평적 분할",
       "english": "horizontal partitioning",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "수평적 분할은 테이블의 행을 기준으로 테이블을 나누어 저장하여 데이터의 일부분만을 효율적으로 관리해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-079",
@@ -6317,7 +8364,10 @@ CS.glossary={
       "term": "수직적 분할",
       "english": "vertical partitioning",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "수직적 분할은 테이블의 열을 기준으로 테이블을 나누어 저장하여 데이터의 특정 부분만을 효율적으로 관리해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q38964816"
     },
     {
       "id": "db-080",
@@ -6325,7 +8375,9 @@ CS.glossary={
       "term": "범위 분할",
       "english": "range partitioning",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "범위 분할은 레코드 데이터가 가질 수 있는 범위를 정의하고, 해당 범위를 기준으로 테이블을 나누는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-081",
@@ -6333,7 +8385,9 @@ CS.glossary={
       "term": "목록 분할",
       "english": "list partitioning",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "목록 분할은 레코드 데이터가 특정 목록에 포함된 값을 가질 경우, 해당 레코드를 별도의 테이블로 분할이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-082",
@@ -6341,7 +8395,9 @@ CS.glossary={
       "term": "해시 분할",
       "english": "hash partitioning",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "해시 분할은 특정 열 데이터에 대한 해시 값을 기준으로 테이블을 분할하여, 데이터를 균등하게 분산이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-083",
@@ -6349,7 +8405,9 @@ CS.glossary={
       "term": "키 분할",
       "english": "key partitioning",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "키 분할은 특정 키를 기준으로 테이블을 분할하여, 데이터를 효율적으로 관리해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "db-084",
@@ -6357,7 +8415,10 @@ CS.glossary={
       "term": "샤딩",
       "english": "sharding",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "샤딩은 분할된 테이블을 별개의 데이터베이스 서버에 분산하여 저장하는 기술로, 대규모 데이터를 효율적으로 관리해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q13424607"
     },
     {
       "id": "db-085",
@@ -6365,7 +8426,10 @@ CS.glossary={
       "term": "샤드",
       "english": "shard",
       "topic": "NoSQL",
-      "detail": ""
+      "detail": "",
+      "meaning": "샤드는 샤딩을 통해 분할된 데이터베이스의 각 단위로, 각 샤드는 독립적인 데이터베이스로 동작이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q13424607"
     },
     {
       "id": "ds-001",
@@ -6373,7 +8437,10 @@ CS.glossary={
       "term": "자료구조",
       "english": "data structure",
       "topic": "자료구조의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "자료구조는 데이터를 효율적으로 저장하고 관리하는 방법과 관련된 과목이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q129856004"
     },
     {
       "id": "ds-002",
@@ -6381,7 +8448,10 @@ CS.glossary={
       "term": "알고리즘",
       "english": "algorithm",
       "topic": "자료구조의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "알고리즘은 문제를 해결하기 위한 일련의 단계적 절차와 관련된 과목이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8366"
     },
     {
       "id": "ds-003",
@@ -6389,7 +8459,10 @@ CS.glossary={
       "term": "시간 복잡도",
       "english": "time complexity",
       "topic": "자료구조의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "시간 복잡도는 알고리즘의 실행 시간(연산 횟수)을 나타내는 척도로, 입력 크기에 대한 함수로 표현해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2393193"
     },
     {
       "id": "ds-004",
@@ -6397,7 +8470,10 @@ CS.glossary={
       "term": "공간 복잡도",
       "english": "space complexity",
       "topic": "자료구조의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "공간 복잡도는 알고리즘이 사용하는 메모리 양을 나타내는 척도예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2098905"
     },
     {
       "id": "ds-005",
@@ -6405,7 +8481,10 @@ CS.glossary={
       "term": "빅 오 표기법",
       "english": "big-O notation",
       "topic": "자료구조의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "빅 오 표기법은 알고리즘의 성능을 점근적 상한을 나타내는 수학적 표기법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q269878"
     },
     {
       "id": "ds-006",
@@ -6413,7 +8492,9 @@ CS.glossary={
       "term": "빅 세타 표기법",
       "english": "big-θ notation",
       "topic": "자료구조의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "빅 세타 표기법은 알고리즘의 평균 성능을 나타내는 수학적 표기법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-007",
@@ -6421,7 +8502,9 @@ CS.glossary={
       "term": "빅 오메가 표기법",
       "english": "big-Ω notation",
       "topic": "자료구조의 큰 그림",
-      "detail": ""
+      "detail": "",
+      "meaning": "빅 오메가 표기법은 알고리즘의 성능을 점근적 하한을 나타내는 수학적 표기법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-008",
@@ -6429,7 +8512,10 @@ CS.glossary={
       "term": "배열",
       "english": "array",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "배열은 일정한 메모리 공간을 차지하는 여러 요소들이 순차적으로 나열된 자료구조예요. 각 요소에는 0부터 시작하는 고유 순서번호인 인덱스가 매겨지며, 데이터 접근 성능은 O(1)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q186152"
     },
     {
       "id": "ds-009",
@@ -6437,7 +8523,10 @@ CS.glossary={
       "term": "인덱스 (배열)",
       "english": "index",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "인덱스 (배열)은 배열에서 특정 요소를 참조하기 위한 0부터 시작하는 정수 값이에요. 배열의 시작 위치로부터 요소까지의 거리를 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1661161"
     },
     {
       "id": "ds-010",
@@ -6445,7 +8534,9 @@ CS.glossary={
       "term": "이차원 배열",
       "english": "",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "이차원 배열은 행과 열로 구성된 배열로, 행렬 형태의 데이터 저장에 사용해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-011",
@@ -6453,7 +8544,9 @@ CS.glossary={
       "term": "삼차원 배열",
       "english": "",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "삼차원 배열은 여러 개의 이차원 배열로 구성된 배열이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-012",
@@ -6461,7 +8554,10 @@ CS.glossary={
       "term": "정적 배열",
       "english": "static array",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "정적 배열은 프로그램을 실행하기 전에 크기가 고정된 배열로, 초기화 시 배열의 크기를 지정이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q99579196"
     },
     {
       "id": "ds-013",
@@ -6469,7 +8565,10 @@ CS.glossary={
       "term": "동적 배열",
       "english": "dynamic array",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "동적 배열은 크기를 동적으로 조절할 수 있는 배열로, 배열의 크기를 유연하게 변경 가능해요. 벡터(vector)라는 이름으로 지칭하기도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q128555"
     },
     {
       "id": "ds-014",
@@ -6477,7 +8576,10 @@ CS.glossary={
       "term": "연결 리스트",
       "english": "linked list",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "연결 리스트는 각 노드가 데이터와 다음 노드에 대한 포인터를 가지는 자료구조로, 데이터 삽입과 삭제가 성능은 O(1)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7003418"
     },
     {
       "id": "ds-015",
@@ -6485,7 +8587,9 @@ CS.glossary={
       "term": "헤드 노드 (연결 리스트)",
       "english": "head node",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "헤드 노드 (연결 리스트)는 연결 리스트의 첫 번째 노드로, 시작점을 나타냄이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-016",
@@ -6493,7 +8597,9 @@ CS.glossary={
       "term": "꼬리 노드 (연결 리스트)",
       "english": "tail node",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "꼬리 노드 (연결 리스트)는 연결 리스트의 마지막 노드로, 다음 노드가 없음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-017",
@@ -6501,7 +8607,10 @@ CS.glossary={
       "term": "이중 연결 리스트",
       "english": "doubly linked list",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "이중 연결 리스트는 각 노드가 다음 노드와 이전 노드에 대한 포인터를 가지는 연결 리스트로, 양방향 탐색이 가능해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5300179"
     },
     {
       "id": "ds-018",
@@ -6509,7 +8618,9 @@ CS.glossary={
       "term": "환형 연결 리스트",
       "english": "circular linked list",
       "topic": "배열과 연결리스트",
-      "detail": ""
+      "detail": "",
+      "meaning": "환형 연결 리스트는 마지막 노드가 첫 번째 노드를 가리키는 연결 리스트로, 리스트가 원형으로 연결해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-019",
@@ -6517,7 +8628,10 @@ CS.glossary={
       "term": "스택",
       "english": "stack",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "스택은 후입선출(LIFO) 방식으로 동작하는 자료구조로, 데이터의 삽입과 삭제가 한쪽 끝에서만 일어남이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q177929"
     },
     {
       "id": "ds-020",
@@ -6525,7 +8639,10 @@ CS.glossary={
       "term": "후입 선출(LIFO)",
       "english": "Last In First Out",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "후입 선출(LIFO)은 마지막에 삽입된 요소가 먼저 삭제되는 방식으로, 스택의 동작 원리를 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q177929"
     },
     {
       "id": "ds-021",
@@ -6533,7 +8650,9 @@ CS.glossary={
       "term": "PUSH (스택 연산)",
       "english": "",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "PUSH (스택 연산)은 스택에 요소를 추가하는 연산으로, 스택의 최상단에 새로운 요소를 삽입이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-022",
@@ -6541,7 +8660,9 @@ CS.glossary={
       "term": "POP (스택 연산)",
       "english": "",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "POP (스택 연산)은 스택에서 요소를 제거하는 연산으로, 스택의 최상단 요소를 삭제해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-023",
@@ -6549,7 +8670,10 @@ CS.glossary={
       "term": "큐",
       "english": "Queue",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "큐는 선입선출(FIFO) 방식으로 동작하는 자료구조로, 데이터의 삽입과 삭제가 양쪽 끝에서 일어남이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q220543"
     },
     {
       "id": "ds-024",
@@ -6557,7 +8681,10 @@ CS.glossary={
       "term": "선입 선출(FIFO)",
       "english": "First In First Out",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "선입 선출(FIFO)은 먼저 삽입된 요소가 먼저 삭제되는 방식으로, 큐의 동작 원리를 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q515636"
     },
     {
       "id": "ds-025",
@@ -6565,7 +8692,10 @@ CS.glossary={
       "term": "인큐",
       "english": "Enqueue",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "인큐는 큐에 요소를 추가하는 연산으로, 큐의 끝에 새로운 요소를 삽입이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q216665"
     },
     {
       "id": "ds-026",
@@ -6573,7 +8703,10 @@ CS.glossary={
       "term": "디큐",
       "english": "Dequeue",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "디큐는 큐에서 요소를 제거하는 연산으로, 큐의 앞쪽 요소를 삭제해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5203240"
     },
     {
       "id": "ds-027",
@@ -6581,7 +8714,10 @@ CS.glossary={
       "term": "원형 큐",
       "english": "circular queue",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "원형 큐는 마지막 위치가 첫 번째 위치와 연결된 큐로, 원형 구조를 가짐이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1224994"
     },
     {
       "id": "ds-028",
@@ -6589,7 +8725,10 @@ CS.glossary={
       "term": "덱",
       "english": "deque;double-ended queue",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "덱은 양쪽 끝에서 요소의 추가와 제거가 가능한 자료구조로, 스택과 큐의 특성을 모두 가짐이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q109274910"
     },
     {
       "id": "ds-029",
@@ -6597,7 +8736,10 @@ CS.glossary={
       "term": "우선순위 큐",
       "english": "priority queue",
       "topic": "스택과 큐",
-      "detail": ""
+      "detail": "",
+      "meaning": "우선순위 큐는 각 요소가 우선순위를 가지고, 높은 우선순위를 가진 요소가 먼저 삭제되는 큐예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q629283"
     },
     {
       "id": "ds-030",
@@ -6605,7 +8747,10 @@ CS.glossary={
       "term": "해시 테이블",
       "english": "hash table",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "해시 테이블은 키와 값의 쌍으로 데이터를 저장하는 자료구조로, 빠른 데이터 검색을 위해 해시 함수를 사용해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q207440"
     },
     {
       "id": "ds-031",
@@ -6613,7 +8758,10 @@ CS.glossary={
       "term": "버킷 (해시 테이블)",
       "english": "bucket",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "버킷 (해시 테이블)은 해시 테이블에서 데이터를 저장하는 단위로, 해시 함수에 의해 할당된 메모리 공간이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q121864104"
     },
     {
       "id": "ds-032",
@@ -6621,7 +8769,10 @@ CS.glossary={
       "term": "해시 함수",
       "english": "hash function",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "해시 함수는 키를 해시 테이블의 인덱스로 변환하는 함수로, 데이터를 균등하게 분산하여 저장해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q183427"
     },
     {
       "id": "ds-033",
@@ -6629,7 +8780,10 @@ CS.glossary={
       "term": "해시 알고리즘",
       "english": "hash algorithm",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "해시 알고리즘은 해시 함수를 구현하는 알고리즘으로, 충돌을 최소화하고 효율적으로 데이터를 분산이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q183427"
     },
     {
       "id": "ds-034",
@@ -6637,7 +8791,10 @@ CS.glossary={
       "term": "해시 충돌",
       "english": "hash collision",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "해시 충돌은 서로 다른 키가 동일한 해시 값을 가지는 경우로, 이를 해결하기 위한 방법이 필요예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1195184"
     },
     {
       "id": "ds-035",
@@ -6645,7 +8802,10 @@ CS.glossary={
       "term": "체이닝 (해시 테이블)",
       "english": "chaining",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "체이닝 (해시 테이블)은 충돌이 발생한 데이터를 링크드 리스트로 연결하여 저장하는 방식으로, 충돌을 해결이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q105205042"
     },
     {
       "id": "ds-036",
@@ -6653,7 +8813,9 @@ CS.glossary={
       "term": "개방 주소법",
       "english": "open addressing",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "개방 주소법은 충돌이 발생한 데이터를 해시 테이블의 다른 빈 공간에 저장하는 방식으로, 선형 조사법, 이차 조사법, 이중 해싱 등이 있음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-037",
@@ -6661,7 +8823,9 @@ CS.glossary={
       "term": "선형 조사법",
       "english": "linear probing",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "선형 조사법은 충돌이 발생할 경우 해시 테이블의 다음 빈 공간을 찾는 방식으로, 충돌 해결을 위한 가장 단순한 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-038",
@@ -6669,7 +8833,9 @@ CS.glossary={
       "term": "군집화 (해시 테이블)",
       "english": "clustering",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "군집화 (해시 테이블)은 해시 충돌이 빈번하게 발생하여 데이터가 특정 구역에 집중되는 현상으로, 선형 조사법에서 주로 발생이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-039",
@@ -6677,7 +8843,9 @@ CS.glossary={
       "term": "이차 조사법",
       "english": "quadratic probing",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "이차 조사법은 충돌이 발생할 경우 일정한 간격으로 빈 공간을 찾는 방식으로, 선형 조사법보다 군집화를 줄일 수 있음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-040",
@@ -6685,7 +8853,10 @@ CS.glossary={
       "term": "이중 해싱",
       "english": "double hashing",
       "topic": "해시 테이블",
-      "detail": ""
+      "detail": "",
+      "meaning": "이중 해싱은 두 개의 해시 함수를 사용하여 충돌을 해결하는 방식으로, 충돌 빈도를 줄일 수 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q478351"
     },
     {
       "id": "ds-041",
@@ -6693,7 +8864,10 @@ CS.glossary={
       "term": "트리",
       "english": "tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "트리는 계층적인 구조를 가진 자료구조로, 노드와 간선으로 구성해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q223655"
     },
     {
       "id": "ds-042",
@@ -6701,7 +8875,9 @@ CS.glossary={
       "term": "부모 노드",
       "english": "parent node",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "부모 노드는 다른 노드를 가리키는 노드로, 자식 노드를 가짐이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-043",
@@ -6709,7 +8885,10 @@ CS.glossary={
       "term": "자식 노드",
       "english": "child node",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "자식 노드는 다른 노드로부터 가리킴을 받는 노드로, 부모 노드를 가짐이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1373197"
     },
     {
       "id": "ds-044",
@@ -6717,7 +8896,9 @@ CS.glossary={
       "term": "형제 노드",
       "english": "sibling node",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "형제 노드는 같은 부모 노드를 가지는 노드로, 형제 관계를 형성이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-045",
@@ -6725,7 +8906,9 @@ CS.glossary={
       "term": "조상 노드",
       "english": "ancestor node",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "조상 노드는 루트 노드까지의 모든 상위 노드로, 노드의 조상을 나타냄이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-046",
@@ -6733,7 +8916,9 @@ CS.glossary={
       "term": "자손 노드",
       "english": "descendant node",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "자손 노드는 현재 노드의 하위에 있는 모든 노드로, 노드의 자손을 나타냄이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-047",
@@ -6741,7 +8926,10 @@ CS.glossary={
       "term": "루트 노드",
       "english": "root node",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "루트 노드는 트리의 최상위 노드로, 부모 노드가 없음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1757074"
     },
     {
       "id": "ds-048",
@@ -6749,7 +8937,10 @@ CS.glossary={
       "term": "리프 노드",
       "english": "leaf node",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "리프 노드는 자식 노드가 없는 노드로, 트리의 끝을 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q93721778"
     },
     {
       "id": "ds-049",
@@ -6757,7 +8948,10 @@ CS.glossary={
       "term": "차수 (트리)",
       "english": "degree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "차수 (트리)는 노드의 자식 노드 개수로, 노드가 가지는 자식 노드의 수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q11579"
     },
     {
       "id": "ds-050",
@@ -6765,7 +8959,10 @@ CS.glossary={
       "term": "레벨 (트리)",
       "english": "level",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "레벨 (트리)는 트리의 깊이로, 루트 노드로부터의 거리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1046315"
     },
     {
       "id": "ds-051",
@@ -6773,7 +8970,10 @@ CS.glossary={
       "term": "깊이 (트리)",
       "english": "depth",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "깊이 (트리)는 루트 노드로부터 특정 노드까지의 거리로, 트리의 깊이를 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q19580008"
     },
     {
       "id": "ds-052",
@@ -6781,7 +8981,10 @@ CS.glossary={
       "term": "높이 (트리)",
       "english": "height",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "높이 (트리)는 특정 노드로부터 리프 노드까지의 거리로, 트리의 높이를 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2550215"
     },
     {
       "id": "ds-053",
@@ -6789,7 +8992,10 @@ CS.glossary={
       "term": "서브트리",
       "english": "subtree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "서브트리는 트리의 일부로, 하위 구조를 형성이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q112850189"
     },
     {
       "id": "ds-054",
@@ -6797,7 +9003,10 @@ CS.glossary={
       "term": "트리 순회",
       "english": "tree traversal",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "트리 순회는 트리의 모든 노드를 방문하는 작업으로, 전위 순회, 중위 순회, 후위 순회, 레벨 순서 순회 등이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1210082"
     },
     {
       "id": "ds-055",
@@ -6805,7 +9014,10 @@ CS.glossary={
       "term": "전위 순회",
       "english": "preorder traversal",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "전위 순회는 루트 노드를 먼저 방문하는 트리 순회 방법으로, 왼쪽 서브트리와 오른쪽 서브트리를 순서대로 방문이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4014804"
     },
     {
       "id": "ds-056",
@@ -6813,7 +9025,9 @@ CS.glossary={
       "term": "중위 순회",
       "english": "inorder traversal",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "중위 순회는 왼쪽 서브트리를 먼저 방문하고 루트 노드를 방문한 후예요. 오른쪽 서브트리를 방문하는 트리 순회 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-057",
@@ -6821,7 +9035,10 @@ CS.glossary={
       "term": "후위 순회",
       "english": "postorder traversal",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "후위 순회는 왼쪽 서브트리와 오른쪽 서브트리를 방문한 후예요. 루트 노드를 방문하는 트리 순회 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4014805"
     },
     {
       "id": "ds-058",
@@ -6829,7 +9046,10 @@ CS.glossary={
       "term": "레벨 순서 순회",
       "english": "level order traversal",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "레벨 순서 순회는 트리의 레벨 순서대로 노드를 방문하는 트리 순회 방법으로, 너비 우선 탐색을 기반으로 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q105243139"
     },
     {
       "id": "ds-059",
@@ -6837,7 +9057,10 @@ CS.glossary={
       "term": "이진 트리",
       "english": "binary tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "이진 트리는 각 노드가 최대 두 개의 자식 노드를 가지는 트리로, 이진 탐색 트리, AVL 트리, 힙 등이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q380172"
     },
     {
       "id": "ds-060",
@@ -6845,7 +9068,9 @@ CS.glossary={
       "term": "편향된 이진 트리",
       "english": "skewed binary tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "편향된 이진 트리는 한쪽 방향으로만 자식 노드를 가지는 이진 트리로, 왼쪽 편향 트리, 오른쪽 편향 트리가 있음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-061",
@@ -6853,7 +9078,10 @@ CS.glossary={
       "term": "정 이진 트리",
       "english": "full binary tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "정 이진 트리는 모든 노드가 정확히 두 개의 자식 노드를 가지는 이진 트리로, 완벽한 이진 트리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q29791667"
     },
     {
       "id": "ds-062",
@@ -6861,7 +9089,9 @@ CS.glossary={
       "term": "포화 이진 트리",
       "english": "perfect binary tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "포화 이진 트리는 모든 리프 노드가 동일한 레벨에 있는 이진 트리로, 모든 노드가 자식 노드를 가짐이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-063",
@@ -6869,7 +9099,9 @@ CS.glossary={
       "term": "완전 이진 트리",
       "english": "complete binary tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "완전 이진 트리는 마지막 레벨을 제외한 모든 레벨에서 노드가 꽉 차 있는 이진 트리로, 레벨 순서대로 노드를 채움이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-064",
@@ -6877,7 +9109,10 @@ CS.glossary={
       "term": "이진 탐색 트리",
       "english": "BST; Binary Search Tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "이진 탐색 트리는 왼쪽 서브트리의 모든 노드 값이 루트 노드보다 작고, 오른쪽 서브트리의 모든 노드 값이 루트 노드보다 큰 트리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q623818"
     },
     {
       "id": "ds-065",
@@ -6885,7 +9120,10 @@ CS.glossary={
       "term": "힙",
       "english": "heap",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "힙은 완전 이진 트리 형태로 우선순위 큐를 구현한 자료구조로, 최대 힙과 최소 힙이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q274089"
     },
     {
       "id": "ds-066",
@@ -6893,7 +9131,10 @@ CS.glossary={
       "term": "자가 균형 이진 탐색 트리",
       "english": "self-balancing binary search tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "자가 균형 이진 탐색 트리는 삽입과 삭제 연산 후에도 균형을 유지하는 이진 탐색 트리로, AVL 트리, 레드-블랙 트리 등이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q245955"
     },
     {
       "id": "ds-067",
@@ -6901,7 +9142,10 @@ CS.glossary={
       "term": "RB 트리",
       "english": "rbtree; red black tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "RB 트리는 각 노드가 빨간색 또는 검은색을 가지며, 삽입과 삭제 시 균형을 유지하는 이진 탐색 트리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q506496"
     },
     {
       "id": "ds-068",
@@ -6909,7 +9153,10 @@ CS.glossary={
       "term": "트리의 회전",
       "english": "tree rotation",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "트리의 회전은 이진 트리의 구조를 변경하여 균형을 맞추는 연산으로, 왼쪽 회전과 오른쪽 회전이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q541347"
     },
     {
       "id": "ds-069",
@@ -6917,7 +9164,9 @@ CS.glossary={
       "term": "왼쪽 회전 (트리의 회전)",
       "english": "left rotation",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "왼쪽 회전 (트리의 회전)은 오른쪽 자식을 부모로 승격시키는 회전 연산으로, 왼쪽 자식과 부모의 관계를 변경이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-070",
@@ -6925,7 +9174,10 @@ CS.glossary={
       "term": "오른쪽 회전 (트리의 회전)",
       "english": "right rotation",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "오른쪽 회전 (트리의 회전)은 왼쪽 자식을 부모로 승격시키는 회전 연산으로, 오른쪽 자식과 부모의 관계를 변경이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q104841378"
     },
     {
       "id": "ds-071",
@@ -6933,7 +9185,10 @@ CS.glossary={
       "term": "B 트리",
       "english": "B tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "B 트리는 균형을 유지하는 다진 탐색 트리로, 데이터베이스와 파일 시스템에서 사용해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q677051"
     },
     {
       "id": "ds-072",
@@ -6941,7 +9196,9 @@ CS.glossary={
       "term": "다진 탐색 트리",
       "english": "",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "다진 탐색 트리는 한 노드가 여러 개의 자식을 가지는 트리로, 검색, 삽입, 삭제 연산에서 효율적이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "ds-073",
@@ -6949,7 +9206,10 @@ CS.glossary={
       "term": "B+ 트리",
       "english": "B+ tree",
       "topic": "트리",
-      "detail": ""
+      "detail": "",
+      "meaning": "B+ 트리는 B 트리의 변형으로, 리프 노드가 Linked List로 연결된 트리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q285861"
     },
     {
       "id": "ds-074",
@@ -6957,7 +9217,10 @@ CS.glossary={
       "term": "그래프",
       "english": "graph",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "그래프는 정점과 정점을 잇는 변으로 구성된 자료구조로, 네트워크 모델을 표현하는 데 사용해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q141488"
     },
     {
       "id": "ds-075",
@@ -6965,7 +9228,10 @@ CS.glossary={
       "term": "연결 그래프",
       "english": "connected graph",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "연결 그래프는 모든 정점이 서로 연결된 그래프로, 모든 정점 간에 경로가 존재예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q230655"
     },
     {
       "id": "ds-076",
@@ -6973,7 +9239,10 @@ CS.glossary={
       "term": "비연결 그래프",
       "english": "disconnected graph",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "비연결 그래프는 일부 정점이 연결되지 않은 그래프로, 일부 정점 간에 경로가 존재하지 않음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q138827270"
     },
     {
       "id": "ds-077",
@@ -6981,7 +9250,10 @@ CS.glossary={
       "term": "방향 그래프",
       "english": "directed graph",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "방향 그래프는 정점 간의 변에 방향이 있는 그래프로, 방향성이 있는 관계를 표현해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1137726"
     },
     {
       "id": "ds-078",
@@ -6989,7 +9261,10 @@ CS.glossary={
       "term": "무방향 그래프",
       "english": "undirected graph",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "무방향 그래프는 정점 간의 변에 방향이 없는 그래프로, 대칭적인 관계를 표현해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3115587"
     },
     {
       "id": "ds-079",
@@ -6997,7 +9272,10 @@ CS.glossary={
       "term": "가중치 그래프",
       "english": "weighted graph",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "가중치 그래프는 변에 가중치가 있는 그래프로, 가중치는 비용이나 거리 등을 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1723971"
     },
     {
       "id": "ds-080",
@@ -7005,7 +9283,10 @@ CS.glossary={
       "term": "서브 그래프",
       "english": "subgraph",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "서브 그래프는 그래프의 일부를 구성하는 그래프로, 원래 그래프의 부분 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7631151"
     },
     {
       "id": "ds-081",
@@ -7013,7 +9294,10 @@ CS.glossary={
       "term": "인접 행렬 (그래프)",
       "english": "adjacency matrix",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "인접 행렬 (그래프)는 그래프를 행렬로 표현하는 방법으로, 정점 간의 연결 여부를 행렬로 나타냄이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q727035"
     },
     {
       "id": "ds-082",
@@ -7021,7 +9305,10 @@ CS.glossary={
       "term": "인접 리스트 (그래프)",
       "english": "adjacency list",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "인접 리스트 (그래프)는 그래프를 리스트로 표현하는 방법으로, 각 정점에 연결된 다른 정점들을 리스트로 표현해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q264398"
     },
     {
       "id": "ds-083",
@@ -7029,7 +9316,10 @@ CS.glossary={
       "term": "깊이 우선 탐색 (DFS)",
       "english": "Depth-First Search",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "깊이 우선 탐색 (DFS)은 그래프의 정점을 깊이 우선으로 탐색하는 알고리즘으로, 재귀적 접근을 사용해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q816319"
     },
     {
       "id": "ds-084",
@@ -7037,7 +9327,10 @@ CS.glossary={
       "term": "너비 우선 탐색 (BFS)",
       "english": "Breadth-First Search",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "너비 우선 탐색 (BFS)은 그래프의 정점을 너비 우선으로 탐색하는 알고리즘으로, 큐를 사용하여 구현이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q325904"
     },
     {
       "id": "ds-085",
@@ -7045,7 +9338,10 @@ CS.glossary={
       "term": "최단 경로 알고리즘",
       "english": "shortest-path algorithm",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "최단 경로 알고리즘은 정점 간의 최단 경로를 찾는 알고리즘으로, 다익스트라 알고리즘, 벨만-포드 알고리즘 등이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1058754"
     },
     {
       "id": "ds-086",
@@ -7053,7 +9349,10 @@ CS.glossary={
       "term": "다익스트라 알고리즘",
       "english": "Dijkstra's algorithm",
       "topic": "그래프",
-      "detail": ""
+      "detail": "",
+      "meaning": "다익스트라 알고리즘은 가중치 그래프에서 시작 정점으로부터 다른 모든 정점까지의예요. 최단 경로를 찾는 알고리즘으로, 각 정점의 최단 경로를 반복적으로 갱신해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8548"
     },
     {
       "id": "arch-001",
@@ -7061,7 +9360,10 @@ CS.glossary={
       "term": "데이터",
       "english": "data",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "데이터는 컴퓨터가 이해하는 숫자, 문자, 이미지, 동영상과 같은 정적인 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q22983"
     },
     {
       "id": "arch-002",
@@ -7069,7 +9371,10 @@ CS.glossary={
       "term": "명령어",
       "english": "instruction",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "명령어는 데이터를 활용하여 CPU를 작동시키는 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1079196"
     },
     {
       "id": "arch-003",
@@ -7077,7 +9382,9 @@ CS.glossary={
       "term": "메인 메모리",
       "english": "main memory",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "메인 메모리는 현재 실행되는 프로그램의 명령어와 데이터를 저장하는 부품이에요. 사용되는 하드웨어로는 RAM(Random Access Memory)과 ROM(Read Only Memory)이 있으며, 메모리라는 용어는 보통 RAM을 지칭이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-004",
@@ -7085,7 +9392,10 @@ CS.glossary={
       "term": "중앙처리장치(CPU)",
       "english": "CPU; Central Processing Unit",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "중앙처리장치(CPU)는 메모리에 저장된 명령어를 읽어 들이고, 읽어 들인 명령어를 해석하고, 실행하는 부품이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q117453145"
     },
     {
       "id": "arch-005",
@@ -7093,7 +9403,10 @@ CS.glossary={
       "term": "산술논리연산장치(ALU)",
       "english": "ALU; Arithmetic Logic Unit",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "산술논리연산장치(ALU)는 CPU 내부 구성 요소 중 하나로, 덧셈, 뺄셈, 곱셈, 나눗셈, 논리 연산 등 계산을 위해 존재하는 부품 (계산용 회로)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q153987"
     },
     {
       "id": "arch-006",
@@ -7101,7 +9414,10 @@ CS.glossary={
       "term": "레지스터",
       "english": "register",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "레지스터는 CPU 내부 구성 요소 중 하나로, CPU 내부의 작은 임시 저장 장치예요. 프로그램을 실행하는 데 필요한 값들을 임시로 저장하며, CPU 안에는 여러 개의 레지스터가 존재하고, 각기 다른 이름과 역할을 가지고 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1343660"
     },
     {
       "id": "arch-007",
@@ -7109,7 +9425,10 @@ CS.glossary={
       "term": "제어장치",
       "english": "control unit",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "제어장치는 CPU 내부 구성 요소 중 하나로, 제어 신호라는 전기 신호를 내보내고 명령어를 해석하는 장치예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q12644198"
     },
     {
       "id": "arch-008",
@@ -7117,7 +9436,10 @@ CS.glossary={
       "term": "보조기억장치",
       "english": "secondary storage",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "보조기억장치는 하드 디스크, SSD, USB 메모리, DVD, CD-ROM과 같이 메모리보다 크기가 크고 전원이 꺼져도 저장된 내용을 잃지 않는 저장 장치예요. 메모리가 현재 실행되는 프로그램을 저장한다면, 보조기억장치는 보관할 프로그램을 저장해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2067979"
     },
     {
       "id": "arch-009",
@@ -7125,7 +9447,9 @@ CS.glossary={
       "term": "입출력장치",
       "english": "I/O device",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "입출력장치는 마이크, 스피커, 프린터, 마우스, 키보드와 같이 컴퓨터 외부에 연결되어 컴퓨터 내부와 정보를 교환하는 장치예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-010",
@@ -7133,7 +9457,10 @@ CS.glossary={
       "term": "주변 장치",
       "english": "peripheral device",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "주변 장치는 보조기억장치와 입출력장치의 통칭이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q178648"
     },
     {
       "id": "arch-011",
@@ -7141,7 +9468,10 @@ CS.glossary={
       "term": "시스템 버스",
       "english": "system bus",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "시스템 버스는 컴퓨터의 네 가지 핵심 부품(CPU, 메모리, 보조기억장치, 입출력장치)들이 서로 정보를 주고받는 통로예요. 주소 버스, 데이터 버스, 제어 버스로 구성해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2377054"
     },
     {
       "id": "arch-012",
@@ -7149,7 +9479,9 @@ CS.glossary={
       "term": "주소 버스",
       "english": "address bus",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "주소 버스는 주소를 주고받는 통로예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-013",
@@ -7157,7 +9489,10 @@ CS.glossary={
       "term": "데이터 버스",
       "english": "data bus",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "데이터 버스는 명령어와 데이터를 주고받는 통로예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2928673"
     },
     {
       "id": "arch-014",
@@ -7165,7 +9500,10 @@ CS.glossary={
       "term": "제어 버스",
       "english": "control bus",
       "topic": "컴퓨터 구조 시작하기",
-      "detail": "컴퓨터 구조의 큰 그림"
+      "detail": "컴퓨터 구조의 큰 그림",
+      "meaning": "제어 버스는 제어 신호를 주고받는 통로예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2235486"
     },
     {
       "id": "arch-015",
@@ -7173,7 +9511,10 @@ CS.glossary={
       "term": "비트",
       "english": "bit",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "비트는 0과 1을 나타내는 가장 작은 정보 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8805"
     },
     {
       "id": "arch-016",
@@ -7181,7 +9522,10 @@ CS.glossary={
       "term": "바이트",
       "english": "byte",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "바이트는 8비트를 묶은 단위로, 비트보다 한 단계 큰 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8799"
     },
     {
       "id": "arch-017",
@@ -7189,7 +9533,10 @@ CS.glossary={
       "term": "워드",
       "english": "word",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "워드는 CPU가 한 번에 처리할 수 있는 데이터 크기예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8171"
     },
     {
       "id": "arch-018",
@@ -7197,7 +9544,9 @@ CS.glossary={
       "term": "하프워드",
       "english": "half word",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "하프워드는 워드의 절반 크기예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-019",
@@ -7205,7 +9554,10 @@ CS.glossary={
       "term": "풀 워드",
       "english": "full word",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "풀 워드는 워드의 1배 크기예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q140232337"
     },
     {
       "id": "arch-020",
@@ -7213,7 +9565,10 @@ CS.glossary={
       "term": "더블 워드",
       "english": "double word",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "더블 워드는 워드의 2배 크기예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3716831"
     },
     {
       "id": "arch-021",
@@ -7221,7 +9576,10 @@ CS.glossary={
       "term": "이진법",
       "english": "binary",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "이진법은 1을 넘어가는 시점에 자리 올림을 하여 0과 1만으로 모든 숫자를 표현하는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3913"
     },
     {
       "id": "arch-022",
@@ -7229,7 +9587,10 @@ CS.glossary={
       "term": "십진법",
       "english": "decimal",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "십진법은 숫자가 9를 넘어가는 시점에 자리 올림을 하여 0부터 9까지, 열 개의 숫자만으로 모든 수를 표현하는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q81365"
     },
     {
       "id": "arch-023",
@@ -7237,7 +9598,10 @@ CS.glossary={
       "term": "이진수",
       "english": "binary number",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "이진수는 이진법으로 표현한 수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q139558835"
     },
     {
       "id": "arch-024",
@@ -7245,7 +9609,10 @@ CS.glossary={
       "term": "십진수",
       "english": "decimal number",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "십진수는 십진법으로 표현한 수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q81365"
     },
     {
       "id": "arch-025",
@@ -7253,7 +9620,10 @@ CS.glossary={
       "term": "1의 보수",
       "english": "1's complement",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "1의 보수는 모든 이진수의 0과 1을 뒤집은 수예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1361630"
     },
     {
       "id": "arch-026",
@@ -7261,7 +9631,10 @@ CS.glossary={
       "term": "2의 보수",
       "english": "2's complement",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "2의 보수는 어떤 수를 그보다 큰 2^n에서 뺀 값(=모든 0과 1을 뒤집고, 거기에 1을 더한 값)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q232577"
     },
     {
       "id": "arch-027",
@@ -7269,7 +9642,10 @@ CS.glossary={
       "term": "플래그",
       "english": "flag",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "플래그는 CPU가 명령어를 처리하는 과정에서 고려해야 할 부가 정보예요. (예: 부호 플래그, 제로 플래그, 캐리 플래그, 오버플로우 플래그, 인터럽트 플래그 등)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q121090777"
     },
     {
       "id": "arch-028",
@@ -7277,7 +9653,10 @@ CS.glossary={
       "term": "십육진법",
       "english": "hexadecimal",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "십육진법은 수가 15를 넘어가는 시점에 자리 올림을 하는 숫자 표현 방식이에요. 십진수 10, 11, 12, 13, 14, 15를 십육진법 체계에서는 각각 A, B, C, D, E, F로 표기예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q82828"
     },
     {
       "id": "arch-029",
@@ -7285,7 +9664,10 @@ CS.glossary={
       "term": "부동 소수점",
       "english": "floating point",
       "topic": "데이터",
-      "detail": "0과 1로 숫자를 표현하는 방법"
+      "detail": "0과 1로 숫자를 표현하는 방법",
+      "meaning": "부동 소수점은 컴퓨터 내부에서 실수를 표현하는 방법이에요. 부호 비트, 지수 부분, 가수 부분으로 구성해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q117879"
     },
     {
       "id": "arch-030",
@@ -7293,7 +9675,10 @@ CS.glossary={
       "term": "문자 집합",
       "english": "character set",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "문자 집합은 컴퓨터가 인식하고 표현할 수 있는 문자의 모음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q184757"
     },
     {
       "id": "arch-031",
@@ -7301,7 +9686,10 @@ CS.glossary={
       "term": "문자 인코딩",
       "english": "character encoding",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "문자 인코딩은 문자를 컴퓨터가 이해 가능한 코드로 변환하는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q184759"
     },
     {
       "id": "arch-032",
@@ -7309,7 +9697,9 @@ CS.glossary={
       "term": "문자 디코딩",
       "english": "character decoding",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "문자 디코딩은 0과 1로 이루어진 문자 코드를 사람이 이해할 수 있는 문자로 변환하는 방법(인코딩의 반대 과정)이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-033",
@@ -7317,7 +9707,10 @@ CS.glossary={
       "term": "아스키",
       "english": "ASCII; American Standard Code for Information Interchange",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "아스키는 영어 알파벳과 아라비아 숫자, 그리고 일부 특수 문자를 포함하는 초창기 문자 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q297303"
     },
     {
       "id": "arch-034",
@@ -7325,7 +9718,10 @@ CS.glossary={
       "term": "아스키 문자",
       "english": "ASCII character",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "아스키 문자는 아스키 문자 집합에 속한 문자예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2493832"
     },
     {
       "id": "arch-035",
@@ -7333,7 +9729,10 @@ CS.glossary={
       "term": "아스키 코드",
       "english": "ASCII code",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "아스키 코드는 아스키 문자에 대응된 고유한 수예요. 아스키 문자들은 0부터 127까지 총 128개의 숫자 중 하나의 고유한 수에 일대일로 대응돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8815"
     },
     {
       "id": "arch-036",
@@ -7341,7 +9740,10 @@ CS.glossary={
       "term": "코드 포인트",
       "english": "code point",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "코드 포인트는 글자에 부여된 고유한 값이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1105784"
     },
     {
       "id": "arch-037",
@@ -7349,7 +9751,10 @@ CS.glossary={
       "term": "확장 아스키",
       "english": "Extended ASCII",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "확장 아스키는 일반 아스키 코드보다 더 다양한 문자 표현을 위해 아스키 코드에 1비트를 추가한 8비트 문자 집합이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2610482"
     },
     {
       "id": "arch-038",
@@ -7357,7 +9762,9 @@ CS.glossary={
       "term": "EUC-KR",
       "english": "",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "EUC-KR은 한글을 2바이트 크기로 인코딩할 수 있는 완성형 인코딩 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-039",
@@ -7365,7 +9772,10 @@ CS.glossary={
       "term": "한글 완성형 인코딩",
       "english": "",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "한글 완성형 인코딩은 초성, 중성, 종성의 조합으로 이루어진 완성된 하나의 글자에 고유한 코드를 부여하는 인코딩 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q12623918"
     },
     {
       "id": "arch-040",
@@ -7373,7 +9783,10 @@ CS.glossary={
       "term": "한글 조합형 인코딩",
       "english": "",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "한글 조합형 인코딩은 초성을 위한 비트열, 중성을 위한 비트열, 종성을 위한 비트열을 할당하여 그것들의 조합으로 하나의 글자 코드를 완성하는 인코딩 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q12623919"
     },
     {
       "id": "arch-041",
@@ -7381,7 +9794,10 @@ CS.glossary={
       "term": "CP949",
       "english": "Code Page 949",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "CP949는 EUC-KR의 확장된 버전으로, EUC-KR로 표현할 수 없는 더욱 다양한 문자를 표현해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1105778"
     },
     {
       "id": "arch-042",
@@ -7389,7 +9805,10 @@ CS.glossary={
       "term": "유니코드",
       "english": "unicode",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "유니코드는 여러 나라의 문자들을 광범위하게 표현할 수 있는 통일된 문자 집합으로, UTF-8, UTF-16, UTF-32는 유니코드 문자의 인코딩 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q8819"
     },
     {
       "id": "arch-043",
@@ -7397,7 +9816,10 @@ CS.glossary={
       "term": "UTF",
       "english": "Unicode Transformation Format",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "UTF는 유니코드를 인코딩하는 방법이에요. 가변 길이 인코딩이에요. 대표적으로 UTF-8, UTF-16, UTF-32가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1416278"
     },
     {
       "id": "arch-044",
@@ -7405,7 +9827,10 @@ CS.glossary={
       "term": "Base64",
       "english": "",
       "topic": "데이터",
-      "detail": "0과 1로 문자를 표현하는 방법"
+      "detail": "0과 1로 문자를 표현하는 방법",
+      "meaning": "Base64는 이미지와 같은 이진 데이터를 아스키 기반 문자열로 변환하는 64진법 기반 인코딩 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q123050629"
     },
     {
       "id": "arch-045",
@@ -7413,7 +9838,10 @@ CS.glossary={
       "term": "고급 언어",
       "english": "high-level programming language",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "고급 언어는 사람이 이해하고 작성하기 쉽게 만들어진 언어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q211496"
     },
     {
       "id": "arch-046",
@@ -7421,7 +9849,10 @@ CS.glossary={
       "term": "저급 언어",
       "english": "low-level programming language",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "저급 언어는 컴퓨터가 직접 이해하고 실행할 수 있는 언어예요. (예: 기계어, 어셈블리어)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q558937"
     },
     {
       "id": "arch-047",
@@ -7429,7 +9860,10 @@ CS.glossary={
       "term": "기계어",
       "english": "machine code",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "기계어는 0과 1의 명령어 비트로 이루어진 언어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q55813"
     },
     {
       "id": "arch-048",
@@ -7437,7 +9871,10 @@ CS.glossary={
       "term": "어셈블리어",
       "english": "assembly language",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "어셈블리어는 0과 1로 표현된 명령어(기계어)를 읽기 편한 형태로 번역한 언어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q165436"
     },
     {
       "id": "arch-049",
@@ -7445,7 +9882,10 @@ CS.glossary={
       "term": "컴파일 언어",
       "english": "compiled language",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "컴파일 언어는 컴파일 방식으로 작동하는 프로그래밍 언어 컴파일러에 의해 소스 코드 전체가 저급 언어로 변환되어 실행되는 고급 언어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q651794"
     },
     {
       "id": "arch-050",
@@ -7453,7 +9893,9 @@ CS.glossary={
       "term": "인터프리터 언어",
       "english": "interpreted language",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "인터프리터 언어는 인터프리트 방식으로 작동하는 프로그래밍 언어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-051",
@@ -7461,7 +9903,9 @@ CS.glossary={
       "term": "컴파일",
       "english": "compile",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "컴파일은 컴파일 언어로 작성된 소스코드가 저급 언어로 변환되는 과정이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-052",
@@ -7469,7 +9913,9 @@ CS.glossary={
       "term": "컴파일러",
       "english": "compiler",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "컴파일러는 소스코드를 처음부터 끝까지 저급 언어로 컴파일해주는 도구예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-053",
@@ -7477,7 +9923,9 @@ CS.glossary={
       "term": "목적 코드",
       "english": "object code",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "목적 코드는 컴파일러를 통해 저급 언어로 변환된 코드예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-054",
@@ -7485,7 +9933,9 @@ CS.glossary={
       "term": "인터프리터",
       "english": "interpreter",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "인터프리터는 소스 코드를 한 줄 씩 저급 언어로 변환하여 실행해 주는 도구예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-055",
@@ -7493,7 +9943,9 @@ CS.glossary={
       "term": "목적 파일",
       "english": "object file",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "목적 파일은 목적 코드로 이루어진 파일이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-056",
@@ -7501,7 +9953,9 @@ CS.glossary={
       "term": "실행 파일",
       "english": "executable file",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "실행 파일은 링킹을 거쳐 만들어진 실행 코드로 이루어진 파일이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-057",
@@ -7509,7 +9963,9 @@ CS.glossary={
       "term": "링킹",
       "english": "linking",
       "topic": "명령어",
-      "detail": "소스 코드와 명령어"
+      "detail": "소스 코드와 명령어",
+      "meaning": "링킹은 여러 목적 파일을 결합하여 실행 파일을 생성하는 과정이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-058",
@@ -7517,7 +9973,9 @@ CS.glossary={
       "term": "명령어의 구조",
       "english": "instruction structure",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "명령어의 구조는 연산 코드와 오퍼랜드로 구성해요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-059",
@@ -7525,7 +9983,10 @@ CS.glossary={
       "term": "연산 코드",
       "english": "operation code",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "연산 코드는 명령어가 수행할 연산 (연산자라고도 부름)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q766483"
     },
     {
       "id": "arch-060",
@@ -7533,7 +9994,10 @@ CS.glossary={
       "term": "오퍼랜드",
       "english": "operand",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "오퍼랜드는 연산에 사용할 데이터 혹은 연산에 사용할 데이터가 저장될 위치 (피연산자라고도 부름)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7096675"
     },
     {
       "id": "arch-061",
@@ -7541,7 +10005,9 @@ CS.glossary={
       "term": "연산 코드 필드",
       "english": "operation code field",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "연산 코드 필드는 명령어의 연산 코드가 담기는 영역이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-062",
@@ -7549,7 +10015,9 @@ CS.glossary={
       "term": "오퍼랜드 필드",
       "english": "operand field",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "오퍼랜드 필드는 명령어의 오퍼랜드가 담기는 영역 (주소 필드라고도 부름)이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-063",
@@ -7557,7 +10025,9 @@ CS.glossary={
       "term": "0-주소 명령어",
       "english": "zero-address instruction",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "0-주소 명령어는 오퍼랜드가 하나도 없는 명령어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-064",
@@ -7565,7 +10035,9 @@ CS.glossary={
       "term": "1-주소 명령어",
       "english": "one-address instruction",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "1-주소 명령어는 오퍼랜드가 하나인 명령어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-065",
@@ -7573,7 +10045,9 @@ CS.glossary={
       "term": "2-주소 명령어",
       "english": "two-address instruction",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "2-주소 명령어는 오퍼랜드가 두 개인 명령어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-066",
@@ -7581,7 +10055,9 @@ CS.glossary={
       "term": "3-주소 명령어",
       "english": "three-address instruction",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "3-주소 명령어는 오퍼랜드가 세 개인 명령어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-067",
@@ -7589,7 +10065,9 @@ CS.glossary={
       "term": "유효 주소",
       "english": "effective address",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "유효 주소는 연산 코드에 사용할 데이터가 저장된 위치, 즉 연산의 대상이 되는 데이터가 저장된 위치예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-068",
@@ -7597,7 +10075,10 @@ CS.glossary={
       "term": "주소 지정 방식",
       "english": "addressing mode",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "주소 지정 방식은 연산에 사용할 데이터 위치를 찾는 방법(=유효 주소를 찾는 방법)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q367183"
     },
     {
       "id": "arch-069",
@@ -7605,7 +10086,9 @@ CS.glossary={
       "term": "즉시 주소 지정 방식",
       "english": "immediate addressing mode",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "즉시 주소 지정 방식은 연산에 사용할 데이터를 오퍼랜드 필드에 직접 명시하는 주소 지정 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-070",
@@ -7613,7 +10096,9 @@ CS.glossary={
       "term": "직접 주소 지정 방식",
       "english": "direct addressing mode",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "직접 주소 지정 방식은 오퍼랜드 필드에 유효 주소를 직접적으로 명시하는 주소 지정 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-071",
@@ -7621,7 +10106,9 @@ CS.glossary={
       "term": "간접 주소 지정 방식",
       "english": "indirect addressing mode",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "간접 주소 지정 방식은 유효 주소의 주소를 오퍼랜드 필드에 명시하는 주소 지정 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-072",
@@ -7629,7 +10116,9 @@ CS.glossary={
       "term": "레지스터 주소 지정 방식",
       "english": "register addressing mode",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "레지스터 주소 지정 방식은 연산에 사용할 데이터를 저장한 레지스터를 오퍼랜드 필드에 직접 명시하는 주소 지정 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-073",
@@ -7637,7 +10126,9 @@ CS.glossary={
       "term": "레지스터 간접 주소 지정 방식",
       "english": "register indirect addressing mode",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "레지스터 간접 주소 지정 방식은 연산에 사용할 데이터를 메모리에 저장하고, 그 주소(유효 주소)를 저장한 레지스터를 오퍼랜드 필드에 명시하는 주소 지정 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-074",
@@ -7645,7 +10136,10 @@ CS.glossary={
       "term": "스택",
       "english": "stack",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "스택은 한쪽 끝이 막혀 있는 통과 같은 저장 공간과 같은 자료구조로, LIFO 자료구조라고도 불림이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q177929"
     },
     {
       "id": "arch-075",
@@ -7653,7 +10147,10 @@ CS.glossary={
       "term": "LIFO",
       "english": "Last In First Out",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "LIFO는 나중에 저장한 데이터를 가장 먼저 빼내는 데이터 관리 방식(후입선출)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q6458644"
     },
     {
       "id": "arch-076",
@@ -7661,7 +10158,10 @@ CS.glossary={
       "term": "큐",
       "english": "queue",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "큐는 한쪽으로는 데이터를 저장하고, 다른 한쪽으로는 먼저 저장한 순서대로 데이터를 뺄 수 있는 자료구조로, FIFO 자료 구조라고도 부름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1740301"
     },
     {
       "id": "arch-077",
@@ -7669,7 +10169,10 @@ CS.glossary={
       "term": "FIFO",
       "english": "First In First Out",
       "topic": "명령어",
-      "detail": "명령어의 구조"
+      "detail": "명령어의 구조",
+      "meaning": "FIFO는 가장 먼저 저장된 데이터부터 빼내는 데이터 관리 방식(선입선출)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q10856017"
     },
     {
       "id": "arch-078",
@@ -7677,7 +10180,10 @@ CS.glossary={
       "term": "ALU",
       "english": "",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "ALU는 CPU의 구성 요소로, 계산을 담당하는 부품이에요. 레지스터를 통해 피연산자를 받아들이고 제어장치로부터 수행할 연산을 알려주는 제어 신호를 받아들여요. 연산한 결괏값과 플래그를 내보내요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q153987"
     },
     {
       "id": "arch-079",
@@ -7685,7 +10191,10 @@ CS.glossary={
       "term": "플래그",
       "english": "flag",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "플래그는 연산 결과에 대한 추가적인 상태 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q121090777"
     },
     {
       "id": "arch-080",
@@ -7693,7 +10202,9 @@ CS.glossary={
       "term": "부호 플래그",
       "english": "sign flag; nagative flag",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "부호 플래그는 연산한 결과의 부호를 나타내는 플래그예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-081",
@@ -7701,7 +10212,10 @@ CS.glossary={
       "term": "제로 플래그",
       "english": "zero flag",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "제로 플래그는 연산 결과가 0인지 여부를 나타내는 플래그예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2004679"
     },
     {
       "id": "arch-082",
@@ -7709,7 +10223,10 @@ CS.glossary={
       "term": "캐리 플래그",
       "english": "carry flag",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "캐리 플래그는 연산 결과 올림수나 빌림수가 발생했는지 나타내는 플래그예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q334167"
     },
     {
       "id": "arch-083",
@@ -7717,7 +10234,10 @@ CS.glossary={
       "term": "오버플로우 플래그",
       "english": "overflow flag",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "오버플로우 플래그는 오버플로우가 발생했는지 나타내는 플래그예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q332719"
     },
     {
       "id": "arch-084",
@@ -7725,7 +10245,10 @@ CS.glossary={
       "term": "인터럽트 플래그",
       "english": "interrupt flag",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "인터럽트 플래그는 인터럽트가 가능한지 여부를 나타내는 플래그예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4035639"
     },
     {
       "id": "arch-085",
@@ -7733,7 +10256,9 @@ CS.glossary={
       "term": "슈퍼바이저 플래그",
       "english": "supervisor flag",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "슈퍼바이저 플래그는 커널 모드로 실행 중인지, 사용자 모드로 실행중인지 나타내는 플래그예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-086",
@@ -7741,7 +10266,10 @@ CS.glossary={
       "term": "오버플로우",
       "english": "overflow",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "오버플로우는 연산 결과가 연산 결과를 담을 레지스터보다 큰 상황이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1191932"
     },
     {
       "id": "arch-087",
@@ -7749,7 +10277,10 @@ CS.glossary={
       "term": "플래그 레지스터",
       "english": "flag register",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "플래그 레지스터는 플래그 값들을 저장하는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1322850"
     },
     {
       "id": "arch-088",
@@ -7757,7 +10288,10 @@ CS.glossary={
       "term": "제어장치",
       "english": "control unit",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "제어장치는 CPU의 구성 요소로, 제어 신호를 내보내고, 명령어를 해석하는 부품이에요. 클럭, 현재 수행할 명령어, 플래그, 제어 신호를 받아들여요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q12644198"
     },
     {
       "id": "arch-089",
@@ -7765,7 +10299,10 @@ CS.glossary={
       "term": "제어 신호",
       "english": "control signal",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "제어 신호는 컴퓨터 부품들을 관리하고 작동시키기 위한 일종의 전기 신호예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q98534691"
     },
     {
       "id": "arch-090",
@@ -7773,7 +10310,10 @@ CS.glossary={
       "term": "클럭",
       "english": "clock",
       "topic": "CPU의 작동 원리",
-      "detail": "ALU와 제어장치"
+      "detail": "ALU와 제어장치",
+      "meaning": "클럭은 컴퓨터의 부품을 작동시키는 GHz 단위의 시간 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q911691"
     },
     {
       "id": "arch-091",
@@ -7781,7 +10321,10 @@ CS.glossary={
       "term": "프로그램 카운터",
       "english": "PC; Program Counter",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "프로그램 카운터는 메모리에서 가져올 명령어의 주소, 즉 메모리에서 읽어 들일 명령어의 주소를 저장하는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q814194"
     },
     {
       "id": "arch-092",
@@ -7789,7 +10332,10 @@ CS.glossary={
       "term": "명령어 포인터",
       "english": "IP; Instruction Pointer",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "명령어 포인터는 프로그램 카운터와의 동의어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q814194"
     },
     {
       "id": "arch-093",
@@ -7797,7 +10343,10 @@ CS.glossary={
       "term": "명령어 레지스터",
       "english": "IR; Instruction Register",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "명령어 레지스터는 해석할 명령어, 즉 방금 메모리에서 읽어 들인 명령어를 저장하는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q794"
     },
     {
       "id": "arch-094",
@@ -7805,7 +10354,10 @@ CS.glossary={
       "term": "메모리 주소 레지스터",
       "english": "MAR; Memory Address Register",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "메모리 주소 레지스터는 메모리의 주소를 저장하는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q21029461"
     },
     {
       "id": "arch-095",
@@ -7813,7 +10365,10 @@ CS.glossary={
       "term": "메모리 버퍼 레지스터",
       "english": "MBR; Memory Buffer Register",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "메모리 버퍼 레지스터는 메모리와 주고받을 값(데이터와 명령어)을 저장하는 레지스터로 메모리에 쓰고 싶은 값이나 메모리로부터 전달받은 값은 메모리 버퍼 레지스터를 거침이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q183380"
     },
     {
       "id": "arch-096",
@@ -7821,7 +10376,10 @@ CS.glossary={
       "term": "메모리 데이터 레지스터",
       "english": "MDR; Memory Data Register",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "메모리 데이터 레지스터는 메모리 버퍼 레지스터와 동의어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q643839"
     },
     {
       "id": "arch-097",
@@ -7829,7 +10387,10 @@ CS.glossary={
       "term": "범용 레지스터",
       "english": "general purpose register",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "범용 레지스터는 다양하고 일반적인 상황에서 자유롭게 사용할 수 있는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q187466"
     },
     {
       "id": "arch-098",
@@ -7837,7 +10398,10 @@ CS.glossary={
       "term": "플래그 레지스터",
       "english": "flag register",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "플래그 레지스터는 연산 결과 또는 CPU 상태에 대한 부가적인 정보(플래그)를 저장하는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1322850"
     },
     {
       "id": "arch-099",
@@ -7845,7 +10409,10 @@ CS.glossary={
       "term": "스택 포인터",
       "english": "stack pointer",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "스택 포인터는 스택의 꼭대기를 가리키는 레지스터로, 스택에 마지막으로 저장한 값의 위치를 저장하는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7595963"
     },
     {
       "id": "arch-100",
@@ -7853,7 +10420,9 @@ CS.glossary={
       "term": "스택 주소 지정 방식",
       "english": "stack addressing mode",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "스택 주소 지정 방식은 스택과 스택 포인터를 이용한 주소 지정 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-101",
@@ -7861,7 +10430,9 @@ CS.glossary={
       "term": "변위 주소 지정 방식",
       "english": "displacement addressing mode",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "변위 주소 지정 방식은 오퍼랜드 필드의 값(변위)과 특정 레지스터의 값을 더하여 유효 주소를 얻어내는 주소 지정 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-102",
@@ -7869,7 +10440,9 @@ CS.glossary={
       "term": "상대 주소 지정 방식",
       "english": "relative addressing mode",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "상대 주소 지정 방식은 오퍼랜드와 프로그램 카운터의 값을 더하여 유효 주소를 얻는 주소 지정 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-103",
@@ -7877,7 +10450,9 @@ CS.glossary={
       "term": "베이스 레지스터 주소 지정 방식",
       "english": "base-register addressing mode",
       "topic": "CPU의 작동 원리",
-      "detail": "레지스터"
+      "detail": "레지스터",
+      "meaning": "베이스 레지스터 주소 지정 방식은 오퍼랜드와 베이스 레지스터의 값을 더하여 유효 주소를 얻는 주소 지정 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-104",
@@ -7885,7 +10460,10 @@ CS.glossary={
       "term": "명령어 사이클",
       "english": "instruction cycle",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "명령어 사이클은 프로그램 속 각 명령어들이 일정히 반복되며 실행되는 주기예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q814190"
     },
     {
       "id": "arch-105",
@@ -7893,7 +10471,9 @@ CS.glossary={
       "term": "인출 사이클",
       "english": "fetch cycle",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "인출 사이클은 메모리에 있는 명령어를 CPU로 가지고 오는 단계예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-106",
@@ -7901,7 +10481,9 @@ CS.glossary={
       "term": "실행 사이클",
       "english": "execution cycle",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "실행 사이클은 CPU로 가져온 명령어를 실행하는 단계예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-107",
@@ -7909,7 +10491,9 @@ CS.glossary={
       "term": "간접 사이클",
       "english": "indirect cycle",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "간접 사이클은 명령어를 실행하기 위해 추가적인 메모리 접근을 수행하는 단계예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-108",
@@ -7917,7 +10501,10 @@ CS.glossary={
       "term": "인터럽트",
       "english": "interrupt",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "인터럽트는 CPU의 정상적인 작업을 방해하는 신호예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q220764"
     },
     {
       "id": "arch-109",
@@ -7925,7 +10512,9 @@ CS.glossary={
       "term": "동기 인터럽트",
       "english": "synchronous interrupts",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "동기 인터럽트는 CPU에 의해 발생하는 인터럽트예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-110",
@@ -7933,7 +10522,10 @@ CS.glossary={
       "term": "예외",
       "english": "exception",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "예외는 동기 인터럽트의 다른 말이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q471748"
     },
     {
       "id": "arch-111",
@@ -7941,7 +10533,9 @@ CS.glossary={
       "term": "비동기 인터럽트",
       "english": "asynchronous interrupts",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "비동기 인터럽트는 주로 입출력장치에 의해 발생하는 인터럽트예요. 입출력 작업 도중 CPU가 효율적으로 명령어를 처리하기 위해 사용돼요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-112",
@@ -7949,7 +10543,9 @@ CS.glossary={
       "term": "하드웨어 인터럽트",
       "english": "",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "하드웨어 인터럽트는 비동기 인터럽트의 다른 말이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-113",
@@ -7957,7 +10553,9 @@ CS.glossary={
       "term": "인터럽트 요청 신호",
       "english": "IRQ signal",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "인터럽트 요청 신호는 인터럽트 가능 여부를 확인하기 위해 CPU에게 보내는 신호예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-114",
@@ -7965,7 +10563,9 @@ CS.glossary={
       "term": "인터럽트 플래그",
       "english": "IF; interrupt flag",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "인터럽트 플래그는 하드웨어 인터럽트를 받아들일지, 무시할지를 결정하는 플래그예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-115",
@@ -7973,7 +10573,10 @@ CS.glossary={
       "term": "인터럽트 서비스 루틴",
       "english": "ISR; Interrupt Service Routine",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "인터럽트 서비스 루틴은 인터럽트를 처리하기 위한 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q801"
     },
     {
       "id": "arch-116",
@@ -7981,7 +10584,10 @@ CS.glossary={
       "term": "인터럽트 핸들러",
       "english": "interrupt handler",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "인터럽트 핸들러는 인터럽트 서비스 루틴의 다른 말이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1541162"
     },
     {
       "id": "arch-117",
@@ -7989,7 +10595,10 @@ CS.glossary={
       "term": "인터럽트 벡터",
       "english": "interrupt vector",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "인터럽트 벡터는 인터럽트 서비스 루틴을 식별하기 위한 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1250262"
     },
     {
       "id": "arch-118",
@@ -7997,7 +10606,10 @@ CS.glossary={
       "term": "폴트",
       "english": "fault",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "폴트는 예외의 일종으로, 예외 처리 직후 예외가 발생한 명령어부터 실행을 재개하는 예외 (예: 페이지 폴트)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1095373"
     },
     {
       "id": "arch-119",
@@ -8005,7 +10617,10 @@ CS.glossary={
       "term": "트랩",
       "english": "trap",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "트랩은 예외의 일종으로, 예외 처리 직후 예외가 발생한 명령어의 다음 명령어부터 실행을 재개하는 예외 (예: 디버깅 브레이크 포인트)예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7835547"
     },
     {
       "id": "arch-120",
@@ -8013,7 +10628,10 @@ CS.glossary={
       "term": "디버깅",
       "english": "debugging",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "디버깅은 프로그램 개발 중에 발생한 문제를 진단하고 해결하기 위한 작업이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q845566"
     },
     {
       "id": "arch-121",
@@ -8021,7 +10639,10 @@ CS.glossary={
       "term": "중단",
       "english": "abort",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "중단은 예외의 일종으로, CPU가 실행 중인 프로그램을 강제로 중단시킬 수밖에 없는 심각한 오류를 발견했을 때 발생하는 예외예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1889498"
     },
     {
       "id": "arch-122",
@@ -8029,7 +10650,9 @@ CS.glossary={
       "term": "소프트웨어 인터럽트",
       "english": "software interrupt",
       "topic": "CPU의 작동 원리",
-      "detail": "명령어 사이클과 인터럽트"
+      "detail": "명령어 사이클과 인터럽트",
+      "meaning": "소프트웨어 인터럽트는 시스템 콜이 호출되었을 때 발생하는 소프트웨어적인 인터럽트의 일종이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-123",
@@ -8037,7 +10660,10 @@ CS.glossary={
       "term": "클럭",
       "english": "clock",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "클럭은 컴퓨터의 부품을 동기화하는 GHz 단위의 시간 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q911691"
     },
     {
       "id": "arch-124",
@@ -8045,7 +10671,10 @@ CS.glossary={
       "term": "오버클럭킹",
       "english": "overclocking",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "오버클럭킹은 최대 클럭 속도를 강제로 더 끌어올릴 수 있는 기법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q215969"
     },
     {
       "id": "arch-125",
@@ -8053,7 +10682,10 @@ CS.glossary={
       "term": "코어",
       "english": "core",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "코어는 명령어를 실행하는 부품을 여러 개 포함하는 부품이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1051469"
     },
     {
       "id": "arch-126",
@@ -8061,7 +10693,10 @@ CS.glossary={
       "term": "멀티코어 CPU",
       "english": "multi-core",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "멀티코어 CPU는 코어를 여러 개 포함하는 CPU예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q555032"
     },
     {
       "id": "arch-127",
@@ -8069,7 +10704,10 @@ CS.glossary={
       "term": "멀티코어 프로세서",
       "english": "multi-core processor",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "멀티코어 프로세서는 여러 개의 코어를 포함하는 CPU예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q555032"
     },
     {
       "id": "arch-128",
@@ -8077,7 +10715,10 @@ CS.glossary={
       "term": "스레드",
       "english": "thread",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "스레드는 실행 흐름의 단위예요. 하드웨어적 스레드와 소프트웨어적 스레드가 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q213092"
     },
     {
       "id": "arch-129",
@@ -8085,7 +10726,10 @@ CS.glossary={
       "term": "하드웨어적 스레드",
       "english": "hardware thread",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "하드웨어적 스레드는 하나의 코어가 동시에 처리하는 명령어 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1064412"
     },
     {
       "id": "arch-130",
@@ -8093,7 +10737,10 @@ CS.glossary={
       "term": "멀티스레드 프로세서",
       "english": "multithread",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "멀티스레드 프로세서는 하나의 코어로 여러 명령어를 동시에 처리하는 CPU예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1064412"
     },
     {
       "id": "arch-131",
@@ -8101,7 +10748,9 @@ CS.glossary={
       "term": "멀티스레드 CPU",
       "english": "",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "멀티스레드 CPU는 여러 개의 하드웨어적 스레드를 지원하는 CPU예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-132",
@@ -8109,7 +10758,10 @@ CS.glossary={
       "term": "하이퍼스레딩",
       "english": "hyper-threading",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "하이퍼스레딩은 인텔의 멀티스레드 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q830955"
     },
     {
       "id": "arch-133",
@@ -8117,7 +10769,10 @@ CS.glossary={
       "term": "소프트웨어적 스레드",
       "english": "software thread",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "소프트웨어적 스레드는 하나의 프로그램에서 독립적으로 실행되는 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q213092"
     },
     {
       "id": "arch-134",
@@ -8125,7 +10780,9 @@ CS.glossary={
       "term": "논리 프로세서",
       "english": "logical processor",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "논리 프로세서는 하드웨어 스레드의 다른 말이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-135",
@@ -8133,7 +10790,10 @@ CS.glossary={
       "term": "병렬성",
       "english": "parallelism",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "병렬성은 작업을 물리적으로 동시에 처리하는 성질이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1429196"
     },
     {
       "id": "arch-136",
@@ -8141,7 +10801,10 @@ CS.glossary={
       "term": "동시성",
       "english": "concurrency",
       "topic": "CPU 성능 향상 기법",
-      "detail": "빠른 CPU를 위한 설계 기법"
+      "detail": "빠른 CPU를 위한 설계 기법",
+      "meaning": "동시성은 동시에 작업을 처리하는 것처럼 보이는 성질이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q837505"
     },
     {
       "id": "arch-137",
@@ -8149,7 +10812,10 @@ CS.glossary={
       "term": "명령어 병렬 처리 기법",
       "english": "ILP; Instruction-Level Parallelism",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "명령어 병렬 처리 기법은 CPU를 쉬지 않고 작동시키기 위해 명령어를 동시에 처리하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q17092304"
     },
     {
       "id": "arch-138",
@@ -8157,7 +10823,9 @@ CS.glossary={
       "term": "명령어 파이프라이닝",
       "english": "instruction pipelining",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "명령어 파이프라이닝은 여러 명령어들을 명령어 파이프라인에 넣고 겹쳐서 동시 실행함으로써 명령어 처리 속도를 높이는 명령어 병렬 처리 기법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-139",
@@ -8165,7 +10833,10 @@ CS.glossary={
       "term": "파이프라인 위험",
       "english": "pipeline hazard",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "파이프라인 위험은 파이프라이닝이 성능 향상에 실패하는 경우예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1424771"
     },
     {
       "id": "arch-140",
@@ -8173,7 +10844,10 @@ CS.glossary={
       "term": "데이터 위험",
       "english": "data hazard",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "데이터 위험은 명령어 간 데이터 의존성에 의해 발생하는 파이프라인 위험이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q135991788"
     },
     {
       "id": "arch-141",
@@ -8181,7 +10855,10 @@ CS.glossary={
       "term": "제어 위험",
       "english": "control hazard",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "제어 위험은 분기 등으로 인한 프로그램 카운터의 갑작스러운 변화에 의해 발생하는 파이프라인 위험이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q77523488"
     },
     {
       "id": "arch-142",
@@ -8189,7 +10866,10 @@ CS.glossary={
       "term": "분기 예측",
       "english": "branch prediction",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "분기 예측은 프로그램이 어디로 분기할지 미리 예측한 후 그 주소를 인출하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q679552"
     },
     {
       "id": "arch-143",
@@ -8197,7 +10877,10 @@ CS.glossary={
       "term": "구조적 위험",
       "english": "structural hazard",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "구조적 위험은 명령어들을 겹쳐 실행하는 과정에서 서로 다른 명령어가 동시에 ALU, 레지스터 등과 같은 CPU 부품을 사용하려고 할 때 발생하는 파이프라인 위험이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7625053"
     },
     {
       "id": "arch-144",
@@ -8205,7 +10888,9 @@ CS.glossary={
       "term": "자원 위험",
       "english": "resource hazard",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "자원 위험은 구조적 위험의 다른 말이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-145",
@@ -8213,7 +10898,10 @@ CS.glossary={
       "term": "슈퍼스칼라",
       "english": "superscalar",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "슈퍼스칼라는 CPU 내부에 여러 개의 명령어 파이프라인을 포함한 구조예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1045706"
     },
     {
       "id": "arch-146",
@@ -8221,7 +10909,9 @@ CS.glossary={
       "term": "슈퍼스칼라 프로세서",
       "english": "",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "슈퍼스칼라 프로세서는 슈퍼스칼라 구조로 명령어 처리가 가능한 CPU예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-147",
@@ -8229,7 +10919,9 @@ CS.glossary={
       "term": "슈퍼스칼라 CPU",
       "english": "",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "슈퍼스칼라 CPU는 슈퍼스칼라 구조로 명령어 처리가 가능한 CPU예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-148",
@@ -8237,7 +10929,9 @@ CS.glossary={
       "term": "비순차적 명령어 처리 기법",
       "english": "OoOE; Out-of-order execution",
       "topic": "CPU 성능 향상 기법",
-      "detail": "명령어 병렬 처리 기법"
+      "detail": "명령어 병렬 처리 기법",
+      "meaning": "비순차적 명령어 처리 기법은 명령어를 순차적으로만 실행하지 않고 순서를 바꿔 실행해도 무방한 명령어를 먼저 실행하여 명령어 파이프라인이 멈추는 것을 방지하는 기법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-149",
@@ -8245,7 +10939,9 @@ CS.glossary={
       "term": "명령어 집합 구조",
       "english": "ISA; Instruction Set Architecture",
       "topic": "CPU 성능 향상 기법",
-      "detail": "CISC와 RISC"
+      "detail": "CISC와 RISC",
+      "meaning": "명령어 집합 구조는 CPU가 이해할 수 있는 명령어들의 모음이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-150",
@@ -8253,7 +10949,10 @@ CS.glossary={
       "term": "CISC",
       "english": "Complex Instruction Set Computer",
       "topic": "CPU 성능 향상 기법",
-      "detail": "CISC와 RISC"
+      "detail": "CISC와 RISC",
+      "meaning": "CISC는 복잡한 명령어 집합을 활용하는 명령어 집합이에요. 복잡하고 다양한 수의 가변 길이 명령어 집합을 활용해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q189120"
     },
     {
       "id": "arch-151",
@@ -8261,7 +10960,9 @@ CS.glossary={
       "term": "가변 길이 명령어",
       "english": "",
       "topic": "CPU 성능 향상 기법",
-      "detail": "CISC와 RISC"
+      "detail": "CISC와 RISC",
+      "meaning": "가변 길이 명령어는 형태와 크기가 다양한 명령어예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-152",
@@ -8269,7 +10970,10 @@ CS.glossary={
       "term": "RISC",
       "english": "Reduced Instruction Set Computer",
       "topic": "CPU 성능 향상 기법",
-      "detail": "CISC와 RISC"
+      "detail": "CISC와 RISC",
+      "meaning": "RISC는 규격화되어 있고, 하나의 명령어가 1클럭 내외로 실행되는 명령어 집합이에요. 짧고 규격화된 명령어 집합을 활용해요. 명령어 파이프라이닝에 유리해요. load-store 구조라고 부르기도 해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q189376"
     },
     {
       "id": "arch-153",
@@ -8277,7 +10981,10 @@ CS.glossary={
       "term": "RAM",
       "english": "Random Access Memory",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "RAM은 메인 메모리로써 사용되는 휘발성 저장 장치예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q132200325"
     },
     {
       "id": "arch-154",
@@ -8285,7 +10992,10 @@ CS.glossary={
       "term": "휘발성 저장 장치",
       "english": "volatile memory",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "휘발성 저장 장치는 전원을 끄면 저장된 내용이 사라지는 저장 장치예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q496533"
     },
     {
       "id": "arch-155",
@@ -8293,7 +11003,10 @@ CS.glossary={
       "term": "비휘발성 저장 장치",
       "english": "non-volatile memory",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "비휘발성 저장 장치는 전원이 꺼져도 저장된 내용이 유지되는 저장 장치예요. 보조기억장치는 대표적인 비휘발성 저장장치예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q118583252"
     },
     {
       "id": "arch-156",
@@ -8301,7 +11014,10 @@ CS.glossary={
       "term": "임의 접근",
       "english": "random access",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "임의 접근은 저장된 요소에 순차적으로 접근하지 않고 임의의 위치에 직접 접근하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q218825"
     },
     {
       "id": "arch-157",
@@ -8309,7 +11025,10 @@ CS.glossary={
       "term": "순차 접근",
       "english": "sequential access",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "순차 접근은 저장된 요소에 순차적으로 접근하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1067705"
     },
     {
       "id": "arch-158",
@@ -8317,7 +11036,10 @@ CS.glossary={
       "term": "직접 접근",
       "english": "direct access",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "직접 접근은 임의 접근의 다른 이름이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1227430"
     },
     {
       "id": "arch-159",
@@ -8325,7 +11047,10 @@ CS.glossary={
       "term": "DRAM",
       "english": "Dynamic RAM",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "DRAM은 저장된 데이터가 동적으로 변하는(사라지는) RAM이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q189396"
     },
     {
       "id": "arch-160",
@@ -8333,7 +11058,10 @@ CS.glossary={
       "term": "SRAM",
       "english": "Static RAM",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "SRAM은 저장된 데이터가 변하지 않는 RAM이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q7392783"
     },
     {
       "id": "arch-161",
@@ -8341,7 +11069,10 @@ CS.glossary={
       "term": "SDRAM",
       "english": "Synchronous Dynamic RAM",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "SDRAM은 클럭 신호와 동기화된 DRAM이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q746478"
     },
     {
       "id": "arch-162",
@@ -8349,7 +11080,10 @@ CS.glossary={
       "term": "DDR SDRAM",
       "english": "Double Data Rate SDRAM",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "DDR SDRAM은 대역폭을 넓혀 속도를 빠르게 만든 SDRAM이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q333914"
     },
     {
       "id": "arch-163",
@@ -8357,7 +11091,10 @@ CS.glossary={
       "term": "대역폭",
       "english": "data rate",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "대역폭은 데이터를 주고받는 전송로의 너비예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q249998"
     },
     {
       "id": "arch-164",
@@ -8365,7 +11102,10 @@ CS.glossary={
       "term": "SDR SDRAM",
       "english": "Single Data Rate SDRAM",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "SDR SDRAM은 한 클럭당 하나씩 데이터를 주고받을 수 있는 SDRAM이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q6116127"
     },
     {
       "id": "arch-165",
@@ -8373,7 +11113,10 @@ CS.glossary={
       "term": "DDR2 SDRAM",
       "english": "",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "DDR2 SDRAM은 DDR SDRAM보다 대역폭을 두 배 넓힌 SDRAM이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q847146"
     },
     {
       "id": "arch-166",
@@ -8381,7 +11124,10 @@ CS.glossary={
       "term": "DDR3 SDRAM",
       "english": "",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "DDR3 SDRAM은 DDR2 SDRAM보다 대역폭을 두 배 넓힌 SDRAM이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q847207"
     },
     {
       "id": "arch-167",
@@ -8389,7 +11135,10 @@ CS.glossary={
       "term": "빅 엔디안",
       "english": "big-endian",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "빅 엔디안은 낮은 번지의 주소에 상위 바이트부터 저장하는 메모리 저장 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q23651349"
     },
     {
       "id": "arch-168",
@@ -8397,7 +11146,10 @@ CS.glossary={
       "term": "리틀 엔디안",
       "english": "little-endian",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "리틀 엔디안은 낮은 번지의 주소에 하위 바이트부터 저장하는 메모리 저장 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q12745768"
     },
     {
       "id": "arch-169",
@@ -8405,7 +11157,9 @@ CS.glossary={
       "term": "바이 엔디안",
       "english": "bi-endian",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "바이 엔디안은 빅 엔디안과 리틀 엔디안 중 하나를 선택하여 사용하는 방식이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-170",
@@ -8413,7 +11167,10 @@ CS.glossary={
       "term": "MSB",
       "english": "Most Significant Bit",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "MSB는 가장 높은 자리의 비트로, 숫자의 크기에 가장 큰 영향을 미치는 숫자예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q40063"
     },
     {
       "id": "arch-171",
@@ -8421,7 +11178,10 @@ CS.glossary={
       "term": "LSB",
       "english": "Least Significant Bit",
       "topic": "메모리와 캐시 메모리",
-      "detail": "RAM의 특징과 종류"
+      "detail": "RAM의 특징과 종류",
+      "meaning": "LSB는 가장 낮은 자리의 비트로, 숫자의 크기에 가장 작은 영향을 미치는 숫자예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3436689"
     },
     {
       "id": "arch-172",
@@ -8429,7 +11189,10 @@ CS.glossary={
       "term": "물리 주소",
       "english": "physical address",
       "topic": "메모리와 캐시 메모리",
-      "detail": "메모리의 주소 공간"
+      "detail": "메모리의 주소 공간",
+      "meaning": "물리 주소는 정보가 실제로 저장된 메모리 하드웨어상의 주소예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q844824"
     },
     {
       "id": "arch-173",
@@ -8437,7 +11200,10 @@ CS.glossary={
       "term": "논리 주소",
       "english": "logical address",
       "topic": "메모리와 캐시 메모리",
-      "detail": "메모리의 주소 공간"
+      "detail": "메모리의 주소 공간",
+      "meaning": "논리 주소는 실행 중인 프로그램 각각에 부여된 0번지부터 시작되는 주소로, CPU와 실행 중인 프로그램이 사용하는 주소예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q3494571"
     },
     {
       "id": "arch-174",
@@ -8445,7 +11211,10 @@ CS.glossary={
       "term": "메모리 관리 장치 (MMU)",
       "english": "MMU; Memory Management Unit",
       "topic": "메모리와 캐시 메모리",
-      "detail": "메모리의 주소 공간"
+      "detail": "메모리의 주소 공간",
+      "meaning": "메모리 관리 장치 (MMU)는 논리 주소와 물리 주소 간의 변환을 수행하는 하드웨어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1888771"
     },
     {
       "id": "arch-175",
@@ -8453,7 +11222,9 @@ CS.glossary={
       "term": "베이스 레지스터",
       "english": "base register",
       "topic": "메모리와 캐시 메모리",
-      "detail": "메모리의 주소 공간"
+      "detail": "메모리의 주소 공간",
+      "meaning": "베이스 레지스터는 프로그램의 가장 작은 물리 주소를 저장하는 레지스터예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-176",
@@ -8461,7 +11232,9 @@ CS.glossary={
       "term": "한계 레지스터",
       "english": "limit register",
       "topic": "메모리와 캐시 메모리",
-      "detail": "메모리의 주소 공간"
+      "detail": "메모리의 주소 공간",
+      "meaning": "한계 레지스터는 논리 주소 범위를 벗어나는 명령어 실행을 방지하기 위해 논리 주소의 최대 크기를 저장하는 레지스터예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-177",
@@ -8469,7 +11242,10 @@ CS.glossary={
       "term": "저장 장치 계층 구조",
       "english": "memory hierarchy",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "저장 장치 계층 구조는 CPU와의 거리를 기준으로 저장 장치를 계층적으로 나타낸 구조예요. 각기 다른 용량과 성능의 저장 장치들을 계층화하여 표현한 구조예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1589327"
     },
     {
       "id": "arch-178",
@@ -8477,7 +11253,10 @@ CS.glossary={
       "term": "캐시 메모리",
       "english": "cache memory",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "캐시 메모리는 CPU와 메모리 사이에 위치하고, 레지스터보다 용량이 크고 메모리보다 빠른 SRAM기반의 저장 장치예요. CPU의 메모리 접근 속도를 줄이기 위해 존재예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q165596"
     },
     {
       "id": "arch-179",
@@ -8485,7 +11264,10 @@ CS.glossary={
       "term": "L1 캐시",
       "english": "level 1",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "L1 캐시는 코어와 가장 가까운 캐시 메모리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q114772045"
     },
     {
       "id": "arch-180",
@@ -8493,7 +11275,10 @@ CS.glossary={
       "term": "L2 캐시",
       "english": "level 2",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "L2 캐시는 코어에서 L1 캐시 그 다음으로 가까운 캐시 메모리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q6535008"
     },
     {
       "id": "arch-181",
@@ -8501,7 +11286,10 @@ CS.glossary={
       "term": "L3 캐시",
       "english": "level 3",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "L3 캐시는 코어에서 L2 캐시 그 다음으로 가까운 캐시 메모리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q6535010"
     },
     {
       "id": "arch-182",
@@ -8509,7 +11297,10 @@ CS.glossary={
       "term": "분리형 캐시",
       "english": "split cache",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "분리형 캐시는 명령어만을 저장하는 L1I 캐시와 데이터만을 저장하는 L1D 캐시로 분리한 L1 캐시 메모리예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q118780714"
     },
     {
       "id": "arch-183",
@@ -8517,7 +11308,10 @@ CS.glossary={
       "term": "캐시 히트",
       "english": "cache hit",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "캐시 히트는 자주 사용될 것으로 예측한 데이터가 실제로 들어맞아 캐시 메모리 내 데이터가 CPU에서 활용되는 상황이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q64866341"
     },
     {
       "id": "arch-184",
@@ -8525,7 +11319,10 @@ CS.glossary={
       "term": "캐시 미스",
       "english": "cache miss",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "캐시 미스는 자주 사용될 것으로 예측하여 캐시 메모리에 저장했지만, 예측이 틀려 메모리에서 필요한 데이터를 직접 가져와야 하는 상황이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q64866336"
     },
     {
       "id": "arch-185",
@@ -8533,7 +11330,9 @@ CS.glossary={
       "term": "캐시 적중률",
       "english": "cache hit rate",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "캐시 적중률은 캐시가 히트되는 비율로 캐시 적중률이 높으면 CPU의 메모리 접근 횟수를 줄일 수 있음이에요. 캐시 히트 횟수 / (캐시 히트 횟수 + 캐시 미스 횟수)예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-186",
@@ -8541,7 +11340,10 @@ CS.glossary={
       "term": "참조 지역성의 원리",
       "english": "locality of reference, principle of locality",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "참조 지역성의 원리는 CPU가 메모리에 접근할 때의 주된 경향을 바탕으로 만들어진 원리예요. 1) CPU는 최근에 접근했던 메모리 공간에 다시 접근하려는 경향이 있음이에요. 2) CPU는 접근한 메모리 공간 근처를 접근하려는 경향이 있음이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1868547"
     },
     {
       "id": "arch-187",
@@ -8549,7 +11351,9 @@ CS.glossary={
       "term": "시간 지역성",
       "english": "temporal locality",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "시간 지역성은 최근에 접근했던 메모리 공간에 다시 접근하려는 경향 (예: 변수)예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-188",
@@ -8557,7 +11361,10 @@ CS.glossary={
       "term": "공간 지역성",
       "english": "spatial locality",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "공간 지역성은 접근한 메모리 공간 근처를 접근하려는 경향 (예: 배열)이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q126392163"
     },
     {
       "id": "arch-189",
@@ -8565,7 +11372,9 @@ CS.glossary={
       "term": "즉시 쓰기",
       "english": "write-through",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "즉시 쓰기는 캐시 메모리에 값을 쓰자마자 메모리에도 즉시 쓰는 캐시 메모리 쓰기 정책이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-190",
@@ -8573,7 +11382,9 @@ CS.glossary={
       "term": "지연 쓰기",
       "english": "write-back",
       "topic": "메모리와 캐시 메모리",
-      "detail": "캐시 메모리"
+      "detail": "캐시 메모리",
+      "meaning": "지연 쓰기는 캐시 메모리에만 값을 써 두었다가 추후 데이터를 한 번에 메모리에 반영하는 캐시 메모리 쓰기 정책이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-191",
@@ -8581,7 +11392,10 @@ CS.glossary={
       "term": "하드 디스크",
       "english": "HDD; Hard Disk Drive",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "하드 디스크는 자기적인 방식으로 데이터를 저장하는 보조기억장치예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q4439"
     },
     {
       "id": "arch-192",
@@ -8589,7 +11403,10 @@ CS.glossary={
       "term": "플래터",
       "english": "platter",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "플래터는 하드 디스크에서 실질적으로 데이터가 저장되는 동그란 원판이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1195211"
     },
     {
       "id": "arch-193",
@@ -8597,7 +11414,10 @@ CS.glossary={
       "term": "스핀들",
       "english": "spindle",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "스핀들은 플래터를 회전시키는 구성 요소예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2416476"
     },
     {
       "id": "arch-194",
@@ -8605,7 +11425,10 @@ CS.glossary={
       "term": "RPM",
       "english": "Revolution Per Minute",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "RPM은 분당 회전수로, 스핀들이 플래터를 돌리는 속도를 표현하는 단위 활용돼요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1344164"
     },
     {
       "id": "arch-195",
@@ -8613,7 +11436,9 @@ CS.glossary={
       "term": "헤드",
       "english": "head",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "헤드는 플래터를 대상으로 데이터를 읽고 쓰는 구성 요소예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-196",
@@ -8621,7 +11446,9 @@ CS.glossary={
       "term": "디스크 암",
       "english": "disk arm",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "디스크 암은 헤드를 원하는 위치로 이동시키는 구성 요소예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-197",
@@ -8629,7 +11456,9 @@ CS.glossary={
       "term": "트랙",
       "english": "track",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "트랙은 플래터를 여러 동심원으로 나누었을 때 그중 하나의 원을 의미예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-198",
@@ -8637,7 +11466,9 @@ CS.glossary={
       "term": "섹터",
       "english": "sector",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "섹터는 트랙 내에 정보가 저장되는 최소의 단위예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-199",
@@ -8645,7 +11476,9 @@ CS.glossary={
       "term": "블록",
       "english": "block",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "블록은 하나 이상의 섹터를 묶은 단위예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-200",
@@ -8653,7 +11486,9 @@ CS.glossary={
       "term": "실린더",
       "english": "cylinder",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "실린더는 여러 겹의 플래터 상에서 같은 트랙이 위치한 곳을 모아 연결한 논리적 단위예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-201",
@@ -8661,7 +11496,9 @@ CS.glossary={
       "term": "탐색 시간",
       "english": "seek time",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "탐색 시간은 접근하려는 데이터가 저장된 트랙까지 헤드를 이동시키는 시간이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-202",
@@ -8669,7 +11506,9 @@ CS.glossary={
       "term": "회전 지연",
       "english": "rotational latency",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "회전 지연은 헤드가 있는 곳으로 플래터를 회전시키는 시간이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-203",
@@ -8677,7 +11516,9 @@ CS.glossary={
       "term": "전송 시간",
       "english": "transfer time",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "전송 시간은 하드 디스크와 컴퓨터 간에 데이터를 전송하는 시간이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-204",
@@ -8685,7 +11526,9 @@ CS.glossary={
       "term": "패킷",
       "english": "packet",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "패킷은 네트워크의 기본적인 전송 단위예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-205",
@@ -8693,7 +11536,9 @@ CS.glossary={
       "term": "단일 헤드 디스크",
       "english": "single-head disk",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "단일 헤드 디스크는 플래터의 한 면당 헤드가 하나씩 달려 있는 하드 디스크예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-206",
@@ -8701,7 +11546,9 @@ CS.glossary={
       "term": "다중 헤드 디스크",
       "english": "multiple-head disk",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "다중 헤드 디스크는 헤드가 트랙별로 여러 개 달려 있는 하드 디스크예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-207",
@@ -8709,7 +11556,9 @@ CS.glossary={
       "term": "고정 헤드 디스크",
       "english": "fixed-head disk",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "고정 헤드 디스크는 헤드를 움직일 필요가 없는 다중 헤드 디스크예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-208",
@@ -8717,7 +11566,9 @@ CS.glossary={
       "term": "이동 헤드 디스크",
       "english": "movable-head disk",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "이동 헤드 디스크는 헤드를 데이터가 있는 곳까지 움직여야 하는 단일 헤드 디스크예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-209",
@@ -8725,7 +11576,9 @@ CS.glossary={
       "term": "플래시 메모리",
       "english": "flash memory",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "플래시 메모리는 전기적으로 데이터를 읽고 쓸 수 있는 반도체 기반의 보조기억장치예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-210",
@@ -8733,7 +11586,9 @@ CS.glossary={
       "term": "NAND 플래시 메모리",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "NAND 플래시 메모리는 NAND 연산을 수행하는 회로(NAND 게이트)를 기반으로 만들어진 저장 장치예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-211",
@@ -8741,7 +11596,9 @@ CS.glossary={
       "term": "NOR 플래시 메모리",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "NOR 플래시 메모리는 NOR 연산을 수행하는 회로(NOR 게이트)를 기반으로 만들어진 저장 장치예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-212",
@@ -8749,7 +11606,10 @@ CS.glossary={
       "term": "셀",
       "english": "cell",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "셀은 플래시 메모리에서 데이터를 저장하는 가장 작은 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q655814"
     },
     {
       "id": "arch-213",
@@ -8757,7 +11617,10 @@ CS.glossary={
       "term": "SLC 타입",
       "english": "Single Level Cell",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "SLC 타입은 한 셀에 1비트를 저장할 수 있는 플래시 메모리 유형이에요. 한 셀로 두 개의 정보를 표현할 수 있어요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q123662850"
     },
     {
       "id": "arch-214",
@@ -8765,7 +11628,9 @@ CS.glossary={
       "term": "MLC 타입",
       "english": "Multiple Level Cell",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "MLC 타입은 한 셀에 2비트를 저장할 수 있는 플래시 메모리 유형이에요. 한 셀로 네 개의 정보를 표현할 수 있어요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-215",
@@ -8773,7 +11638,9 @@ CS.glossary={
       "term": "TLC 타입",
       "english": "Triple-Level Cell",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "TLC 타입은 한 셀에 3비트를 저장할 수 있는 플래시 메모리 유형이에요. 한 셀로 여덟 개의 정보를 표현할 수 있어요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-216",
@@ -8781,7 +11648,10 @@ CS.glossary={
       "term": "QLC 타입",
       "english": "Quad-Level Cell",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "QLC 타입은 한 셀에 4비트를 저장할 수 있는 플래시 메모리 유형이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q56297229"
     },
     {
       "id": "arch-217",
@@ -8789,7 +11659,10 @@ CS.glossary={
       "term": "페이지",
       "english": "page",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "페이지는 플래시 메모리에서 여러 셀들을 묶은 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q656083"
     },
     {
       "id": "arch-218",
@@ -8797,7 +11670,9 @@ CS.glossary={
       "term": "블록",
       "english": "block",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "블록은 플래시 메모리에서 여러 페이지들을 묶은 단위예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-219",
@@ -8805,7 +11680,10 @@ CS.glossary={
       "term": "플레인",
       "english": "plane",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "플레인은 플래시 메모리에서 여러 블록들을 묶은 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q108131599"
     },
     {
       "id": "arch-220",
@@ -8813,7 +11691,10 @@ CS.glossary={
       "term": "다이",
       "english": "die",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "다이는 플래시 메모리에서 여러 플레인을 묶은 단위예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1072430"
     },
     {
       "id": "arch-221",
@@ -8821,7 +11702,9 @@ CS.glossary={
       "term": "Free 상태",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "Free 상태는 플래시 메모리에서 어떠한 데이터도 저장하고 있지 않아 새로운 데이터를 저장할 수 있는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-222",
@@ -8829,7 +11712,9 @@ CS.glossary={
       "term": "Valid 상태",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "Valid 상태는 플래시 메모리에서 이미 유효한 데이터를 저장하고 있는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-223",
@@ -8837,7 +11722,9 @@ CS.glossary={
       "term": "Invalid 상태",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "Invalid 상태는 플래시 메모리에서 쓰레기값이라 부르는 유효하지 않은 데이터를 저장하고 있는 상태예요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-224",
@@ -8845,7 +11732,10 @@ CS.glossary={
       "term": "가비지 컬렉션",
       "english": "garbage collection",
       "topic": "보조기억장치",
-      "detail": "다양한 보조기억장치"
+      "detail": "다양한 보조기억장치",
+      "meaning": "가비지 컬렉션은 플래시 메모리에서 SSD를 비롯한 플래시 메모리가 쓰레기값을 정리하기 위해 제공하는 기능이에요. 유효한 페이지들만을 새로운 블록으로 복사한 뒤, 기존의 블록을 삭제하여 공간을 정리하는 기능이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q322202"
     },
     {
       "id": "arch-225",
@@ -8853,7 +11743,10 @@ CS.glossary={
       "term": "RAID",
       "english": "Redundant Array of Independent Disks",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "RAID는 데이터의 안전성 혹은 높은 성능을 위해 여러 개의 물리적 보조기억장치(하드 디스크와 SSD)를 마치 하나의 논리적 보조기억장치처럼 사용하는 기술이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q179299"
     },
     {
       "id": "arch-226",
@@ -8861,7 +11754,9 @@ CS.glossary={
       "term": "RAID 레벨",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "RAID 레벨은 RAID 구성 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-227",
@@ -8869,7 +11764,10 @@ CS.glossary={
       "term": "RAID 0",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "RAID 0은 여러 개의 보조기억장치에 데이터를 단순히 나누어 저장하는 RAID 구성 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q60502056"
     },
     {
       "id": "arch-228",
@@ -8877,7 +11775,10 @@ CS.glossary={
       "term": "RAID 1",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "RAID 1은 복사본을 만드는 RAID 구성 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q60502081"
     },
     {
       "id": "arch-229",
@@ -8885,7 +11786,10 @@ CS.glossary={
       "term": "미러링",
       "english": "mirroring",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "미러링은 RAID 1의 다른 말이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q350865"
     },
     {
       "id": "arch-230",
@@ -8893,7 +11797,10 @@ CS.glossary={
       "term": "RAID 4",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "RAID 4는 RAID 1처럼 완전한 복사본을 만드는 대신 오류를 검출하고 복구하기 위한 정보(패리티)를 저장한 장치를 두는 RAID 구성 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q56353268"
     },
     {
       "id": "arch-231",
@@ -8901,7 +11808,10 @@ CS.glossary={
       "term": "패리티",
       "english": "parity bit",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "패리티는 오류를 검출용 정보예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q625502"
     },
     {
       "id": "arch-232",
@@ -8909,7 +11819,10 @@ CS.glossary={
       "term": "RAID 5",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "RAID 5는 패리티 정보를 분산하여 저장해 RAID 4의 병목현상 문제를 해소한 RAID 구성 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q60502233"
     },
     {
       "id": "arch-233",
@@ -8917,7 +11830,10 @@ CS.glossary={
       "term": "RAID 6",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "RAID 6은 서로 다른 두 개의 패리티를 두는 RAID 구성 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q60502301"
     },
     {
       "id": "arch-234",
@@ -8925,7 +11841,10 @@ CS.glossary={
       "term": "Nested RAID",
       "english": "",
       "topic": "보조기억장치",
-      "detail": "RAID의 정의와 종류"
+      "detail": "RAID의 정의와 종류",
+      "meaning": "Nested RAID는 여러 RAID 레벨을 혼합한 RAID 구성 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q15298290"
     },
     {
       "id": "arch-235",
@@ -8933,7 +11852,10 @@ CS.glossary={
       "term": "전송률",
       "english": "transfer rate",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "전송률은 데이터 교환 속도를 나타내는 지표예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q495092"
     },
     {
       "id": "arch-236",
@@ -8941,7 +11863,10 @@ CS.glossary={
       "term": "장치 컨트롤러",
       "english": "device controller",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "장치 컨트롤러는 입출력장치와 CPU의 연결 및 통신을 중개하는 장치예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q136701646"
     },
     {
       "id": "arch-237",
@@ -8949,7 +11874,9 @@ CS.glossary={
       "term": "입출력 제어기",
       "english": "I/O controller",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "입출력 제어기는 장치 컨트롤러의 다른 말이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-238",
@@ -8957,7 +11884,10 @@ CS.glossary={
       "term": "입출력 모듈",
       "english": "I/O module",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "입출력 모듈은 장치 컨트롤러의 다른 말이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q18695611"
     },
     {
       "id": "arch-239",
@@ -8965,7 +11895,10 @@ CS.glossary={
       "term": "버퍼링",
       "english": "buffering",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "버퍼링은 전송률이 높은 장치와 낮은 장치 사이에 주고받는 데이터를 버퍼에 저장하여 전송률을 비슷하게 맞추기 위한 방법이에요. 버퍼에 데이터를 조금씩 모았다가 한꺼번에 내보내거나, 데이터를 한 번에 많이 받아 조금씩 내보내는 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q331911"
     },
     {
       "id": "arch-240",
@@ -8973,7 +11906,10 @@ CS.glossary={
       "term": "버퍼",
       "english": "buffer",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "버퍼는 데이터를 임시로 저장할 공간이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q331911"
     },
     {
       "id": "arch-241",
@@ -8981,7 +11917,10 @@ CS.glossary={
       "term": "데이터 레지스터",
       "english": "data register",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "데이터 레지스터는 장치 컨트롤러에서 CPU와 입출력장치 사이에 주고받을 데이터가 담기는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q30724475"
     },
     {
       "id": "arch-242",
@@ -8989,7 +11928,10 @@ CS.glossary={
       "term": "상태 레지스터",
       "english": "status register",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "상태 레지스터는 장치 컨트롤러에서 입출력장치가 입출력 작업을 할 준비가 되었는지, 입출력 작업이 완료되었는지, 입출력장치에 오류는 없는지 등의 상태 정보가 저장되는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1322850"
     },
     {
       "id": "arch-243",
@@ -8997,7 +11939,10 @@ CS.glossary={
       "term": "제어 레지스터",
       "english": "control register",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "제어 레지스터는 장치 컨트롤러에서 입출력장치가 수행할 내용에 대한 제어 정보와 명령이 저장되는 레지스터예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5165884"
     },
     {
       "id": "arch-244",
@@ -9005,7 +11950,10 @@ CS.glossary={
       "term": "장치 드라이버",
       "english": "device driver",
       "topic": "입출력장치",
-      "detail": "장치 컨트롤러와 장치 드라이버"
+      "detail": "장치 컨트롤러와 장치 드라이버",
+      "meaning": "장치 드라이버는 장치 컨트롤러의 동작을 감지하고 제어함으로써 장치 컨트롤러가 컴퓨터 내부와 정보를 주고받을 수 있게 하는 프로그램이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1033951"
     },
     {
       "id": "arch-245",
@@ -9013,7 +11961,10 @@ CS.glossary={
       "term": "프로그램 입출력",
       "english": "programmed I/O",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "프로그램 입출력은 프로그램 속 명령어로 입출력장치를 제어하는 입출력 방법이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1328317"
     },
     {
       "id": "arch-246",
@@ -9021,7 +11972,10 @@ CS.glossary={
       "term": "메모리 맵 입출력",
       "english": "memory-mapped I/O",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "메모리 맵 입출력은 메모리에 접근하기 위한 주소 공간과 입출력장치에 접근하기 위한 주소 공간을 하나의 주소 공간으로 간주하는 프로그램 입출력의 일종이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q891094"
     },
     {
       "id": "arch-247",
@@ -9029,7 +11983,10 @@ CS.glossary={
       "term": "고립형 입출력",
       "english": "isolated I/O",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "고립형 입출력은 메모리를 위한 주소 공간과 입출력장치를 위한 주소 공간을 분리하는 프로그램 입출력의 일종이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q18553537"
     },
     {
       "id": "arch-248",
@@ -9037,7 +11994,9 @@ CS.glossary={
       "term": "인터럽트 기반 입출력",
       "english": "interrupt-Driven I/O",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "인터럽트 기반 입출력은 인터럽트를 기반으로 하는 입출력 방법이에요.",
+      "meaningSource": "csnote"
     },
     {
       "id": "arch-249",
@@ -9045,7 +12004,10 @@ CS.glossary={
       "term": "폴링",
       "english": "polling",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "폴링은 입출력 과정에서, 입출력장치의 상태는 어떤지, 처리할 데이터가 있는지를 주기적으로 확인하는 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1362921"
     },
     {
       "id": "arch-250",
@@ -9053,7 +12015,10 @@ CS.glossary={
       "term": "NMI",
       "english": "Non-Maskable Interrupt",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "NMI는 인터럽트 비트를 비활성화해도 무시할 수 없는 인터럽트예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1585234"
     },
     {
       "id": "arch-251",
@@ -9061,7 +12026,10 @@ CS.glossary={
       "term": "프로그래머블 인터럽트 컨트롤러",
       "english": "PIC; Programmable Interrupt Controller",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "프로그래머블 인터럽트 컨트롤러는 장치 컨트롤러에서 보낸 하드웨어 인터럽트 요청들의 우선순위를 판별한 뒤 CPU에 지금 처리해야 할 하드웨어 인터럽트는 무엇인지 알려주는 장치예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q1756494"
     },
     {
       "id": "arch-252",
@@ -9069,7 +12037,10 @@ CS.glossary={
       "term": "DMA",
       "english": "Direct Memory Access",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "DMA는 입출력장치와 메모리가 CPU를 거치지 않고도 상호작용할 수 있는 입출력 방식이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q784"
     },
     {
       "id": "arch-253",
@@ -9077,7 +12048,10 @@ CS.glossary={
       "term": "DMA 컨트롤러",
       "english": "DMA controller",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "DMA 컨트롤러는 DMA 입출력을 하기 위해서 필요한 시스템 버스에 연결된 하드웨어예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q844006"
     },
     {
       "id": "arch-254",
@@ -9085,7 +12059,10 @@ CS.glossary={
       "term": "사이클 스틸링",
       "english": "cycle stealing",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "사이클 스틸링은 DMA의 시스템 버스 이용 양상을 의미예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q5198181"
     },
     {
       "id": "arch-255",
@@ -9093,7 +12070,10 @@ CS.glossary={
       "term": "PCIe",
       "english": "Peripheral Component Interconnect",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "PCIe는 대표적인 입출력 버스예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q206924"
     },
     {
       "id": "arch-256",
@@ -9101,7 +12081,10 @@ CS.glossary={
       "term": "PCIe 슬롯",
       "english": "Peripheral Component Interconnect",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "PCIe 슬롯은 여러 입출력장치들을 PCIe 버스와 연결해 주는 통로예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q2032544"
     },
     {
       "id": "arch-257",
@@ -9109,7 +12092,10 @@ CS.glossary={
       "term": "입출력 프로세서",
       "english": "IOP; Input/Output Processor",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "입출력 프로세서는 메모리에 직접 접근할 뿐만 아니라 입출력 명령어를 직접 인출하고, 해석하고, 실행까지 하는 일종의 입출력 전용 CPU예요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q513283"
     },
     {
       "id": "arch-258",
@@ -9117,7 +12103,10 @@ CS.glossary={
       "term": "입출력 채널",
       "english": "Input/Output Channel",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "입출력 채널은 입출력 프로세서의 다른 말이에요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q844006"
     },
     {
       "id": "arch-259",
@@ -9125,7 +12114,10 @@ CS.glossary={
       "term": "GPU",
       "english": "Graphics Processing Unit",
       "topic": "입출력장치",
-      "detail": "다양한 입출력 방법"
+      "detail": "다양한 입출력 방법",
+      "meaning": "GPU는 그래픽 처리와 같은 다량의 코어 연산을 위해 만들어진 입출력 프로세서예요. CPU에 비해 코어 수가 많지만 CPU의 코어만큼 복잡한 연산을 수행하지는 못해요.",
+      "meaningSource": "csnote",
+      "meaningSourceUrl": "http://www.wikidata.org/entity/Q183484"
     }
   ]
 };
