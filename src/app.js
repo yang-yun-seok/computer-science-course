@@ -51,6 +51,15 @@ function mountLab(root,key){
  activeLabs.set(key,handle);cleanup.push(()=>handle.dispose());
 }
 function questionHTML(q,index){return `<div class="quiz" data-question="${index}"><fieldset><legend>${index+1}. ${e(q.q)}</legend>${q.options.map((option,i)=>`<label class="quiz-option"><input type="radio" name="q${index}" value="${i}"><span>${e(option)}</span></label>`).join('')}</fieldset><div class="quiz-actions"><button data-check="${index}" class="primary">답 확인하기</button><button data-reveal="${index}">해설 보기</button></div><div class="quiz-feedback" role="status"></div></div>`;}
+function enhanceFigures(root){
+ root.querySelectorAll('figure.teaching-figure').forEach((figure,index)=>{
+  if(figure.querySelector(':scope > img'))figure.classList.add('image-figure');
+  const caption=figure.querySelector('figcaption'),focus=caption?.querySelector(':scope > strong');
+  if(!caption||!focus)return;
+  const context=document.createElement('span');context.className='figure-context';context.textContent='앞의 설명을 그림에서 확인해요';caption.prepend(context);
+  const id=`figure-focus-${currentId}-${index+1}`;focus.id=id;figure.setAttribute('aria-describedby',id);
+ });
+}
 function renderOverview(){
  cleanup.forEach(fn=>fn());cleanup=[];activeLabs=new Map();announce('');currentId='overview';nav();const o=CS.overview;
  if(!o){main.innerHTML='<div class="not-ready"><h1>학습 개요를 불러오지 못했어요.</h1><a href="#ch01-l01">첫 단원으로 이동하기</a></div>';return;}
@@ -93,9 +102,9 @@ function renderLesson(id){
  if(!meta||!lesson){main.innerHTML=`<div class="not-ready"><h1>${meta?'이 단원은 제작 중이에요.':'학습 주소를 찾지 못했어요.'}</h1><p>${meta?e(meta.title):'목차에서 원하는 소단원을 골라 주세요.'}</p><a href="#ch01-l01">첫 단원으로 돌아가기</a></div>`;return;}
  const position=CATALOG.lessons.findIndex(l=>l.id===id),prev=CATALOG.lessons[position-1],next=CATALOG.lessons[position+1];
  document.title=`${meta.title} | Computer Science`;
- const sectionHTML=lesson.sections.map((s,i)=>`<section id="${s.id}" class="section"><div class="section-kicker">${String(i+1).padStart(2,'0')} / 살펴보기</div><h2>${s.title}</h2>${s.html||''}${s.lab?`<div class="lab" data-lab="${s.lab}"></div>`:''}</section>`).join('');
+ const sectionHTML=lesson.sections.map((s,i)=>`<section id="${s.id}" class="section"><header class="section-head"><div class="section-kicker">주제 ${String(i+1).padStart(2,'0')} / ${String(lesson.sections.length).padStart(2,'0')}</div><h2>${s.title}</h2></header>${s.html||''}${s.lab?`<div class="lab" data-lab="${s.lab}"></div>`:''}</section>`).join('');
  main.innerHTML=`<article class="lesson"><div class="crumb"><span class="level">${level(meta.chapter)}</span><span>${String(meta.chapter).padStart(2,'0')}. ${e(CATALOG.chapters.find(c=>c.id===meta.chapter).title)}</span><span>${meta.sub}/2</span></div><h1 tabindex="-1">${e(meta.title)}</h1><p class="lesson-lead">${e(lesson.lead)}</p><div class="learning-goals"><strong>이번에 이해할 것</strong><ul>${lesson.goals.map(g=>`<li>${e(g)}</li>`).join('')}</ul></div>${lesson.prerequisites?.length?`<p class="small muted">앞에서 배운 것: ${lesson.prerequisites.map(p=>`<a href="#${p}">${e(CATALOG.lessons.find(l=>l.id===p)?.title||p)}</a>`).join(' · ')}</p>`:''}<nav class="jump-links" aria-label="이 단원의 학습 흐름"><a href="#${id}/${lesson.sections[0].id}">개념 살펴보기</a><a href="#${id}/${lesson.sections.find(s=>s.lab)?.id||lesson.sections[0].id}">직접 해보기</a><a href="#${id}/questions">확인 문제</a><a href="#${id}/summary">핵심 정리</a></nav>${sectionHTML}<section id="questions" class="section"><div class="section-kicker">이해 확인</div><h2>이제 내 말로 설명해 볼까요?</h2><p class="muted">먼저 답을 골라 보세요. 틀렸다면 이유를 읽고 실습으로 돌아가 다시 확인해도 괜찮아요.</p>${lesson.questions.map(questionHTML).join('')}</section><section id="summary" class="section"><div class="section-kicker">이번 단원 정리</div><h2>세 가지만 기억해요</h2><ol class="summary-list">${lesson.summary.map(s=>`<li>${e(s)}</li>`).join('')}</ol><p>${e(lesson.nextQuestion)}</p></section><details class="more sources"><summary>참고한 자료</summary><div class="more-body"><p>본문은 학습 흐름에 맞춰 새로 작성했어요. 더 자세한 설명은 아래 자료에서 확인할 수 있어요. 출처 링크를 여는 데에는 인터넷 연결이 필요해요.</p><ul>${lesson.sources.map(([name,url])=>`<li><a href="${e(url)}" target="_blank" rel="noopener noreferrer">${e(name)}</a></li>`).join('')}</ul></div></details><footer class="lesson-footer">${prev&&CS.lessons[prev.id]?`<a href="#${prev.id}">← 이전 · ${e(prev.title)}</a>`:'<span></span>'}${next&&CS.lessons[next.id]?`<a href="#${next.id}">다음 · ${e(next.title)} →</a>`:next?`<span class="small muted">다음 단원 제작 중 · ${e(next.title)}</span>`:'<span>전체 과정을 마쳤어요.</span>'}</footer></article>`;
- main.querySelectorAll('[data-lab]').forEach(el=>mountLab(el,el.dataset.lab));
+ enhanceFigures(main);main.querySelectorAll('[data-lab]').forEach(el=>mountLab(el,el.dataset.lab));
  const quizLife=new AbortController();cleanup.push(()=>quizLife.abort());
  main.addEventListener('click',event=>{
  const check=event.target.closest('[data-check]'),reveal=event.target.closest('[data-reveal]');if(!check&&!reveal)return;

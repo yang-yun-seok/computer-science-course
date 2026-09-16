@@ -64,3 +64,16 @@ test('glossary indexes every reference keyword without copying descriptions',()=
  assert.match(app,/href="#glossary"/);
  assert.match(app,/id==='glossary'\)renderGlossary/);
 });
+
+test('lesson topics have breathing room and figures explain their learning focus',()=>{
+ const app=read('src/app.js'),style=read('src/style.css');
+ assert.match(app,/주제 \$\{String\(i\+1\)/);
+ assert.match(app,/앞의 설명을 그림에서 확인해요/);
+ assert.match(app,/enhanceFigures\(main\)/);
+ assert.match(style,/\.lesson>\.section\{[^}]*padding:58px 0 76px/);
+ assert.match(style,/\.image-figure\{display:grid/);
+ let figures=0,captions=0;
+ for(const file of fs.readdirSync(path.join(root,'content')).filter(name=>/^ch\d+.*\.js$/.test(name))){const text=read(`content/${file}`);figures+=(text.match(/<figure class="teaching-figure/g)||[]).length;captions+=(text.match(/<figcaption>/g)||[]).length;}
+ assert.equal(figures,185);
+ assert.equal(captions,figures);
+});
