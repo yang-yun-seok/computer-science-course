@@ -41,3 +41,10 @@ test('GitHub Pages workflow validates and publishes dist',()=>{
  assert.match(workflow,/actions\/deploy-pages@v4/);
  assert.match(read('scripts/build.cjs'),/\.nojekyll/);
 });
+
+test('build uses only repository-owned curriculum data',()=>{
+ const build=read('scripts/build.cjs');
+ assert.match(build,/content\/curriculum\.md/);
+ assert.doesNotMatch(build,/\.\.\/outputs/);
+ assert.match(read('content/curriculum.md'),/^# Computer Science/m);
+});

@@ -2,7 +2,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname,'..');
 const read = p=>fs.readFileSync(path.join(root,p),'utf8');
-const curriculum=read('../outputs/CS_기초부터심화까지_전체커리큘럼.md');
+// Keep the catalog source inside the repository so local and CI builds are identical.
+const curriculum=read('content/curriculum.md');
 const chapters=[...curriculum.matchAll(/^## (\d+)\. (.+)$/gm)].map(m=>({id:Number(m[1]),title:m[2].trim()}));
 const lessons=[...curriculum.matchAll(/^### (\d+)-(\d+)\. (.+)$/gm)].map(m=>({id:`ch${m[1].padStart(2,'0')}-l${m[2].padStart(2,'0')}`,chapter:+m[1],sub:+m[2],title:m[3].trim()}));
 if(chapters.length!==24||lessons.length!==48)throw Error('Curriculum must have 24 chapters and 48 lessons');
