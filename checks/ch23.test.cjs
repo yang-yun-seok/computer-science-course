@@ -1,0 +1,18 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const vm=require('node:vm');
+const fs=require('node:fs');
+const path=require('node:path');
+const ctx=vm.createContext({structuredClone});ctx.window=ctx;
+for(const file of ['src/core.js','src/labs/ch23.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
+const labs=ctx.CS.labs;
+test('buggy sort is ordered but loses a duplicate',()=>{const s=labs['test-invariants'].initial();assert.deepEqual(Array.from(s.output),[1,2]);assert.equal(s.checks.sorted,true);assert.equal(s.checks.preserved,false);});
+test('fixed sort preserves duplicate values',()=>{const l=labs['test-invariants'],s=l.action(l.initial(),'fixed');assert.deepEqual(Array.from(s.output),[1,2,2]);assert.ok(Object.values(s.checks).every(Boolean));});
+test('buggy sort suite finds duplicate counterexamples',()=>{const l=labs['test-invariants'],s=l.action(l.initial(),'suite-broken');assert.ok(s.suite.some(x=>!x.pass));assert.ok(s.suite.some(x=>x.pass));});
+test('fixed sort passes all prepared cases including empty and one item',()=>{const l=labs['test-invariants'],s=l.action(l.initial(),'suite-fixed');assert.ok(s.suite.every(x=>x.pass));});
+test('sort rejects nonnumeric input',()=>{const l=labs['test-invariants'];assert.throws(()=>l.action(l.initial(),'invalid'),/숫자 배열/);});
+test('buggy shipping expression fails only the exact threshold fixture',()=>{const l=labs['boundary-debugging'],s=l.action(l.initial(),'reproduce');assert.equal(s.suite.filter(x=>!x.pass).length,1);assert.equal(s.suite.find(x=>!x.pass).price,10000);});
+test('fixed shipping expression passes all boundary fixtures',()=>{const l=labs['boundary-debugging'],s=l.action(l.initial(),'fix');assert.equal(s.version,'fixed');assert.ok(s.suite.every(x=>x.pass));});
+test('zero price pays shipping and empty input is rejected',()=>{const l=labs['boundary-debugging'],z=l.action(l.initial(),'zero');assert.equal(z.actual,3000);assert.equal(z.pass,true);assert.throws(()=>l.action(l.initial(),'empty'),/빈 입력/);});
+test('negative price is rejected',()=>{const l=labs['boundary-debugging'];assert.throws(()=>l.action(l.initial(),'invalid'),/0부터/);});
+test('CH23 lessons include four figures and three questions each',()=>{const lessonCtx=vm.createContext({CS:ctx.CS});lessonCtx.window=lessonCtx;vm.runInContext(fs.readFileSync(path.join(__dirname,'..','content/ch23.js'),'utf8'),lessonCtx);for(const id of ['ch23-l01','ch23-l02']){const lesson=lessonCtx.CS.lessons[id],html=lesson.sections.map(s=>s.html||'').join('');assert.equal((html.match(/<figure /g)||[]).length,4);assert.equal(lesson.sections.length,6);assert.equal(lesson.questions.length,3);assert.ok(lesson.sources.length>=3);}});

@@ -1,0 +1,15 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const vm=require('node:vm');
+const fs=require('node:fs');
+const path=require('node:path');
+const ctx=vm.createContext({structuredClone});ctx.window=ctx;
+for(const file of ['src/core.js','src/labs/ch15.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
+const labs=ctx.CS.labs;
+test('longest prefix selects R2 for 192.0.2.130',()=>{const s=labs['ipv4-routing'].action(labs['ipv4-routing'].initial(),'to-r2');assert.equal(s.result.chosen.prefix,25);assert.equal(s.result.chosen.next,'R2');});
+test('/24 and default routes handle their destinations',()=>{const l=labs['ipv4-routing'];assert.equal(l.action(l.initial(),'to-r1').result.chosen.next,'R1');assert.equal(l.action(l.initial(),'to-default').result.chosen.next,'R3');assert.equal(l.action(l.initial(),'no-default').result.chosen,null);});
+test('invalid IPv4 address is rejected without a route',()=>{const l=labs['ipv4-routing'];assert.throws(()=>l.action(l.initial(),'invalid'));});
+test('loss recovery keeps ACK2 until B then delivers ABC with ACK4',()=>{const l=labs['tcp-recovery'];let s=tcpActSafe(l);function tcpActSafe(lab){let n=lab.initial();for(const a of ['send-a','lose-b','send-c'])n=lab.action(n,a);assert.equal(n.ack,2);assert.equal(n.app,'A');return lab.action(n,'resend-b');}assert.equal(s.ack,4);assert.equal(s.app,'ABC');assert.equal(s.retransmissions,1);});
+test('normal flow needs no retransmission and duplicate is not redelivered',()=>{const l=labs['tcp-recovery'];let s=l.action(l.initial(),'run-normal');assert.equal(s.app,'ABC');assert.equal(s.retransmissions,0);s=l.action(s,'duplicate-b');assert.equal(s.app,'ABC');assert.equal(s.ack,4);});
+test('zero receive window is rejected',()=>{const l=labs['tcp-recovery'];assert.throws(()=>l.action(l.initial(),'invalid-window'));});
+test('CH15 lessons include four figures and three questions each',()=>{const lessonCtx=vm.createContext({CS:ctx.CS});lessonCtx.window=lessonCtx;vm.runInContext(fs.readFileSync(path.join(__dirname,'..','content/ch15.js'),'utf8'),lessonCtx);for(const id of ['ch15-l01','ch15-l02']){const lesson=lessonCtx.CS.lessons[id],html=lesson.sections.map(s=>s.html||'').join('');assert.equal((html.match(/<figure /g)||[]).length,4);assert.equal(lesson.sections.length,6);assert.equal(lesson.questions.length,3);assert.ok(lesson.sources.length>=3);}});

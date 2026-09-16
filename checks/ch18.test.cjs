@@ -1,0 +1,18 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const vm=require('node:vm');
+const fs=require('node:fs');
+const path=require('node:path');
+const ctx=vm.createContext({structuredClone});ctx.window=ctx;
+for(const file of ['src/core.js','src/labs/ch18.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
+const labs=ctx.CS.labs;
+test('parser respects precedence and parentheses',()=>{const l=labs['expression-parser'];assert.equal(l.action(l.initial(),'precedence').result,14);assert.equal(l.action(l.initial(),'parentheses').result,20);});
+test('parser accepts one number and nested parentheses',()=>{const l=labs['expression-parser'];assert.equal(l.action(l.initial(),'single').result,7);assert.equal(l.action(l.initial(),'nested').result,20);});
+test('parser reports incomplete and invalid expressions',()=>{const l=labs['expression-parser'];assert.throws(()=>l.action(l.initial(),'missing'),/숫자나 여는 괄호/);assert.throws(()=>l.action(l.initial(),'invalid'),/사용할 수 없는 문자/);});
+test('parser rejects division by zero and unconsumed tokens',()=>{const l=labs['expression-parser'];assert.throws(()=>l.action(l.initial(),'zero'),/0으로 나눌/);assert.throws(()=>l.action({...l.initial(),input:'2 3'},'run-all'),/뒤를 해석/);});
+test('parser enforces input and integer boundaries',()=>{const l=labs['expression-parser'];assert.throws(()=>l.action({...l.initial(),input:'1000+1'},'run-all'),/0~999/);assert.throws(()=>l.action({...l.initial(),input:'1+'.repeat(61)+'1'},'run-all'),/0~120/);});
+test('GC marks reachable objects and finds an unreachable cycle',()=>{const l=labs['gc-reachability'],s=l.action(l.initial(),'mark');assert.deepEqual([...s.marked],['A','B']);assert.deepEqual([...s.candidates],['C','D']);});
+test('GC treats every object as a candidate after the root is cut',()=>{const l=labs['gc-reachability'],s=l.action(l.initial(),'cut-root');assert.deepEqual([...s.candidates],['A','B','C','D']);});
+test('adding C as a root preserves its cycle and traversal terminates',()=>{const l=labs['gc-reachability'],s=l.action(l.initial(),'root-c');assert.deepEqual([...s.marked],['A','B','C','D']);assert.equal(s.candidates.length,0);});
+test('GC rejects a reference to a missing object',()=>{const l=labs['gc-reachability'];assert.throws(()=>l.action(l.initial(),'missing'),/A가 없는 객체 Z/);});
+test('CH18 lessons include four figures and three questions each',()=>{const lessonCtx=vm.createContext({CS:ctx.CS});lessonCtx.window=lessonCtx;vm.runInContext(fs.readFileSync(path.join(__dirname,'..','content/ch18.js'),'utf8'),lessonCtx);for(const id of ['ch18-l01','ch18-l02']){const lesson=lessonCtx.CS.lessons[id],html=lesson.sections.map(s=>s.html||'').join('');assert.equal((html.match(/<figure /g)||[]).length,4);assert.equal(lesson.sections.length,6);assert.equal(lesson.questions.length,3);assert.ok(lesson.sources.length>=3);}});

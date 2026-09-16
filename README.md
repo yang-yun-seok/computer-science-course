@@ -1,0 +1,45 @@
+# Computer Science
+
+컴퓨터가 데이터를 저장하고 프로그램을 실행하며 서로 통신하는 원리를 개념 설명, 시각 자료, 브라우저 실습과 확인 문제로 배우는 한국어 CS 교재입니다.
+
+## 학습 구성
+
+- **1강:** CPU·메모리·프로세스·자료구조·네트워크
+- **2강:** 알고리즘·운영체제·가상 메모리·동시성·SQL
+- **3강:** 인터넷·브라우저·보안·컴파일러·병렬 처리·분산 시스템
+- **부록:** 확장성·아키텍처·테스트·배포·장애 복구
+
+총 24개 대단원, 48개 소단원으로 구성되어 있습니다. 각 소단원은 개념 설명, 시각 자료, 직접 조작하는 실습, 확인 문제와 핵심 정리 순서로 진행됩니다.
+
+## 로컬 실행
+
+Node.js 20 이상이 필요합니다.
+
+```bash
+npm ci
+npm test
+npm run build
+npm start
+```
+
+브라우저에서 `http://127.0.0.1:4173`을 열면 됩니다. `npm run build`는 `dist/index.html`과 보관용 `dist/cs-course.html`을 생성합니다.
+
+## 프로젝트 구조
+
+```text
+content/             학생용 원고와 개요
+src/labs/            브라우저 실습의 상태 모델
+src/app.js           화면 이동과 실습 UI
+src/style.css        공통·단원별 스타일
+assets/              생성 이미지 원본과 최적화 이미지
+checks/              Node.js 회귀 테스트
+scripts/build.cjs    단일 HTML 빌드
+dist/                빌드 결과(버전 관리 제외)
+.github/workflows/   GitHub Pages 자동 배포
+```
+
+## GitHub Pages 배포
+
+저장소의 기본 브랜치를 `main`으로 사용하고 GitHub의 **Settings → Pages → Source**를 **GitHub Actions**로 설정합니다. 이후 `main`에 push하면 테스트와 빌드를 실행한 뒤 `dist/`를 게시합니다. 수동 배포는 Actions의 `Deploy to GitHub Pages`에서 실행할 수 있습니다.
+
+이 사이트는 해시 주소로 단원을 이동하므로 사용자 또는 프로젝트 GitHub Pages 저장소에서 별도의 경로 설정 없이 동작합니다.

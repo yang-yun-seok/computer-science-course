@@ -1,0 +1,16 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const vm=require('node:vm');
+const fs=require('node:fs');
+const path=require('node:path');
+const makeStorage=()=>{const data=new Map();return {getItem:k=>data.has(k)?data.get(k):null,setItem:(k,v)=>data.set(k,String(v)),removeItem:k=>data.delete(k)};};
+const ctx=vm.createContext({structuredClone,setTimeout,clearTimeout,Promise,DOMException,sessionStorage:makeStorage(),localStorage:makeStorage()});ctx.window=ctx;
+for(const file of ['src/core.js','src/labs/ch16.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
+const labs=ctx.CS.labs;
+test('actual browser scheduling prints synchronous A then microtask B then timer C',async()=>{const l=labs['event-loop-order'];const s=await l.action(l.initial(),'run',null,{});assert.deepEqual([...s.logs],['A','B','C']);assert.equal(s.runs,1);});
+test('two runs start independent logs',async()=>{const l=labs['event-loop-order'];let s=await l.action(l.initial(),'run',null,{});s=await l.action(s,'repeat',null,{});assert.deepEqual([...s.logs],['A','B','C']);assert.equal(s.runs,2);});
+test('prepared event-loop error does not invent output',async()=>{const l=labs['event-loop-order'];await assert.rejects(l.action(l.initial(),'preset-error'));});
+test('refresh comparison clears memory and retains both web stores',()=>{const l=labs['storage-lifetime'];const s=l.action(l.initial(),'run-compare');assert.equal(s.memory,null);assert.equal(s.session,20);assert.equal(s.local,20);assert.equal(s.refreshed,true);});
+test('memory alone returns to default after refresh',()=>{const l=labs['storage-lifetime'];let s=l.action(l.initial(),'clear');s=l.action(s,'save-memory');assert.equal(s.memory,20);s=l.action(s,'refresh');assert.equal(s.memory,null);assert.equal(s.session,null);assert.equal(s.local,null);});
+test('blocked storage scenario preserves prior state',()=>{const l=labs['storage-lifetime'];const s=l.action(l.initial(),'save-memory');assert.throws(()=>l.action(s,'blocked'));assert.equal(s.memory,20);l.action(s,'clear');});
+test('CH16 lessons include four figures and three questions each',()=>{const lessonCtx=vm.createContext({CS:ctx.CS});lessonCtx.window=lessonCtx;vm.runInContext(fs.readFileSync(path.join(__dirname,'..','content/ch16.js'),'utf8'),lessonCtx);for(const id of ['ch16-l01','ch16-l02']){const lesson=lessonCtx.CS.lessons[id],html=lesson.sections.map(s=>s.html||'').join('');assert.equal((html.match(/<figure /g)||[]).length,4);assert.equal(lesson.sections.length,6);assert.equal(lesson.questions.length,3);assert.ok(lesson.sources.length>=3);}});

@@ -1,0 +1,37 @@
+(()=>{
+const {escape:e}=CS.helpers;
+
+const exprInitial=()=>({input:'2+3*4',tokens:[],ast:null,result:null,events:[]});
+const tokenize=input=>{
+ if(typeof input!=='string'||input.length>120)throw Error('산술식은 0~120글자로 입력해 주세요.');
+ const tokens=[];let i=0;
+ while(i<input.length){const c=input[i];if(/\s/.test(c)){i++;continue;}if(/\d/.test(c)){const start=i;while(i<input.length&&/\d/.test(input[i]))i++;const raw=input.slice(start,i),value=Number(raw);if(value>999)throw Error(`${start+1}번째 위치의 정수는 0~999만 사용할 수 있어요.`);tokens.push({type:'number',value,pos:start+1});continue;}if('+-*/()'.includes(c)){tokens.push({type:c,value:c,pos:i+1});i++;continue;}throw Error(`${i+1}번째 위치의 '${c}'는 사용할 수 없는 문자예요.`);}
+ tokens.push({type:'eof',value:'끝',pos:input.length+1});return tokens;
+};
+const parse=tokens=>{let at=0;const peek=()=>tokens[at],take=()=>tokens[at++];
+ const primary=()=>{const t=peek();if(t.type==='number'){take();return {type:'num',value:t.value};}if(t.type==='('){take();const node=expression();if(peek().type!==')')throw Error(`${peek().pos}번째 위치에 닫는 괄호가 필요해요.`);take();return node;}throw Error(`${t.pos}번째 위치에 숫자나 여는 괄호가 필요해요.`);};
+ const term=()=>{let node=primary();while(peek().type==='*'||peek().type==='/'){const op=take().type;node={type:'bin',op,left:node,right:primary()};}return node;};
+ const expression=()=>{let node=term();while(peek().type==='+'||peek().type==='-'){const op=take().type;node={type:'bin',op,left:node,right:term()};}return node;};
+ const ast=expression();if(peek().type!=='eof')throw Error(`${peek().pos}번째 위치의 '${peek().value}' 뒤를 해석할 수 없어요.`);return ast;
+};
+const evaluate=node=>{if(node.type==='num')return node.value;const left=evaluate(node.left),right=evaluate(node.right);if(node.op==='/'&&right===0)throw Error('0으로 나눌 수 없어요.');const value=node.op==='+'?left+right:node.op==='-'?left-right:node.op==='*'?left*right:left/right;if(!Number.isFinite(value)||Math.abs(value)>1e9)throw Error('계산 결과가 학습용 범위 ±1,000,000,000을 벗어났어요.');return value;};
+const run=(s,stage)=>{const tokens=tokenize(s.input);if(tokens.length===1)throw Error('숫자와 연산자가 있는 산술식을 입력해 주세요.');if(stage==='tokenize')return {...s,tokens,ast:null,result:null,events:[...s.events,`토큰 ${tokens.length-1}개를 만들었어요.`]};const ast=parse(tokens);if(stage==='parse')return {...s,tokens,ast,result:null,events:[...s.events,'연산자 우선순위를 반영한 AST를 만들었어요.']};const result=evaluate(ast);return {...s,tokens,ast,result,events:[...s.events,`AST를 계산해 결과 ${result}을 얻었어요.`]};};
+const astHtml=node=>node?`<div class="ast-node ${node.type}"><b>${node.type==='num'?node.value:e(node.op)}</b>${node.type==='bin'?`<div>${astHtml(node.left)}${astHtml(node.right)}</div>`:''}</div>`:'<p class="empty-stage">아직 AST가 없어요.</p>';
+CS.labs['expression-parser']={custom:true,title:'산술식을 토큰·AST·결과로 바꾸세요',type:'실제 제한 문법 토크나이저·재귀 하강 파서',intro:'정수, 괄호, + − × ÷만 허용하는 작은 언어예요. 2+3*4가 14가 되는 구조를 중간 단계마다 확인해요.',limit:'eval을 사용하지 않고 문법을 직접 해석해요. 정수 리터럴은 0~999, 입력은 120글자, 결과 절댓값은 10억까지예요. 단항 음수와 변수는 지원하지 않아요.',
+ initial:exprInitial,
+ action(s,a,data){if(a==='reset')return exprInitial();if(a==='edit')return {...s,input:data,tokens:[],ast:null,result:null};if(a==='tokenize')return run(s,'tokenize');if(a==='parse')return run(s,'parse');if(a==='evaluate'||a==='run-all')return run(s,'evaluate');const examples={precedence:'2+3*4',parentheses:'(2+3)*4',single:'7',nested:'((2+3)*4)',missing:'2+',zero:'8/(3-3)',invalid:'2+a'};if(a in examples)return run({...exprInitial(),input:examples[a]},'evaluate');throw Error('알 수 없는 파서 실습 동작이에요.');},
+ describe(s){return s.result!==null?`${s.input} = ${s.result} · AST의 아래쪽 계산부터 결과가 올라와요.`:s.ast?'AST를 만들었어요. 이제 노드를 계산해 보세요.':s.tokens.length?`${s.tokens.length-1}개 토큰을 만들었어요. 이제 문법 구조를 확인하세요.`:'산술식을 입력하고 토큰화부터 시작하세요.';},
+ actions(){return [{id:'tokenize',text:'1. 토큰화',primary:true},{id:'parse',text:'2. AST 만들기'},{id:'evaluate',text:'3. 계산'},{id:'run-all',text:'한 번에 실행'},{id:'precedence',text:'2+3×4'},{id:'parentheses',text:'(2+3)×4'},{id:'single',text:'숫자 하나'},{id:'nested',text:'중첩 괄호'},{id:'missing',text:'2+ 오류'},{id:'zero',text:'0으로 나누기'},{id:'invalid',text:'잘못된 문자'},{id:'reset',text:'처음부터'}];},
+ render(s){const visible=s.tokens.filter(t=>t.type!=='eof');return `<label class="field expr-input">산술식<input data-action="edit" value="${e(s.input)}" maxlength="121" inputmode="text" spellcheck="false"></label><div class="parser-tokens">${visible.length?visible.map(t=>`<span><b>${e(t.value)}</b><small>${t.type==='number'?'정수':'기호'} · 위치 ${t.pos}</small></span>`).join(''):'<p>아직 토큰이 없어요.</p>'}</div><div class="parser-work"><section><small>추상 구문 트리</small><div class="parser-ast">${astHtml(s.ast)}</div></section><section class="parser-result"><small>실행 결과</small><strong>${s.result===null?'—':e(s.result)}</strong><span>${s.result===null?'AST를 계산하면 표시돼요.':'실제 파서가 계산한 값'}</span></section></div>`;}
+};
+
+const gcInitial=()=>({roots:['A'],edges:{A:['B'],B:[],C:['D'],D:['C']},marked:[],candidates:[],events:[]});
+const trace=s=>{const names=Object.keys(s.edges),known=new Set(names),seen=new Set(),stack=[...s.roots];for(const root of s.roots)if(!known.has(root))throw Error(`루트가 없는 객체 ${root}를 가리켜요.`);while(stack.length){const name=stack.pop();if(seen.has(name))continue;seen.add(name);for(const target of s.edges[name]||[]){if(!known.has(target))throw Error(`${name}가 없는 객체 ${target}를 가리켜요.`);if(!seen.has(target))stack.push(target);}}const marked=names.filter(n=>seen.has(n)),candidates=names.filter(n=>!seen.has(n));return {...structuredClone(s),marked,candidates,events:[...s.events,`루트에서 ${marked.length}개 도달 · ${candidates.length}개 회수 후보` ]};};
+CS.labs['gc-reachability']={custom:true,title:'루트에서 닿지 않는 객체를 찾아보세요',type:'결정적 도달 가능성·표시 모형',intro:'R은 실행 중인 코드가 직접 가진 루트예요. A→B는 사용 중이고 C↔D는 서로 연결됐지만 루트에서 닿지 않아요.',limit:'브라우저 메모리를 직접 회수하지 않는 그래프 모형이에요. 실제 GC는 세대·쓰기 장벽·증분·동시 처리 등 구현 전략과 정지 시간을 함께 관리해요.',
+ initial:gcInitial,
+ action(s,a){if(a==='reset')return gcInitial();if(a==='mark')return trace(s);if(a==='cut-root')return trace({...gcInitial(),roots:[]});if(a==='cut-a-b')return trace({...gcInitial(),edges:{A:[],B:[],C:['D'],D:['C']}});if(a==='root-c')return trace({...gcInitial(),roots:['A','C']});if(a==='cycle')return trace({...gcInitial(),roots:[]});if(a==='missing')return trace({...gcInitial(),edges:{A:['Z'],B:[],C:['D'],D:['C']}});throw Error('알 수 없는 GC 실습 동작이에요.');},
+ describe(s){return s.events.at(-1)||'표시를 실행하면 R에서 참조를 따라가며 살아 있는 객체를 찾습니다.';},
+ actions(){return [{id:'mark',text:'도달 가능성 표시',primary:true},{id:'cut-a-b',text:'A→B 끊기'},{id:'cut-root',text:'R→A 끊기'},{id:'root-c',text:'C도 루트로'},{id:'cycle',text:'루트 없는 순환'},{id:'missing',text:'없는 Z 연결'},{id:'reset',text:'처음부터'}];},
+ render(s){const status=n=>s.marked.includes(n)?'reachable':s.candidates.includes(n)?'candidate':'',edgeList=Object.entries(s.edges).flatMap(([a,bs])=>bs.map(b=>`${a} → ${b}`));return `<div class="gc-roots"><b>루트 R</b><span>${s.roots.length?s.roots.map(n=>`→ ${e(n)}`).join(' · '):'연결 없음'}</span></div><div class="gc-graph">${Object.keys(s.edges).map(n=>`<div class="gc-node ${status(n)}"><b>${n}</b><small>${status(n)==='reachable'?'도달 가능':status(n)==='candidate'?'회수 후보':'미표시'}</small></div>`).join('')}</div><div class="gc-links"><small>참조</small><strong>${edgeList.length?edgeList.map(e).join(' · '):'없음'}</strong></div><div class="gc-summary"><span>도달 가능 <b>${s.marked.length?s.marked.join(', '):'—'}</b></span><span>회수 후보 <b>${s.candidates.length?s.candidates.join(', '):'—'}</b></span></div>`;}
+};
+})();

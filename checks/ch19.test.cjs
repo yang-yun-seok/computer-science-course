@@ -1,0 +1,18 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const vm=require('node:vm');
+const fs=require('node:fs');
+const path=require('node:path');
+const ctx=vm.createContext({structuredClone});ctx.window=ctx;
+for(const file of ['src/core.js','src/labs/ch19.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
+const labs=ctx.CS.labs;
+test('three independent instructions fill and drain in seven cycles',()=>{const l=labs['pipeline-hazards'],s=l.action(l.initial(),'independent');assert.equal(s.cycles,7);assert.equal(s.stalls,0);assert.deepEqual([...s.rows.at(-1).cells],['·','·','·','·','I3']);});
+test('ALU forwarding removes stalls from dependent instructions',()=>{const l=labs['pipeline-hazards'],fast=l.action(l.initial(),'forward'),slow=l.action(l.initial(),'no-forward');assert.equal(fast.stalls,0);assert.ok(slow.stalls>0);assert.ok(slow.cycles>fast.cycles);});
+test('load-use dependency needs exactly one forwarding stall',()=>{const l=labs['pipeline-hazards'],s=l.action(l.initial(),'load-use');assert.equal(s.stalls,1);assert.equal(s.cycles,8);});
+test('branch misprediction adds the declared two-cycle penalty',()=>{const l=labs['pipeline-hazards'],hit=l.action(l.initial(),'branch-hit'),miss=l.action(l.initial(),'branch-miss');assert.equal(miss.branchPenalty,2);assert.equal(miss.cycles,hit.cycles+2);});
+test('pipeline rejects an empty instruction list',()=>{const l=labs['pipeline-hazards'];assert.throws(()=>l.action(l.initial(),'invalid'),/1~8개/);});
+test('Amdahl calculation matches 90 percent on eight cores',()=>{const l=labs['amdahl-speedup'],s=l.action(l.initial(),'ninety');assert.ok(Math.abs(s.speedup-4.7058823529)<1e-9);assert.equal(s.limit,10);});
+test('Amdahl custom lab accepts the empty UI parameter object on mount',()=>{const l=labs['amdahl-speedup'],s=l.initial({});assert.equal(s.parallel,90);assert.equal(s.cores,8);assert.ok(l.render(s).includes('4.71×'));});
+test('Amdahl serial and fully parallel boundaries stay defined',()=>{const l=labs['amdahl-speedup'],serial=l.action(l.initial(),'serial'),full=l.action(l.initial(),'full');assert.equal(serial.speedup,1);assert.equal(full.speedup,8);assert.equal(full.limit,Infinity);});
+test('one core never speeds up and zero cores are rejected',()=>{const l=labs['amdahl-speedup'];const s=l.action({...l.initial(),cores:1},'calculate');assert.equal(s.speedup,1);assert.throws(()=>l.action(l.initial(),'invalid'),/1~1,000,000/);});
+test('CH19 lessons include four figures and three questions each',()=>{const lessonCtx=vm.createContext({CS:ctx.CS});lessonCtx.window=lessonCtx;vm.runInContext(fs.readFileSync(path.join(__dirname,'..','content/ch19.js'),'utf8'),lessonCtx);for(const id of ['ch19-l01','ch19-l02']){const lesson=lessonCtx.CS.lessons[id],html=lesson.sections.map(s=>s.html||'').join('');assert.equal((html.match(/<figure /g)||[]).length,4);assert.equal(lesson.sections.length,6);assert.equal(lesson.questions.length,3);assert.ok(lesson.sources.length>=3);}});

@@ -1,0 +1,18 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const vm=require('node:vm');
+const fs=require('node:fs');
+const path=require('node:path');
+const {webcrypto}=require('node:crypto');
+const btoa=s=>Buffer.from(s,'binary').toString('base64'),atob=s=>Buffer.from(s,'base64').toString('binary');
+const ctx=vm.createContext({structuredClone,crypto:webcrypto,TextEncoder,TextDecoder,Uint8Array,btoa,atob});ctx.window=ctx;
+for(const file of ['src/core.js','src/labs/ch17.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
+const labs=ctx.CS.labs;
+test('hello Base64 round trip is real UTF-8 conversion',async()=>{const l=labs['crypto-compare'];const s=await l.action(l.initial(),'base64');assert.equal(s.base64,'aGVsbG8=');assert.equal(s.restored,'hello');});
+test('hello SHA-256 matches the independent reference digest',async()=>{const l=labs['crypto-compare'];const s=await l.action(l.initial(),'hash');assert.equal(s.hash,'2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824');assert.equal(s.hash.length,64);});
+test('one-character change produces a different fixed-length hash',async()=>{const l=labs['crypto-compare'];const s=await l.action(l.initial(),'compare');assert.equal(s.changed,'hello!');assert.notEqual(s.hash,s.changedHash);assert.equal(s.changedHash.length,64);});
+test('empty input is valid and oversized input is rejected',async()=>{const l=labs['crypto-compare'];let s=await l.action(l.initial(),'empty');s=await l.action(s,'hash');assert.equal(s.hash,'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855');s=await l.action(s,'too-long');await assert.rejects(l.action(s,'hash'));});
+test('authorization allows owner and assigned teacher but rejects another student',()=>{const l=labs['access-control'];assert.equal(l.action(l.initial(),'own').decision.status,200);assert.equal(l.action(l.initial(),'teacher').decision.status,200);assert.equal(l.action(l.initial(),'other').decision.status,403);});
+test('logged out and unknown resource are denied by default',()=>{const l=labs['access-control'];assert.equal(l.action(l.initial(),'logged-out').decision.status,401);assert.equal(l.action(l.initial(),'unknown').decision.status,404);});
+test('unsafe-looking note is encoded as text in the lab output',()=>{const l=labs['access-control'];const html=l.render(l.initial());assert.ok(html.includes('&lt;img'));assert.ok(!html.includes('<img src=x'))});
+test('CH17 lessons include four figures and three questions each',()=>{const lessonCtx=vm.createContext({CS:ctx.CS});lessonCtx.window=lessonCtx;vm.runInContext(fs.readFileSync(path.join(__dirname,'..','content/ch17.js'),'utf8'),lessonCtx);for(const id of ['ch17-l01','ch17-l02']){const lesson=lessonCtx.CS.lessons[id],html=lesson.sections.map(s=>s.html||'').join('');assert.equal((html.match(/<figure /g)||[]).length,4);assert.equal(lesson.sections.length,6);assert.equal(lesson.questions.length,3);assert.ok(lesson.sources.length>=3);}});

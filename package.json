@@ -1,0 +1,13 @@
+{
+  "name": "computer-science-course",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "start": "node scripts/serve.cjs",
+    "test": "node --test checks/*.test.cjs"
+  },
+  "dependencies": {
+    "sql.js": "1.14.2"
+  }
+}

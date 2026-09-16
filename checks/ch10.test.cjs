@@ -1,0 +1,20 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const vm=require('node:vm');
+const fs=require('node:fs');
+const path=require('node:path');
+const ctx=vm.createContext({structuredClone});ctx.window=ctx;
+for(const file of ['src/core.js','src/labs/ch10.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
+const labs=ctx.CS.labs;
+
+test('virtual address 2053 maps page 2 offset 5 to physical 7173',()=>{const l=labs['virtual-memory'];let s=l.initial();s=l.action(s,'translate-all');assert.equal(s.translation.page,2);assert.equal(s.translation.offset,5);assert.equal(s.translation.frame,7);assert.equal(s.translation.physical,7173);assert.equal(s.translation.fault,false);});
+test('TLB miss is separate from a present page-table mapping',()=>{const l=labs['virtual-memory'];let s=l.initial();s=l.action(s,'translate');s=l.action(s,'translate');assert.equal(s.translation.tlb,'MISS');assert.equal(s.translation.fault,false);s=l.action(s,'translate');assert.match(s.translation.pte,/프레임 7/);});
+test('page boundary has offset zero and unmapped page does not invent physical address',()=>{const l=labs['virtual-memory'];let s=l.initial();s=l.action(s,'edit-address','1024');s=l.action(s,'translate-all');assert.equal(s.translation.page,1);assert.equal(s.translation.offset,0);assert.equal(s.translation.fault,true);assert.equal(s.translation.physical,null);});
+test('address input rejects invalid values while preserving the last valid result',()=>{const l=labs['virtual-memory'];for(const value of ['-1','1.5','', '8192']){let s=l.action(l.initial(),'translate-all');s=l.action(s,'edit-address',value);assert.throws(()=>l.action(s,'translate'));assert.equal(s.translation.physical,7173);}});
+test('FIFO and LRU choose different victims for 1 2 3 1 4',()=>{const l=labs['virtual-memory'];let fifo=l.initial();fifo=l.action(fifo,'reference-all');assert.equal(fifo.hits,1);assert.equal(fifo.faults,4);assert.equal(fifo.victim,1);let lru=l.action(l.initial(),'policy','lru');lru=l.action(lru,'reference-all');assert.equal(lru.hits,1);assert.equal(lru.faults,4);assert.equal(lru.victim,2);});
+test('one-frame replacement remains bounded and faults on every request',()=>{const l=labs['virtual-memory'];let s=l.action(l.initial(),'capacity','1');s=l.action(s,'reference-all');assert.equal(s.frames.length,1);assert.equal(s.faults,5);assert.equal(s.hits,0);assert.equal(s.frames[0],4);});
+
+test('crash before journal commit preserves A',()=>{const l=labs['journal-recovery'];let s=l.initial();s=l.action(s,'step');s=l.action(s,'crash');s=l.action(s,'recover');assert.equal(s.file,'A');assert.equal(s.committed,false);assert.equal(s.recovered,true);});
+test('crash after commit replays B before home update',()=>{const l=labs['journal-recovery'];let s=l.initial();s=l.action(s,'step');s=l.action(s,'step');assert.equal(s.homeApplied,false);s=l.action(s,'crash');s=l.action(s,'recover');assert.equal(s.file,'B');assert.equal(s.homeApplied,true);assert.equal(s.recovered,true);});
+test('normal journal flow, empty file and no-space boundary keep invariants',()=>{const l=labs['journal-recovery'];let s=l.action(l.initial(),'run-normal');assert.equal(s.file,'B');assert.equal(s.committed,true);assert.equal(s.homeApplied,true);let empty=l.action(l.initial(),'preset','empty');assert.equal(empty.size,0);assert.equal(empty.blocks.length,0);assert.match(empty.fileName,/empty/);let full=l.action(l.initial(),'preset','no-space');full=l.action(full,'step');assert.equal(full.error,'ENOSPC');assert.equal(full.file,'A');assert.equal(full.journal,null);});
+test('CH10 lessons include four figures and three questions each',()=>{const lessonCtx=vm.createContext({CS:ctx.CS});lessonCtx.window=lessonCtx;vm.runInContext(fs.readFileSync(path.join(__dirname,'..','content/ch10.js'),'utf8'),lessonCtx);for(const id of ['ch10-l01','ch10-l02']){const lesson=lessonCtx.CS.lessons[id],html=lesson.sections.map(s=>s.html||'').join('');assert.equal((html.match(/<figure /g)||[]).length,4);assert.equal(lesson.sections.length,6);assert.equal(lesson.questions.length,3);assert.ok(lesson.sources.length>=3);}});

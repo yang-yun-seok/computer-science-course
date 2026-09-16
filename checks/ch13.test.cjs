@@ -1,0 +1,15 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const vm=require('node:vm');
+const fs=require('node:fs');
+const path=require('node:path');
+const ctx=vm.createContext({structuredClone,Worker:undefined,WebAssembly});ctx.window=ctx;ctx.CS_SQL_WORKER='';
+for(const file of ['src/core.js','src/labs/sql.js','src/labs/ch13.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
+const labs=ctx.CS.labs;
+test('fourth key splits leaves and creates separator 3',()=>{const l=labs['bplus-tree'];let s=l.initial();for(let i=0;i<4;i++)s=l.action(s,'insert-next');assert.deepEqual(Array.from(s.root),[3]);assert.deepEqual(Array.from(s.leaves[0]),[1,2]);assert.deepEqual(Array.from(s.leaves[1]),[3,4]);assert.deepEqual(Array.from(s.keys),[1,2,3,4]);});
+test('point search follows root to right leaf',()=>{const l=labs['bplus-tree'];let s=l.action(l.initial(),'insert-all');s=l.action(s,'search');assert.deepEqual(Array.from(s.result),[4]);assert.equal(s.visited.length,2);});
+test('range scan follows linked leaves and preserves order',()=>{const l=labs['bplus-tree'];let s=l.action(l.initial(),'insert-all');s=l.action(s,'range');assert.deepEqual(Array.from(s.result),[2,3,4]);assert.equal(s.visited.length,3);});
+test('empty lookup terminates and duplicate key is rejected',()=>{const l=labs['bplus-tree'];let s=l.action(l.initial(),'empty-search');assert.deepEqual(Array.from(s.result),[]);assert.deepEqual(Array.from(s.keys),[]);assert.throws(()=>l.action(s,'duplicate'));});
+test('query plan presets cover scan, index, key, expression and join',async()=>{const l=labs['query-plan'];for(const id of ['scan','index','primary','expression','join']){const s=await l.action(l.initial(),'preset-'+id);assert.equal(s.preset,id);assert.match(s.sql,/EXPLAIN QUERY PLAN/);}assert.match((await l.action(l.initial(),'preset-index')).sql,/CREATE INDEX/);});
+test('query plan editor rejects empty and oversized input',async()=>{const l=labs['query-plan'];for(const sql of ['', 'x'.repeat(4001)]){const s=await l.action(l.initial(),'edit',sql);await assert.rejects(()=>l.action(s,'run',null,{}));}});
+test('CH13 lessons include four figures and three questions each',()=>{const lessonCtx=vm.createContext({CS:ctx.CS});lessonCtx.window=lessonCtx;vm.runInContext(fs.readFileSync(path.join(__dirname,'..','content/ch13.js'),'utf8'),lessonCtx);for(const id of ['ch13-l01','ch13-l02']){const lesson=lessonCtx.CS.lessons[id],html=lesson.sections.map(s=>s.html||'').join('');assert.equal((html.match(/<figure /g)||[]).length,4);assert.equal(lesson.sections.length,6);assert.equal(lesson.questions.length,3);assert.ok(lesson.sources.length>=3);}});

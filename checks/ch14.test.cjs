@@ -1,0 +1,16 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const vm=require('node:vm');
+const fs=require('node:fs');
+const path=require('node:path');
+const ctx=vm.createContext({structuredClone});ctx.window=ctx;
+for(const file of ['src/core.js','src/labs/ch14.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
+const labs=ctx.CS.labs;
+test('statement snapshots observe committed 120 on second read',()=>{const s=labs['isolation-snapshots'].action(labs['isolation-snapshots'].initial(),'run-statement');assert.deepEqual(Array.from(s.t1.reads),[100,120]);});
+test('transaction snapshot keeps 100 across both reads',()=>{const s=labs['isolation-snapshots'].action(labs['isolation-snapshots'].initial(),'run-transaction');assert.deepEqual(Array.from(s.t1.reads),[100,100]);assert.equal(s.t1.snapshot,1);});
+test('uncommitted 120 is never visible',()=>{let s=labs['isolation-snapshots'].action(labs['isolation-snapshots'].initial(),'show-uncommitted');assert.deepEqual(Array.from(s.t1.reads),[100,100]);assert.equal(s.t2.pending,120);});
+test('ended transaction and invalid commit cannot run again',()=>{const l=labs['isolation-snapshots'];let s=l.action(l.initial(),'t1-end');assert.throws(()=>l.action(s,'t1-read'));assert.throws(()=>l.action(l.initial(),'t2-commit'));});
+test('crash before durable commit preserves 100',()=>{const l=labs['wal-recovery'],s=l.action(l.initial(),'run-before');assert.equal(s.disk,100);assert.equal(s.recovered,true);});
+test('crash after durable commit redoes 120 idempotently',()=>{const l=labs['wal-recovery'];let s=l.action(l.initial(),'run-after');assert.equal(s.disk,120);const again=l.action(s,'recover');assert.equal(again.disk,120);});
+test('transaction without update keeps original value',()=>{const l=labs['wal-recovery'],s=l.action(l.initial(),'run-empty');assert.equal(s.disk,100);assert.equal(s.memory,100);});
+test('CH14 lessons include four figures and three questions each',()=>{const lessonCtx=vm.createContext({CS:ctx.CS});lessonCtx.window=lessonCtx;vm.runInContext(fs.readFileSync(path.join(__dirname,'..','content/ch14.js'),'utf8'),lessonCtx);for(const id of ['ch14-l01','ch14-l02']){const lesson=lessonCtx.CS.lessons[id],html=lesson.sections.map(s=>s.html||'').join('');assert.equal((html.match(/<figure /g)||[]).length,4);assert.equal(lesson.sections.length,6);assert.equal(lesson.questions.length,3);assert.ok(lesson.sources.length>=3);}});
