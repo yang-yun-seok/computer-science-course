@@ -77,3 +77,11 @@ test('lesson topics have breathing room and figures explain their learning focus
  assert.equal(figures,185);
  assert.equal(captions,figures);
 });
+
+test('Korean prose wraps by eojeol and complete thoughts',()=>{
+ const style=read('src/style.css');
+ assert.match(style,/:root\{[^}]*line-break:strict;word-break:keep-all;overflow-wrap:break-word/);
+ assert.match(style,/h1,h2,h3,h4,[^{]+\{[^}]*text-wrap:balance/);
+ assert.match(style,/p,li,dt,dd,th,td,legend,figcaption,[^{]+\{[^}]*word-break:keep-all;overflow-wrap:break-word;text-wrap:pretty/);
+ assert.match(style,/code,pre,[^{]+\{[^}]*overflow-wrap:anywhere/);
+});
