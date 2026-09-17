@@ -59,6 +59,11 @@ test('glossary indexes every reference keyword with a readable meaning',()=>{
  assert.deepEqual(Array.from(glossary.subjects,v=>[v.id,glossary.terms.filter(term=>term.subject===v.id).length]),[['os',220],['net',483],['db',85],['ds',86],['arch',259]]);
  assert.ok(glossary.terms.every(term=>term.term&&term.subject&&term.topic&&term.meaning.length>=8));
  assert.ok(glossary.terms.every(term=>!/<[^>]+>/.test(term.meaning)));
+ const meanings=glossary.terms.map(term=>term.meaning).join('\n');
+ assert.doesNotMatch(meanings,/(?:있음|없음|않음|부름|불림|나타냄|가리킴|가짐|받음|보냄|일어남|구성되었음)이에요/);
+ assert.doesNotMatch(meanings,/[을를] 의미예요|메세지|주고 받을|페이지 가|각각이에요|부름\)이에요|부르며예요|존재예요|생김이에요|하면이에요|되고예요|역할 수행해요|기능 지원해요|무시로 대처/);
+ assert.ok(glossary.terms.some(term=>term.term==='태스크'));
+ assert.ok(glossary.terms.every(term=>term.term!=='테스크'));
  assert.match(glossary.source.note,/짧은 뜻/);
  const app=read('src/app.js');
  assert.match(app,/href="#glossary"/);
