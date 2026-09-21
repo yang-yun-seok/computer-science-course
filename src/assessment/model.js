@@ -17,16 +17,16 @@
   return shuffle(selected,`${seed}:order`);
  }
  function createAttempt(preset,pool,options={}){
-  const startedAt=options.startedAt||Date.now(),seed=options.seed||`${preset.id}:${startedAt}`;
+  const startedAt=options.startedAt??Date.now(),seed=options.seed||`${preset.id}:${startedAt}`;
   const selected=selectQuestions(preset,pool,seed);
   const noLimit=Boolean(options.noLimit);const deadlineAt=noLimit?null:startedAt+preset.minutes*60*1000;
-  return {schemaVersion:1,id:`attempt-${startedAt}-${Math.floor(Math.random()*1e6).toString(36)}`,presetId:preset.id,seed,questionIds:selected.map(q=>q.id),questions:selected.map(clone),answers:{},flags:{},currentIndex:0,startedAt,deadlineAt,noLimit,status:'in-progress',submittedAt:null,submitReason:null};
+  return {schemaVersion:2,id:`attempt-${startedAt}-${Math.floor(Math.random()*1e6).toString(36)}`,presetId:preset.id,seed,questionIds:selected.map(q=>q.id),questions:selected.map(clone),answers:{},flags:{},currentIndex:0,startedAt,deadlineAt,noLimit,status:'in-progress',submittedAt:null,submitReason:null};
  }
  const grade=attempt=>{const items=attempt.questions.map(q=>{const answer=attempt.answers[q.id];return {id:q.id,lessonId:q.lessonId,selected:answer??null,correct:answer!=null&&answer===q.correctOptionId,unanswered:answer==null,question:q};});const correct=items.filter(i=>i.correct).length;return {items,correct,total:items.length,unanswered:items.filter(i=>i.unanswered).length,wrong:items.filter(i=>!i.correct&&!i.unanswered).length,score:items.length?Math.round(correct/items.length*1000)/10:0};};
- const isExpired=attempt=>!attempt.noLimit&&attempt.status==='in-progress'&&Number.isFinite(attempt.deadlineAt)&&Date.now()>=attempt.deadlineAt;
+ const isExpired=(attempt,now=Date.now())=>!attempt.noLimit&&attempt.status==='in-progress'&&Number.isFinite(attempt.deadlineAt)&&now>=attempt.deadlineAt;
  function updateAnswer(attempt,id,optionId){if(attempt.status!=='in-progress')return attempt;const next=clone(attempt);if(next.questions.some(q=>q.id===id)&&next.questions.find(q=>q.id===id).options.some(o=>o.id===optionId))next.answers[id]=optionId;return next;}
  function toggleFlag(attempt,id){if(attempt.status!=='in-progress')return attempt;const next=clone(attempt);next.flags[id]=!next.flags[id];return next;}
  function move(attempt,index){if(attempt.status!=='in-progress')return attempt;const next=clone(attempt);next.currentIndex=Math.max(0,Math.min(index,next.questions.length-1));return next;}
- function submit(attempt,reason='manual'){if(attempt.status!=='in-progress')return attempt;const next=clone(attempt);next.status='submitted';next.submittedAt=Date.now();next.submitReason=reason;next.result=grade(next);return next;}
+ function submit(attempt,reason='manual',now=Date.now()){if(attempt.status!=='in-progress')return attempt;const next=clone(attempt);next.status='submitted';next.submittedAt=now;next.submitReason=reason;next.result=grade(next);return next;}
  assessment.clone=clone;assessment.shuffle=shuffle;assessment.selectQuestions=selectQuestions;assessment.createAttempt=createAttempt;assessment.grade=grade;assessment.isExpired=isExpired;assessment.updateAnswer=updateAnswer;assessment.toggleFlag=toggleFlag;assessment.move=move;assessment.submit=submit;
 })();

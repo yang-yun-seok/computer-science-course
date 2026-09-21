@@ -13,7 +13,7 @@ const load=()=>{
  const lessons=[...curriculum.matchAll(/^### (\d+)-(\d+)\. (.+)$/gm)].map(m=>({id:`ch${m[1].padStart(2,'0')}-l${m[2].padStart(2,'0')}`,chapter:+m[1],sub:+m[2],title:m[3]}));
  context.CATALOG={chapters,lessons};
  for(const file of fs.readdirSync(path.join(root,'content')).filter(name=>/^ch\d+.*\.js$/.test(name)).sort())vm.runInContext(read(`content/${file}`),context);
- vm.runInContext(read('content/exam-presets.js'),context);vm.runInContext(read('content/exams.js'),context);vm.runInContext(read('src/assessment/model.js'),context);
+ vm.runInContext(read('content/exam-bank.js'),context);vm.runInContext(read('content/exam-presets.js'),context);vm.runInContext(read('content/exams.js'),context);vm.runInContext(read('src/assessment/model.js'),context);
  return context;
 };
 
@@ -22,7 +22,37 @@ test('시험 문제은행은 모든 소단원에 6개 문항과 안정적인 ID�
  assert.equal(Object.keys(context.CS.lessons).length,48);
  assert.equal(questions.length,288);
  assert.equal(new Set(questions.map(q=>q.id)).size,288);
- assert.ok(questions.every(q=>q.lessonId&&q.options.length===3&&q.options.some(o=>o.id===q.correctOptionId)&&q.reviewTargets.length));
+ assert.equal(new Set(questions.map(q=>q.prompt)).size,288);
+ assert.ok(questions.every(q=>/-e0[1-6]$/.test(q.id)&&q.revision===2&&q.lessonId&&q.options.length===3&&new Set(q.options.map(o=>o.text)).size===3&&q.options.some(o=>o.id===q.correctOptionId)&&q.feedback.length===3&&q.reviewTargets.length));
+ assert.ok(questions.every(q=>!q.conceptTags.includes('goal-check')&&!q.prompt.includes('가장 직접 확인할 내용')));
+ for(const [lessonId,lesson] of Object.entries(context.CS.lessons))assert.deepEqual(questions.filter(q=>q.lessonId===lessonId).map(q=>q.reviewTargets[0].sectionId),lesson.sections.map(section=>section.id));
+});
+
+const webStorage=map=>({getItem:key=>map.has(key)?map.get(key):null,setItem:(key,value)=>map.set(key,String(value)),removeItem:key=>map.delete(key)});
+const storageContext=(shared,session=new Map(),broken=false)=>{const context={console,Math,JSON,Date,URL,URLSearchParams,localStorage:broken?{getItem(){throw Error('blocked');},setItem(){throw Error('blocked');},removeItem(){throw Error('blocked');}}:webStorage(shared),sessionStorage:webStorage(session)};context.window=context;context.globalThis=context;vm.createContext(context);vm.runInContext(read('src/core.js'),context);vm.runInContext(read('src/assessment/model.js'),context);vm.runInContext(read('src/assessment/storage.js'),context);return context;};
+
+test('응시 소유권은 탭 사이에서 보호되고 명시적으로 이전할 수 있다',()=>{
+ const shared=new Map(),first=storageContext(shared),second=storageContext(shared);
+ const attempt={id:'attempt-1',status:'in-progress',questions:[],answers:{},flags:{}};
+ assert.equal(first.CS.assessment.storage.putAttempt(attempt),true);
+ assert.equal(second.CS.assessment.storage.ownership(),'other');
+ assert.equal(second.CS.assessment.storage.putAttempt(attempt),false);
+ assert.equal(second.CS.assessment.storage.claim(true),true);
+ assert.equal(first.CS.assessment.storage.ownership(),'other');
+ assert.equal(second.CS.assessment.storage.finishAttempt({...attempt,status:'submitted'}),true);
+ assert.equal(first.CS.assessment.storage.active(),null);
+ assert.equal(first.CS.assessment.storage.history().length,1);
+});
+
+test('브라우저 저장소가 막혀도 현재 탭의 응시와 복습은 메모리에 유지된다',()=>{
+ const context=storageContext(new Map(),new Map(),true),storage=context.CS.assessment.storage;
+ const attempt={id:'volatile',status:'in-progress',questions:[],answers:{},flags:{}};
+ assert.equal(storage.putAttempt(attempt),false);
+ assert.equal(storage.active().id,'volatile');
+ assert.equal(storage.healthy(),false);
+ const question={id:'q1',lessonId:'ch01-l01',options:[{id:'a',text:'A'}],correctOptionId:'a',feedback:['설명'],reviewTargets:[{lessonId:'ch01-l01',sectionId:'b01'}]};
+ assert.equal(storage.addReview(question,'시험 · 예시',null),false);
+ assert.equal(storage.reviews().length,1);
 });
 
 test('시험 출제·채점은 범위와 문항 수를 지키고 선택지 순서와 독립적이다',()=>{

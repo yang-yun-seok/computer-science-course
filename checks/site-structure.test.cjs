@@ -106,3 +106,15 @@ test('assessment navigation connects exams, results and review notes',()=>{
  assert.match(style,/\.assessment-page/);
  assert.match(style,/\.exam-option/);
 });
+
+test('review notes expose filters, core summary and return path',()=>{
+ const app=read('src/app.js'),style=read('src/style.css');
+ assert.match(app,/data-review-status="done"/);
+ assert.match(app,/data-review-source/);
+ assert.match(app,/핵심 세 가지/);
+ assert.match(app,/원래 문제로 돌아가기/);
+ assert.match(app,/data-take-over/);
+ assert.match(app,/storage\.release/);
+ assert.match(style,/\.review-return/);
+ assert.match(style,/\.review-filters/);
+});
