@@ -53,7 +53,7 @@
 - 시험 목록·단원 선택·준비·응시·결과·재도전 화면과 모바일 스타일을 추가했다.
 - 웹판은 참조 JPEG 18개를 `dist/assets/`로 분리하고 단일 파일판은 이미지 내장을 유지했다. 웹 HTML은 약5.5MB에서 약2.4MB가 됐다.
 - `npm run build`, `npm test` 217개 통과. Chromium에서 `#exams`와 `#exam/setup/stage-1` 준비 화면을 확인했다.
-- 남은 작업: GitHub Pages 공개 URL에서 시험·복습 깊은 링크와 분리 이미지 경로를 확인한다.
+- 완료: GitHub Pages Actions run `35599349729`의 build/deploy 성공을 확인했고, 공개 HTML 200·분리 JPEG 200·`assets-manifest.json` 200을 확인했다.
 
 ## 다음 작업
 
