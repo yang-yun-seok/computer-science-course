@@ -92,3 +92,17 @@ test('Korean prose wraps by eojeol and complete thoughts',()=>{
  assert.match(style,/p,li,dt,dd,th,td,legend,figcaption,[^{]+\{[^}]*word-break:keep-all;overflow-wrap:break-word;text-wrap:pretty/);
  assert.match(style,/code,pre,[^{]+\{[^}]*overflow-wrap:anywhere/);
 });
+
+test('assessment navigation connects exams, results and review notes',()=>{
+ const app=read('src/app.js'),style=read('src/style.css');
+ assert.match(app,/href="#exams"/);
+ assert.match(app,/href="#review"/);
+ assert.match(app,/exam\/setup/);
+ assert.match(app,/exam\/run/);
+ assert.match(app,/exam\/result/);
+ assert.match(app,/data-review-check/);
+ assert.match(app,/storage\.addReview/);
+ assert.match(app,/storage\.completeReview/);
+ assert.match(style,/\.assessment-page/);
+ assert.match(style,/\.exam-option/);
+});

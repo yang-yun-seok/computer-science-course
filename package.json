@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "node scripts/build.cjs",
+    "build": "node scripts/build.cjs && node scripts/optimize-images.cjs",
     "start": "node scripts/serve.cjs",
     "test": "node --test checks/*.test.cjs"
   },
