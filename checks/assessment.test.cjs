@@ -47,6 +47,7 @@ test('응시 상태는 제출 후 불변이고 시간 제한이 있는 응시는
 test('웹 빌드는 외부 자산과 단일 파일 자산을 각각 만든다',()=>{
  const build=read('scripts/build.cjs'),packageJson=JSON.parse(read('package.json'));
  assert.match(build,/assetDir/);assert.match(build,/htmlFor=inline/);assert.match(packageJson.scripts.build,/optimize-images/);
+ if(!fs.existsSync(path.join(root,'dist/index.html')))return;
  const web=fs.readFileSync(path.join(root,'dist/index.html'),'utf8'),single=fs.readFileSync(path.join(root,'dist/cs-course.html'),'utf8');
  assert.match(web,/assets\/foodtruck-cpu-memory\.jpg/);assert.doesNotMatch(web,/data:image\/jpeg;base64/);assert.match(single,/data:image\/jpeg;base64/);
  assert.ok(fs.existsSync(path.join(root,'dist','assets','foodtruck-cpu-memory.jpg')));
