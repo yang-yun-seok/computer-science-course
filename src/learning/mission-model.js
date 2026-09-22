@@ -4,7 +4,7 @@ const root=CS.learning=CS.learning||{};
 root.missions={
  create(definition,saved){
   const base={missionId:definition.id,revision:definition.revision||1,runs:{A:null,B:null},checks:{},note:'',completed:false,updatedAt:0};
-  if(!saved||saved.missionId!==definition.id)return base;
+  if(!saved||saved.missionId!==definition.id||saved.revision!==base.revision)return base;
   return {...base,...structuredClone(saved),runs:{...base.runs,...(saved.runs||{})},checks:{...(saved.checks||{})}};
  },
  record(state,label,observation){

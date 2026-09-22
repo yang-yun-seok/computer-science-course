@@ -1,20 +1,20 @@
 (()=>{
 const {escape:e}=CS.helpers;
 
-const orderInitial=()=>({prediction:'',logs:[],queues:{stack:[],microtasks:[],tasks:[]},runs:0,events:[]});
-const runActual=signal=>new Promise((resolve,reject)=>{
+const orderInitial=()=>({variant:'promise-first',prediction:'',logs:[],queues:{stack:[],microtasks:[],tasks:[]},runs:0,events:[]});
+const runActual=(signal,variant)=>new Promise((resolve,reject)=>{
  const logs=[],queues={stack:['A 출력'],microtasks:['Promise → B'],tasks:['setTimeout → C']};
  logs.push('A');
- Promise.resolve().then(()=>logs.push('B'));
- const timer=setTimeout(()=>{logs.push('C');resolve({logs,queues:{stack:[],microtasks:[],tasks:[]}});},0);
+ let timer;const promise=()=>Promise.resolve().then(()=>logs.push('B')),task=()=>{timer=setTimeout(()=>{logs.push('C');resolve({logs,queues:{stack:[],microtasks:[],tasks:[]}});},0);};
+ if(variant==='timer-first'){task();promise();}else{promise();task();}
  if(signal)signal.addEventListener('abort',()=>{clearTimeout(timer);reject(new DOMException('실습을 중단했어요.','AbortError'));},{once:true});
 });
 CS.labs['event-loop-order']={custom:true,async:true,title:'A·B·C가 어떤 순서로 출력되는지 실제로 실행하세요',type:'실제 JavaScript 태스크·마이크로태스크 실행',intro:'동기 A를 출력하고, setTimeout의 C와 Promise 반응의 B를 예약해요. 실행 스택이 비면 마이크로태스크를 먼저 비우므로 A→B→C가 돼요.',limit:'준비한 코드만 실행하며 임의 코드는 받지 않아요. 타이머 지연 시간은 정확한 실행 시각이 아니라 최소 대기 조건이고, 브라우저가 바쁘면 더 늦어질 수 있어요.',
  initial:orderInitial,
- async action(s,a,data,context={}){if(a==='reset')return orderInitial();if(a==='predict')return {...s,prediction:data,events:[`예상 순서를 ${data}로 골랐어요.`]};if(a==='preset-error')throw Error('준비된 오류 예시예요. 오류가 나도 이전 실행 결과는 그대로 남아요.');if(a==='run'||a==='repeat'){const result=await runActual(context.signal);return {...s,logs:result.logs,queues:result.queues,runs:s.runs+1,events:[...s.events,`실제 실행 ${s.runs+1}회 · ${result.logs.join(' → ')}`]};}throw Error('알 수 없는 이벤트 루프 동작이에요.');},
+ async action(s,a,data,context={}){if(a==='reset')return orderInitial();if(a==='variant-promise')return {...orderInitial(),variant:'promise-first',events:['Promise 반응을 먼저 예약하는 코드를 골랐어요.']};if(a==='variant-timer')return {...orderInitial(),variant:'timer-first',events:['타이머를 먼저 예약하는 코드를 골랐어요.']};if(a==='predict')return {...s,prediction:data,events:[...s.events,`예상 순서를 ${data}로 골랐어요.`]};if(a==='preset-error')throw Error('준비된 오류 예시예요. 오류가 나도 이전 실행 결과는 그대로 남아요.');if(a==='run'||a==='repeat'){const result=await runActual(context.signal,s.variant);return {...s,logs:result.logs,queues:result.queues,runs:s.runs+1,events:[...s.events,`실제 실행 ${s.runs+1}회 · ${result.logs.join(' → ')}`]};}throw Error('알 수 없는 이벤트 루프 동작이에요.');},
  describe(s){if(!s.logs.length)return '먼저 순서를 예상한 뒤 실제 브라우저에서 실행해 보세요.';return `실제 출력은 ${s.logs.join(' → ')}예요.${s.prediction?` 예상 ${s.prediction}과 ${s.prediction===s.logs.join('→')?'같아요.':'달라요.'}`:''}`;},
- actions(){return [{id:'run',text:'실제로 실행',primary:true},{id:'repeat',text:'한 번 더 실행'},{id:'preset-error',text:'준비된 오류 실행'},{id:'reset',text:'처음부터'}];},
- render(s){const choices=['A→B→C','A→C→B','B→A→C'].map(v=>`<button type="button" data-action="predict" data-value="${v}" class="${s.prediction===v?'selected':''}">${v}</button>`).join('');return `<div class="order-predict"><b>먼저 예상하기</b><div>${choices}</div></div><div class="event-queues"><section><small>호출 스택</small><strong>${s.logs.length?'비어 있음':'A 실행 전'}</strong></section><section><small>마이크로태스크 큐</small><strong>Promise → B</strong></section><section><small>태스크 큐</small><strong>setTimeout → C</strong></section></div><div class="order-output">${s.logs.length?s.logs.map((v,i)=>`<span><small>${i+1}</small>${e(v)}</span>`).join('<i>→</i>'):'<em>아직 실행하지 않았어요.</em>'}</div><p class="small">실행 횟수 <b>${s.runs}회</b> · 각 실행은 새 로그에서 시작해요.</p>`;}
+ actions(s){return [{id:'variant-promise',text:'Promise 먼저 예약',primary:s.variant==='promise-first'},{id:'variant-timer',text:'타이머 먼저 예약',primary:s.variant==='timer-first'},{id:'run',text:'실제로 실행',primary:true},{id:'repeat',text:'한 번 더 실행'},{id:'preset-error',text:'준비된 오류 실행'},{id:'reset',text:'처음부터'}];},
+ render(s){const choices=['A→B→C','A→C→B','B→A→C'].map(v=>`<button type="button" data-action="predict" data-value="${v}" class="${s.prediction===v?'selected':''}">${v}</button>`).join('');return `<p class="small"><strong>준비 코드</strong> · ${s.variant==='promise-first'?'Promise 반응 예약 → 타이머 예약':'타이머 예약 → Promise 반응 예약'}</p><div class="order-predict"><b>먼저 예상하기</b><div>${choices}</div></div><div class="event-queues"><section><small>호출 스택</small><strong>${s.logs.length?'비어 있음':'A 실행 전'}</strong></section><section><small>마이크로태스크 큐</small><strong>Promise → B</strong></section><section><small>태스크 큐</small><strong>setTimeout → C</strong></section></div><div class="order-output">${s.logs.length?s.logs.map((v,i)=>`<span><small>${i+1}</small>${e(v)}</span>`).join('<i>→</i>'):'<em>아직 실행하지 않았어요.</em>'}</div><p class="small">실행 횟수 <b>${s.runs}회</b> · 각 실행은 새 로그에서 시작해요.</p>`;}
 };
 
 const keySession='cs-course-ch16-session-font',keyLocal='cs-course-ch16-local-font';

@@ -8,6 +8,7 @@ const ctx=vm.createContext({structuredClone,setTimeout,clearTimeout,Promise,DOME
 for(const file of ['src/core.js','src/labs/ch16.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),ctx);
 const labs=ctx.CS.labs;
 test('actual browser scheduling prints synchronous A then microtask B then timer C',async()=>{const l=labs['event-loop-order'];const s=await l.action(l.initial(),'run',null,{});assert.deepEqual([...s.logs],['A','B','C']);assert.equal(s.runs,1);});
+test('timer registered before Promise still runs after the microtask',async()=>{const l=labs['event-loop-order'];let s=await l.action(l.initial(),'variant-timer');s=await l.action(s,'run',null,{});assert.equal(s.variant,'timer-first');assert.deepEqual([...s.logs],['A','B','C']);});
 test('two runs start independent logs',async()=>{const l=labs['event-loop-order'];let s=await l.action(l.initial(),'run',null,{});s=await l.action(s,'repeat',null,{});assert.deepEqual([...s.logs],['A','B','C']);assert.equal(s.runs,2);});
 test('prepared event-loop error does not invent output',async()=>{const l=labs['event-loop-order'];await assert.rejects(l.action(l.initial(),'preset-error'));});
 test('refresh comparison clears memory and retains both web stores',()=>{const l=labs['storage-lifetime'];const s=l.action(l.initial(),'run-compare');assert.equal(s.memory,null);assert.equal(s.session,20);assert.equal(s.local,20);assert.equal(s.refreshed,true);});

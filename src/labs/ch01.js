@@ -19,10 +19,10 @@ CS.labs['cpu-add']={
 };
 CS.labs['memory-save']={
  title:'저장한 글은 어디에 남을까요?',type:'학습용 전원·저장 모형',intro:'글을 고치고, 저장하거나 저장하지 않은 채 모형 전원을 꺼 보세요.',limit:'모형의 전원만 조작해요. 실제 기기를 끄거나 파일을 저장하지 않아요. 자동 저장과 기록 도중 장애는 생략했어요.',custom:true,
- initial(){return {power:true,draft:'첫 문장',saved:'첫 문장',message:'작업 중인 글과 저장한 글이 같아요.',events:[]};},
+ initial(){return {power:true,draft:'첫 문장',saved:'첫 문장',edited:false,savedAfterEdit:false,message:'작업 중인 글과 저장한 글이 같아요.',events:[]};},
  action(s,action,data){const n={...s,events:[...s.events]};if(action==='reset')return this.initial();
- if(action==='edit'){if(!s.power)return s;if(typeof data!=='string'||[...data].length>100)throw Error('100자 이내로 입력해 주세요.');n.draft=data;n.message='작업 중인 글을 바꿨어요. 저장한 글은 그대로예요.';return n;}
- if(action==='save'){if(!s.power)return s;n.saved=n.draft;n.message='지금 작업 중인 글을 저장했어요.';}
+ if(action==='edit'){if(!s.power)return s;if(typeof data!=='string'||[...data].length>100)throw Error('100자 이내로 입력해 주세요.');n.draft=data;n.edited=true;n.savedAfterEdit=false;n.message='작업 중인 글을 바꿨어요. 저장한 글은 그대로예요.';return n;}
+ if(action==='save'){if(!s.power)return s;n.saved=n.draft;n.savedAfterEdit=n.edited;n.message='지금 작업 중인 글을 저장했어요.';}
  if(action==='power'){n.power=!s.power;if(n.power){n.draft=n.saved;n.message='저장한 글을 작업 공간으로 다시 불러왔어요.';}else{n.draft=null;n.message='작업 공간은 비었지만 저장한 글은 남아 있어요.';}}
  n.events.push(n.message);return n;},
  describe(s){return `${s.power?'전원 켜짐':'전원 꺼짐'} — ${s.message}`;},

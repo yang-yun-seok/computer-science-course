@@ -13,9 +13,13 @@ CS.labs['bplus-tree']={custom:true,title:'네 번째 키가 리프를 나누는 
 const PLANS={
  scan:`EXPLAIN QUERY PLAN
 SELECT * FROM books
+WHERE title = '컴퓨터 첫걸음';
+SELECT * FROM books
 WHERE title = '컴퓨터 첫걸음';`,
  index:`CREATE INDEX idx_books_title ON books(title);
 EXPLAIN QUERY PLAN
+SELECT * FROM books
+WHERE title = '컴퓨터 첫걸음';
 SELECT * FROM books
 WHERE title = '컴퓨터 첫걸음';`,
  primary:`EXPLAIN QUERY PLAN
@@ -37,6 +41,6 @@ CS.labs['query-plan']={custom:true,async:true,title:'같은 결과를 찾는 실
  async action(s,a,data,context){if(a==='reset')return planInitial();if(a==='edit')return {...s,sql:data};if(a.startsWith('preset-')){const preset=a.slice(7);if(!PLANS[preset])throw Error('알 수 없는 실행 계획 예시예요.');return {sql:PLANS[preset],result:null,preset,events:['계획 예시를 바꿨어요. 실행해 detail 열을 읽어 보세요.']};}if(a!=='run')throw Error('실행 계획 동작을 확인해 주세요.');if(!s.sql.trim()||s.sql.length>4000)throw Error('SQL은1~4,000자로 입력해 주세요.');const result=await CS.helpers.executeSQL(s.sql,context?.signal);return {...s,result,events:[`SQLite ${result.version} 계획 확인 완료 · 결과 표 ${result.results.length}개`]};},
  describe(s){return s.events.at(-1)||'먼저 인덱스 없는 제목 조회 계획을 실행해 보세요.';},
  actions(){return [{id:'run',text:'계획 실행',primary:true},{id:'preset-scan',text:'인덱스 없이'},{id:'preset-index',text:'제목 인덱스 생성'},{id:'preset-primary',text:'기본키 검색'},{id:'preset-expression',text:'함수 적용 조건'},{id:'preset-join',text:'3표 JOIN'},{id:'reset',text:'기본 계획'}];},
- render(s){const output=s.result?s.result.results.map((r,i)=>`<h4>계획 결과 ${i+1}</h4>${table(r.columns.map(e),r.rows.map(row=>row.map(v=>e(v))))}`).join('')||'<p>계획 결과 표가 없어요.</p>':'<p>아직 실행하지 않았어요. 실행 뒤 detail 열의 SCAN·SEARCH·USING INDEX를 찾아보세요.</p>';return `<label class="field sql-editor">SQL과 EXPLAIN QUERY PLAN<textarea data-action="edit" rows="8" maxlength="4000" spellcheck="false">${e(s.sql)}</textarea></label><div class="plan-legend"><span><b>SCAN</b> 넓게 순회</span><span><b>SEARCH</b> 조건으로 위치 탐색</span><span><b>USING INDEX</b> 사용한 인덱스</span></div><div class="sql-output">${output}</div>`;}
+ render(s){const output=s.result?s.result.results.map(r=>{const plan=r.columns.includes('detail');return `<h4>${plan?'실행 계획':'SELECT 결과'} · ${r.rows.length}행</h4>${table(r.columns.map(e),r.rows.map(row=>row.map(v=>e(v))))}`;}).join('')||'<p>계획 결과 표가 없어요.</p>':'<p>아직 실행하지 않았어요. 실행 뒤 detail 열의 SCAN·SEARCH·USING INDEX와 SELECT 결과 행을 함께 보세요.</p>';return `<label class="field sql-editor">SQL과 EXPLAIN QUERY PLAN<textarea data-action="edit" rows="10" maxlength="4000" spellcheck="false">${e(s.sql)}</textarea></label><div class="plan-legend"><span><b>SCAN</b> 넓게 순회</span><span><b>SEARCH</b> 조건으로 위치 탐색</span><span><b>USING INDEX</b> 사용한 인덱스</span></div><div class="sql-output">${output}</div>`;}
 };
 })();
