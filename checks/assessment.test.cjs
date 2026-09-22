@@ -13,7 +13,7 @@ const load=()=>{
  const lessons=[...curriculum.matchAll(/^### (\d+)-(\d+)\. (.+)$/gm)].map(m=>({id:`ch${m[1].padStart(2,'0')}-l${m[2].padStart(2,'0')}`,chapter:+m[1],sub:+m[2],title:m[3]}));
  context.CATALOG={chapters,lessons};
  for(const file of fs.readdirSync(path.join(root,'content')).filter(name=>/^ch\d+.*\.js$/.test(name)).sort())vm.runInContext(read(`content/${file}`),context);
- vm.runInContext(read('content/exam-bank.js'),context);vm.runInContext(read('content/exam-presets.js'),context);vm.runInContext(read('content/exams.js'),context);vm.runInContext(read('src/assessment/model.js'),context);
+ vm.runInContext(read('content/exam-bank.js'),context);vm.runInContext(read('content/exam-feedback.js'),context);vm.runInContext(read('content/exam-presets.js'),context);vm.runInContext(read('content/exams.js'),context);vm.runInContext(read('src/assessment/model.js'),context);
  return context;
 };
 
@@ -23,7 +23,8 @@ test('시험 문제은행은 모든 소단원에 6개 문항과 안정적인 ID�
  assert.equal(questions.length,288);
  assert.equal(new Set(questions.map(q=>q.id)).size,288);
  assert.equal(new Set(questions.map(q=>q.prompt)).size,288);
- assert.ok(questions.every(q=>/-e0[1-6]$/.test(q.id)&&q.revision===3&&q.lessonId&&q.options.length===3&&new Set(q.options.map(o=>o.text)).size===3&&q.options.some(o=>o.id===q.correctOptionId)&&q.feedback.length===3&&q.reviewTargets.length));
+ assert.ok(questions.every(q=>/-e0[1-6]$/.test(q.id)&&[3,4].includes(q.revision)&&q.lessonId&&q.options.length===3&&new Set(q.options.map(o=>o.text)).size===3&&q.options.some(o=>o.id===q.correctOptionId)&&q.feedback.length===3&&q.reviewTargets.length));
+ assert.ok(questions.filter(q=>['ch01-l01','ch08-l01','ch08-l02','ch13-l02','ch15-l02','ch16-l01'].includes(q.lessonId)).every(q=>q.revision===4));
  assert.ok(questions.every(q=>!q.conceptTags.includes('goal-check')&&!q.prompt.includes('가장 직접 확인할 내용')));
  for(const [lessonId,lesson] of Object.entries(context.CS.lessons))assert.deepEqual(questions.filter(q=>q.lessonId===lessonId).map(q=>q.reviewTargets[0].sectionId),lesson.sections.map(section=>section.id));
 });
@@ -66,6 +67,15 @@ test('브라우저 저장소가 막혀도 현재 탭의 응시와 복습은 메�
  const question={id:'q1',lessonId:'ch01-l01',options:[{id:'a',text:'A'}],correctOptionId:'a',feedback:['설명'],reviewTargets:[{lessonId:'ch01-l01',sectionId:'b01'}]};
  assert.equal(storage.addReview(question,'시험 · 예시',null),false);
  assert.equal(storage.reviews().length,1);
+});
+
+test('revision이 바뀐 시험 문항은 옛 복습 기록을 덮어쓰지 않는다',()=>{
+ const context=storageContext(new Map(),new Map(),false),storage=context.CS.assessment.storage;
+ const base={id:'q-revision',revision:3,lessonId:'ch01-l01',options:[{id:'a',text:'A'}],correctOptionId:'a',feedback:['설명'],reviewTargets:[{lessonId:'ch01-l01',sectionId:'b01'}]};
+ const next={...base,revision:4,feedback:['새 설명']};
+ assert.equal(storage.addReview(base,'시험 · 이전',null),true);
+ assert.equal(storage.addReview(next,'시험 · 새 버전',null),true);
+ assert.deepEqual(storage.reviews().map(item=>item.id).sort(),['review-q-revision-r3','review-q-revision-r4']);
 });
 
 test('시험 출제·채점은 범위와 문항 수를 지키고 선택지 순서와 독립적이다',()=>{

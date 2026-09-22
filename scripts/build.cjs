@@ -7,7 +7,7 @@ const curriculum=read('content/curriculum.md');
 const chapters=[...curriculum.matchAll(/^## (\d+)\. (.+)$/gm)].map(m=>({id:Number(m[1]),title:m[2].trim()}));
 const lessons=[...curriculum.matchAll(/^### (\d+)-(\d+)\. (.+)$/gm)].map(m=>({id:`ch${m[1].padStart(2,'0')}-l${m[2].padStart(2,'0')}`,chapter:+m[1],sub:+m[2],title:m[3].trim()}));
 if(chapters.length!==24||lessons.length!==48)throw Error('Curriculum must have 24 chapters and 48 lessons');
-const scripts=['src/core.js','src/lab-guides.js',...fs.readdirSync(path.join(root,'src/labs')).filter(x=>x.endsWith('.js')).sort().map(x=>'src/labs/'+x),...fs.readdirSync(path.join(root,'src/assessment')).filter(x=>x.endsWith('.js')).sort().map(x=>'src/assessment/'+x),...fs.readdirSync(path.join(root,'content')).filter(x=>x.endsWith('.js')).sort().map(x=>'content/'+x),'src/app.js'];
+const scripts=['src/core.js','src/lab-guides.js',...fs.readdirSync(path.join(root,'src/labs')).filter(x=>x.endsWith('.js')).sort().map(x=>'src/labs/'+x),...fs.readdirSync(path.join(root,'src/learning')).filter(x=>x.endsWith('.js')).sort().map(x=>'src/learning/'+x),...fs.readdirSync(path.join(root,'src/assessment')).filter(x=>x.endsWith('.js')).sort().map(x=>'src/assessment/'+x),...fs.readdirSync(path.join(root,'content')).filter(x=>x.endsWith('.js')).sort().map(x=>'content/'+x),'src/app.js'];
 const sqlWorker=require('./sql-bundle.cjs')(root);
 const sourceJs=`window.CATALOG=${JSON.stringify({chapters,lessons})};\nwindow.CS_SQL_WORKER=${JSON.stringify(sqlWorker)};\n`+scripts.map(read).join('\n');
 const assetPattern=/\{\{asset:([a-zA-Z0-9_.-]+)\}\}/g;
