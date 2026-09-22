@@ -23,9 +23,22 @@ test('시험 문제은행은 모든 소단원에 6개 문항과 안정적인 ID�
  assert.equal(questions.length,288);
  assert.equal(new Set(questions.map(q=>q.id)).size,288);
  assert.equal(new Set(questions.map(q=>q.prompt)).size,288);
- assert.ok(questions.every(q=>/-e0[1-6]$/.test(q.id)&&q.revision===2&&q.lessonId&&q.options.length===3&&new Set(q.options.map(o=>o.text)).size===3&&q.options.some(o=>o.id===q.correctOptionId)&&q.feedback.length===3&&q.reviewTargets.length));
+ assert.ok(questions.every(q=>/-e0[1-6]$/.test(q.id)&&q.revision===3&&q.lessonId&&q.options.length===3&&new Set(q.options.map(o=>o.text)).size===3&&q.options.some(o=>o.id===q.correctOptionId)&&q.feedback.length===3&&q.reviewTargets.length));
  assert.ok(questions.every(q=>!q.conceptTags.includes('goal-check')&&!q.prompt.includes('가장 직접 확인할 내용')));
  for(const [lessonId,lesson] of Object.entries(context.CS.lessons))assert.deepEqual(questions.filter(q=>q.lessonId===lessonId).map(q=>q.reviewTargets[0].sectionId),lesson.sections.map(section=>section.id));
+});
+
+test('288개 시험 문항은 정규화 중복과 학습 피드백 누락이 없다',()=>{
+ const questions=load().CS.examQuestions;
+ const normalize=value=>value.normalize('NFKC').replace(/[\s?.!,`'"“”‘’·:;()\[\]{}+-]/g,'').toLowerCase();
+ const normalizedPrompts=questions.map(question=>normalize(question.prompt));
+ assert.equal(new Set(normalizedPrompts).size,questions.length);
+ assert.ok(questions.every(question=>question.prompt.endsWith('?')));
+ assert.ok(questions.every(question=>question.prompt.length>=20));
+ assert.ok(questions.every(question=>question.feedback.every(feedback=>feedback.length>=15&&/[.!?요]$/.test(feedback))));
+ assert.ok(questions.every(question=>new Set(question.options.map(option=>normalize(option.text))).size===3));
+ assert.ok(questions.every(question=>question.conceptTags.length===1&&['application','prediction'].includes(question.conceptTags[0])));
+ assert.ok(questions.every(question=>question.reviewTargets.length===1));
 });
 
 const webStorage=map=>({getItem:key=>map.has(key)?map.get(key):null,setItem:(key,value)=>map.set(key,String(value)),removeItem:key=>map.delete(key)});

@@ -86,10 +86,24 @@ test('lesson topics have breathing room and figures explain their learning focus
 });
 
 test('every simulator teaches through prediction, observation and explanation',()=>{
- const app=read('src/app.js'),style=read('src/style.css');
+ const app=read('src/app.js'),style=read('src/style.css'),build=read('scripts/build.cjs');
+ const context={};context.window=context;vm.createContext(context);
+ vm.runInContext(read('src/core.js'),context);vm.runInContext(read('src/lab-guides.js'),context);
+ const labIds=new Set();
+ for(const file of fs.readdirSync(path.join(root,'src/labs')).filter(name=>name.endsWith('.js'))){
+  for(const match of read(`src/labs/${file}`).matchAll(/CS\.labs\[['"]([^'"]+)['"]\]/g))labIds.add(match[1]);
+ }
+ assert.equal(labIds.size,57);
+ assert.deepEqual([...Object.keys(context.CS.labGuides)].sort(),[...labIds].sort());
+ assert.ok(Object.values(context.CS.labGuides).every(guide=>['predict','observe','explain','mistake'].every(key=>typeof guide[key]==='string'&&guide[key].length>=25)));
+ assert.match(build,/src\/lab-guides\.js/);
  assert.match(app,/예측/);
  assert.match(app,/이번 변화/);
- assert.match(app,/다음 관찰/);
+ assert.match(app,/지금 관찰할 것/);
+ assert.match(app,/guide\.predict/);
+ assert.match(app,/guide\.observe/);
+ assert.match(app,/guide\.explain/);
+ assert.match(app,/guide\.mistake/);
  assert.match(app,/id:'back'/);
  assert.match(app,/data-speed/);
  assert.match(app,/history\.push/);
@@ -97,6 +111,7 @@ test('every simulator teaches through prediction, observation and explanation',(
  assert.match(app,/events\.length>beforeEvents/);
  assert.match(style,/\.lab-method/);
  assert.match(style,/\.lab-explainer/);
+ assert.match(style,/\.lab-misconception/);
  assert.match(style,/@keyframes lab-stage-change/);
 });
 
