@@ -24,8 +24,8 @@ test('시험 문제은행은 모든 소단원에 6개 문항과 안정적인 ID�
  assert.equal(new Set(questions.map(q=>q.id)).size,288);
  assert.equal(new Set(questions.map(q=>q.prompt)).size,288);
  assert.ok(questions.every(q=>/-e0[1-6]$/.test(q.id)&&[3,4].includes(q.revision)&&q.lessonId&&q.options.length===3&&new Set(q.options.map(o=>o.text)).size===3&&q.options.some(o=>o.id===q.correctOptionId)&&q.feedback.length===3&&q.reviewTargets.length));
- const revised=['ch01-l01','ch01-l02','ch02-l01','ch02-l02','ch03-l01','ch03-l02','ch04-l01','ch04-l02','ch08-l01','ch08-l02','ch13-l02','ch15-l02','ch16-l01'];
- assert.equal(questions.filter(q=>q.revision===4).length,78);
+ const revised=Object.keys(context.CS.lessons);
+ assert.equal(questions.filter(q=>q.revision===4).length,288);
  assert.ok(questions.filter(q=>revised.includes(q.lessonId)).every(q=>q.revision===4));
  assert.ok(questions.every(q=>!q.conceptTags.includes('goal-check')&&!q.prompt.includes('가장 직접 확인할 내용')));
  for(const [lessonId,lesson] of Object.entries(context.CS.lessons))assert.deepEqual(questions.filter(q=>q.lessonId===lessonId).map(q=>q.reviewTargets[0].sectionId),lesson.sections.map(section=>section.id));
