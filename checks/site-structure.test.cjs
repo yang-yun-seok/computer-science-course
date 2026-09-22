@@ -85,6 +85,19 @@ test('lesson topics have breathing room and figures explain their learning focus
  assert.equal(captions,figures);
 });
 
+test('every simulator teaches through prediction, observation and explanation',()=>{
+ const app=read('src/app.js'),style=read('src/style.css');
+ assert.match(app,/예측/);
+ assert.match(app,/이번 변화/);
+ assert.match(app,/다음 관찰/);
+ assert.match(app,/id:'back'/);
+ assert.match(app,/data-speed/);
+ assert.match(app,/history\.push/);
+ assert.match(style,/\.lab-method/);
+ assert.match(style,/\.lab-explainer/);
+ assert.match(style,/@keyframes lab-stage-change/);
+});
+
 test('Korean prose wraps by eojeol and complete thoughts',()=>{
  const style=read('src/style.css');
  assert.match(style,/:root\{[^}]*line-break:strict;word-break:keep-all;overflow-wrap:break-word/);
