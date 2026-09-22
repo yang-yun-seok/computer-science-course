@@ -93,6 +93,8 @@ test('every simulator teaches through prediction, observation and explanation',(
  assert.match(app,/id:'back'/);
  assert.match(app,/data-speed/);
  assert.match(app,/history\.push/);
+ assert.match(app,/조작 \$\{stepCount\}회/);
+ assert.match(app,/events\.length>beforeEvents/);
  assert.match(style,/\.lab-method/);
  assert.match(style,/\.lab-explainer/);
  assert.match(style,/@keyframes lab-stage-change/);
