@@ -234,7 +234,7 @@ const adapters={
   if(s.arrival!==8||s.service!==3||s.limit!==10||s.mode!==mode||s.ticks!==5||s.queue!==7||s.processed!==15)return null;
   if(label==='A'&&(s.rejected!==18||s.delayed!==0))return null;
   if(label==='B'&&(s.rejected!==0||s.delayed!==18))return null;
-  return {summary:`${label==='A'?'제한 큐':'백프레셔'} · 대기 7 · 초과 18`,metrics:{정책:mode,대기:s.queue,처리:s.processed,거부:s.rejected,상류지연:s.delayed}};
+  return {summary:`${label==='A'?'제한 큐 · 거부 18':'백프레셔 · 상류 지연 18'} · 대기 7`,metrics:{정책:mode,대기:s.queue,처리:s.processed,거부:s.rejected,상류지연:s.delayed}};
  },
  'module-boundary':(s,_p,label)=>{
   const structure=label==='A'?'tangled':'separated',affected=label==='A'?3:2;
