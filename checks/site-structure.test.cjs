@@ -22,6 +22,10 @@ test('overview explains motivation, course path and learning method',()=>{
  assert.equal(overview.example.steps.length,5);
  assert.match(overview.example.note,/모든 클릭이 서버나 데이터베이스를 거치는 것은 아니에요/);
  assert.equal(overview.reasons.length,4);
+ assert.match(overview.audience.lead,/바이브 코더/);
+ assert.equal(overview.audience.groups.length,2);
+ assert.ok(overview.audience.groups.every(group=>group.situation&&group.insight&&group.example));
+ assert.match(read('src/app.js'),/id="who-needs-cs"/);
  assert.equal(overview.path.length,4);
  assert.ok(overview.path.every(stage=>stage.question&&stage.href));
  assert.equal(overview.method.length,3);

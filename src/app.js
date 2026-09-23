@@ -116,6 +116,13 @@ function renderOverview(){
    <p class="example-note">${e(o.example.note)}</p>
   </section>
   <section class="overview-section"><div class="section-kicker">왜 배울까요?</div><h2>보이는 증상 뒤의 원인을 설명할 수 있어요</h2><div class="reason-grid">${o.reasons.map(r=>`<section><span>${e(r.number)}</span><h3>${e(r.title)}</h3><p>${e(r.text)}</p></section>`).join('')}</div></section>
+  <section id="who-needs-cs" class="overview-section overview-audience" aria-labelledby="overview-audience-title">
+   <div class="section-kicker">누구에게 도움이 될까요?</div>
+   <h2 id="overview-audience-title">${e(o.audience.title)}</h2>
+   <p class="overview-section-lead">${e(o.audience.lead)}</p>
+   <div class="audience-list">${o.audience.groups.map((group,i)=>`<article><div class="audience-story"><span class="audience-label">${String(i+1).padStart(2,'0')} · ${e(group.label)}</span><h3>${e(group.title)}</h3><p>${e(group.situation)}</p></div><div class="audience-detail"><p>${e(group.insight)}</p><div class="audience-example"><span>이렇게 물어볼 수 있어요</span><p>${e(group.example)}</p></div></div></article>`).join('')}</div>
+   <p class="audience-closing">${e(o.audience.closing)}</p>
+  </section>
   <section id="learning-path" class="overview-section"><div class="section-kicker">학습 지도</div><h2>작은 계산에서 실제 서비스의 운영까지 연결해요</h2><p class="overview-section-lead">앞에서 익힌 역할과 흐름이 다음 단계의 바탕이 돼요. 처음이라면 1강부터 차례로 읽어 보세요.</p><div class="learning-path">${o.path.map((p,i)=>`<a href="${e(p.href)}"><span>${e(p.label)}</span><div><h3>${e(p.title)}</h3><p class="path-question">${e(p.question)}</p><p>${e(p.text)}</p></div><b>${String(i+1).padStart(2,'0')}</b></a>`).join('')}</div></section>
   <section class="overview-section overview-method"><div><div class="section-kicker">이렇게 공부해요</div><h2>예상하고, 바꿔 보고, 설명해요</h2><p>처음 보는 용어는 각 단원에서 차례로 설명해요. 한 번에 외우려 하지 말고, 예상과 결과가 다른 지점으로 돌아가 다시 살펴보세요.</p></div><ol>${o.method.map(m=>`<li><span>${e(m.step)}</span><div><h3>${e(m.title)}</h3><p>${e(m.text)}</p></div></li>`).join('')}</ol></section>
   <section class="overview-start"><span>첫 단원에서 확인할 질문</span><h2>계산한 값은 언제 화면에 나타날까요?</h2><p>3 + 2를 계산하는 과정을 따라가며 CPU에 결과가 생기는 순간, 메모리에 기록하는 순간, 화면에 보여 주는 순간을 구별해 보세요.</p><div class="overview-actions"><a class="button-link primary" href="#ch01-l01">01. CPU와 메모리 시작하기 →</a></div></section>
