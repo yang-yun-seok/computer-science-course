@@ -17,10 +17,13 @@ test('overview explains motivation, course path and learning method',()=>{
  vm.runInContext(read('src/core.js'),context);
  vm.runInContext(read('content/overview.js'),context);
  const overview=context.CS.overview;
- assert.match(overview.lead,/Computer Science/);
+ assert.match(overview.definition,/Computer Science/);
  assert.deepEqual(Array.from(overview.title),['컴퓨터가 왜 그렇게 동작하는지','이해하는 힘']);
+ assert.equal(overview.example.steps.length,5);
+ assert.match(overview.example.note,/모든 클릭이 서버나 데이터베이스를 거치는 것은 아니에요/);
  assert.equal(overview.reasons.length,4);
  assert.equal(overview.path.length,4);
+ assert.ok(overview.path.every(stage=>stage.question&&stage.href));
  assert.equal(overview.method.length,3);
  assert.match(read('src/app.js'),/href="#overview\/learning-path">전체 흐름 보기/);
 });

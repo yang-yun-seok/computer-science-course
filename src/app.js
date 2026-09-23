@@ -100,7 +100,26 @@ function renderOverview(){
  cleanup.forEach(fn=>fn());cleanup=[];activeLabs=new Map();announce('');currentId='overview';nav();const o=CS.overview;
  if(!o){main.innerHTML='<div class="not-ready"><h1>학습 개요를 불러오지 못했어요.</h1><a href="#ch01-l01">첫 단원으로 이동하기</a></div>';return;}
  document.title='Computer Science';
- main.innerHTML=`<article class="overview"><section class="overview-hero"><div><span class="overview-eyebrow">${e(o.eyebrow)}</span><h1 tabindex="-1"><span>${e(o.title[0])}</span><span>${e(o.title[1])}</span></h1><p>${e(o.lead)}</p><div class="overview-actions"><a class="button-link primary" href="#ch01-l01">첫 단원 시작하기</a><a class="button-link" href="#overview/learning-path">전체 흐름 보기</a></div></div><div class="request-journey" aria-label="한 번의 클릭이 브라우저 네트워크 서버 데이터베이스를 거쳐 다시 화면으로 돌아오는 흐름"><span><b>클릭</b>입력</span><i>→</i><span><b>브라우저</b>프로그램</span><i>→</i><span><b>네트워크</b>통신</span><i>→</i><span><b>서버</b>처리</span><i>→</i><span><b>DB</b>데이터</span><i>→</i><strong>화면<br>결과</strong></div></section><section class="overview-section"><div class="section-kicker">왜 배울까요?</div><h2>코드를 넘어 시스템 전체를 보는 눈을 길러요</h2><div class="reason-grid">${o.reasons.map(r=>`<section><span>${e(r.number)}</span><h3>${e(r.title)}</h3><p>${e(r.text)}</p></section>`).join('')}</div></section><section id="learning-path" class="overview-section"><div class="section-kicker">학습 지도</div><h2>작은 계산에서 실제 서비스의 운영까지 연결해요</h2><div class="learning-path">${o.path.map((p,i)=>`<a href="${e(p.href)}"><span>${e(p.label)}</span><div><h3>${e(p.title)}</h3><p>${e(p.text)}</p></div><b>${String(i+1).padStart(2,'0')}</b></a>`).join('')}</div></section><section class="overview-section overview-method"><div><div class="section-kicker">이렇게 공부해요</div><h2>보고, 움직여 보고, 설명해 보세요</h2><p>실습의 정답을 빠르게 누르는 것보다 상태가 왜 바뀌었는지 소리 내어 설명하는 것이 더 중요해요.</p></div><ol>${o.method.map(m=>`<li><span>${e(m.step)}</span><div><h3>${e(m.title)}</h3><p>${e(m.text)}</p></div></li>`).join('')}</ol></section><section class="overview-start"><span>준비됐나요?</span><h2>CPU와 메모리에서 첫 흐름을 시작해요</h2><p>계산기에 숫자를 넣고 결과가 화면에 나타날 때, 값이 어디를 거쳐 가는지 직접 확인합니다.</p><div class="overview-actions"><a class="button-link primary" href="#ch01-l01">01. CPU와 메모리 시작하기 →</a><a class="button-link" href="#cases">배운 원리로 문제 해결하기 →</a></div></section></article>`;
+ main.innerHTML=`<article class="overview">
+  <section class="overview-hero">
+   <span class="overview-eyebrow">${e(o.eyebrow)}</span>
+   <h1 tabindex="-1"><span>${e(o.title[0])}</span><span>${e(o.title[1])}</span></h1>
+   <p class="overview-definition">${e(o.definition)}</p>
+   <p class="overview-lead">${e(o.lead)}</p>
+   <div class="overview-actions"><a class="button-link primary" href="#ch01-l01">첫 단원 시작하기</a><a class="button-link" href="#overview/learning-path">전체 흐름 보기</a></div>
+  </section>
+  <section class="overview-section overview-example" aria-labelledby="overview-example-title">
+   <div class="section-kicker">하나의 상황으로 살펴보기</div>
+   <h2 id="overview-example-title">${e(o.example.title)}</h2>
+   <p class="overview-section-lead">${e(o.example.intro)}</p>
+   <ol class="example-journey">${o.example.steps.map((step,i)=>`<li><span class="example-number">${String(i+1).padStart(2,'0')}</span><div class="example-stage"><h3>${e(step.name)}</h3><p>${e(step.action)}</p></div><p class="example-question">${e(step.question)}</p></li>`).join('')}</ol>
+   <p class="example-note">${e(o.example.note)}</p>
+  </section>
+  <section class="overview-section"><div class="section-kicker">왜 배울까요?</div><h2>보이는 증상 뒤의 원인을 설명할 수 있어요</h2><div class="reason-grid">${o.reasons.map(r=>`<section><span>${e(r.number)}</span><h3>${e(r.title)}</h3><p>${e(r.text)}</p></section>`).join('')}</div></section>
+  <section id="learning-path" class="overview-section"><div class="section-kicker">학습 지도</div><h2>작은 계산에서 실제 서비스의 운영까지 연결해요</h2><p class="overview-section-lead">앞에서 익힌 역할과 흐름이 다음 단계의 바탕이 돼요. 처음이라면 1강부터 차례로 읽어 보세요.</p><div class="learning-path">${o.path.map((p,i)=>`<a href="${e(p.href)}"><span>${e(p.label)}</span><div><h3>${e(p.title)}</h3><p class="path-question">${e(p.question)}</p><p>${e(p.text)}</p></div><b>${String(i+1).padStart(2,'0')}</b></a>`).join('')}</div></section>
+  <section class="overview-section overview-method"><div><div class="section-kicker">이렇게 공부해요</div><h2>예상하고, 바꿔 보고, 설명해요</h2><p>처음 보는 용어는 각 단원에서 차례로 설명해요. 한 번에 외우려 하지 말고, 예상과 결과가 다른 지점으로 돌아가 다시 살펴보세요.</p></div><ol>${o.method.map(m=>`<li><span>${e(m.step)}</span><div><h3>${e(m.title)}</h3><p>${e(m.text)}</p></div></li>`).join('')}</ol></section>
+  <section class="overview-start"><span>첫 단원에서 확인할 질문</span><h2>계산한 값은 언제 화면에 나타날까요?</h2><p>3 + 2를 계산하는 과정을 따라가며 CPU에 결과가 생기는 순간, 메모리에 기록하는 순간, 화면에 보여 주는 순간을 구별해 보세요.</p><div class="overview-actions"><a class="button-link primary" href="#ch01-l01">01. CPU와 메모리 시작하기 →</a></div></section>
+ </article>`;
  main.querySelector('h1')?.focus({preventScroll:true});
 }
 function renderCases(){
