@@ -202,7 +202,7 @@ const adapters={
  },
  'pipeline-hazards':(s,_p,label)=>{
   const forwarding=label==='B',cycles=label==='A'?11:7,stalls=label==='A'?4:0;
-  if(s.preset!=='dependent'||s.forwarding!==forwarding||s.cycles!==cycles||s.stalls!==stalls)return null;
+  if(s.visibleCycle!==s.rows.length||s.preset!=='dependent'||s.forwarding!==forwarding||s.cycles!==cycles||s.stalls!==stalls)return null;
   return {summary:`전달 ${forwarding?'있음':'없음'} · ${cycles}사이클 · 멈춤 ${stalls}회`,metrics:{전달:forwarding?'있음':'없음',사이클:cycles,멈춤:stalls,명령수:s.program.length}};
  },
  'amdahl-speedup':(s,_p,label)=>{
