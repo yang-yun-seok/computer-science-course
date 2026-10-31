@@ -110,7 +110,10 @@ test('BFS and DFS orders follow the same illustrated graph and never skip E',()=
  assert.deepEqual(order('bfs'),bfs);assert.deepEqual(order('dfs'),dfs);assert.equal(new Set(dfs).size,6);assert.ok(dfs.includes('E'));
  const degree=render('ds-089'),directed=[...degree.matchAll(/data-from="([A-D])" data-to="([A-D])"/g)].map(m=>[m[1],m[2]]);
  assert.equal(directed.filter(x=>x[1]==='B').length,2);assert.equal(directed.filter(x=>x[0]==='B').length,1);
- assert.ok(c.CS.lessons['ch08-l02'].sections.find(s=>s.id==='b03').html.includes('↩ B → E ↩ A → C → F'));
+ const lesson=c.CS.lessons['ch08-l02'].sections.find(s=>s.id==='b03').html;
+ assert.match(lesson,/A → B → C → D → E → F/);
+ assert.match(lesson,/A → B → D → E → C → F/);
+ assert.match(lesson,/D—E 간선이 있다는 뜻은 아니에요/);
 });
 
 test('database pictures distinguish row counts, column counts and the query projection',()=>{
