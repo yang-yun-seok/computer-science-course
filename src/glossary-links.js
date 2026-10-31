@@ -3,8 +3,10 @@
 const normalize=value=>String(value||'').normalize('NFKC').toLocaleLowerCase('en').replace(/\s+/g,'').trim();
 const escapeRegex=value=>value.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const subjectOrder={1:['arch','os'],2:['os','arch'],3:['db'],4:['ds','arch'],5:['arch','ds'],6:['net'],7:['ds'],8:['ds'],9:['os'],10:['os','arch'],11:['os','db'],12:['db'],13:['db','ds'],14:['db','os'],15:['net'],16:['net','os'],17:['net','db'],18:['arch','os','ds'],19:['arch','os'],20:['net','db','os'],21:['net','db','os'],22:['os','ds','db'],23:['ds','os'],24:['os','net']};
-const extraAliases={'arch-178':['캐시'],'arch-138':['파이프라인','명령 파이프라인','파이프라이닝'],'os-072':['스케줄링'],'os-038':['힙'],'os-040':['스택'],'db-055':['색인']};
+const extraAliases={'arch-178':['캐시'],'arch-138':['파이프라인','명령 파이프라인','파이프라이닝'],'arch-043':['UTF-8','UTF-16','UTF-32'],'os-072':['스케줄링'],'os-034':['BSS'],'os-038':['힙','Heap'],'os-040':['스택','Stack','호출 스택','실행 스택'],'os-222':['Clock'],'db-055':['색인'],'net-436':['리버스 프록시'],'net-484':['타임아웃'],'arch-264':['압축']};
 const preferred={'tcp':'net-225','cpu스케줄링':'os-072'};
+// An everyday word is not enough evidence for a domain-specific definition.
+const unlinkedAliases=new Set(['데이터','data','블록','중단','상태','자원','서비스','경로','식별자','플래그','버전','과부하','클래스','패딩','중간노드','충돌','if','date']);
 const particles=/^(?:은|는|이|가|을|를|의|에|에서|에게|와|과|도|만|로|으로|처럼|보다|까지|부터|마다|라고|라는|란|이란|이라|이라면|라면|이고|이며|이면|이므로|이지만|이다|입니다|이에요|예요|이어서|여서|일|인|이냐|인가|인지|들이|들을|들은|들과|에도|에서는|에만|으로는|로는|과는|와는|만을|만의|과의|와의|별|별로)$/;
 function createIndex(terms){
  const aliases=new Map(),byId=new Map(terms.map(term=>[term.id,term]));
@@ -24,22 +26,62 @@ function createIndex(terms){
  const spellings=[...aliases.values()].flatMap(items=>items.map(item=>item.alias));
  const patterns=[...new Set(spellings)].sort((a,b)=>normalize(b).length-normalize(a).length||b.length-a.length).map(alias=>escapeRegex(alias).replace(/\s+/g,'\\s*'));
  const pattern=patterns.length?new RegExp(patterns.join('|'),'giu'):null;
- function resolve(alias,lessonId=''){
+ function resolve(alias,lessonId='',context=''){
   const candidates=aliases.get(normalize(alias));if(!candidates)return null;
   const chapter=Number(lessonId.match(/^ch(\d+)/)?.[1]),key=normalize(alias),order=subjectOrder[chapter]||[],rank=t=>{const n=order.indexOf(t.subject);return n<0?99:n;};
-  // These short names also occur in analogies or unrelated domains. Do not silently attach the wrong definition.
-  if(['데이터','블록'].includes(key)||key==='모니터'&&chapter!==11||key==='주소'&&![6,15,16,17,20,21].includes(chapter)||key==='페이지'&&chapter!==10)return null;
-  if(key==='캐시')return byId.get([1,4,5,10,18,19].includes(chapter)?'arch-178':'net-391')||null;
+  const pick=id=>byId.get(id)||null;
+  if(unlinkedAliases.has(key))return null;
+  if(key==='모니터'&&chapter!==11||key==='주소'&&![6,15,16,17,20,21].includes(chapter))return null;
+  if(key==='캐시')return pick([1,2,19].includes(chapter)?'arch-178':'net-391');
+  if(key==='페이지')return lessonId==='ch10-l01'?pick('os-221'):null;
+  if(key==='ip')return pick('net-136');
+  if(key==='ir')return pick(chapter===18?'arch-260':chapter===1?'arch-093':'');
+  if(key==='ipc')return pick(chapter===19?'arch-261':[2,9].includes(chapter)?'os-063':'');
+  if(key==='bss')return pick(chapter===2?'os-034':chapter===6?'net-481':'');
+  if(key==='post')return lessonId==='ch06-l02'?pick('net-332'):null;
+  if(key==='tls'&&chapter===2)return null;
+  if(['fork','join'].includes(key)&&/fork\s*\/\s*join/i.test(context))return null;
+  if(key==='clock')return pick(['ch01-l02','ch10-l01'].includes(lessonId)?'os-222':'arch-090');
+  if(key==='스택'||key==='stack')return pick([2,5,16,18].includes(chapter)?'os-040':'ds-019');
+  if(key==='힙'||key==='heap')return pick([2,18].includes(chapter)?'os-038':chapter===8?'ds-065':'');
+  if(key==='인덱스'||key==='index')return pick([4,5,7,8,11].includes(chapter)?'ds-009':[3,12,13,16].includes(chapter)?'db-055':'');
+  if(key==='도메인')return pick(chapter===3?'db-013':[6,15,16,17].includes(chapter)?'net-288':'');
+  if(key==='속성')return pick([3,12].includes(chapter)?'db-012':'');
+  if(key==='레코드')return pick([3,12,13,14].includes(chapter)?'db-016':[6,15].includes(chapter)?'net-317':'');
+  if(['커밋','commit','롤백','rollback','일관성','consistency'].includes(key)&&![3,12,13,14].includes(chapter))return null;
+  if(key==='차수')return pick(chapter===3?'db-086':lessonId==='ch08-l02'?'ds-089':lessonId==='ch08-l01'?'ds-049':'');
+  if(key==='높이'&&![8,13].includes(chapter)||key==='깊이'&&chapter!==8)return null;
+  if(key==='노드')return pick([3,4,5,8,13,18].includes(chapter)?'ds-087':chapter===21?'net-005':'');
+  if(key==='간선')return pick('ds-088');
+  if(key==='헤더'&&chapter===4||key==='호스트'&&![6,15,16].includes(chapter))return null;
+  if(['표현계층','응용계층','캡슐화','포트','port'].includes(key)&&chapter===22)return null;
+  if(key==='세그먼트'&&chapter!==15||key==='스위치'&&chapter!==6)return null;
+  if(key==='타입')return pick('arch-262');
+  if(key==='태스크'&&chapter===16)return pick('arch-263');
+  if(key==='타임아웃')return pick('net-484');
+  if(key==='ttl')return pick(chapter===15&&/DNS|레코드|캐시/i.test(context)?'net-306':chapter===18?'net-485':chapter===15&&/홉|패킷|IPv4/i.test(context)?'net-144':'');
+  if(key==='다중화'&&chapter===16)return pick('net-486');
+  if(key==='세션')return /(?:페이지|탭)\s*세션/.test(context)?null:pick(lessonId==='ch06-l01'?'net-042':[6,16,17,21].includes(chapter)?'net-487':'');
+  if(key==='lru'&&chapter!==10)return pick('net-488');
+  if(key==='전송시간'&&chapter===5)return pick('net-489');
+  if(key==='압축')return chapter===4?pick('arch-264'):null;
+  if(key==='컨테이너'&&chapter!==24||key==='파티션'||key==='작업집합'&&chapter!==10)return null;
+  if(['파이프라인','파이프라이닝','데이터위험'].includes(key)&&chapter!==19)return null;
+  if(key==='문맥'&&![2].includes(chapter)&&lessonId!=='ch09-l01')return null;
+  if(key==='실행상태'&&!/Running|CPU를\s*할당/i.test(context))return null;
+  if(key==='예외'&&![9,19].includes(chapter)||key==='동기화'&&[10,12].includes(chapter))return null;
+  if(key==='키분할'&&chapter===21)return null;
+  if(key==='버킷'&&![4,13].includes(chapter)||key==='자료형'&&/추상\s*자료형/.test(context))return null;
   return [...candidates].sort((a,b)=>rank(a.term)-rank(b.term)||(a.term.id===preferred[normalize(alias)]?-1:b.term.id===preferred[normalize(alias)]?1:0)||Number(!a.term.english)-Number(!b.term.english)||a.term.id.localeCompare(b.term.id))[0].term;
  }
- function find(text,lessonId=''){
+ function find(text,lessonId='',context=text){
   if(!pattern)return [];pattern.lastIndex=0;const found=[];
   for(const match of text.matchAll(pattern)){
    const start=match.index,end=start+match[0].length,before=text[start-1]||'',after=text.slice(end),next=after[0]||'';
    if(/[\p{L}\p{N}_]/u.test(before))continue;
    if(/[A-Za-z0-9_]/.test(next))continue;
    if(/[가-힣]/.test(next)&&!particles.test(after.match(/^[가-힣]+/)?.[0]||''))continue;
-   const term=resolve(match[0],lessonId);if(term)found.push({start,end,text:match[0],term});
+   const term=resolve(match[0],lessonId,context);if(term)found.push({start,end,text:match[0],term});
   }
   return found;
  }
@@ -60,7 +102,8 @@ function mount(root,lessonId){
   const seen=new Set(),walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,{acceptNode(node){const parent=node.parentElement;return parent&&!parent.closest('a,button,code,pre,textarea,select,svg,canvas,figcaption,.lab,.quiz,.sources,.section-head,summary,h1,h2,h3,h4')&&parent.closest('p,li,td,th,dd,dt,strong')?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;}}),nodes=[];
   while(walker.nextNode())nodes.push(walker.currentNode);
   for(const node of nodes){
-   const matches=index.find(node.nodeValue,lessonId).filter(match=>{if(seen.has(match.term.id)||seen.size>=12)return false;seen.add(match.term.id);return true;});if(!matches.length)continue;
+   const context=(node.parentElement.closest('p,li,dd,dt,tr')||node.parentElement).textContent;
+   const matches=index.find(node.nodeValue,lessonId,context).filter(match=>{if(seen.has(match.term.id)||seen.size>=12)return false;seen.add(match.term.id);return true;});if(!matches.length)continue;
    const fragment=document.createDocumentFragment();let at=0;
    for(const match of matches){
     fragment.append(node.nodeValue.slice(at,match.start));const button=document.createElement('button');button.type='button';button.className='term-trigger';button.dataset.termId=match.term.id;button.id=`term-${lessonId}-${++serial}`;button.textContent=match.text;button.setAttribute('aria-label',`${match.text} 뜻 보기`);button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-expanded','false');fragment.append(button);at=match.end;

@@ -62,8 +62,9 @@ test('glossary indexes every reference keyword with a readable meaning',()=>{
  vm.runInContext(read('src/core.js'),context);
  vm.runInContext(read('content/glossary.js'),context);
  const glossary=context.CS.glossary;
- assert.equal(glossary.terms.length,1133);
- assert.deepEqual(Array.from(glossary.subjects,v=>[v.id,glossary.terms.filter(term=>term.subject===v.id).length]),[['os',220],['net',483],['db',85],['ds',86],['arch',259]]);
+ assert.equal(glossary.terms.length,1151);
+ assert.deepEqual(Array.from(glossary.subjects,v=>[v.id,glossary.terms.filter(term=>term.subject===v.id).length]),[['os',223],['net',489],['db',86],['ds',89],['arch',264]]);
+ assert.equal(new Set(glossary.terms.map(term=>term.id)).size,glossary.terms.length);
  assert.ok(glossary.terms.every(term=>term.term&&term.subject&&term.topic&&term.meaning.length>=8));
  assert.ok(glossary.terms.every(term=>!/<[^>]+>/.test(term.meaning)));
  const meanings=glossary.terms.map(term=>term.meaning).join('\n');
