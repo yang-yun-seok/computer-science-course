@@ -7881,7 +7881,7 @@ CS.glossary={
       "english": "composite key",
       "topic": "RDBMS의 기본",
       "detail": "",
-      "meaning": "복합 키는 두 개 이상의 필드로 구성된 후보 키로, 여러 필드를 결합하여 유일성을 보장이에요.",
+      "meaning": "복합 키는 두 개 이상의 필드로 구성된 후보 키로, 여러 필드를 결합하여 유일성을 보장해요.",
       "meaningSource": "csnote",
       "meaningSourceUrl": "http://www.wikidata.org/entity/Q120065105"
     },
@@ -8116,7 +8116,7 @@ CS.glossary={
       "english": "index",
       "topic": "효율적 쿼리",
       "detail": "",
-      "meaning": "인덱스는 테이블의 검색 속도를 높이기 위해 사용하는 자료구조로, 대량의 데이터를 효율적으로 조회예요.",
+      "meaning": "인덱스는 테이블의 검색 속도를 높이기 위해 사용하는 자료구조로, 대량의 데이터를 효율적으로 조회하도록 도와줘요.",
       "meaningSource": "csnote",
       "meaningSourceUrl": "http://www.wikidata.org/entity/Q2272475"
     },
@@ -8651,7 +8651,7 @@ CS.glossary={
       "english": "",
       "topic": "스택과 큐",
       "detail": "",
-      "meaning": "PUSH (스택 연산)는 스택에 요소를 추가하는 연산으로, 스택의 최상단에 새로운 요소를 삽입이에요.",
+      "meaning": "PUSH는 스택의 맨 위에 새로운 요소를 추가하는 연산이에요.",
       "meaningSource": "csnote"
     },
     {
@@ -8693,7 +8693,7 @@ CS.glossary={
       "english": "Enqueue",
       "topic": "스택과 큐",
       "detail": "",
-      "meaning": "인큐는 큐에 요소를 추가하는 연산으로, 큐의 끝에 새로운 요소를 삽입이에요.",
+      "meaning": "인큐는 큐의 뒤쪽에 새로운 요소를 추가하는 연산이에요.",
       "meaningSource": "csnote",
       "meaningSourceUrl": "http://www.wikidata.org/entity/Q216665"
     },
@@ -10982,7 +10982,7 @@ CS.glossary={
       "english": "Random Access Memory",
       "topic": "메모리와 캐시 메모리",
       "detail": "RAM의 특징과 종류",
-      "meaning": "RAM은 메인 메모리로써 사용되는 휘발성 저장 장치예요.",
+      "meaning": "RAM은 메인 메모리로 사용되는 휘발성 기억장치예요.",
       "meaningSource": "csnote",
       "meaningSourceUrl": "http://www.wikidata.org/entity/Q132200325"
     },
